@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Check-in is from 2:00 PM and check-out is by 11:00 AM.",
+  "scenario_id": "M-01",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "14.1"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "14.1",
+    "18",
+    "3.6",
+    "Lahore > Sleep",
+    "Lahore > Sleep > Budget"
+  ],
+  "latency_s": 45.57,
+  "llm_s": 41.411,
+  "tool_s": 0.0,
+  "retrieval_s": 1.91,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1475,
+  "completion_tokens": 24,
+  "error": null,
+  "ollama": {
+    "total_duration": 41.139156,
+    "load_duration": 0.018649,
+    "prompt_eval_duration": 36.472261,
+    "eval_duration": 4.588771
+  }
+}

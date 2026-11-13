@@ -1,0 +1,111 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "There is a grocery store called Fresh Basket Mart that is 5 minutes walk away and open from 9:00 AM to 1:00 AM daily. For a pharmacy, Lane 4 Care Pharmacy is 3 minutes away and open 24 hours.",
+  "scenario_id": "M-19",
+  "guest_message": "Is there a grocery store or pharmacy nearby that's open late?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "3.7"
+    },
+    {
+      "type": "manual",
+      "id": "12.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Mid-range"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Shopping malls"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "nearby grocery store open late, nearby pharmacy open late"
+      },
+      "result_size": 1839,
+      "ms": 45.6
+    },
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "sights, restaurants, shopping, transport, safety, policies, amenities, check-in and check-out times, wifi, safety and house rules, fees, local area, apartment, building, amenities, policies, fees, check-in and check-out times, wifi, safety, house rules, nearby grocery store open late, nearby pharmacy open late"
+      },
+      "result_size": 4186,
+      "ms": 123.4
+    }
+  ],
+  "retrieved": [
+    "17",
+    "14.3",
+    "3.7",
+    "12.4",
+    "Lahore > Buy > Other",
+    "Lahore > Sleep",
+    "Lahore > Eat > Mid-range",
+    "Lahore > Buy > Shopping malls"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"17\",\"title\":\"Nearby Essentials (the host's short list)\",\"text\":\"House manual > 17. Nearby Essentials (the host's short list)\\n\\nThese are the places our guests use most. All are within a short walk.\\n\\n| What | Name and details |\\n|---|---|\\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\\n| Mosque | Masjid Al-Noor, about 300 m away |\\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\\n\\nFor sightseeing, food and transport around Lahore, see the separate local guide.\"},{\"source_id\":\"14.3\",\"title\":\"Late check-out\",\"text\":\"House manual > 14. Checking Out > 14.3 Late check-out\\n\\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).\"},{\"source_id\":\"3.7\",\"title\":\"Late arrival\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.7 Late arrival\\n\\nSelf check-in works at any hour. If you will arrive after **11:00 PM**, tell the host in advance so the guard expects you. The guards at Gate 2 are on duty all night, but the front desk is closed after 9:00 PM.\"},{\"source_id\":\"12.4\",\"title\":\"Medical help\",\"text\":\"House manual > 12. Safety and Emergencies > 12.4 Medical help\\n\\nCall **1122** for emergencies. The nearest hospital with a 24-hour emergency department is Gulberg Community Hospital, about 2.5 km away (roughly 10 minutes by car). A 24-hour pharmacy is a 3-minute walk away (section 17).\"}]",
+    "[{\"source_id\":\"Lahore > Buy > Other\",\"title\":\"Other\",\"text\":\"Lahore > Buy > Other\\n\\nHigher end khadi can be bought at the Khaadi shop in Mini Market.\\n\\n8 Hafeez Centre. One of the famous mobile and computer market of the province Punjab, with inexpensive software (pirated), and hardware that can be bargained for. (updated Feb 2017)\\n\\nFortress Stadium has a huge variety of inexpensive linens, clothes, DVDs.\\n\\nEhsan chappal house has shoes for ladies, also check out Stylo shoes for stylish shoes and clutches/purses.\\n\\n9 Moon Market. Jewellery market, banks, clothes market (mostly for women and children), restaurants. (updated Feb 2017)\\n\\n10 Kareem Block Market. Men's wear - casual and formal wear for men of all ages. (updated Feb 2017)\\n\\nJoray Pull is a developing area near airport and Rangers HQ. It's safe and you do a lot of eating activity here along with shopping.\\n\\nLevi's products are comparatively cheap as they're produced in Pakistan. A regular pair of trousers in an official retail store will be between 5,000 and 10,000 Rs.\"},{\"source_id\":\"Lahore > Sleep\",\"title\":\"Sleep\",\"text\":\"Lahore > Sleep\\n\\nFor the visitor there are three broad options of areas in which to stay\\n\\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\\n\\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\\n\\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\\n\\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\\n\\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.\"},{\"source_id\":\"Lahore > Eat > Mid-range\",\"title\":\"Mid-range\",\"text\":\"Lahore > Eat > Mid-range\\n\\nLahore has several mid-range cafes, notably Masoom's for cakes, desserts and coffee, and sandwiches at Coffee, Tea and Company nearby. In Defence, Hot Fuzon is another good cafe and a Masoom's franchise.\\n\\nMexican cafes: Chalupa in Samnabad which has many tasty Mexican dishes like taco. There is also a bar with night time disco.\\n\\nLebanese restaurants: Cock and Bull with three branches in Lahore serving shawarmas.\\n\\nKim's snack bar in Samnabad. Lahore second best shawarma.\\n\\nChinese food is also very popular in Lahore. It is very strongly altered to local tastes.\\n\\nMini Golf (National Bank Park near Kalma Chowk). Don't miss this place for great open air atmosphere where you can also get sheesha.\\n\\nChatkhara. Serves snack food like samosas, chaat and dahi bhallay\\n\\nBalouchi Sajji, Fortress Stadium. One of the best restaurant in Lahore. Best traditionally grilled lamb and chicken in town and after the meal one must have the traditional kawa (green tea)\\n\\nLiberty Market. Offers good standard Pakistani food. The mutton karahi at Rs 510 is a popular dish and easily serves two people, while most dishes are half that price. They also offer salads, but see the Stay Healthy section below.\"},{\"source_id\":\"Lahore > Buy > Shopping malls\",\"title\":\"Shopping malls\",\"text\":\"Lahore > Buy > Shopping malls\\n\\n3 Panorama mall, Mall Road. An ideal place to buy formal male clothes. It houses over 1000 shops so you have a large variety of clothes to choose from and that is too at a competitive price. (updated Jun 2026)\\n\\n4 PACE. Shopping mall with food, clothes, electronics, movies. Located in Link Road, Model town. (updated Feb 2017)\\n\\n5 Mall of Lahore (Cantonment). A very prestigious shopping mall with a super market named green valley mall. (updated Feb 2017)\\n\\nXinhua Mall has brands such as Nike, The Body shop, Levis, Cross Roads, Next, Minni Minors and from the local brands we have Ammar Bilal, Nomi Ansari, Out Fitters and Saira Ahsan.\"}]"
+  ],
+  "latency_s": 97.192,
+  "llm_s": 95.252,
+  "tool_s": 0.124,
+  "retrieval_s": 0.169,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2595,
+  "completion_tokens": 227,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 94.722309,
+    "load_duration": 0.030337,
+    "prompt_eval_duration": 51.7114,
+    "eval_duration": 42.882044
+  },
+  "plan": {
+    "intent": "need_local_information",
+    "use_manual": true,
+    "manual_query": "nearby grocery store open late, nearby pharmacy open late",
+    "use_guide": true,
+    "guide_query": "sights, restaurants, shopping, transport, safety, policies, amenities, check-in and check-out times, wifi, safety and house rules, fees, local area, apartment, building, amenities, policies, fees, check-in and check-out times, wifi, safety, house rules, nearby grocery store open late, nearby pharmacy open late",
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 32.625,
+  "llm_answer_s": 62.627
+}

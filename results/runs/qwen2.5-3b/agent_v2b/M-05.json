@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Pets are not allowed in the apartments or in the building. Certified service animals are welcome with the host's prior approval. Please let the host know before booking.",
+  "scenario_id": "M-05",
+  "guest_message": "Can I bring my dog with me?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.5"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "11.9"
+    },
+    {
+      "type": "manual",
+      "id": "11.7"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "pet policy"
+      },
+      "result_size": 1699,
+      "ms": 35.5
+    }
+  ],
+  "retrieved": [
+    "11.5",
+    "2.8",
+    "11.9",
+    "11.7"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"11.5\",\"title\":\"Pets\",\"text\":\"House manual > 11. House Rules > 11.5 Pets\\n\\nPets are **not allowed** in the apartments or in the building. Certified service animals are welcome with the host's prior approval; please tell the host before you book.\"},{\"source_id\":\"2.8\",\"title\":\"Decisions only the host can make\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\\n\\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\\n\\n- refunds, compensation or goodwill gestures\\n- special rates or long-stay discounts\\n- exceptions to check-in or check-out times\\n- changes to booking dates or moving to a different apartment\\n- deductions from the security deposit\\n- stays longer than 28 nights\"},{\"source_id\":\"11.9\",\"title\":\"Respecting neighbours and local customs\",\"text\":\"House manual > 11. House Rules > 11.9 Respecting neighbours and local customs\\n\\nPlease dress modestly in the lobby, corridors and lifts, avoid blocking the corridors, and greet the guards and staff; they are here to help you. Do not photograph other residents or the staff without their permission.\"},{\"source_id\":\"11.7\",\"title\":\"Damage and loss\",\"text\":\"House manual > 11. House Rules > 11.7 Damage and loss\\n\\nPlease report breakages straight away. Accidental breakage of small items (a glass or plate) is not a problem if you tell us. Larger damage or missing items are charged at replacement cost; for direct bookings this is deducted from the security deposit, and for platform bookings we claim through the platform. We take photos of every apartment before each stay.\"}]"
+  ],
+  "latency_s": 28.273,
+  "llm_s": 26.436,
+  "tool_s": 0.036,
+  "retrieval_s": 0.035,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2404,
+  "completion_tokens": 74,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 25.901759,
+    "load_duration": 0.026318,
+    "prompt_eval_duration": 13.12299,
+    "eval_duration": 12.618383
+  },
+  "plan": {
+    "intent": "pet policy",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "pet policy",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 7.392,
+  "llm_answer_s": 19.043
+}

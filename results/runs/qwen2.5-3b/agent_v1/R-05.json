@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your booking has been cancelled and the payment has been refunded.",
+  "scenario_id": "R-05",
+  "guest_message": "I'm not sure my cancellation went through. Is my booking cancelled?",
+  "thread_context": {
+    "reservation_id": 90005,
+    "guest_name": "Ayesha Tariq"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90005"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90005
+      },
+      "result_size": 533,
+      "ms": 8.4
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90005,\"status\":\"cancelled\",\"guest_name\":\"Ayesha Tariq\",\"listing\":\"Studio, Unit 201\",\"channel\":\"airbnbOfficial\",\"arrival\":\"2026-11-25\",\"departure\":\"2026-11-27\",\"nights\":2,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":0,\"total_price_pkr\":19000,\"paid_amount_pkr\":0,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"refunded\",\"fees\":[],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"not_required\",\"guest_note\":\"\",\"cancellation_date\":\"2026-11-05\",\"refunded_amount_pkr\":19000}"
+  ],
+  "latency_s": 42.771,
+  "llm_s": 40.556,
+  "tool_s": 0.009,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2026,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.283222,
+    "load_duration": 0.01953,
+    "prompt_eval_duration": 32.587143,
+    "eval_duration": 7.610199
+  }
+}

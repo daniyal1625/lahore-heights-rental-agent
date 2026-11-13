@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "No, the building does not have a swimming pool or a gym.",
+  "scenario_id": "M-13",
+  "guest_message": "Is there a swimming pool or a gym in the building?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.3"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "10.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.3",
+    "18",
+    "10.6",
+    "Lahore > Do",
+    "Lahore"
+  ],
+  "evidence": [
+    "[Manual 10.3 — What the building does not have]\nHouse manual > 10. Building Amenities and Accessibility > 10.3 What the building does not have\n\nThe building does **not** have a swimming pool, a gym or a sauna. The roof terrace is for sitting and relaxing only.",
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 10.6 — Where things are in the building]\nHouse manual > 10. Building Amenities and Accessibility > 10.6 Where things are in the building\n\n- **Ground floor:** lobby and front desk, shared laundry room, the ramp from Gate 2, and the lifts.\n- **Basement (B1):** parking, reached by the vehicle ramp from Gate 1 or by lift (press B1).\n- **Each residential floor:** two lifts, Stair A and Stair B (fire exits), a trash room at the end of the corridor, and the apartment doors.\n- **Roof level (R):** the shared roof terrace with the smoking corner at its north end, reached by lift or by Stair A.\n- **Outside:** the front lawn at Gate 1 is the fire assembly point.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore]\nLahore\n\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\n\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\n\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\n\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts."
+  ],
+  "latency_s": 40.766,
+  "llm_s": 39.593,
+  "tool_s": 0.0,
+  "retrieval_s": 0.146,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1437,
+  "completion_tokens": 15,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 39.324017,
+    "load_duration": 0.033982,
+    "prompt_eval_duration": 36.257539,
+    "eval_duration": 2.971491
+  }
+}

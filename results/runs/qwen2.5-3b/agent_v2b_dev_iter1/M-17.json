@@ -1,0 +1,82 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, there are lifts in the building that are large enough for a wheelchair. However, the apartments are not fully wheelchair-accessible. Guests with limited mobility should message the host before booking to advise honestly.",
+  "scenario_id": "M-17",
+  "guest_message": "Is there an elevator? My father uses a wheelchair.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.5"
+    },
+    {
+      "type": "manual",
+      "id": "10.3"
+    },
+    {
+      "type": "manual",
+      "id": "10.1"
+    },
+    {
+      "type": "manual",
+      "id": "10.2"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "amenities elevator wheelchair accessible"
+      },
+      "result_size": 1636,
+      "ms": 36.2
+    }
+  ],
+  "retrieved": [
+    "10.5",
+    "10.3",
+    "10.1",
+    "10.2"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"10.5\",\"title\":\"Accessibility\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.5 Accessibility\\n\\n- The lifts are large enough for a wheelchair (door width 90 cm).\\n- A ramp leads from Gate 2 to the lobby, and the lobby has no steps to the lifts.\\n- Apartment entrance doors are 85 cm wide.\\n- Bathroom doors are 70 cm wide and have a threshold of about 2 cm, and showers have a small step. **The apartments are therefore not fully wheelchair-accessible.** Guests with limited mobility should message the host before booking so we can advise honestly.\"},{\"source_id\":\"10.3\",\"title\":\"What the building does not have\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.3 What the building does not have\\n\\nThe building does **not** have a swimming pool, a gym or a sauna. The roof terrace is for sitting and relaxing only.\"},{\"source_id\":\"10.1\",\"title\":\"Lifts\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.1 Lifts\\n\\nThe building has two lifts. They work during power cuts because they run on the generator. If a lift stops between floors, press the alarm button and call the security desk. Do not try to open the doors.\"},{\"source_id\":\"10.2\",\"title\":\"Roof terrace\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\\n\\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).\"}]"
+  ],
+  "latency_s": 43.613,
+  "llm_s": 41.746,
+  "tool_s": 0.036,
+  "retrieval_s": 0.036,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1423,
+  "completion_tokens": 142,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.212652,
+    "load_duration": 0.018402,
+    "prompt_eval_duration": 13.463858,
+    "eval_duration": 27.640619
+  },
+  "plan": {
+    "intent": "search_house_manual",
+    "use_manual": true,
+    "manual_query": "amenities elevator wheelchair accessible",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 21.089,
+  "llm_answer_s": 20.657
+}

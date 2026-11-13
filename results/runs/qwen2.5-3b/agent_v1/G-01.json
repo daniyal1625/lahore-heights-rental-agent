@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque is free to enter, but you will be asked to pay about Rs 20 upon exit. Opening hours are 8:00am-8:00pm.",
+  "scenario_id": "G-01",
+  "guest_message": "Is Badshahi Mosque free to enter, and what are its opening hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Badshahi Mosque opening hours and free entry"
+      },
+      "result_size": 4799,
+      "ms": 54.6
+    }
+  ],
+  "retrieved": [
+    "Lahore > See > Walled City",
+    "Lahore > Do",
+    "Lahore > Sleep",
+    "Lahore"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\\n\\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\\n\\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\\n\\n6 Minar-e-Pakistan. This tower, sometimes called the \\\"Eiffel Tower of Pakistan\\\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\\n\\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.\"},{\"source_id\":\"Lahore > Do\",\"title\":\"Do\",\"text\":\"Lahore > Do\\n\\nThese can be found at Fortress Stadium and Sozo Water Park (Jallo).\\n\\nEnjoy street food and local special treats in the aptly named 3 Gawalmandi Food Street and 4 Anarkali Food Street.\\n\\nWagah Border Ceremony, Grand Trunk Road, Wagah. Daily 4:15 PM or 5:15 PM depending on the season. A patriotic and energetic display of military showmanship between India and Pakistan, known for its loud atmosphere and extended wait times. The experience is unique and memorable, though the long wait can be tiring. Entry is free. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200 (800 from the Raja Sansi Airport) for the entire vehicle. (updated July 2024)\"},{\"source_id\":\"Lahore > Sleep\",\"title\":\"Sleep\",\"text\":\"Lahore > Sleep\\n\\nFor the visitor there are three broad options of areas in which to stay\\n\\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\\n\\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\\n\\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\\n\\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\\n\\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"}]"
+  ],
+  "latency_s": 58.674,
+  "llm_s": 56.632,
+  "tool_s": 0.055,
+  "retrieval_s": 0.055,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2977,
+  "completion_tokens": 70,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 56.350523,
+    "load_duration": 0.050237,
+    "prompt_eval_duration": 42.148462,
+    "eval_duration": 14.02426
+  }
+}

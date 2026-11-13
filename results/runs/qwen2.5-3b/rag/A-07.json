@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! For one night with two guests, there is no extra guest fee as the base occupancy is 2. There are no free items included in the nightly rate. Please let me know if you have any other questions or need assistance with your booking.",
+  "scenario_id": "A-07",
+  "guest_message": "Anything free tonight? Just one night, 2 guests.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.2"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Drink"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.2",
+    "2.3",
+    "2.7",
+    "Lahore > Sleep > Splurge",
+    "Lahore > Drink"
+  ],
+  "evidence": [
+    "[Manual 2.2 — Extra guest fee]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.2 Extra guest fee\n\nIf the number of guests is above the base occupancy of the apartment, an extra guest fee of **PKR 2,000 per extra guest per night** applies, up to the maximum occupancy. For example, three guests in the One-Bedroom (base 2) pay one extra guest fee each night, and five guests in the Two-Bedroom (base 4) pay one extra guest fee each night. The Studio has no extra guest fee because its base and maximum are both 2.",
+    "[Manual 2.3 — What is included in the nightly rate, and optional fees]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\n\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\n\n| Item | Fee |\n|---|---|\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\n| Travel cot, high chair, extra heater, plug adapters | Free |",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Guide Lahore > Sleep > Splurge]\nLahore > Sleep > Splurge\n\n2 Avari Hotel, 87 Shahrah-e-Quaid-e-Azam, ☏ +92 42 636-6366, lahore@avari.com.  (updated Mar 2017)\n\n3 Faletti's Hotel, 24 Edgerton Rd, ☏ +92 42 111 444 333. Lahore's true Grand old hotel, built in late 18th century by an Italian and later renovated. (updated Mar 2017)\n\n4 Four Points by Sheraton Lahore, 25-26 Egerton Rd, ☏ +92 42 36310077. formerly known as Holiday Inn and Hospitality Inn. US$99-200.\n\n5 Pearl Continental Lahore, The Mall, ☏ +92 42 111 505 505. Pearl Continental is a 4-star hotel. US$180-740. (updated Mar 2017)\n\n6 The Residency Hotel Lahore, 39-A Zafar ali road Gulberg V, ☏ +92 42 111-395-395, info@rh.com.pk. Check-in: 14:00, check-out: 12:00.  US$70. (updated Feb 2019)\n\n7 The Nishat Hotel, Commercial Area Phase 2 Johar Town (adjacent to Emporium Mall), ☏ +92 42 111 646 835, toll-free:  +92 42 111 000 777, reservationsj@nishathotel.com.  $100. (updated Aug 2022)\n\nIndigo Hotel (Indigo Heights), Noor Jehan Road, Gulberg 3, ☏ +92 42 111 463 446, info@indigoheights.com. Indigo Heights is a 4 star hotel. $90. (updated Dec 2022)",
+    "[Guide Lahore > Drink]\nLahore > Drink\n\nAlcohol is illegal for Muslim Pakistanis. Clubbing is quite popular but not easy to find, majority of the clubs being private and invite only.\n\nClubs\n\nParties at Farmhouse\n\nCaviar Lounge, a bar/club in Royal Palm.\n\nClub Bhurban, in Pearl Continental hotel\n\nUptown LA in Defence R block. The club opens after 11PM at night till 4AM in the morning\n\n1 Peeru's Cafe, Green Acres Main Rd. Situated about an hour outside of Lahore. Peeru's, a cafe with an artistic flair. Saturday night is always Jazz Night, Peeru's cafe is really the only place which has live jazz music. Tuesday is Sufi night. Sitting inside, it even feels like some cafe in Venice.\n\nChalupa club.\n\nDisco beat in Muslim town.\n\nBon vivant cafe\n\nPanini Italian Cafe.\n\nAK lounge:First floor shop4 and 5 in Xinhua mall in Gulberg 3.\n\nCafe rock: 56 b3 Gulberg 3.\n\nCafe forest: 57 T Gulberg.\n\nChez Nur bistro: 39 C1 Gulberg 3.Tel:(92)35759835.\n\nGulberg: 2B 3 Gulberg 3.\n\nDefence: 181/Y Block, phase three DHA."
+  ],
+  "latency_s": 50.867,
+  "llm_s": 49.768,
+  "tool_s": 0.0,
+  "retrieval_s": 0.095,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1748,
+  "completion_tokens": 52,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 49.495975,
+    "load_duration": 0.00637,
+    "prompt_eval_duration": 40.910919,
+    "eval_duration": 8.47102
+  }
+}

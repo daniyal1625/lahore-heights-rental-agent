@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Your booking dates are from 2026-11-10 to 2026-11-13.",
+  "scenario_id": "R-01",
+  "guest_message": "What are my booking dates?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90001"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90001
+      },
+      "result_size": 534,
+      "ms": 4.3
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90001,\"status\":\"new\",\"guest_name\":\"Sara Khan\",\"listing\":\"One-Bedroom, Unit 304\",\"channel\":\"airbnbOfficial\",\"arrival\":\"2026-11-10\",\"departure\":\"2026-11-13\",\"nights\":3,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":0,\"total_price_pkr\":42000,\"paid_amount_pkr\":42000,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"verified\",\"guest_note\":\"Arriving around 6 PM.\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 61.348,
+  "llm_s": 59.555,
+  "tool_s": 0.004,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1185,
+  "completion_tokens": 146,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 59.028195,
+    "load_duration": 0.017527,
+    "prompt_eval_duration": 32.266441,
+    "eval_duration": 26.682712
+  },
+  "plan": {
+    "intent": "find_booking_dates",
+    "use_manual": false,
+    "manual_query": "select * from get_reservation where id = 90001",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": true,
+    "reservation_id": 90001,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 33.695,
+  "llm_answer_s": 25.86
+}

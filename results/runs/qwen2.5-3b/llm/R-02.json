@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "There is 1 guest on your booking. You are in apartment 201.",
+  "scenario_id": "R-02",
+  "guest_message": "How many guests are on my booking and which apartment am I in?",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 14.807,
+  "llm_s": 12.433,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 350,
+  "completion_tokens": 19,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 12.176558,
+    "load_duration": 0.011284,
+    "prompt_eval_duration": 9.473288,
+    "eval_duration": 2.647372
+  }
+}

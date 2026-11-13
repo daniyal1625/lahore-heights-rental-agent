@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I don't have the status of reservation 99999. I would need to check with the host to find out the current status.",
+  "scenario_id": "D-01",
+  "guest_message": "What's the status of reservation 99999?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.678,
+  "llm_s": 5.803,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 342,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.493332,
+    "load_duration": 0.008367,
+    "prompt_eval_duration": 0.928443,
+    "eval_duration": 4.53768
+  }
+}

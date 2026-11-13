@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! I will check and get back to you with availability.",
+  "scenario_id": "D-09",
+  "guest_message": "Hi, do you have availability next weekend?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.214,
+  "llm_s": 4.125,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 338,
+  "completion_tokens": 14,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 3.86088,
+    "load_duration": 0.015366,
+    "prompt_eval_duration": 1.252412,
+    "eval_duration": 2.27692
+  }
+}

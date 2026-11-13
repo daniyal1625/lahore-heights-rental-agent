@@ -1,0 +1,60 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The tap water in Lahore is generally safe to drink, but it's recommended to use bottled water for added safety.",
+  "scenario_id": "M-09",
+  "guest_message": "Is the tap water safe to drink?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "tap water safety Lahore"
+      },
+      "result_size": 5399,
+      "ms": 52.5
+    }
+  ],
+  "retrieved": [
+    "Lahore > Stay healthy",
+    "Lahore",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Stay healthy\",\"title\":\"Stay healthy\",\"text\":\"Lahore > Stay healthy\\n\\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\\n\\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\\n\\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\\n\\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\\n\\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\\n\\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing).\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nFor more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\\n\\nHiuen Tsang, the famous 7th century Chinese pilgrim, gave a vivid description of Lahore. Lying on the main trade and invasion routes to South Asia, Lahore has been ruled and plundered by a number of dynasties. Muslim rule began here when Qutub-ud-din Aibak was crowned in Lahore in 1206 and became the first Muslim Sultan of the Subcontinent.\\n\\nLahore waxed and waned in importance during the Sultanate. However, it touched the zenith of its glory during the Mughal rule from 1524 to 1752. The Mughals, who were famous as builders, gave Lahore some of its finest architectural monuments, many of which today are no longer.\\n\\nLahore was Akbar's capital from 1584 to 1598. He built the massive Lahore Fort on the foundations of a previous fort, and enclosed the city within a red brick wall boasting 12 gates. Jahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens.\"}]"
+  ],
+  "latency_s": 58.062,
+  "llm_s": 53.89,
+  "tool_s": 0.053,
+  "retrieval_s": 0.052,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3055,
+  "completion_tokens": 48,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 53.606892,
+    "load_duration": 0.039095,
+    "prompt_eval_duration": 44.026071,
+    "eval_duration": 9.412902
+  }
+}

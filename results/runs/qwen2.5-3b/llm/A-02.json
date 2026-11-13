@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, I don't have specific availability details for your dates. I recommend checking the booking system directly.",
+  "scenario_id": "A-02",
+  "guest_message": "We're 3 adults looking for Nov 15 to Nov 18. What's available?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.777,
+  "llm_s": 6.687,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 350,
+  "completion_tokens": 24,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.417833,
+    "load_duration": 0.006148,
+    "prompt_eval_duration": 2.033895,
+    "eval_duration": 4.350877
+  }
+}

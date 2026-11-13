@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque was built by the Mughal emperor Aurangzeb.",
+  "scenario_id": "G-04",
+  "guest_message": "Who built Badshahi Mosque?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "1.1"
+    },
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "1.1",
+    "10.4",
+    "0",
+    "Lahore > See > Walled City",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[Manual 1.1 — About the building]\nHouse manual > 1. Welcome to Lahore Heights > 1.1 About the building\n\nWelcome, and thank you for choosing Lahore Heights Apartments. We are a small, quiet building in Gulberg III, Lahore (fictional address: Plot 27-C, Sunrise Avenue, Gulberg III, Lahore). The building has a ground-floor lobby with a front desk, seven residential floors, a shared roof terrace and one level of basement parking (B1).\n\nWe rent out four apartments. All other apartments belong to private owners and families who live here all year, so you will share the lifts and corridors with residents. Please treat the building as you would your own home. Guards are on duty at the gates 24 hours a day, and the building has CCTV in all common areas (never inside the apartments).\n\nThis manual explains how everything in your apartment and in the building works, what our rules are, and what to do if something goes wrong. If you cannot find an answer here, message your host and we will help.",
+    "[Manual 10.4 — Prayer facilities]\nHouse manual > 10. Building Amenities and Accessibility > 10.4 Prayer facilities\n\nEvery apartment has prayer mats and a copy of the Quran. The Qibla direction is shown by an arrow sticker on the bedroom wardrobe. A neighbourhood mosque (Masjid Al-Noor, about 300 metres away) broadcasts the call to prayer five times a day, and the dawn (Fajr) call can be heard faintly in the early morning. Earplugs are in the bedside drawer.",
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.",
+    "[Guide Lahore > Understand > History]\nLahore > Understand > History\n\nJahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens.\n\nJahangir loved the city, and he and his wife Noor Jahan are buried at Shahdara on the outskirts of Lahore. Aurangzeb (1658-1707) gave Lahore its most famous monuments: the Badshahi Masjid (Royal Mosque) and the Alamgiri gateway to the fort.\n\nDuring the eighteenth century, as Mughal power dwindled, there were constant invasions. Lahore was a suba, a province of the Empire, governed by provincial rulers with their own courts. The 1740s were years of chaos, and between 1745 and 1756 there were nine changes of governors. Invasions and chaos in local government allowed bands of warring Sikhs to gain control in some areas. Lahore ended up being ruled by a triumvirate of Sikhs of dubious character, and the population of the city invited Ranjit Singh to invade. He took the city in 1799. Holding the capital gave him enough legitimacy to proclaim himself the Emperor. Descriptions of Lahore during the early 19th century refer to it as a “melancholy picture of fallen splendor.”"
+  ],
+  "latency_s": 37.094,
+  "llm_s": 36.079,
+  "tool_s": 0.0,
+  "retrieval_s": 0.082,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1411,
+  "completion_tokens": 18,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 35.817251,
+    "load_duration": 0.018855,
+    "prompt_eval_duration": 32.348134,
+    "eval_duration": 3.425463
+  }
+}

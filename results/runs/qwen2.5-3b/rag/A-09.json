@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I will check with the host and get back to you.",
+  "scenario_id": "A-09",
+  "guest_message": "Can we book November 5 to November 7?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.7",
+    "2.8",
+    "11.4",
+    "Lahore > See > Walled City",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 32.363,
+  "llm_s": 31.204,
+  "tool_s": 0.0,
+  "retrieval_s": 0.091,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1311,
+  "completion_tokens": 13,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 30.940961,
+    "load_duration": 0.008775,
+    "prompt_eval_duration": 28.798476,
+    "eval_duration": 2.110637
+  }
+}

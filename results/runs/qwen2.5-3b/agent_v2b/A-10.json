@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "I have available units for your stay from December 10 to 12. Here are your options:\n\n1. Studio, Unit 201: 2 nights for PKR 19,000\n2. One-Bedroom, Unit 304: 2 nights for PKR 28,000\n3. Two-Bedroom, Unit 502: 2 nights for PKR 42,000\n4. Penthouse, Unit 701: 2 nights for PKR 76,000\n\nPlease let me know which you prefer.",
+  "scenario_id": "A-10",
+  "guest_message": "We are 4 adults and want December 10 to 12. What do you have and what does it cost?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-12-10..2026-12-12"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-12-10",
+        "check_out": "2026-12-12"
+      },
+      "result_size": 759,
+      "ms": 8.8
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-12-10\",\"check_out\":\"2026-12-12\",\"nights\":2,\"guests\":null,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":true,\"nightly_price_pkr\":9500,\"stay_total_pkr\":19000,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":true,\"nightly_price_pkr\":14000,\"stay_total_pkr\":28000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":true,\"nightly_price_pkr\":21000,\"stay_total_pkr\":42000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":true,\"nightly_price_pkr\":38000,\"stay_total_pkr\":76000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 46.556,
+  "llm_s": 44.754,
+  "tool_s": 0.009,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2334,
+  "completion_tokens": 219,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 44.221752,
+    "load_duration": 0.013833,
+    "prompt_eval_duration": 9.964819,
+    "eval_duration": 34.13746
+  },
+  "plan": {
+    "intent": "check availability",
+    "calls": [
+      {
+        "tool": "check_availability",
+        "query": null,
+        "reservation_id": null,
+        "check_in": "2026-12-10",
+        "check_out": "2026-12-12",
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 14.753,
+  "llm_answer_s": 30.0
+}

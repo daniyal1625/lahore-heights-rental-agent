@@ -1,0 +1,76 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The Shalimar Gardens are located along the GT Road towards Wagah. They are a three-tiered formal garden built in the 1600s and are a UNESCO World Heritage Site. Admission is Rs 200 for foreigners.",
+  "scenario_id": "G-09",
+  "guest_message": "Where are the Shalimar Gardens?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Other sights"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Shalimar Gardens in Lahore city center"
+      },
+      "result_size": 5684,
+      "ms": 39.6
+    }
+  ],
+  "retrieved": [
+    "Lahore",
+    "Lahore > See > Other sights",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"},{\"source_id\":\"Lahore > See > Other sights\",\"title\":\"Other sights\",\"text\":\"Lahore > See > Other sights\\n\\nMasterpieces of Mughal architecture are scattered throughout the city, even in neighborhoods that today seem a little dilapidated. Buildings and sites include:\\n\\n35 Shalimar Gardens (located along the GT Road towards Wagah). A three-tiered formal garden built in the 1600s, and a UNESCO World Heritage Site. Rs 200 for foreigners. (updated Feb 2017)\\n\\n36 Chauburji Gate (at Chauburji Chowk). An impressive, ornate 4-towered gate dating to 1646. (updated Feb 2017)\\n\\n37 Tomb of Jahangir (Shahdara suburb). Built in 1637 for the Mughal emperor Jahangir. (updated Feb 2017)\\n\\n38 Tomb of Nur Jahan (Shahdara suburb).  (updated Feb 2017)\\n\\nThere are also other sites, including tombs and mausoleums. Check this website Lahore, Pakistan: Traditional and Historical Architecture for information, plans, and photo galleries of many monuments.\\n\\n39 Data Durbar (Data Darbar). A Sufi Muslim shrine to Lahore's patron saint, Hazrat Daata Ganj Bakhsh. This vast modern structure is always filled with people praying, collecting or bestowing alms, or eating at the huge charity 'langar' or soup kitchen. (updated Feb 2017)\\n\\n40 Trafalgar Square (Bahria Town). A replica of the famous Trafalgar Square in London is located in the Bahria Town suburb. A Mini Egypt and a Zoo are located nearby and also worth a visit. (updated Feb 2017)\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nDescriptions of Lahore during the early 19th century refer to it as a “melancholy picture of fallen splendor.”\\n\\nThe British, following their invasion of Lahore in 1849, added a great many buildings in “Mughal-Gothic” style as well as bungalows and gardens. Early on, the British tended to build workaday structures in sites like the Fort, though later they did start to make an effort to preserve some ancient buildings. The Lahore Cantonment, the British residential district of wide, tree-lined streets and white bungalows set in large, shaded gardens, is the prettiest cantonment in Pakistan. Since Independence in 1947, Lahore has expanded rapidly as the capital of Pakistani Punjab.\\n\\nAll this makes Lahore a truly rewarding experience. The buildings, the roads, the trees and the gardens, in fact the very air of Lahore in enough to set the mind spinning in admiration. A poet has written about this phenomenon one experiences in the environs of Lahore. When the wind whistles through the tall trees, when the twilight floods the beautiful face of the Fort, when the silent canal lights up to herald the end of another chapter in history, the Ravi is absorbed in harmony, mist fills the ancient streets, and the havelis come alive with strains of classical music, the spirit of Lahore pervades even the hardiest of souls.\"}]"
+  ],
+  "latency_s": 61.853,
+  "llm_s": 59.993,
+  "tool_s": 0.04,
+  "retrieval_s": 0.04,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3345,
+  "completion_tokens": 99,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 59.463414,
+    "load_duration": 0.016021,
+    "prompt_eval_duration": 42.756424,
+    "eval_duration": 16.532776
+  },
+  "plan": {
+    "intent": "old city sights",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "Shalimar Gardens in Lahore city center",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 8.648,
+  "llm_answer_s": 51.345
+}

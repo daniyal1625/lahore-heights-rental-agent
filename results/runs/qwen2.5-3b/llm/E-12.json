@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I don't have a baby monitor or a baby bath. For assistance with these, I would need to check with the host.",
+  "scenario_id": "E-12",
+  "guest_message": "Do you have a baby monitor or a baby bath?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.436,
+  "llm_s": 7.21,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 340,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.949973,
+    "load_duration": 0.006621,
+    "prompt_eval_duration": 1.339713,
+    "eval_duration": 5.565238
+  }
+}

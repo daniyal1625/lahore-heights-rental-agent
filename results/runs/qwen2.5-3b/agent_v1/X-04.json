@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The extra fee on your booking is for having more guests than the base occupancy of the apartment. The fee is PKR 2,000 per extra guest per night. For example, if you had three guests in a One-Bedroom apartment, which has a base occupancy of 2 guests, you would be charged one extra guest fee. If you have any questions or need further assistance, feel free to ask.",
+  "scenario_id": "X-04",
+  "guest_message": "Why is there an extra fee on my booking?",
+  "thread_context": {
+    "reservation_id": 90006,
+    "guest_name": "Daniel Meyer"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.2"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    },
+    {
+      "type": "manual",
+      "id": "11.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "extra fee"
+      },
+      "result_size": 2790,
+      "ms": 93.8
+    }
+  ],
+  "retrieved": [
+    "2.2",
+    "2.3",
+    "11.7",
+    "2.7"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"2.2\",\"title\":\"Extra guest fee\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.2 Extra guest fee\\n\\nIf the number of guests is above the base occupancy of the apartment, an extra guest fee of **PKR 2,000 per extra guest per night** applies, up to the maximum occupancy. For example, three guests in the One-Bedroom (base 2) pay one extra guest fee each night, and five guests in the Two-Bedroom (base 4) pay one extra guest fee each night. The Studio has no extra guest fee because its base and maximum are both 2.\"},{\"source_id\":\"2.3\",\"title\":\"What is included in the nightly rate, and optional fees\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\\n\\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\\n\\n| Item | Fee |\\n|---|---|\\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\\n| Travel cot, high chair, extra heater, plug adapters | Free |\"},{\"source_id\":\"11.7\",\"title\":\"Damage and loss\",\"text\":\"House manual > 11. House Rules > 11.7 Damage and loss\\n\\nPlease report breakages straight away. Accidental breakage of small items (a glass or plate) is not a problem if you tell us. Larger damage or missing items are charged at replacement cost; for direct bookings this is deducted from the security deposit, and for platform bookings we claim through the platform. We take photos of every apartment before each stay.\"},{\"source_id\":\"2.7\",\"title\":\"Changing or extending your stay\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\\n\\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.\"}]"
+  ],
+  "latency_s": 73.261,
+  "llm_s": 71.292,
+  "tool_s": 0.094,
+  "retrieval_s": 0.094,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2568,
+  "completion_tokens": 109,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 71.025231,
+    "load_duration": 0.032217,
+    "prompt_eval_duration": 49.622626,
+    "eval_duration": 21.286501
+  }
+}

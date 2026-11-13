@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Badshahi Mosque is free to enter. It opens at 8:00 AM and closes at 8:00 PM.",
+  "scenario_id": "G-01",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "16.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "17",
+    "10.4",
+    "16.3",
+    "Lahore > See > Walled City",
+    "Lahore"
+  ],
+  "latency_s": 47.186,
+  "llm_s": 44.925,
+  "tool_s": 0.0,
+  "retrieval_s": 0.09,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1368,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama": {
+    "total_duration": 44.662251,
+    "load_duration": 0.020692,
+    "prompt_eval_duration": 37.988621,
+    "eval_duration": 6.603055
+  }
+}

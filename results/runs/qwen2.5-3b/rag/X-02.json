@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "For direct bookings, you will receive a full refund if you cancel up to 7 days before the arrival date. If you cancel between 7 days and 48 hours before arrival, you will receive a 50% refund. Please check the cancellation policy for any platform bookings.",
+  "scenario_id": "X-02",
+  "guest_message": "If I cancel my booking now, will I get a refund?",
+  "thread_context": {
+    "reservation_id": 90003,
+    "guest_name": "Emily Carter"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.6"
+    },
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "14.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay safe"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.6",
+    "2.5",
+    "14.4",
+    "Lahore > Get around > By taxi",
+    "Lahore > Stay safe"
+  ],
+  "evidence": [
+    "[Manual 2.6 — Cancellation policy]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.6 Cancellation policy\n\n- **Direct bookings:** free cancellation with a full refund up to **7 days before the arrival date**. If you cancel between 7 days and 48 hours before arrival, you receive a 50% refund. Within 48 hours of arrival there is no refund. Refunds are processed within 5 business days to the original payment method.\n- **Bookings made through Airbnb or Booking.com:** the cancellation policy shown on your platform booking applies, not the direct-booking policy above. Cancel and request refunds through the platform.\n\nRefund exceptions (illness, flight problems and similar) are decided by the host. See section 2.8.",
+    "[Manual 2.5 — Paying for your booking]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\n\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.",
+    "[Manual 14.4 — Security deposit refund]\nHouse manual > 14. Checking Out > 14.4 Security deposit refund\n\nFor direct bookings, the deposit is refunded within **3 business days** after check-out inspection (section 2.4).",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Stay safe]\nLahore > Stay safe\n\nStreet crimes in Lahore are not common but special precautions must be taken by visitors.\n\nDemonstrations aren't uncommon and should be avoided at all cost. In early 2006, the Prophet Muhammad cartoon protests quickly got out of hand, and several businesses were torched along with scores of cars. If a large demonstration or protest is underway, foreigners should try to remain at their hotels until the dust settles.\n\nIn general, visitors will find the locals very curious, very eager to help. Being friendly and smiling at people goes a long way. If you're a woman, though, it's best to be sparing with smiles lest people get too friendly; though this is mostly in areas like bazaars, not the actual city.\n\nIf you enter a mosque, women should wear a dupatta, which is a scarf used by local females to cover their heads. Men & women should also remove their shoes while entering in a mosque.\n\nAvoid traveling to unlit areas at night, especially alone. Use common sense when hanging out with friends, and definitely avoid being intoxicated in public as it is an Islamic country.\n\nBeware of pickpockets when you are in crowded areas like Liberty market, the airport, bus stands, the railway station, Anarkali, Ichra shopping centre, or Mall road.\n\nIn an emergency you can call police help line 15 or call Rescue Services at 1122."
+  ],
+  "latency_s": 43.792,
+  "llm_s": 42.629,
+  "tool_s": 0.0,
+  "retrieval_s": 0.104,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1208,
+  "completion_tokens": 59,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 42.364035,
+    "load_duration": 0.008589,
+    "prompt_eval_duration": 30.482816,
+    "eval_duration": 11.765922
+  }
+}

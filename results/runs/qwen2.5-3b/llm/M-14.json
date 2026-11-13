@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "If you smell gas, open all windows and doors to ventilate the area. Turn off any sources of ignition and evacuate the premises immediately. Contact the gas company or emergency services for assistance.",
+  "scenario_id": "M-14",
+  "guest_message": "What should I do if I smell gas in the apartment?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.593,
+  "llm_s": 8.572,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 39,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.307619,
+    "load_duration": 0.019815,
+    "prompt_eval_duration": 1.204369,
+    "eval_duration": 7.034972
+  }
+}

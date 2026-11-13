@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Faisal Movers has its terminal on Band Road at Abdullah Travels in Lahore. For travel to Islamabad, you can use Daewoo or Faisal Movers. Daewoo offers a more comfortable and reliable service.",
+  "scenario_id": "G-05",
+  "guest_message": "I want to take a coach to Islamabad. Where is the Faisal Movers terminal in Lahore?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Mall Road"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Faisal Movers terminal Islamabad,Lahore"
+      },
+      "result_size": 5955,
+      "ms": 37.5
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get in > By bus",
+    "Lahore > Get around > By bus",
+    "Lahore > See > Mall Road",
+    "Lahore"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get in > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get in > By bus\\n\\nFrom the Indian border, bus #4 runs to the Main train station for Rs 20.\\n\\nMinibuses are the cheapest way to get between the larger cities, and the only way to get to some more remote destinations. They can be uncomfortably crowded, so if possible opt for a more comfortable larger bus.\\n\\nDaewoo has its own terminal away from the main bus station, on Ferozpur Road near Kalma Chowk and Liberty Market. Clean, comfortable, air-conditioned coaches run regularly between Lahore to all major cities of Punjab, KP and Sindh including Karachi plus many smaller cities and towns such as Islamabad, Multan, Faisalabad and Peshawar. Daewoo is more expensive but much more comfortable and reliable than the competition. Between Lahore and Rawalpindi/Islamabad they have a 'Premium Plus service' which gives you a business class style seat and more space.\\n\\nFaisal Movers has its Lahore terminal on Band Road at Abdullah Travels. It is popular due to its safety and refreshments in the bus. Faisal Mover is less expensive than Daewoo but not other companies. This is a comfortable and easy way to go from Lahore to cities such as Murree, Rawalpindi, Islamabad, Sahiwal, Multan, Dera Ghazi Khan.\\n\\nSkyways, Niazi Express and a couple others operate large, comfortable buses to Islamabad, Peshawar, Faisalabad and many other cities and towns from their own bus terminals near M2 Motorway Interchange. These services are rather affordable and convenient.\"},{\"source_id\":\"Lahore > Get around > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get around > By bus\\n\\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\\n\\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\\n\\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\\n\\nOther bus companies\\n\\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\\n\\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\\n\\nSkyways: Known for economical fares and a wide route network.\\n\\nNiazi Express: A long-standing service offering low-cost travel options.\\n\\nRajput Travels: Offers reasonably priced routes connecting many regions.\\n\\nPower International: Affordable intercity travel with decent amenities.\\n\\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.\"},{\"source_id\":\"Lahore > See > Mall Road\",\"title\":\"Mall Road\",\"text\":\"Lahore > See > Mall Road\\n\\nThis road, also known as Shahrah-e-Quaid-e-Azam road, is a central road constructed in the British era, which has many historic buildings.\\n\\n22 General Post Office.  (updated Feb 2017)\\n\\n23 Lahore High Court.  (updated Feb 2017)\\n\\n24 Punjab University (Old Campus). Buildings were erected here as early as 1858. (updated Feb 2017)\\n\\n25 National College of Arts. Rudyard Kipling's father was the principal here. Offers a thesis show every winter. Kim's Gun is outside the NCA (updated Feb 2017)\\n\\nCharing Cross - Lahore's monumental square dating to the British era. Surrounded by historic buildings. It has been renamed to Faisal Square (Faisal Chowk in Urdu/Punjabi).\\n\\n26 Islamic Summit Minar. An obelisk built to commemorate the 1974 Organisation of Islamic Cooperation conference. Located in the Charing Cross roundabout. Few know the presence of a library/museum below the roundabout that is all about the OIC and Islamic Summit and is a treat to visit. (updated Feb 2017)\\n\\n27 Shahdin Manzil. An impressive building, dating to 1914. (updated Feb 2017)\\n\\n28 Masonic Temple. An impressive old building. Since 1972, no longer used by the Masons. (updated Feb 2017)\\n\\n29 Punjab Provincial Assembly Building.  (updated Feb 2017)\\n\\n30 WAPDA House. A modern office block, with a glass dome and a roof garden. (updated Feb 2017)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"}]"
+  ],
+  "latency_s": 59.187,
+  "llm_s": 57.325,
+  "tool_s": 0.038,
+  "retrieval_s": 0.037,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3457,
+  "completion_tokens": 95,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 56.79362,
+    "load_duration": 0.012941,
+    "prompt_eval_duration": 40.974295,
+    "eval_duration": 15.57436
+  },
+  "plan": {
+    "intent": "coach terminal location",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "Faisal Movers terminal Islamabad,Lahore",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 9.146,
+  "llm_answer_s": 48.179
+}

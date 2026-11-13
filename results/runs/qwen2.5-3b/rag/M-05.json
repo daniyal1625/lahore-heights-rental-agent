@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but pets are not allowed in the apartments or the building. Certified service animals are welcome with prior approval from the host.",
+  "scenario_id": "M-05",
+  "guest_message": "Can I bring my dog with me?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.5"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Go next"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "11.5",
+    "2.8",
+    "15.1",
+    "Lahore > Go next",
+    "Lahore > Do"
+  ],
+  "evidence": [
+    "[Manual 11.5 — Pets]\nHouse manual > 11. House Rules > 11.5 Pets\n\nPets are **not allowed** in the apartments or in the building. Certified service animals are welcome with the host's prior approval; please tell the host before you book.",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Manual 15.1 — Travel cot and high chair]\nHouse manual > 15. Extras and Requests > 15.1 Travel cot and high chair\n\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.",
+    "[Guide Lahore > Go next]\nLahore > Go next\n\nWagah Border The border between Pakistan and India is also an attraction for tourists, with a ceremony at the border everyday.\n\nFor foreigners, crossing the Wagah border to India and visiting the Golden Temple in Amritsar is a lifetime experience. However, for this you will need an Indian visa. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200(800 from the raja sansi airport) for the entire vehicle. Amritsar is about 32 km from Lahore. As of July 2024, the Pakistani side is under construction so the Indian side is much better.\n\nChanga Manga is a man-made forest 68 km from Lahore. There is a lake, and a miniature railway, which winds its way through its forest. Chhanga Manga has 12,510 acres of plantations. It is a popular picnic spot spread over 50 acres with a lake and rowboats, motorboats, children's park, swimming pool, cafeteria, canteen and rest houses",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library."
+  ],
+  "latency_s": 36.365,
+  "llm_s": 34.769,
+  "tool_s": 0.0,
+  "retrieval_s": 0.119,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1149,
+  "completion_tokens": 29,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 34.502682,
+    "load_duration": 0.018338,
+    "prompt_eval_duration": 28.032321,
+    "eval_duration": 6.418721
+  }
+}

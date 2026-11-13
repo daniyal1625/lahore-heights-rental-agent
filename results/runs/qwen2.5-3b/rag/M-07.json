@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "No smoking is allowed inside the apartments, on balconies, or on the Penthouse terrace. Smoking is permitted only in the marked corner at the north end of the roof terrace.",
+  "scenario_id": "M-07",
+  "guest_message": "Can I smoke on the balcony?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.2"
+    },
+    {
+      "type": "manual",
+      "id": "8.5"
+    },
+    {
+      "type": "manual",
+      "id": "11.8"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "11.2",
+    "8.5",
+    "11.8",
+    "Lahore > Do",
+    "Lahore > Stay healthy"
+  ],
+  "evidence": [
+    "[Manual 11.2 — Smoking and vaping]\nHouse manual > 11. House Rules > 11.2 Smoking and vaping\n\nSmoking and vaping are **not allowed** inside the apartments, on the balconies, on the Penthouse terrace, in the corridors, in the lifts or in the basement. You may smoke only in the **marked corner at the north end of the roof terrace**. If we find that someone has smoked indoors, a deep-cleaning fee of **PKR 15,000** is deducted from the security deposit (or charged to the guest for platform bookings).",
+    "[Manual 8.5 — Cooking Pakistani dishes without setting off the alarm]\nHouse manual > 8. Kitchen and Cooking > 8.5 Cooking Pakistani dishes without setting off the alarm\n\nFrying onions, tempering spices (tadka) and making parathas can create smoke that triggers the smoke detector. Before you start, switch on the exhaust fan and open a window, and use the lowest flame that works. **Never cover or disable the smoke detector.** If the alarm sounds from cooking smoke, fan the detector with a towel and open the balcony door; it stops by itself within a minute. If you see actual flames, use the kitchen fire extinguisher or a damp cloth over the pan, leave the apartment and follow section 12.2.",
+    "[Manual 11.8 — Open flames and barbecues]\nHouse manual > 11. House Rules > 11.8 Open flames and barbecues\n\nBarbecues, charcoal grills, candles with open flames and fireworks are **not allowed** anywhere in the building, including balconies, the roof terrace and the Penthouse terrace. This is a fire-safety rule.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > Stay healthy]\nLahore > Stay healthy\n\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\n\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\n\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\n\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\n\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\n\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing)."
+  ],
+  "latency_s": 41.546,
+  "llm_s": 39.911,
+  "tool_s": 0.0,
+  "retrieval_s": 0.118,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1259,
+  "completion_tokens": 37,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 39.642867,
+    "load_duration": 0.019593,
+    "prompt_eval_duration": 32.177412,
+    "eval_duration": 7.385131
+  }
+}

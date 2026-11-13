@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Unfortunately, pets are not allowed in the apartments or the building. Certified service animals are welcome with the host's prior approval. Please let the host know before booking.",
+  "scenario_id": "M-05",
+  "guest_message": "Can I bring my dog with me?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.5"
+    },
+    {
+      "type": "manual",
+      "id": "11.3"
+    },
+    {
+      "type": "manual",
+      "id": "11.6"
+    },
+    {
+      "type": "manual",
+      "id": "11.8"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "pets allowed"
+      },
+      "result_size": 1249,
+      "ms": 60.4
+    }
+  ],
+  "retrieved": [
+    "11.5",
+    "11.3",
+    "11.6",
+    "11.8"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"11.5\",\"title\":\"Pets\",\"text\":\"House manual > 11. House Rules > 11.5 Pets\\n\\nPets are **not allowed** in the apartments or in the building. Certified service animals are welcome with the host's prior approval; please tell the host before you book.\"},{\"source_id\":\"11.3\",\"title\":\"Alcohol and prohibited items\",\"text\":\"House manual > 11. House Rules > 11.3 Alcohol and prohibited items\\n\\nAlcohol, drugs, weapons and any illegal items are not allowed anywhere in the building. Guests must follow Pakistani law and the building by-laws at all times.\"},{\"source_id\":\"11.6\",\"title\":\"Parties and events\",\"text\":\"House manual > 11. House Rules > 11.6 Parties and events\\n\\nParties, events, celebrations and gatherings larger than your registered guests plus the visitor limit are **not allowed**. A violation can lead to an immediate end of your stay without a refund and loss of the security deposit.\"},{\"source_id\":\"11.8\",\"title\":\"Open flames and barbecues\",\"text\":\"House manual > 11. House Rules > 11.8 Open flames and barbecues\\n\\nBarbecues, charcoal grills, candles with open flames and fireworks are **not allowed** anywhere in the building, including balconies, the roof terrace and the Penthouse terrace. This is a fire-safety rule.\"}]"
+  ],
+  "latency_s": 27.476,
+  "llm_s": 24.991,
+  "tool_s": 0.061,
+  "retrieval_s": 0.06,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2120,
+  "completion_tokens": 56,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 24.705644,
+    "load_duration": 0.05122,
+    "prompt_eval_duration": 12.291946,
+    "eval_duration": 12.246411
+  }
+}

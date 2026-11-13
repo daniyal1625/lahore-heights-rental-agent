@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I will check with the host and get back to you.",
+  "scenario_id": "X-12",
+  "guest_message": "Can I extend my stay by 2 nights, until Dec 7?",
+  "thread_context": {
+    "reservation_id": 90010,
+    "guest_name": "Hassan Ali"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.7",
+    "20.3",
+    "11.4",
+    "Lahore > Sleep > Splurge",
+    "Lahore > Sleep"
+  ],
+  "evidence": [
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Manual 20.3 — Long stays]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\n\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\n- Studio guests use the shared laundry room for longer stays (section 9.1).\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).",
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Guide Lahore > Sleep > Splurge]\nLahore > Sleep > Splurge\n\n2 Avari Hotel, 87 Shahrah-e-Quaid-e-Azam, ☏ +92 42 636-6366, lahore@avari.com.  (updated Mar 2017)\n\n3 Faletti's Hotel, 24 Edgerton Rd, ☏ +92 42 111 444 333. Lahore's true Grand old hotel, built in late 18th century by an Italian and later renovated. (updated Mar 2017)\n\n4 Four Points by Sheraton Lahore, 25-26 Egerton Rd, ☏ +92 42 36310077. formerly known as Holiday Inn and Hospitality Inn. US$99-200.\n\n5 Pearl Continental Lahore, The Mall, ☏ +92 42 111 505 505. Pearl Continental is a 4-star hotel. US$180-740. (updated Mar 2017)\n\n6 The Residency Hotel Lahore, 39-A Zafar ali road Gulberg V, ☏ +92 42 111-395-395, info@rh.com.pk. Check-in: 14:00, check-out: 12:00.  US$70. (updated Feb 2019)\n\n7 The Nishat Hotel, Commercial Area Phase 2 Johar Town (adjacent to Emporium Mall), ☏ +92 42 111 646 835, toll-free:  +92 42 111 000 777, reservationsj@nishathotel.com.  $100. (updated Aug 2022)\n\nIndigo Hotel (Indigo Heights), Noor Jehan Road, Gulberg 3, ☏ +92 42 111 463 446, info@indigoheights.com. Indigo Heights is a 4 star hotel. $90. (updated Dec 2022)",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner."
+  ],
+  "latency_s": 37.145,
+  "llm_s": 35.92,
+  "tool_s": 0.0,
+  "retrieval_s": 0.137,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1491,
+  "completion_tokens": 13,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 35.660315,
+    "load_duration": 0.009921,
+    "prompt_eval_duration": 33.695757,
+    "eval_duration": 1.938651
+  }
+}

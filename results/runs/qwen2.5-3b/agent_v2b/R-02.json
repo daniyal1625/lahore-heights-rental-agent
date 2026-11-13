@@ -1,0 +1,64 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Your booking for 2 adults and 2 children is in the Two-Bedroom, Unit 502 apartment. There are 2 guests in total.",
+  "scenario_id": "R-02",
+  "guest_message": "How many guests are on my booking and which apartment am I in?",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90002"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90002
+      },
+      "result_size": 515,
+      "ms": 4.6
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90002,\"status\":\"new\",\"guest_name\":\"Omar Farooq\",\"listing\":\"Two-Bedroom, Unit 502\",\"channel\":\"airbnbOfficial\",\"arrival\":\"2026-11-08\",\"departure\":\"2026-11-12\",\"nights\":4,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":2,\"total_price_pkr\":84000,\"paid_amount_pkr\":84000,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"verified\",\"guest_note\":\"\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 19.52,
+  "llm_s": 17.705,
+  "tool_s": 0.005,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2215,
+  "completion_tokens": 77,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 17.172408,
+    "load_duration": 0.016983,
+    "prompt_eval_duration": 5.873604,
+    "eval_duration": 11.162088
+  },
+  "plan": {
+    "intent": "guest details",
+    "calls": [
+      {
+        "tool": "get_reservation",
+        "query": null,
+        "reservation_id": 90002,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 7.464,
+  "llm_answer_s": 10.24
+}

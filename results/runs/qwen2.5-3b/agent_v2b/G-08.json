@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Lahore Fort is a UNESCO World Heritage Site. In the Walled City, you can visit the Shalimar Gardens, Lahore Museum, and the Lahore Fort. There are also other sites like the Tomb of Jahangir and Data Durbar. For more information, you can check the website Lahore, Pakistan: Traditional and Historical Architecture.",
+  "scenario_id": "G-08",
+  "guest_message": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > See > Other sights"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Museums"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "old city sights in Lahore"
+      },
+      "result_size": 5325,
+      "ms": 35.3
+    }
+  ],
+  "retrieved": [
+    "Lahore > See > Other sights",
+    "Lahore",
+    "Lahore > See > Museums",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > See > Other sights\",\"title\":\"Other sights\",\"text\":\"Lahore > See > Other sights\\n\\nMasterpieces of Mughal architecture are scattered throughout the city, even in neighborhoods that today seem a little dilapidated. Buildings and sites include:\\n\\n35 Shalimar Gardens (located along the GT Road towards Wagah). A three-tiered formal garden built in the 1600s, and a UNESCO World Heritage Site. Rs 200 for foreigners. (updated Feb 2017)\\n\\n36 Chauburji Gate (at Chauburji Chowk). An impressive, ornate 4-towered gate dating to 1646. (updated Feb 2017)\\n\\n37 Tomb of Jahangir (Shahdara suburb). Built in 1637 for the Mughal emperor Jahangir. (updated Feb 2017)\\n\\n38 Tomb of Nur Jahan (Shahdara suburb).  (updated Feb 2017)\\n\\nThere are also other sites, including tombs and mausoleums. Check this website Lahore, Pakistan: Traditional and Historical Architecture for information, plans, and photo galleries of many monuments.\\n\\n39 Data Durbar (Data Darbar). A Sufi Muslim shrine to Lahore's patron saint, Hazrat Daata Ganj Bakhsh. This vast modern structure is always filled with people praying, collecting or bestowing alms, or eating at the huge charity 'langar' or soup kitchen. (updated Feb 2017)\\n\\n40 Trafalgar Square (Bahria Town). A replica of the famous Trafalgar Square in London is located in the Bahria Town suburb. A Mini Egypt and a Zoo are located nearby and also worth a visit. (updated Feb 2017)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > See > Museums\",\"title\":\"Museums\",\"text\":\"Lahore > See > Museums\\n\\n41 Lahore Museum. The largest museum in Pakistan, established during the British Raj in 1864. It displays a complete cross-section of the culture and history of the region with a fine collection of Buddhist art from the Gandhara Period, Islamic artifacts, calligraphy, old manuscripts, arms, costumes and jewelry. John Kipling, father of the writer Rudyard Kipling, was curator in the 19th century and the museum appears in the first chapter of Kim. Unfortunately the presentation is old-fashioned and basic, and captions are sometimes in Urdu only.\\n\\n42 Tollinton market, Mall Road. Built as an exhibition hall and later a market, it now hosts the Lahore City Heritage Museum. Built in 1864. (updated Feb 2017)\\n\\n43 Shakir Ali Museum. This museum was actually Shakir's House at 93, Tipu Block, New Garder Town, Lahore, which he made for himself. After his death it was bought by Idara-I-Saqafat-e-Pakistan, and turned into a museum on April 3, 1976. The idea behind it was not only to preserve the great artist's paintings and other masterpieces under one roof but also to open this combination of modern and traditional architecture to the public.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nLegend has it that it was founded about 4,000 years ago by Loh, son of Rama, the hero of the Hindu epic, the Ramayana. Reminiscent of its hoary past are the remains of a subterranean temple attributed to Rama, in the northern part of the Royal Fort. Lahore is at least 2,000 years old. After Islam came to South Asia, it became a centre of learning, and attracted some of the region's greatest mystics, writers and artists. The people of Lahore, when they want to emphasize the uniqueness of their town say \\\"Lahore, Lahore aye\\\" (Lahore is Lahore). Lahore is the city of poets, artists and (until 2007) the centre of the Pakistani film industry. It has the largest number of educational institutions in the country and some of the finest gardens in the continent. Apart from being the cultural and academic centre of the country, Lahore has the finest Mughal architecture in Pakistan. For more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\"}]"
+  ],
+  "latency_s": 115.127,
+  "llm_s": 113.284,
+  "tool_s": 0.036,
+  "retrieval_s": 0.035,
+  "n_llm_calls": 3,
+  "prompt_tokens": 4516,
+  "completion_tokens": 515,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 112.755558,
+    "load_duration": 0.024516,
+    "prompt_eval_duration": 34.599852,
+    "eval_duration": 77.913286
+  },
+  "plan": {
+    "intent": "old city sights",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "old city sights in Lahore",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 2,
+  "llm_plan_s": 68.228,
+  "llm_answer_s": 45.056
+}

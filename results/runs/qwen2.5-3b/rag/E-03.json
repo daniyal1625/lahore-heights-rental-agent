@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "No electric car chargers are available at the apartment complex. For electric vehicle charging, you may need to look for public charging stations in the area.",
+  "scenario_id": "E-03",
+  "guest_message": "Is there an electric car charger in the parking?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "15.2"
+    },
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "manual",
+      "id": "13.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By car"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do > Parks"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "15.2",
+    "3.2",
+    "13.3",
+    "Lahore > Get in > By car",
+    "Lahore > Do > Parks"
+  ],
+  "evidence": [
+    "[Manual 15.2 — Extra heaters and adapters]\nHouse manual > 15. Extras and Requests > 15.2 Extra heaters and adapters\n\nFree electric oil-filled heaters (winter) and plug adapters are available from the front desk (sections 7.2 and 5.4).",
+    "[Manual 3.2 — Taxis and ride-hailing]\nHouse manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\n\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\"Lahore Heights Apartments, Gate 2\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.",
+    "[Manual 13.3 — Quick fixes]\nHouse manual > 13. Maintenance and Troubleshooting > 13.3 Quick fixes\n\n| Problem | What to try |\n|---|---|\n| No power in the apartment | Check the breaker board in the entrance closet (section 6.3). If the whole building is dark, wait for the generator (about 30 seconds). |\n| AC not cooling | Check the mode is **Cool**, the temperature is 24 to 26 °C, windows are closed, and the remote batteries are fresh. During a power cut only the green-sticker AC works. |\n| No hot water | Check the geyser switch outside the bathroom is on, and wait 30 minutes. The geyser does not work on the generator and its 2-hour timer may have switched it off. |\n| Weak gas flame | Common on winter mornings. Use the induction plate. |\n| Low water pressure | The booster pump is automatic. Wait 10 minutes, then message the host. |\n| Wi-Fi not working | Unplug the router for 30 seconds (section 5.1). The 4G backup starts automatically. |\n| TV remote not working | Replace the batteries from the TV-stand drawer. |\n| Door keypad not responding | Touch the keypad to wake it and enter the code followed by **#**. If it still does not respond, call the emergency maintenance line. |",
+    "[Guide Lahore > Get in > By car]\nLahore > Get in > By car\n\nA modern motorway connects Lahore to Islamabad, Faisalabad and Peshawar. The motorway is considerably better than the GT road, even though it is longer.\n\nWhile Pakistani traffic is generally chaotic and highly dangerous, the motorway is very comfortable and one of the few places traffic laws are enforced. Traffic Police enforce traffic laws on highways too.\n\nTaxis are possible to/from the Indian border for ~Rs 400.",
+    "[Guide Lahore > Do > Parks]\nLahore > Do > Parks\n\n5 Lawrence Gardens & Library (Bagh-e-Jinnah) (Opposite to Lahore Chamber of Commerce and Industry, next to Mall Road.). Among the biggest gardens of Lahore. (updated Feb 2017)\n\n6 Jallo Park. Following the canal side road to the east of the city is Jallo Park. It is a large drive-in park with a drive-in zoo and a man-made lake. Spreading over 450 acres, it has expanses of lawns, a forest research centre, a children's park, a small museum and a gift shop. Sozo Water Park is another attraction in this park. Also see Sindbad, Joy Land and Sky Land. It can be visited by road and by rail. A rail car leaves for Jallo Railway Station every half hour. (updated Feb 2017)\n\n7 Race Course Park, Jail Road. A huge park featuring vast lush grounds, a lake for boating, and a well-maintained jogging track. The park hosts special flower shows during the spring season. (updated Feb 2017)\n\n8 Gulshan-e-Iqbal Park (In Allama Iqbal Town). A vast park with a lake for boating, a mini-zoo, and recreational rides. (updated Feb 2017)\n\nLovers park"
+  ],
+  "latency_s": 44.387,
+  "llm_s": 43.049,
+  "tool_s": 0.0,
+  "retrieval_s": 0.103,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1250,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 42.784227,
+    "load_duration": 0.008405,
+    "prompt_eval_duration": 37.189868,
+    "eval_duration": 5.546831
+  }
+}

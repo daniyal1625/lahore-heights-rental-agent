@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we provide a hair dryer and an iron for your convenience.",
+  "scenario_id": "M-18",
+  "guest_message": "Do you provide a hair dryer and an iron?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.577,
+  "llm_s": 4.19,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 339,
+  "completion_tokens": 15,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 3.911243,
+    "load_duration": 0.028851,
+    "prompt_eval_duration": 1.31663,
+    "eval_duration": 2.522247
+  }
+}

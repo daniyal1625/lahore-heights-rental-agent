@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "For a whole month stay, we need the host's approval. Long stays are only possible with their personal approval. There are no special rates or discounts for long stays. Please check with the host for any changes or extensions.",
+  "scenario_id": "E-04",
+  "guest_message": "We'd like to stay a whole month. Is there a discount for long stays?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "15.3"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "long stay discount"
+      },
+      "result_size": 2226,
+      "ms": 45.5
+    }
+  ],
+  "retrieved": [
+    "20.3",
+    "15.3",
+    "2.7",
+    "2.8"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"20.3\",\"title\":\"Long stays\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\\n\\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\\n- Studio guests use the shared laundry room for longer stays (section 9.1).\\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).\"},{\"source_id\":\"15.3\",\"title\":\"Mid-stay cleaning\",\"text\":\"House manual > 15. Extras and Requests > 15.3 Mid-stay cleaning\\n\\nA cleaning visit during your stay costs **PKR 3,000 per visit**, including fresh bed linen and towels. Book it **24 hours ahead**. The cleaners work between 10:00 AM and 4:00 PM, and someone should be in the apartment or let us know where the valuables are.\"},{\"source_id\":\"2.7\",\"title\":\"Changing or extending your stay\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\\n\\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.\"},{\"source_id\":\"2.8\",\"title\":\"Decisions only the host can make\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\\n\\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\\n\\n- refunds, compensation or goodwill gestures\\n- special rates or long-stay discounts\\n- exceptions to check-in or check-out times\\n- changes to booking dates or moving to a different apartment\\n- deductions from the security deposit\\n- stays longer than 28 nights\"}]"
+  ],
+  "latency_s": 38.777,
+  "llm_s": 36.812,
+  "tool_s": 0.046,
+  "retrieval_s": 0.045,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2389,
+  "completion_tokens": 69,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.535677,
+    "load_duration": 0.029682,
+    "prompt_eval_duration": 18.995548,
+    "eval_duration": 17.404945
+  }
+}

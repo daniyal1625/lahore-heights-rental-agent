@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but we don't offer airport pickup services. You can arrange your own taxi from the airport to the apartment. Please be firm with the driver about the agreed fare.",
+  "scenario_id": "E-01",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "manual",
+      "id": "15.4"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By plane"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.2",
+    "15.4",
+    "3.6",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get in > By plane"
+  ],
+  "latency_s": 39.997,
+  "llm_s": 38.772,
+  "tool_s": 0.0,
+  "retrieval_s": 0.11,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1130,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama": {
+    "total_duration": 38.506831,
+    "load_duration": 0.007305,
+    "prompt_eval_duration": 30.288095,
+    "eval_duration": 8.194358
+  }
+}

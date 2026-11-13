@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Quiet hours are from 10:00 PM to 8:00 AM. Please keep music, TV, and voices low, and avoid noise in the corridors and on the balconies.",
+  "scenario_id": "M-06",
+  "guest_message": "What are your quiet hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.1"
+    },
+    {
+      "type": "manual",
+      "id": "16.3"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "11.1",
+    "16.3",
+    "18",
+    "Lahore > Sleep",
+    "Lahore > Sleep > Budget"
+  ],
+  "evidence": [
+    "[Manual 11.1 — Quiet hours]\nHouse manual > 11. House Rules > 11.1 Quiet hours\n\nQuiet hours are **10:00 PM to 8:00 AM**. Please keep music, TV and voices low, and avoid noise in the corridors and on the balconies. Residents include families with children and elderly people.",
+    "[Manual 16.3 — Ramadan]\nHouse manual > 16. Seasonal Notes > 16.3 Ramadan\n\nDuring Ramadan the front desk opens from **10:00 AM to 6:00 PM**. We ask guests not to eat, drink or smoke in the corridors, lobby and on the roof terrace during fasting hours, out of respect for residents. Quiet hours are unchanged.",
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles."
+  ],
+  "latency_s": 48.917,
+  "llm_s": 47.377,
+  "tool_s": 0.0,
+  "retrieval_s": 0.115,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1371,
+  "completion_tokens": 42,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 47.101258,
+    "load_duration": 0.038034,
+    "prompt_eval_duration": 36.763366,
+    "eval_duration": 10.205222
+  }
+}

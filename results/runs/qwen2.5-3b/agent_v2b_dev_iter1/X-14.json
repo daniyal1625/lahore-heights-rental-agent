@@ -1,0 +1,49 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "You will need to pay a security deposit for your stay. Please check with the host for the amount.",
+  "scenario_id": "X-14",
+  "guest_message": "Do I need to pay a security deposit, and how?",
+  "thread_context": {
+    "reservation_id": 90004,
+    "guest_name": "Hamza Sheikh"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 26.316,
+  "llm_s": 24.494,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1015,
+  "completion_tokens": 125,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 23.971848,
+    "load_duration": 0.021089,
+    "prompt_eval_duration": 1.975119,
+    "eval_duration": 21.912636
+  },
+  "plan": {
+    "intent": "need_security_deposit_info",
+    "use_manual": false,
+    "manual_query": "search_house_manual?policy=security_deposit",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 19.384,
+  "llm_answer_s": 5.11
+}

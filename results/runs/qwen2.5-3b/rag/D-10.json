@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I apologize for the inconvenience, Mr. Farooq. Please allow me to check with the host regarding your situation. You can expect a response within 24 hours.",
+  "scenario_id": "D-10",
+  "guest_message": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "13.2"
+    },
+    {
+      "type": "manual",
+      "id": "13.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Drink"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "18",
+    "13.2",
+    "13.3",
+    "Lahore > Sleep > Budget",
+    "Lahore > Drink"
+  ],
+  "evidence": [
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 13.2 — How fast we respond]\nHouse manual > 13. Maintenance and Troubleshooting > 13.2 How fast we respond\n\n- **Urgent** (no power in your apartment, no water, a gas smell, flooding, a lock-out): within **60 minutes** between 8:00 AM and 10:00 PM, and as fast as possible overnight.\n- **Standard** (a light bulb, a dripping tap, a noisy AC): the same day if reported before 4:00 PM, otherwise the next morning.",
+    "[Manual 13.3 — Quick fixes]\nHouse manual > 13. Maintenance and Troubleshooting > 13.3 Quick fixes\n\n| Problem | What to try |\n|---|---|\n| No power in the apartment | Check the breaker board in the entrance closet (section 6.3). If the whole building is dark, wait for the generator (about 30 seconds). |\n| AC not cooling | Check the mode is **Cool**, the temperature is 24 to 26 °C, windows are closed, and the remote batteries are fresh. During a power cut only the green-sticker AC works. |\n| No hot water | Check the geyser switch outside the bathroom is on, and wait 30 minutes. The geyser does not work on the generator and its 2-hour timer may have switched it off. |\n| Weak gas flame | Common on winter mornings. Use the induction plate. |\n| Low water pressure | The booster pump is automatic. Wait 10 minutes, then message the host. |\n| Wi-Fi not working | Unplug the router for 30 seconds (section 5.1). The 4G backup starts automatically. |\n| TV remote not working | Replace the batteries from the TV-stand drawer. |\n| Door keypad not responding | Touch the keypad to wake it and enter the code followed by **#**. If it still does not respond, call the emergency maintenance line. |",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles.",
+    "[Guide Lahore > Drink]\nLahore > Drink\n\nAlcohol is illegal for Muslim Pakistanis. Clubbing is quite popular but not easy to find, majority of the clubs being private and invite only.\n\nClubs\n\nParties at Farmhouse\n\nCaviar Lounge, a bar/club in Royal Palm.\n\nClub Bhurban, in Pearl Continental hotel\n\nUptown LA in Defence R block. The club opens after 11PM at night till 4AM in the morning\n\n1 Peeru's Cafe, Green Acres Main Rd. Situated about an hour outside of Lahore. Peeru's, a cafe with an artistic flair. Saturday night is always Jazz Night, Peeru's cafe is really the only place which has live jazz music. Tuesday is Sufi night. Sitting inside, it even feels like some cafe in Venice.\n\nChalupa club.\n\nDisco beat in Muslim town.\n\nBon vivant cafe\n\nPanini Italian Cafe.\n\nAK lounge:First floor shop4 and 5 in Xinhua mall in Gulberg 3.\n\nCafe rock: 56 b3 Gulberg 3.\n\nCafe forest: 57 T Gulberg.\n\nChez Nur bistro: 39 C1 Gulberg 3.Tel:(92)35759835.\n\nGulberg: 2B 3 Gulberg 3.\n\nDefence: 181/Y Block, phase three DHA."
+  ],
+  "latency_s": 53.515,
+  "llm_s": 52.45,
+  "tool_s": 0.0,
+  "retrieval_s": 0.11,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1747,
+  "completion_tokens": 36,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 52.186653,
+    "load_duration": 0.006868,
+    "prompt_eval_duration": 46.335313,
+    "eval_duration": 5.776929
+  }
+}

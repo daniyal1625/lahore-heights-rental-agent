@@ -1,0 +1,59 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Reservation 99999 is not linked to this conversation. I will check with the host to find out the status.",
+  "scenario_id": "D-01",
+  "guest_message": "What's the status of reservation 99999?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 99999
+      },
+      "result_size": 87,
+      "ms": 4.8
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"error\":\"not_authorized\",\"message\":\"This booking is not linked to this conversation.\"}"
+  ],
+  "latency_s": 20.554,
+  "llm_s": 18.764,
+  "tool_s": 0.005,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2039,
+  "completion_tokens": 102,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 18.221796,
+    "load_duration": 0.013649,
+    "prompt_eval_duration": 2.233456,
+    "eval_duration": 15.839978
+  },
+  "plan": {
+    "intent": "get reservation status",
+    "calls": [
+      {
+        "tool": "get_reservation",
+        "query": "99999",
+        "reservation_id": 99999,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 12.989,
+  "llm_answer_s": 5.775
+}

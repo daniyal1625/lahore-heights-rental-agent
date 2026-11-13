@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Your booking dates are not specified in your message. Please check your booking confirmation for the exact dates.",
+  "scenario_id": "R-01",
+  "guest_message": "What are my booking dates?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.5",
+    "2.8",
+    "2.7",
+    "Lahore > Sleep > Budget",
+    "Lahore > Sleep"
+  ],
+  "evidence": [
+    "[Manual 2.5 — Paying for your booking]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\n\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles.",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner."
+  ],
+  "latency_s": 33.317,
+  "llm_s": 32.171,
+  "tool_s": 0.0,
+  "retrieval_s": 0.142,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1309,
+  "completion_tokens": 21,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 31.911123,
+    "load_duration": 0.009762,
+    "prompt_eval_duration": 28.678623,
+    "eval_duration": 3.204507
+  }
+}

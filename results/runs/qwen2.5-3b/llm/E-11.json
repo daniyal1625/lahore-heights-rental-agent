@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but the apartment allows stays of up to 30 nights. Please check with the host for any possible exceptions.",
+  "scenario_id": "E-11",
+  "guest_message": "We want to stay for 45 nights. Is that possible?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.239,
+  "llm_s": 6.329,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 343,
+  "completion_tokens": 28,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.061054,
+    "load_duration": 0.00654,
+    "prompt_eval_duration": 1.151687,
+    "eval_duration": 4.881848
+  }
+}

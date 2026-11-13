@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! I can check availability for 6 people from Nov 25 to 28. Let me confirm with the host. I will get back to you shortly.",
+  "scenario_id": "A-06",
+  "guest_message": "Do you have a place for 6 people for Nov 25 to 28?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "11.4",
+    "2.7",
+    "18",
+    "Lahore > Do",
+    "Lahore > See > Walled City"
+  ],
+  "evidence": [
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate."
+  ],
+  "latency_s": 43.339,
+  "llm_s": 42.186,
+  "tool_s": 0.0,
+  "retrieval_s": 0.141,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1536,
+  "completion_tokens": 36,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.921018,
+    "load_duration": 0.006144,
+    "prompt_eval_duration": 35.975724,
+    "eval_duration": 5.920062
+  }
+}

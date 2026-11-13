@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! I will check and get back to you. The minimum stay is 1 night and the maximum is 28 nights per booking. Longer stays require the host's approval.",
+  "scenario_id": "D-09",
+  "guest_message": "Hi, do you have availability next weekend?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "manual",
+      "id": "14.1"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Shopping malls"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "15.1",
+    "14.1",
+    "2.7",
+    "Lahore > Get around > By taxi",
+    "Lahore > Buy > Shopping malls"
+  ],
+  "evidence": [
+    "[Manual 15.1 — Travel cot and high chair]\nHouse manual > 15. Extras and Requests > 15.1 Travel cot and high chair\n\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.",
+    "[Manual 14.1 — Check-out time]\nHouse manual > 14. Checking Out > 14.1 Check-out time\n\nCheck-out is at **11:00 AM**. The next guest may arrive at 2:00 PM, and the cleaners need the time in between. Please message the host when you leave.",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Buy > Shopping malls]\nLahore > Buy > Shopping malls\n\n3 Panorama mall, Mall Road. An ideal place to buy formal male clothes. It houses over 1000 shops so you have a large variety of clothes to choose from and that is too at a competitive price. (updated Jun 2026)\n\n4 PACE. Shopping mall with food, clothes, electronics, movies. Located in Link Road, Model town. (updated Feb 2017)\n\n5 Mall of Lahore (Cantonment). A very prestigious shopping mall with a super market named green valley mall. (updated Feb 2017)\n\nXinhua Mall has brands such as Nike, The Body shop, Levis, Cross Roads, Next, Minni Minors and from the local brands we have Ammar Bilal, Nomi Ansari, Out Fitters and Saira Ahsan."
+  ],
+  "latency_s": 33.483,
+  "llm_s": 32.428,
+  "tool_s": 0.0,
+  "retrieval_s": 0.084,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1064,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.158637,
+    "load_duration": 0.006289,
+    "prompt_eval_duration": 24.920353,
+    "eval_duration": 7.215196
+  }
+}

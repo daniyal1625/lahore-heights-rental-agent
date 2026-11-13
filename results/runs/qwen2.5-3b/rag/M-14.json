@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "If you smell gas, do not switch any lights or electrical appliances on or off, and do not use a lighter or match. Turn the red gas shut-off lever under the kitchen sink a quarter turn so it is across the pipe. Open windows and the balcony door. Leave the apartment and call the security desk and the emergency maintenance line from outside. Do not go back inside until instructed to do so by Rafiq or the security team.",
+  "scenario_id": "M-14",
+  "guest_message": "What should I do if I smell gas in the apartment?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "12.3"
+    },
+    {
+      "type": "manual",
+      "id": "12.2"
+    },
+    {
+      "type": "manual",
+      "id": "11.2"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay safe"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "12.3",
+    "12.2",
+    "11.2",
+    "Lahore > Stay safe",
+    "Lahore > Stay healthy"
+  ],
+  "evidence": [
+    "[Manual 12.3 — If you smell gas]\nHouse manual > 12. Safety and Emergencies > 12.3 If you smell gas\n\n1. Do **not** switch any lights or electrical appliances on or off, and do not use a lighter or match.\n2. Turn the **red gas shut-off lever under the kitchen sink** a quarter turn so it is across the pipe.\n3. Open windows and the balcony door.\n4. Leave the apartment and call the security desk and the emergency maintenance line from outside.\n\nDo not go back inside until Rafiq or the security team says it is safe.",
+    "[Manual 12.2 — Fire]\nHouse manual > 12. Safety and Emergencies > 12.2 Fire\n\nEach apartment has smoke detectors, and a fire extinguisher is in every kitchen and in every corridor. If you hear the alarm or see fire: leave the apartment, close the door, use the **stairs (never the lift)** at Stair A or Stair B, and gather at the front lawn at Gate 1. Call 16 and the security desk.",
+    "[Manual 11.2 — Smoking and vaping]\nHouse manual > 11. House Rules > 11.2 Smoking and vaping\n\nSmoking and vaping are **not allowed** inside the apartments, on the balconies, on the Penthouse terrace, in the corridors, in the lifts or in the basement. You may smoke only in the **marked corner at the north end of the roof terrace**. If we find that someone has smoked indoors, a deep-cleaning fee of **PKR 15,000** is deducted from the security deposit (or charged to the guest for platform bookings).",
+    "[Guide Lahore > Stay safe]\nLahore > Stay safe\n\nStreet crimes in Lahore are not common but special precautions must be taken by visitors.\n\nDemonstrations aren't uncommon and should be avoided at all cost. In early 2006, the Prophet Muhammad cartoon protests quickly got out of hand, and several businesses were torched along with scores of cars. If a large demonstration or protest is underway, foreigners should try to remain at their hotels until the dust settles.\n\nIn general, visitors will find the locals very curious, very eager to help. Being friendly and smiling at people goes a long way. If you're a woman, though, it's best to be sparing with smiles lest people get too friendly; though this is mostly in areas like bazaars, not the actual city.\n\nIf you enter a mosque, women should wear a dupatta, which is a scarf used by local females to cover their heads. Men & women should also remove their shoes while entering in a mosque.\n\nAvoid traveling to unlit areas at night, especially alone. Use common sense when hanging out with friends, and definitely avoid being intoxicated in public as it is an Islamic country.\n\nBeware of pickpockets when you are in crowded areas like Liberty market, the airport, bus stands, the railway station, Anarkali, Ichra shopping centre, or Mall road.\n\nIn an emergency you can call police help line 15 or call Rescue Services at 1122.",
+    "[Guide Lahore > Stay healthy]\nLahore > Stay healthy\n\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\n\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\n\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\n\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\n\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\n\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing)."
+  ],
+  "latency_s": 50.747,
+  "llm_s": 49.597,
+  "tool_s": 0.0,
+  "retrieval_s": 0.099,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1304,
+  "completion_tokens": 89,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 49.324749,
+    "load_duration": 0.030986,
+    "prompt_eval_duration": 31.639373,
+    "eval_duration": 17.611974
+  }
+}

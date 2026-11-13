@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Based on the house manual, a late check-out until 2:00 PM costs PKR 2,500. This is only possible if no guest is arriving in your apartment that day and you request it by 9:00 PM the evening before. Please confirm this with the host. If you stay beyond 2:00 PM, a full night is charged at the nightly rate.",
+  "scenario_id": "X-06",
+  "guest_message": "Can we do a late checkout on the 13th?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "3.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "late checkout fee"
+      },
+      "result_size": 2547,
+      "ms": 39.3
+    }
+  ],
+  "retrieved": [
+    "14.3",
+    "3.7",
+    "2.3",
+    "3.6"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"14.3\",\"title\":\"Late check-out\",\"text\":\"House manual > 14. Checking Out > 14.3 Late check-out\\n\\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).\"},{\"source_id\":\"3.7\",\"title\":\"Late arrival\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.7 Late arrival\\n\\nSelf check-in works at any hour. If you will arrive after **11:00 PM**, tell the host in advance so the guard expects you. The guards at Gate 2 are on duty all night, but the front desk is closed after 9:00 PM.\"},{\"source_id\":\"2.3\",\"title\":\"What is included in the nightly rate, and optional fees\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\\n\\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\\n\\n| Item | Fee |\\n|---|---|\\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\\n| Travel cot, high chair, extra heater, plug adapters | Free |\"},{\"source_id\":\"3.6\",\"title\":\"Early check-in and luggage storage\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\\n\\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.\"}]"
+  ],
+  "latency_s": 72.134,
+  "llm_s": 69.937,
+  "tool_s": 0.04,
+  "retrieval_s": 0.039,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2590,
+  "completion_tokens": 108,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 69.683886,
+    "load_duration": 0.021557,
+    "prompt_eval_duration": 47.916458,
+    "eval_duration": 21.61916
+  }
+}

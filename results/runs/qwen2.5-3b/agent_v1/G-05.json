@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The Faisal Movers terminal for buses is located on Band Road at Abdullah Travels in Lahore. For your trip to Islamabad, you might consider using Daewoo, Faisal Movers, or other bus services like Skyways, Niazi Express, or Rajput Travels. Please check schedules and prices for your journey.",
+  "scenario_id": "G-05",
+  "guest_message": "I want to take a coach to Islamabad. Where is the Faisal Movers terminal in Lahore?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By car"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Mall Road"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Faisal Movers terminal Islamabad"
+      },
+      "result_size": 5007,
+      "ms": 45.4
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get in > By bus",
+    "Lahore > Get around > By bus",
+    "Lahore > Get in > By car",
+    "Lahore > See > Mall Road"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get in > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get in > By bus\\n\\nFrom the Indian border, bus #4 runs to the Main train station for Rs 20.\\n\\nMinibuses are the cheapest way to get between the larger cities, and the only way to get to some more remote destinations. They can be uncomfortably crowded, so if possible opt for a more comfortable larger bus.\\n\\nDaewoo has its own terminal away from the main bus station, on Ferozpur Road near Kalma Chowk and Liberty Market. Clean, comfortable, air-conditioned coaches run regularly between Lahore to all major cities of Punjab, KP and Sindh including Karachi plus many smaller cities and towns such as Islamabad, Multan, Faisalabad and Peshawar. Daewoo is more expensive but much more comfortable and reliable than the competition. Between Lahore and Rawalpindi/Islamabad they have a 'Premium Plus service' which gives you a business class style seat and more space.\\n\\nFaisal Movers has its Lahore terminal on Band Road at Abdullah Travels. It is popular due to its safety and refreshments in the bus. Faisal Mover is less expensive than Daewoo but not other companies. This is a comfortable and easy way to go from Lahore to cities such as Murree, Rawalpindi, Islamabad, Sahiwal, Multan, Dera Ghazi Khan.\\n\\nSkyways, Niazi Express and a couple others operate large, comfortable buses to Islamabad, Peshawar, Faisalabad and many other cities and towns from their own bus terminals near M2 Motorway Interchange. These services are rather affordable and convenient.\"},{\"source_id\":\"Lahore > Get around > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get around > By bus\\n\\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\\n\\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\\n\\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\\n\\nOther bus companies\\n\\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\\n\\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\\n\\nSkyways: Known for economical fares and a wide route network.\\n\\nNiazi Express: A long-standing service offering low-cost travel options.\\n\\nRajput Travels: Offers reasonably priced routes connecting many regions.\\n\\nPower International: Affordable intercity travel with decent amenities.\\n\\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.\"},{\"source_id\":\"Lahore > Get in > By car\",\"title\":\"By car\",\"text\":\"Lahore > Get in > By car\\n\\nA modern motorway connects Lahore to Islamabad, Faisalabad and Peshawar. The motorway is considerably better than the GT road, even though it is longer.\\n\\nWhile Pakistani traffic is generally chaotic and highly dangerous, the motorway is very comfortable and one of the few places traffic laws are enforced. Traffic Police enforce traffic laws on highways too.\\n\\nTaxis are possible to/from the Indian border for ~Rs 400.\"},{\"source_id\":\"Lahore > See > Mall Road\",\"title\":\"Mall Road\",\"text\":\"Lahore > See > Mall Road\\n\\nThis road, also known as Shahrah-e-Quaid-e-Azam road, is a central road constructed in the British era, which has many historic buildings.\\n\\n22 General Post Office.  (updated Feb 2017)\\n\\n23 Lahore High Court.  (updated Feb 2017)\\n\\n24 Punjab University (Old Campus). Buildings were erected here as early as 1858. (updated Feb 2017)\\n\\n25 National College of Arts. Rudyard Kipling's father was the principal here. Offers a thesis show every winter. Kim's Gun is outside the NCA (updated Feb 2017)\\n\\nCharing Cross - Lahore's monumental square dating to the British era. Surrounded by historic buildings. It has been renamed to Faisal Square (Faisal Chowk in Urdu/Punjabi).\\n\\n26 Islamic Summit Minar. An obelisk built to commemorate the 1974 Organisation of Islamic Cooperation conference. Located in the Charing Cross roundabout. Few know the presence of a library/museum below the roundabout that is all about the OIC and Islamic Summit and is a treat to visit. (updated Feb 2017)\\n\\n27 Shahdin Manzil. An impressive building, dating to 1914. (updated Feb 2017)\\n\\n28 Masonic Temple. An impressive old building. Since 1972, no longer used by the Masons. (updated Feb 2017)\\n\\n29 Punjab Provincial Assembly Building.  (updated Feb 2017)\\n\\n30 WAPDA House. A modern office block, with a glass dome and a roof garden. (updated Feb 2017)\"}]"
+  ],
+  "latency_s": 66.863,
+  "llm_s": 65.0,
+  "tool_s": 0.046,
+  "retrieval_s": 0.045,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3077,
+  "completion_tokens": 94,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 64.730422,
+    "load_duration": 0.018445,
+    "prompt_eval_duration": 45.818099,
+    "eval_duration": 18.774431
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "You can take trains from major Pakistani cities to Lahore. The main station connects to the western part of Pakistan, including Faisalabad. The Samjhauta Express used to run between Lahore and Attari, Amritsar, but services have been suspended since 2019 due to tensions. Local stations in Lahore include Shahdara Bagh, Badami Bagh, Moghalpur, Baghbanpura, Harbanspura, Jallo, and Wagah. For more information, you can visit the Lahore Art Gallery or the Al Hamra Arts Council.",
+  "scenario_id": "G-07",
+  "guest_message": "Which railway stations in Lahore can I take a train from?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By train"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Mall Road"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "railway stations in Lahore"
+      },
+      "result_size": 4884,
+      "ms": 52.0
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get in > By train",
+    "Lahore > Do",
+    "Lahore",
+    "Lahore > See > Mall Road"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get in > By train\",\"title\":\"By train\",\"text\":\"Lahore > Get in > By train\\n\\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\\n\\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\\n\\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\\n\\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)\"},{\"source_id\":\"Lahore > Do\",\"title\":\"Do\",\"text\":\"Lahore > Do\\n\\nThe club offers other facilities with its literary club offering literary seminars, poetry readings and a library.\\n\\nLahore has long been a bastion for sport. An excursion to a polo game would be a memorable experience. Pakistan is one of only 8 nations to play polo professionally, and fields some 26 professional clubs. Lahore's most famous club is Lahore Polo Club, where emperors, kings and other notables have been playing for centuries. Foreign teams often play here in friendly games, and facilities are first rate.\\n\\nCricket: 2 Gaddafi Stadium, Hafeez Kader Rd, ☏ +92 423 571 7231. Built in 1959, renovated in 1996 and named for the Libyan leader Muammar Gaddafi, this has a capacity of 27,000 and hosts international Test matches, and Lahore Qalanders in the T20 Pakistan Super League. (updated Oct 2023)\\n\\nMedical tourism is a growing industry in Lahore due to its high quality and low cost, especially in sectors like Dental treatment, Hair transplant, Cosmetic surgery and Open heart surgery.\\n\\nGo to bazaars and look around, you can buy amazing jewellery, crockery, souvenirs and of course clothes!\\n\\nGo karting or playing paintball in one of the several amusement parks in town. These can be found at Fortress Stadium and Sozo Water Park (Jallo).\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > See > Mall Road\",\"title\":\"Mall Road\",\"text\":\"Lahore > See > Mall Road\\n\\n(updated Feb 2017)\\n\\n31 Lahore Zoo. One of the oldest zoos in the sub continent, founded in 1872. The material used in some of the construction even bears the marks of 1853. The Lahore zoo attracts a large crowd throughout the year. Driving east along the Sharah-e-Quaid-e-Azam, just past Charing Cross and opposite the WAPDA House is the main gate of the zoo. (updated Feb 2017)\\n\\n32 Al Hamra Arts council. Used for theater and other cultural events. (updated Feb 2017)\\n\\n33 Fortress Stadium (Lahore Fortress). An attempt to combine the architecture of a fort like Rohtas with a sports stadium. Many exhibitions held here. The Stadium is the site of the famous Horse and Cattle Show in March. Joyland amusement park is also located here. (updated Feb 2017)\\n\\n34 Masjid-e-Shohada.  (updated Feb 2017)\\n\\nLahore Art Gallery. The Croweaters Gallery\"}]"
+  ],
+  "latency_s": 79.25,
+  "llm_s": 77.299,
+  "tool_s": 0.052,
+  "retrieval_s": 0.052,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3035,
+  "completion_tokens": 145,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 77.021464,
+    "load_duration": 0.031595,
+    "prompt_eval_duration": 47.200393,
+    "eval_duration": 29.668973
+  }
+}

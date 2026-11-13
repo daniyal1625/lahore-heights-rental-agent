@@ -1,0 +1,61 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we provide prayer mats. The Qibla direction is marked on the wardrobe in the bedroom.",
+  "scenario_id": "M-15",
+  "guest_message": "Do you provide prayer mats, and which direction is the Qibla?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "20.4"
+    },
+    {
+      "type": "manual",
+      "id": "10.2"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.4",
+    "20.4",
+    "10.2",
+    "Lahore > Do",
+    "Lahore > Do"
+  ],
+  "evidence": [
+    "[Manual 10.4 — Prayer facilities]\nHouse manual > 10. Building Amenities and Accessibility > 10.4 Prayer facilities\n\nEvery apartment has prayer mats and a copy of the Quran. The Qibla direction is shown by an arrow sticker on the bedroom wardrobe. A neighbourhood mosque (Masjid Al-Noor, about 300 metres away) broadcasts the call to prayer five times a day, and the dawn (Fajr) call can be heard faintly in the early morning. Earplugs are in the bedside drawer.",
+    "[Manual 20.4 — Halal kitchens and prayer]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.4 Halal kitchens and prayer\n\nAll kitchens in the building are used for halal cooking only. Please do not bring pork products or alcohol into the apartments (section 11.3). Prayer mats are provided and the Qibla direction is marked (section 10.4).",
+    "[Manual 10.2 — Roof terrace]\nHouse manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\n\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).",
+    "[Guide Lahore > Do]\nLahore > Do\n\nThese can be found at Fortress Stadium and Sozo Water Park (Jallo).\n\nEnjoy street food and local special treats in the aptly named 3 Gawalmandi Food Street and 4 Anarkali Food Street.\n\nWagah Border Ceremony, Grand Trunk Road, Wagah. Daily 4:15 PM or 5:15 PM depending on the season. A patriotic and energetic display of military showmanship between India and Pakistan, known for its loud atmosphere and extended wait times. The experience is unique and memorable, though the long wait can be tiring. Entry is free. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200 (800 from the Raja Sansi Airport) for the entire vehicle. (updated July 2024)",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library."
+  ],
+  "latency_s": 31.395,
+  "llm_s": 30.204,
+  "tool_s": 0.0,
+  "retrieval_s": 0.113,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1158,
+  "completion_tokens": 22,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 29.94108,
+    "load_duration": 0.031915,
+    "prompt_eval_duration": 25.74109,
+    "eval_duration": 4.124746
+  }
+}

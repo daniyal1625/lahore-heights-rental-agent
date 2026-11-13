@@ -1,0 +1,49 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but Lahore Heights Apartments does not offer a baby monitor or a baby bath. For these items, you may want to consider renting a separate device.",
+  "scenario_id": "E-12",
+  "guest_message": "Do you have a baby monitor or a baby bath?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 23.778,
+  "llm_s": 21.969,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 999,
+  "completion_tokens": 140,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 21.440487,
+    "load_duration": 0.012605,
+    "prompt_eval_duration": 1.23045,
+    "eval_duration": 20.15553
+  },
+  "plan": {
+    "intent": "information_request",
+    "use_manual": false,
+    "manual_query": "amenities?amenity=baby_monitor&amenity=baby_bath",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 16.3,
+  "llm_answer_s": 5.669
+}

@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Quiet hours are from 10:00 PM to 8:00 AM. Please keep music, TV and voices low, and avoid noise in the corridors and on the balconies. Residents include families with children and elderly people.",
+  "scenario_id": "M-06",
+  "guest_message": "What are your quiet hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.1"
+    },
+    {
+      "type": "manual",
+      "id": "16.3"
+    },
+    {
+      "type": "manual",
+      "id": "13.2"
+    },
+    {
+      "type": "manual",
+      "id": "1.5"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "quiet hours"
+      },
+      "result_size": 1376,
+      "ms": 53.8
+    }
+  ],
+  "retrieved": [
+    "11.1",
+    "16.3",
+    "13.2",
+    "1.5"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"11.1\",\"title\":\"Quiet hours\",\"text\":\"House manual > 11. House Rules > 11.1 Quiet hours\\n\\nQuiet hours are **10:00 PM to 8:00 AM**. Please keep music, TV and voices low, and avoid noise in the corridors and on the balconies. Residents include families with children and elderly people.\"},{\"source_id\":\"16.3\",\"title\":\"Ramadan\",\"text\":\"House manual > 16. Seasonal Notes > 16.3 Ramadan\\n\\nDuring Ramadan the front desk opens from **10:00 AM to 6:00 PM**. We ask guests not to eat, drink or smoke in the corridors, lobby and on the roof terrace during fasting hours, out of respect for residents. Quiet hours are unchanged.\"},{\"source_id\":\"13.2\",\"title\":\"How fast we respond\",\"text\":\"House manual > 13. Maintenance and Troubleshooting > 13.2 How fast we respond\\n\\n- **Urgent** (no power in your apartment, no water, a gas smell, flooding, a lock-out): within **60 minutes** between 8:00 AM and 10:00 PM, and as fast as possible overnight.\\n- **Standard** (a light bulb, a dripping tap, a noisy AC): the same day if reported before 4:00 PM, otherwise the next morning.\"},{\"source_id\":\"1.5\",\"title\":\"Time zone and language\",\"text\":\"House manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\\n\\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.\"}]"
+  ],
+  "latency_s": 36.764,
+  "llm_s": 33.385,
+  "tool_s": 0.054,
+  "retrieval_s": 0.054,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2192,
+  "completion_tokens": 72,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 33.107674,
+    "load_duration": 0.032964,
+    "prompt_eval_duration": 15.198223,
+    "eval_duration": 17.703784
+  }
+}

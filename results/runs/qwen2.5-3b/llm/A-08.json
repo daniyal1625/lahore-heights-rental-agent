@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "The cost for 5 nights for 2 people from December 1 to December 6 would be PKR 50000. Please confirm your availability.",
+  "scenario_id": "A-08",
+  "guest_message": "How much would 5 nights cost for 2 people, December 1 to December 6?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.835,
+  "llm_s": 6.753,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 349,
+  "completion_tokens": 35,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.487985,
+    "load_duration": 0.006537,
+    "prompt_eval_duration": 1.286953,
+    "eval_duration": 5.169533
+  }
+}

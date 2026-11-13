@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I don't have weather information. You can check local weather forecasts for the weekend.",
+  "scenario_id": "D-05",
+  "guest_message": "What will the weather be like in Lahore this weekend?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 4.897,
+  "llm_s": 3.91,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 340,
+  "completion_tokens": 18,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 3.642409,
+    "load_duration": 0.007749,
+    "prompt_eval_duration": 1.000787,
+    "eval_duration": 2.615111
+  }
+}

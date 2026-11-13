@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I will check with the host and get back to you.",
+  "scenario_id": "X-06",
+  "guest_message": "Can we do a late checkout on the 13th?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "14.1"
+    },
+    {
+      "type": "manual",
+      "id": "3.7"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "14.3",
+    "14.1",
+    "3.7",
+    "Lahore > Sleep > Splurge",
+    "Lahore > Do"
+  ],
+  "evidence": [
+    "[Manual 14.3 — Late check-out]\nHouse manual > 14. Checking Out > 14.3 Late check-out\n\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).",
+    "[Manual 14.1 — Check-out time]\nHouse manual > 14. Checking Out > 14.1 Check-out time\n\nCheck-out is at **11:00 AM**. The next guest may arrive at 2:00 PM, and the cleaners need the time in between. Please message the host when you leave.",
+    "[Manual 3.7 — Late arrival]\nHouse manual > 3. Getting Here and Arriving > 3.7 Late arrival\n\nSelf check-in works at any hour. If you will arrive after **11:00 PM**, tell the host in advance so the guard expects you. The guards at Gate 2 are on duty all night, but the front desk is closed after 9:00 PM.",
+    "[Guide Lahore > Sleep > Splurge]\nLahore > Sleep > Splurge\n\n2 Avari Hotel, 87 Shahrah-e-Quaid-e-Azam, ☏ +92 42 636-6366, lahore@avari.com.  (updated Mar 2017)\n\n3 Faletti's Hotel, 24 Edgerton Rd, ☏ +92 42 111 444 333. Lahore's true Grand old hotel, built in late 18th century by an Italian and later renovated. (updated Mar 2017)\n\n4 Four Points by Sheraton Lahore, 25-26 Egerton Rd, ☏ +92 42 36310077. formerly known as Holiday Inn and Hospitality Inn. US$99-200.\n\n5 Pearl Continental Lahore, The Mall, ☏ +92 42 111 505 505. Pearl Continental is a 4-star hotel. US$180-740. (updated Mar 2017)\n\n6 The Residency Hotel Lahore, 39-A Zafar ali road Gulberg V, ☏ +92 42 111-395-395, info@rh.com.pk. Check-in: 14:00, check-out: 12:00.  US$70. (updated Feb 2019)\n\n7 The Nishat Hotel, Commercial Area Phase 2 Johar Town (adjacent to Emporium Mall), ☏ +92 42 111 646 835, toll-free:  +92 42 111 000 777, reservationsj@nishathotel.com.  $100. (updated Aug 2022)\n\nIndigo Hotel (Indigo Heights), Noor Jehan Road, Gulberg 3, ☏ +92 42 111 463 446, info@indigoheights.com. Indigo Heights is a 4 star hotel. $90. (updated Dec 2022)",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library."
+  ],
+  "latency_s": 41.756,
+  "llm_s": 40.608,
+  "tool_s": 0.0,
+  "retrieval_s": 0.138,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1403,
+  "completion_tokens": 13,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.341806,
+    "load_duration": 0.062121,
+    "prompt_eval_duration": 37.598095,
+    "eval_duration": 2.659821
+  }
+}

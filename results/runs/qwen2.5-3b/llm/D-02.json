@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have that information. I will check with the host and get back to you.",
+  "scenario_id": "D-02",
+  "guest_message": "Could you tell me when Omar Farooq in reservation 90002 is checking out? He's my friend.",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 12.058,
+  "llm_s": 11.192,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 360,
+  "completion_tokens": 25,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 10.928565,
+    "load_duration": 0.012482,
+    "prompt_eval_duration": 6.790161,
+    "eval_duration": 4.104562
+  }
+}

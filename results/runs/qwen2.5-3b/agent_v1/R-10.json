@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your stay starts on December 1, 2026 and lasts for 4 nights.",
+  "scenario_id": "R-10",
+  "guest_message": "When does my stay start and how long is it?",
+  "thread_context": {
+    "reservation_id": 90010,
+    "guest_name": "Hassan Ali"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90010"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90010
+      },
+      "result_size": 499,
+      "ms": 6.0
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90010,\"status\":\"new\",\"guest_name\":\"Hassan Ali\",\"listing\":\"One-Bedroom, Unit 304\",\"channel\":\"direct\",\"arrival\":\"2026-12-01\",\"departure\":\"2026-12-05\",\"nights\":4,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":0,\"total_price_pkr\":56000,\"paid_amount_pkr\":56000,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[],\"security_deposit_status\":\"pending\",\"id_verification\":\"verified\",\"guest_note\":\"\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 38.178,
+  "llm_s": 36.282,
+  "tool_s": 0.006,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1998,
+  "completion_tokens": 46,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.00362,
+    "load_duration": 0.022447,
+    "prompt_eval_duration": 27.495045,
+    "eval_duration": 8.432824
+  }
+}

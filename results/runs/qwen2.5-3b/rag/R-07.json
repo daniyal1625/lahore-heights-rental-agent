@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "You are staying for a total of 28 nights. You can check out on the day you request, but it must be by 9:00 PM the evening before, and it costs PKR 2,500 for late check-out until 2:00 PM. Please request this by then.",
+  "scenario_id": "R-07",
+  "guest_message": "How many nights am I staying in total and which day do I check out?",
+  "thread_context": {
+    "reservation_id": 90008,
+    "guest_name": "Fatima Noor"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "11.4",
+    "20.3",
+    "14.3",
+    "Lahore > Sleep > Budget",
+    "Lahore > Sleep"
+  ],
+  "evidence": [
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Manual 20.3 — Long stays]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\n\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\n- Studio guests use the shared laundry room for longer stays (section 9.1).\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).",
+    "[Manual 14.3 — Late check-out]\nHouse manual > 14. Checking Out > 14.3 Late check-out\n\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles.",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner."
+  ],
+  "latency_s": 49.571,
+  "llm_s": 48.47,
+  "tool_s": 0.0,
+  "retrieval_s": 0.101,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1326,
+  "completion_tokens": 67,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 48.19987,
+    "load_duration": 0.007146,
+    "prompt_eval_duration": 34.490792,
+    "eval_duration": 13.681294
+  }
+}

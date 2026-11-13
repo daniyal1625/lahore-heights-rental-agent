@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we have availability for 6 people from Nov 25 to 28. How many nights do you need?",
+  "scenario_id": "A-06",
+  "guest_message": "Do you have a place for 6 people for Nov 25 to 28?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.469,
+  "llm_s": 5.529,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 348,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.263755,
+    "load_duration": 0.00599,
+    "prompt_eval_duration": 1.216167,
+    "eval_duration": 4.007823
+  }
+}

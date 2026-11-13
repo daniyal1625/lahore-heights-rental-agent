@@ -1,0 +1,61 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, I noted that you're travelling with a small child. The Two-Bedroom and Penthouse are the best choices for families as they have separate bedrooms and a washing machine. Please ask for a travel cot or high chair at least 48 hours before your arrival.",
+  "scenario_id": "R-08",
+  "guest_message": "Did you note that we're travelling with a small child?",
+  "thread_context": {
+    "reservation_id": 90007,
+    "guest_name": "Bilal Raza"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "manual",
+      "id": "2.1"
+    },
+    {
+      "type": "manual",
+      "id": "11.7"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.1",
+    "2.1",
+    "11.7",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 20.1 — Families with children]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\n\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).",
+    "[Manual 2.1 — Guest numbers and occupancy]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.1 Guest numbers and occupancy\n\nEvery apartment has a **base occupancy** and a **maximum occupancy** (see the table in section 1.2). You may never exceed the maximum, even for a few hours. Infants under 2 years old sleep free and do not count as guests. Children aged 2 and above count as guests.\n\nOnly guests registered on the booking may stay overnight. If your plans change and more people will sleep in the apartment, tell the host before they arrive so the booking can be updated (subject to the maximum occupancy and to section 2.2).",
+    "[Manual 11.7 — Damage and loss]\nHouse manual > 11. House Rules > 11.7 Damage and loss\n\nPlease report breakages straight away. Accidental breakage of small items (a glass or plate) is not a problem if you tell us. Larger damage or missing items are charged at replacement cost; for direct bookings this is deducted from the security deposit, and for platform bookings we claim through the platform. We take photos of every apartment before each stay.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nTaxis are a rarity on the streets of Lahore - with auto-rickshaws having cornered the market - for a  taxi you need to book one by phone. Most taxi drivers and, indeed, rickshaw drivers, carry mobile phones; it may be useful to take a number down if you find someone especially reliable. Do not take taxis in the Inner City, as the streets are narrow and very crowded. Either walk or take a qingqi. InDrive, Uber, and \"Careem\" are also available in the city.\n\nMinivans are probably the most dangerous form of public transport, with very rash drivers. Women will find these especially uncomfortable, as they are very crowded. Often women must sit in an undersized cubicle or with the driver, to prevent harassment."
+  ],
+  "latency_s": 44.604,
+  "llm_s": 43.342,
+  "tool_s": 0.0,
+  "retrieval_s": 0.154,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1166,
+  "completion_tokens": 57,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 43.065314,
+    "load_duration": 0.010793,
+    "prompt_eval_duration": 31.329287,
+    "eval_duration": 11.704289
+  }
+}

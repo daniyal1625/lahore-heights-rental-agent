@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "You can take a train from the following railway stations in Lahore:\n\n- Lahore Junction\n- Lahore Cantonment\n\nThese stations connect to various destinations within Lahore and other parts of Pakistan.",
+  "scenario_id": "G-07",
+  "guest_message": "Which railway stations in Lahore can I take a train from?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "manual",
+      "id": "1.5"
+    },
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By train"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.5",
+    "1.5",
+    "3.2",
+    "Lahore > Get in > By train",
+    "Lahore > Get around > By bus"
+  ],
+  "evidence": [
+    "[Manual 20.5 — First-time visitors to Pakistan]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\n\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\n- Dress modestly in the lobby and corridors (section 11.9).\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.",
+    "[Manual 1.5 — Time zone and language]\nHouse manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\n\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.",
+    "[Manual 3.2 — Taxis and ride-hailing]\nHouse manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\n\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\"Lahore Heights Apartments, Gate 2\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.",
+    "[Guide Lahore > Get in > By train]\nLahore > Get in > By train\n\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\n\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\n\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\n\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)",
+    "[Guide Lahore > Get around > By bus]\nLahore > Get around > By bus\n\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\n\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\n\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\n\nOther bus companies\n\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\n\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\n\nSkyways: Known for economical fares and a wide route network.\n\nNiazi Express: A long-standing service offering low-cost travel options.\n\nRajput Travels: Offers reasonably priced routes connecting many regions.\n\nPower International: Affordable intercity travel with decent amenities.\n\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience."
+  ],
+  "latency_s": 42.178,
+  "llm_s": 41.017,
+  "tool_s": 0.0,
+  "retrieval_s": 0.105,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1287,
+  "completion_tokens": 37,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.752105,
+    "load_duration": 0.020928,
+    "prompt_eval_duration": 33.675727,
+    "eval_duration": 7.03141
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! We currently do not have any free slots available from November 12 to November 14. I will check availability for you and get back to you.",
+  "scenario_id": "A-01",
+  "guest_message": "Hi, do you have anything free from November 12 to November 14? Two of us.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.937,
+  "llm_s": 7.945,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 351,
+  "completion_tokens": 35,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 7.670565,
+    "load_duration": 0.022306,
+    "prompt_eval_duration": 1.622121,
+    "eval_duration": 5.970972
+  }
+}

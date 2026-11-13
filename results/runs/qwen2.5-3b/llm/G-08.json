@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Lahore Fort is a UNESCO World Heritage site. In the Walled City, you can also visit the Shalimar Gardens, Badshahi Mosque, and the Lahore Museum.",
+  "scenario_id": "G-08",
+  "guest_message": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.48,
+  "llm_s": 8.48,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 349,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.227393,
+    "load_duration": 0.019012,
+    "prompt_eval_duration": 1.585557,
+    "eval_duration": 6.580174
+  }
+}

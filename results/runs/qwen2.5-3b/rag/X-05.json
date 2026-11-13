@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The travel cot is free of charge and you don't need to pay for it. Please request it at least 48 hours before your arrival.",
+  "scenario_id": "X-05",
+  "guest_message": "Is our travel cot booked? And do we have to pay for it?",
+  "thread_context": {
+    "reservation_id": 90007,
+    "guest_name": "Bilal Raza"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "2.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "15.1",
+    "2.5",
+    "2.4",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By bus"
+  ],
+  "evidence": [
+    "[Manual 15.1 — Travel cot and high chair]\nHouse manual > 15. Extras and Requests > 15.1 Travel cot and high chair\n\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.",
+    "[Manual 2.5 — Paying for your booking]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\n\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.",
+    "[Manual 2.4 — Security deposit (direct bookings only)]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.4 Security deposit (direct bookings only)\n\nFor **direct bookings** (booked with us and not through a platform) we collect a refundable security deposit of **PKR 25,000**. Pay it by bank transfer or mobile wallet (Easypaisa or JazzCash) at least 24 hours before arrival. The host sends the payment details. After you check out and we inspect the apartment, the deposit is refunded to the same account within **3 business days**, minus the cost of any damage or fees described in section 11.7.\n\nFor bookings made through **Airbnb or Booking.com** we do not collect a deposit. The platform's own damage-protection rules apply instead.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around > By bus]\nLahore > Get around > By bus\n\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\n\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\n\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\n\nOther bus companies\n\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\n\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\n\nSkyways: Known for economical fares and a wide route network.\n\nNiazi Express: A long-standing service offering low-cost travel options.\n\nRajput Travels: Offers reasonably priced routes connecting many regions.\n\nPower International: Affordable intercity travel with decent amenities.\n\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience."
+  ],
+  "latency_s": 40.19,
+  "llm_s": 38.912,
+  "tool_s": 0.0,
+  "retrieval_s": 0.119,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1251,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.648925,
+    "load_duration": 0.017244,
+    "prompt_eval_duration": 32.744917,
+    "eval_duration": 5.862972
+  }
+}

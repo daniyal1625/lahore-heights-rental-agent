@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have specific information about the cost of visiting the Lahore Fort for foreign tourists. For accurate pricing and any other details, I would need to check with the host or the local authorities. I recommend contacting Ayesha Malik directly for this information.",
+  "scenario_id": "G-02",
+  "guest_message": "How much does Lahore Fort cost for a foreign tourist?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "1.1"
+    },
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "1.1",
+    "20.5",
+    "0",
+    "Lahore",
+    "Lahore > Do"
+  ],
+  "evidence": [
+    "[Manual 1.1 — About the building]\nHouse manual > 1. Welcome to Lahore Heights > 1.1 About the building\n\nWelcome, and thank you for choosing Lahore Heights Apartments. We are a small, quiet building in Gulberg III, Lahore (fictional address: Plot 27-C, Sunrise Avenue, Gulberg III, Lahore). The building has a ground-floor lobby with a front desk, seven residential floors, a shared roof terrace and one level of basement parking (B1).\n\nWe rent out four apartments. All other apartments belong to private owners and families who live here all year, so you will share the lifts and corridors with residents. Please treat the building as you would your own home. Guards are on duty at the gates 24 hours a day, and the building has CCTV in all common areas (never inside the apartments).\n\nThis manual explains how everything in your apartment and in the building works, what our rules are, and what to do if something goes wrong. If you cannot find an answer here, message your host and we will help.",
+    "[Manual 20.5 — First-time visitors to Pakistan]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\n\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\n- Dress modestly in the lobby and corridors (section 11.9).\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.",
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Guide Lahore]\nLahore\n\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\n\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\n\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\n\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nThe club offers other facilities with its literary club offering literary seminars, poetry readings and a library.\n\nLahore has long been a bastion for sport. An excursion to a polo game would be a memorable experience. Pakistan is one of only 8 nations to play polo professionally, and fields some 26 professional clubs. Lahore's most famous club is Lahore Polo Club, where emperors, kings and other notables have been playing for centuries. Foreign teams often play here in friendly games, and facilities are first rate.\n\nCricket: 2 Gaddafi Stadium, Hafeez Kader Rd, ☏ +92 423 571 7231. Built in 1959, renovated in 1996 and named for the Libyan leader Muammar Gaddafi, this has a capacity of 27,000 and hosts international Test matches, and Lahore Qalanders in the T20 Pakistan Super League. (updated Oct 2023)\n\nMedical tourism is a growing industry in Lahore due to its high quality and low cost, especially in sectors like Dental treatment, Hair transplant, Cosmetic surgery and Open heart surgery.\n\nGo to bazaars and look around, you can buy amazing jewellery, crockery, souvenirs and of course clothes!\n\nGo karting or playing paintball in one of the several amusement parks in town. These can be found at Fortress Stadium and Sozo Water Park (Jallo)."
+  ],
+  "latency_s": 50.287,
+  "llm_s": 49.172,
+  "tool_s": 0.0,
+  "retrieval_s": 0.098,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1410,
+  "completion_tokens": 57,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 48.896573,
+    "load_duration": 0.033782,
+    "prompt_eval_duration": 35.218203,
+    "eval_duration": 13.581471
+  }
+}

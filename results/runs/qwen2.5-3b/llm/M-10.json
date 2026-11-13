@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "The hot water system uses a heater to warm the water. If you're experiencing cold water, it might be due to the heater not being on or having a malfunction. I recommend checking the heater or contacting the property management for assistance.",
+  "scenario_id": "M-10",
+  "guest_message": "The shower is only giving cold water, how does the hot water work?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 12.437,
+  "llm_s": 10.474,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 344,
+  "completion_tokens": 48,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 10.210016,
+    "load_duration": 0.019964,
+    "prompt_eval_duration": 1.273788,
+    "eval_duration": 8.862283
+  }
+}

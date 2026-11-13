@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Your door code will be sent by the host to you personally via a 6-digit code message. Please wait for the host to contact you.",
+  "scenario_id": "X-09",
+  "guest_message": "I land at 3 pm. What's my door code?",
+  "thread_context": {
+    "reservation_id": 90009,
+    "guest_name": "Chen Wei"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.5"
+    },
+    {
+      "type": "manual",
+      "id": "19.1"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Drink"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.5",
+    "19.1",
+    "21",
+    "Lahore > Get around > By bus",
+    "Lahore > Drink"
+  ],
+  "evidence": [
+    "[Manual 3.5 — Self check-in]\nHouse manual > 3. Getting Here and Arriving > 3.5 Self check-in\n\nCheck-in time is **2:00 PM**. The apartments use a smart keypad lock, so no one has to meet you.\n\n1. Arrive at Gate 2 and tell the guard your apartment number. The guard will register you.\n2. Take the lift to your floor.\n3. On the day of arrival, once your ID is verified (and, for direct bookings, your balance is paid), the host messages you a personal 6-digit door code.\n4. Touch the keypad to wake it, enter the code, then press the **#** key.\n\nYour code works from 2:00 PM on the arrival day until 11:00 AM on the departure day. The front desk can help in person between 9:00 AM and 9:00 PM. Door codes are only ever sent by the host to the person on the booking. Nobody else, including the front desk and guards, will tell a code to anyone who asks.",
+    "[Manual 19.1 — The smart door lock]\nHouse manual > 19. Appliance How-To Guide > 19.1 The smart door lock\n\nThe keypad is on the apartment door at handle height. Touch it with your palm to wake it, then type your 6-digit code and press **#**. A green light and a short beep mean the door is unlocked; a red light and a long beep mean the code was wrong. After three wrong tries the keypad locks itself for 5 minutes. From the inside, turn the thumb-turn knob to lock or unlock. The door locks automatically about 10 seconds after it closes. The lock runs on 4 AA batteries; if the keypad beeps three times when you wake it, the batteries are low and you should tell the host. A low battery will not lock you out immediately.",
+    "[Manual 21 — Key Facts at a Glance]\nHouse manual > 21. Key Facts at a Glance\n\n| Topic | Fact |\n|---|---|\n| Check-in / check-out | 2:00 PM / 11:00 AM |\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\n| Quiet hours | 10:00 PM to 8:00 AM |\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\n| Front desk | 9:00 AM to 9:00 PM |\n| Roof terrace | 7:00 AM to 10:00 PM |\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\n| Maximum stay | 28 nights |\n| Generator start time | About 30 seconds |\n| Rescue / Police / Fire | 1122 / 15 / 16 |\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\n| Emergency maintenance | +92 300 555 0177 (24 hours) |",
+    "[Guide Lahore > Get around > By bus]\nLahore > Get around > By bus\n\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\n\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\n\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\n\nOther bus companies\n\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\n\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\n\nSkyways: Known for economical fares and a wide route network.\n\nNiazi Express: A long-standing service offering low-cost travel options.\n\nRajput Travels: Offers reasonably priced routes connecting many regions.\n\nPower International: Affordable intercity travel with decent amenities.\n\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.",
+    "[Guide Lahore > Drink]\nLahore > Drink\n\nDefence: 181/Y Block, phase three DHA.\n\nCinamoon Coffee lounge and Bakery: Sharah e Quaid e Azam, Avari Hotel.\n\nCoffee tea and company: 3B3 Gulberg.\n\nEspresso: Chez Casa, Gulberg three.\n\nFlorigelium: 73L, Gulberg.\n\nGloria Jeans Coffee: Defence: 42Z, Commercial; and Gulberg: 25/2B, Kasuri road.\n\nLahore Grand: Zafar Ali Road.\n\nLums: DHA, Lahore Cantt.\n\nMall of Lahore: 172 Tufail Road, Lahore Cantt.\n\nHobnob Cafe:DHA phase 2.\n\nJamin Java Cafe: Has three branches in Lahore mainly in Defence, Gulberg and Johar Town.\n\nLuciano at Ammar Belal: Kasuri road, Gulberg.\n\nMalees cafe: At Jail road and in Gulberg, three at MM.Alam road.\n\nWhite Dining Lounge: At MM.Alam road, Gulberg, Lahore.\n\nWorld Fashion cafe: Kasuri road, Gaulberg, Lahore.\n\nRoasters: Gulberg 3, Lahore.\n\nNadia cafe: Pearl Continental Hotel, Sharah e Quaid e azam."
+  ],
+  "latency_s": 53.185,
+  "llm_s": 52.086,
+  "tool_s": 0.0,
+  "retrieval_s": 0.097,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1719,
+  "completion_tokens": 30,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 51.818587,
+    "load_duration": 0.006299,
+    "prompt_eval_duration": 45.956801,
+    "eval_duration": 5.743482
+  }
+}

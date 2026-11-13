@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, the 2-bedroom is available from November 28 to November 30.",
+  "scenario_id": "A-04",
+  "guest_message": "Is the 2-bedroom free from Nov 28 to Nov 30?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.039,
+  "llm_s": 5.84,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 346,
+  "completion_tokens": 20,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.576889,
+    "load_duration": 0.006,
+    "prompt_eval_duration": 1.85942,
+    "eval_duration": 3.682923
+  }
+}

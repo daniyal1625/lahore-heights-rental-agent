@@ -1,0 +1,39 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "I found a few options for you:\n\n1. Studio, Unit 201: Available from November 12 to November 14. Price: PKR 19,000. This listing can accommodate up to 2 guests, and you are 2 guests, so it's suitable.\n2. One-Bedroom, Unit 304: Not available during your requested dates.\n3. Two-Bedroom, Unit 502: Available from November 12 to November 14. Price: PKR 42,000. This listing can accommodate up to 5 guests, and you are 2 guests, so it's suitable.\n4. Penthouse, Unit 701: Available from November 12 to November 14. Price: PKR 76,000. This listing can accommodate up to 7 guests, and you are 2 guests, so it's suitable.\n\nPlease let me know which one you prefer.",
+  "scenario_id": "A-01",
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-12..2026-11-14"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-12",
+        "check_out": "2026-11-14",
+        "guests": 2
+      },
+      "result_size": 757,
+      "ms": 12.1
+    }
+  ],
+  "retrieved": [],
+  "latency_s": 60.606,
+  "llm_s": 58.864,
+  "tool_s": 0.012,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2151,
+  "completion_tokens": 264,
+  "error": null,
+  "ollama": {
+    "total_duration": 58.598003,
+    "load_duration": 0.01474,
+    "prompt_eval_duration": 10.726156,
+    "eval_duration": 47.766494
+  }
+}

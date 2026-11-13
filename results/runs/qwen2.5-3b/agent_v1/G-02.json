@@ -1,0 +1,60 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The cost for visiting Lahore Fort as a foreign tourist is not specified in the information provided. I recommend checking with the Lahore Fort management or a local travel guide for the most accurate information.",
+  "scenario_id": "G-02",
+  "guest_message": "How much does Lahore Fort cost for a foreign tourist?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Lahore Fort cost for foreign tourist"
+      },
+      "result_size": 5358,
+      "ms": 55.3
+    }
+  ],
+  "retrieved": [
+    "Lahore",
+    "Lahore > Do",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > Do\",\"title\":\"Do\",\"text\":\"Lahore > Do\\n\\nThe club offers other facilities with its literary club offering literary seminars, poetry readings and a library.\\n\\nLahore has long been a bastion for sport. An excursion to a polo game would be a memorable experience. Pakistan is one of only 8 nations to play polo professionally, and fields some 26 professional clubs. Lahore's most famous club is Lahore Polo Club, where emperors, kings and other notables have been playing for centuries. Foreign teams often play here in friendly games, and facilities are first rate.\\n\\nCricket: 2 Gaddafi Stadium, Hafeez Kader Rd, ☏ +92 423 571 7231. Built in 1959, renovated in 1996 and named for the Libyan leader Muammar Gaddafi, this has a capacity of 27,000 and hosts international Test matches, and Lahore Qalanders in the T20 Pakistan Super League. (updated Oct 2023)\\n\\nMedical tourism is a growing industry in Lahore due to its high quality and low cost, especially in sectors like Dental treatment, Hair transplant, Cosmetic surgery and Open heart surgery.\\n\\nGo to bazaars and look around, you can buy amazing jewellery, crockery, souvenirs and of course clothes!\\n\\nGo karting or playing paintball in one of the several amusement parks in town. These can be found at Fortress Stadium and Sozo Water Park (Jallo).\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nFor more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\\n\\nHiuen Tsang, the famous 7th century Chinese pilgrim, gave a vivid description of Lahore. Lying on the main trade and invasion routes to South Asia, Lahore has been ruled and plundered by a number of dynasties. Muslim rule began here when Qutub-ud-din Aibak was crowned in Lahore in 1206 and became the first Muslim Sultan of the Subcontinent.\\n\\nLahore waxed and waned in importance during the Sultanate. However, it touched the zenith of its glory during the Mughal rule from 1524 to 1752. The Mughals, who were famous as builders, gave Lahore some of its finest architectural monuments, many of which today are no longer.\\n\\nLahore was Akbar's capital from 1584 to 1598. He built the massive Lahore Fort on the foundations of a previous fort, and enclosed the city within a red brick wall boasting 12 gates. Jahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens.\"}]"
+  ],
+  "latency_s": 66.038,
+  "llm_s": 63.816,
+  "tool_s": 0.056,
+  "retrieval_s": 0.055,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3088,
+  "completion_tokens": 66,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 63.536096,
+    "load_duration": 0.038875,
+    "prompt_eval_duration": 49.958409,
+    "eval_duration": 13.407624
+  }
+}

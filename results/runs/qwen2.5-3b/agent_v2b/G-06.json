@@ -1,0 +1,76 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "According to the guide, a taxi from the airport to Gulberg should cost around Rs 600.",
+  "scenario_id": "G-06",
+  "guest_message": "Roughly how much should a taxi to Gulberg cost, according to your guide?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "taxi to Gulberg cost"
+      },
+      "result_size": 3630,
+      "ms": 38.6
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get around > By taxi",
+    "Lahore > Eat > Splurge",
+    "Lahore > Buy > Other"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get around > By taxi\",\"title\":\"By taxi\",\"text\":\"Lahore > Get around > By taxi\\n\\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\\n\\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\\n\\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.\"},{\"source_id\":\"Lahore > Eat > Splurge\",\"title\":\"Splurge\",\"text\":\"Lahore > Eat > Splurge\\n\\nA globally famous restaurant chain.\\n\\nCosta Nostra. Authentic Italian food, overseen by Pak-Italian owners. It has a reservation-only, high-end gourmet experience with a rather well put-together table d'hote, and it has a basement pizzeria where you can't go wrong if want a pizza pie that resembles something from Rome and not Chicago.\\n\\nThe Monal, in Gulberg III near Liberty Chowk, roundabout. It on the top of Liberty Park Plaza. You have to climb up the plaza by a car, but be careful to drive slowly and look in the traffic mirrors to see if a car is coming from the upper floor when you're about to climb up in the plaza. The Monal has indoor and outdoor seating and it shows a total sky view of the bustling city. ☏ +91 42 35789824\"},{\"source_id\":\"Lahore > Get around > By taxi\",\"title\":\"By taxi\",\"text\":\"Lahore > Get around > By taxi\\n\\nTaxis are a rarity on the streets of Lahore - with auto-rickshaws having cornered the market - for a  taxi you need to book one by phone. Most taxi drivers and, indeed, rickshaw drivers, carry mobile phones; it may be useful to take a number down if you find someone especially reliable. Do not take taxis in the Inner City, as the streets are narrow and very crowded. Either walk or take a qingqi. InDrive, Uber, and \\\"Careem\\\" are also available in the city.\\n\\nMinivans are probably the most dangerous form of public transport, with very rash drivers. Women will find these especially uncomfortable, as they are very crowded. Often women must sit in an undersized cubicle or with the driver, to prevent harassment.\"},{\"source_id\":\"Lahore > Buy > Other\",\"title\":\"Other\",\"text\":\"Lahore > Buy > Other\\n\\nTrendy types congregate in the Gulberg and Defence suburbs. In Gulberg, MM Alam Road is the hippest part of town, with all the most expensive designer shops, including fine furniture and clothing, both Western and Pakistani, and the best restaurants.\\n\\n6 Liberty Market (Gulberg). A large circular market with hundreds of shops selling clothing, electronics, and so on. A basement shop in Liberty (tell the rickshaw driver it's near H Karim Bakhsh) has good handicrafts, and can be bargained with. (updated Feb 2017)\\n\\n7 Ferozsons Book Centre, Mall Road. The oldest book shop in Lahore. (updated Feb 2017)\\n\\nReadings bookshop in Main Boulevard Gulberg and Variety Books in liberty market are a must see.\\n\\nLast word in Gulberg at 32-A, Mian Mehmood Ali Kasoori Road.\\n\\nRaja Centre in Gulberg has a good selection of handloom 'khadi' fabric, both stitched and unstitched. Higher end khadi can be bought at the Khaadi shop in Mini Market.\"}]"
+  ],
+  "latency_s": 36.287,
+  "llm_s": 34.411,
+  "tool_s": 0.039,
+  "retrieval_s": 0.039,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2941,
+  "completion_tokens": 69,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 33.873926,
+    "load_duration": 0.014263,
+    "prompt_eval_duration": 23.545105,
+    "eval_duration": 10.099995
+  },
+  "plan": {
+    "intent": "city sightseeing",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "taxi to Gulberg cost",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 7.996,
+  "llm_answer_s": 26.415
+}

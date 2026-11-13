@@ -1,0 +1,82 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The Wi-Fi network name for the Studio unit is LH-Guest-201. The password is Studio201wifi. The router is on the living-room shelf. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. Please do not change router settings. If it still does not work after 10 minutes, message the host.",
+  "scenario_id": "M-02",
+  "guest_message": "Hi! What's the wifi name and password for the studio?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "5.1"
+    },
+    {
+      "type": "manual",
+      "id": "4.1"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "5.2"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "Hi! What's the wifi name and password for the studio?"
+      },
+      "result_size": 3116,
+      "ms": 35.7
+    }
+  ],
+  "retrieved": [
+    "5.1",
+    "4.1",
+    "18",
+    "5.2"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"5.1\",\"title\":\"Wi-Fi\",\"text\":\"House manual > 5. Wi-Fi, TV and Electronics > 5.1 Wi-Fi\\n\\nEach apartment has its own network. The building has 100 Mbps fibre internet with an automatic 4G backup router (slower, about 20 Mbps) that switches on if the main line fails.\\n\\n| Unit | Network name | Password |\\n|---|---|---|\\n| Studio, 201 | LH-Guest-201 | Studio201wifi |\\n| One-Bedroom, 304 | LH-Guest-304 | 1BR304wifi |\\n| Two-Bedroom, 502 | LH-Guest-502 | 2BR502wifi |\\n| Penthouse, 701 | LH-Guest-701 | Penthouse701wifi |\\n\\nThe router is on the living-room shelf. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. Please do not change router settings. If it still does not work after 10 minutes, message the host.\"},{\"source_id\":\"4.1\",\"title\":\"Studio, Unit 201\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.1 Studio, Unit 201\\n\\n- **Sleeps:** 2. One queen bed (160 × 200 cm). The sofa is not a bed.\\n- **Bathroom:** one, with shower. Electric water heater (geyser) of 35 litres.\\n- **Kitchenette:** 2-burner gas hob, induction plate, microwave, kettle, toaster, 250-litre fridge. There is **no oven**.\\n- **Laundry:** **no washing machine** in the unit. Use the shared laundry room on the ground floor (section 9.1).\\n- **Cooling and air:** one inverter air conditioner (this is the AC that keeps running on the generator) and one air purifier.\\n- **Other:** 32-inch smart TV, desk and chair for working, large window with garden view (no balcony), iron and ironing board in the wardrobe, hair dryer in the bathroom drawer.\\n- **Parking:** B1-12. **Wi-Fi network:** LH-Guest-201.\"},{\"source_id\":\"18\",\"title\":\"Quick FAQ\",\"text\":\"House manual > 18. Quick FAQ\\n\\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\\n\\n**Is there a cleaning fee?** No. It is included in the nightly rate.\\n\\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\\n\\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\\n\\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\\n\\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\\n\\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\\n\\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\\n\\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\\n\\n**Who can approve a refund or a special request?** Only the host (section 2.8).\"},{\"source_id\":\"5.2\",\"title\":\"TV and streaming\",\"text\":\"House manual > 5. Wi-Fi, TV and Electronics > 5.2 TV and streaming\\n\\nEvery apartment has a smart TV with local cable channels and YouTube. You can sign in to your own streaming accounts (for example Netflix). **Please sign out before check-out.** The TV remote and spare batteries are in the TV-stand drawer.\"}]"
+  ],
+  "latency_s": 198.137,
+  "llm_s": 196.23,
+  "tool_s": 0.036,
+  "retrieval_s": 0.036,
+  "n_llm_calls": 3,
+  "prompt_tokens": 4127,
+  "completion_tokens": 883,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 195.693286,
+    "load_duration": 0.026283,
+    "prompt_eval_duration": 33.364287,
+    "eval_duration": 162.047963
+  },
+  "plan": {
+    "intent": "fallback",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "Hi! What's the wifi name and password for the studio?",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ],
+    "fallback_reason": "plan JSON did not match the schema"
+  },
+  "plan_attempts": 2,
+  "llm_plan_s": 149.364,
+  "llm_answer_s": 46.866
+}

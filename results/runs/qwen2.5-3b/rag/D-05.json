@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The weather in Lahore this weekend is expected to be clear and pleasant. It's a good time to enjoy outdoor activities.",
+  "scenario_id": "D-05",
+  "guest_message": "What will the weather be like in Lahore this weekend?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "manual",
+      "id": "16.1"
+    },
+    {
+      "type": "manual",
+      "id": "1.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.5",
+    "16.1",
+    "1.5",
+    "Lahore > Understand",
+    "Lahore > Sleep > Budget"
+  ],
+  "evidence": [
+    "[Manual 20.5 — First-time visitors to Pakistan]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\n\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\n- Dress modestly in the lobby and corridors (section 11.9).\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.",
+    "[Manual 16.1 — Smog season (roughly November to January)]\nHouse manual > 16. Seasonal Notes > 16.1 Smog season (roughly November to January)\n\nLahore can have heavy smog in winter. On bad days, keep windows and balcony doors closed and run the air purifier (switched on with its power button; the filter is changed monthly). Plan outdoor activities for the afternoon, when the air is usually clearer.",
+    "[Manual 1.5 — Time zone and language]\nHouse manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\n\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.",
+    "[Guide Lahore > Understand]\nLahore > Understand\n\nLahore is the second largest city in Pakistan with a population of roughly 8.5 million. The traditional capital of Punjab for a thousand years, it had been the cultural centre of Northern India extending from Peshawar to New Delhi.  The origins of Lahore are shrouded in the mists of antiquity but Lahore is undoubtedly ancient.\n\nToday, Lahore is certainly worth a visit, but don't come expecting a tranquil city overflowing with history, art and culture: these qualities do exist but are hidden under the surface of a sprawling, traffic clogged and polluted south Asian city. Forward planning is recommended if the tourist is going to get the most out of what Lahore has to offer - the time of year to visit, the choice of hotel, the restaurants to dine at, the art galleries and the shopping areas to frequent are all key to getting the most out of your stay.\n\nLahore is a relatively friendly and liberal city.  There is an old saying, that in every Lahori, there is a Mughal prince. The city has known ages of cultural, intellectual, musical, literary and humanistic evolution, which has consequently led to the fermentation and over fermentation of this rich brew we call Lahore.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles."
+  ],
+  "latency_s": 30.403,
+  "llm_s": 29.327,
+  "tool_s": 0.0,
+  "retrieval_s": 0.123,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1270,
+  "completion_tokens": 25,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 29.068243,
+    "load_duration": 0.007107,
+    "prompt_eval_duration": 25.208349,
+    "eval_duration": 3.779064
+  }
+}

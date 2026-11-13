@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we have a travel cot and high chair available for free of charge. Please ask at least 48 hours before your arrival.",
+  "scenario_id": "M-12",
+  "guest_message": "Do you have a travel cot or high chair for our toddler?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "manual",
+      "id": "2.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By auto-rickshaw"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "15.1",
+    "20.1",
+    "2.1",
+    "Lahore > Get around > By auto-rickshaw",
+    "Lahore > Sleep"
+  ],
+  "evidence": [
+    "[Manual 15.1 — Travel cot and high chair]\nHouse manual > 15. Extras and Requests > 15.1 Travel cot and high chair\n\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.",
+    "[Manual 20.1 — Families with children]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\n\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).",
+    "[Manual 2.1 — Guest numbers and occupancy]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.1 Guest numbers and occupancy\n\nEvery apartment has a **base occupancy** and a **maximum occupancy** (see the table in section 1.2). You may never exceed the maximum, even for a few hours. Infants under 2 years old sleep free and do not count as guests. Children aged 2 and above count as guests.\n\nOnly guests registered on the booking may stay overnight. If your plans change and more people will sleep in the apartment, tell the host before they arrive so the booking can be updated (subject to the maximum occupancy and to section 2.2).",
+    "[Guide Lahore > Get around > By auto-rickshaw]\nLahore > Get around > By auto-rickshaw\n\nAuto-rickshaws/Qingqis are open rickshaws with (narrow) rear-facing seats, or with two seats facing forward and two backward. They are handy for moving around in the Inner City, since it's easier to see where you're going. Tourists used to average western road etiquette might be horrified by the chaos on the roads - but it almost seems to work. Qingqi drivers have an unbelievable sense of space, speed and angles and you may well learn to trust them (or not). Rickshaws are the cheapest and, for women, the safest individual forms of public transport. Haggle thoroughly with the driver; if you do not speak Punjabi or Urdu or are clearly a foreigner, try to get a Lahori friend to ensure you don't get ripped off. Try to find a rickshaw with a well-padded seat, otherwise you will come out bruised and aching. You can also order a rickshaw by using Careem or InDrive app.",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner."
+  ],
+  "latency_s": 36.09,
+  "llm_s": 33.716,
+  "tool_s": 0.0,
+  "retrieval_s": 0.146,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1189,
+  "completion_tokens": 29,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 33.437626,
+    "load_duration": 0.030675,
+    "prompt_eval_duration": 27.617382,
+    "eval_duration": 5.749897
+  }
+}

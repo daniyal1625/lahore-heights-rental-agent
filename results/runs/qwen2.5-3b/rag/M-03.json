@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "To connect to the internet in your unit, you can use the network name: LH-Guest-502. The password is 2BR502wifi. If you need further assistance, please let me know.",
+  "scenario_id": "M-03",
+  "guest_message": "We're in unit 502. How do we connect to the internet?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "5.1"
+    },
+    {
+      "type": "manual",
+      "id": "4.3"
+    },
+    {
+      "type": "manual",
+      "id": "5.2"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "5.1",
+    "4.3",
+    "5.2",
+    "Lahore > Get around > By taxi",
+    "Lahore > Eat > Budget"
+  ],
+  "evidence": [
+    "[Manual 5.1 — Wi-Fi]\nHouse manual > 5. Wi-Fi, TV and Electronics > 5.1 Wi-Fi\n\nEach apartment has its own network. The building has 100 Mbps fibre internet with an automatic 4G backup router (slower, about 20 Mbps) that switches on if the main line fails.\n\n| Unit | Network name | Password |\n|---|---|---|\n| Studio, 201 | LH-Guest-201 | Studio201wifi |\n| One-Bedroom, 304 | LH-Guest-304 | 1BR304wifi |\n| Two-Bedroom, 502 | LH-Guest-502 | 2BR502wifi |\n| Penthouse, 701 | LH-Guest-701 | Penthouse701wifi |\n\nThe router is on the living-room shelf. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. Please do not change router settings. If it still does not work after 10 minutes, message the host.",
+    "[Manual 4.3 — Two-Bedroom, Unit 502]\nHouse manual > 4. Your Apartment, Unit by Unit > 4.3 Two-Bedroom, Unit 502\n\n- **Sleeps:** up to 5. Master bedroom with a king bed and its own bathroom; second bedroom with two single beds; sofa bed in the living room (base occupancy is 4).\n- **Bathrooms:** two. Geyser of 80 litres.\n- **Kitchen:** full kitchen with 4-burner gas hob **and an oven**, induction plate, microwave, air fryer, blender, kettle, toaster, 400-litre fridge, dining table for 6.\n- **Laundry:** fully automatic washing machine. Drying rack on the balcony.\n- **Cooling and air:** three inverter ACs (both bedrooms and living room). The **master bedroom** AC runs on the generator. Air purifier in each bedroom.\n- **Other:** 50-inch smart TV, desk in the living room, balcony, iron and ironing board, hair dryer.\n- **Parking:** B1-30. **Wi-Fi network:** LH-Guest-502.",
+    "[Manual 5.2 — TV and streaming]\nHouse manual > 5. Wi-Fi, TV and Electronics > 5.2 TV and streaming\n\nEvery apartment has a smart TV with local cable channels and YouTube. You can sign in to your own streaming accounts (for example Netflix). **Please sign out before check-out.** The TV remote and spare batteries are in the TV-stand drawer.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Eat > Budget]\nLahore > Eat > Budget\n\nFor nihari, go to Haji Nihari  on Jail Road or inside Lohari Gate; for chicken paratha rolls go to Karachi Silver Spoon in Liberty Market, and so on lastly go to Muhammadi Nihari in Mozang.\n\nThe 'Food Street' of Gowal Mandi is a must-visit for dinner - you'll find a street full of shops selling fine Lahori fare, and the setting, amidst traditional jharoka architecture, is lovely.  If you make it to Food Street, go by auto rickshaw (Rs 30) or walk to Mochi Gate and try Rasheeds kebabs or Saiyns kebabs.  Mochi Gate is also home to Fazal Sweets and Rafique Sweet House. Bhaiya kabab in Model Town is foremost name in Kabab Street, where you will enjoy bar-b-que with fresh soda. A 200/300-m long street with historically preserved 2/3 storey old houses on both sides which are lightened up in a very special way giving a very historical and magnificent look. The environment is a real creation of culture of Lahore, the mughal era. You will find around a hundred restaurants in this street which mouth watering menus. Do try Chappal Kababas, Saag with Makai ki roti, Golas of Ice, Sardar ki Machli and anything you like because a lot of variety is present."
+  ],
+  "latency_s": 56.435,
+  "llm_s": 54.536,
+  "tool_s": 0.0,
+  "retrieval_s": 0.114,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1479,
+  "completion_tokens": 47,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 54.271806,
+    "load_duration": 0.025043,
+    "prompt_eval_duration": 43.231651,
+    "eval_duration": 10.944904
+  }
+}

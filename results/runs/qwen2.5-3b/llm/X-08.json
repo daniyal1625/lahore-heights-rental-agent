@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! For 5 guests on Nov 12-13, the cost would be PKR 15,000 per night. Please let me check availability.",
+  "scenario_id": "X-08",
+  "guest_message": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.509,
+  "llm_s": 8.575,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 354,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.314741,
+    "load_duration": 0.019839,
+    "prompt_eval_duration": 1.71718,
+    "eval_duration": 6.483298
+  }
+}

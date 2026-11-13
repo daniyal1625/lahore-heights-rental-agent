@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "You are staying for 5 nights. You should check out on the 5th night.",
+  "scenario_id": "R-07",
+  "guest_message": "How many nights am I staying in total and which day do I check out?",
+  "thread_context": {
+    "reservation_id": 90008,
+    "guest_name": "Fatima Noor"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 11.742,
+  "llm_s": 10.779,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 352,
+  "completion_tokens": 20,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 10.508657,
+    "load_duration": 0.006426,
+    "prompt_eval_duration": 7.557635,
+    "eval_duration": 2.920304
+  }
+}

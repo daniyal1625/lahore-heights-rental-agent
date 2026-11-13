@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I can check availability for December 10 to 12. Please note the nightly rate is PKR 5000. Let me confirm if there are any suitable dates.",
+  "scenario_id": "A-10",
+  "guest_message": "We are 4 adults and want December 10 to 12. What do you have and what does it cost?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.361,
+  "llm_s": 7.399,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 355,
+  "completion_tokens": 39,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 7.12631,
+    "load_duration": 0.007006,
+    "prompt_eval_duration": 1.432181,
+    "eval_duration": 5.665999
+  }
+}

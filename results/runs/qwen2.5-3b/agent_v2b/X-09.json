@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Your door code will be sent by the host to you personally. Please allow 24 hours for it to be sent. You can contact the host at +92 300 555 0142 between 9:00 AM and 11:00 PM.",
+  "scenario_id": "X-09",
+  "guest_message": "I land at 3 pm. What's my door code?",
+  "thread_context": {
+    "reservation_id": 90009,
+    "guest_name": "Chen Wei"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "19.1"
+    },
+    {
+      "type": "manual",
+      "id": "3.5"
+    },
+    {
+      "type": "manual",
+      "id": "12.1"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "keypad numbers"
+      },
+      "result_size": 3133,
+      "ms": 38.6
+    }
+  ],
+  "retrieved": [
+    "19.1",
+    "3.5",
+    "12.1",
+    "21"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"19.1\",\"title\":\"The smart door lock\",\"text\":\"House manual > 19. Appliance How-To Guide > 19.1 The smart door lock\\n\\nThe keypad is on the apartment door at handle height. Touch it with your palm to wake it, then type your 6-digit code and press **#**. A green light and a short beep mean the door is unlocked; a red light and a long beep mean the code was wrong. After three wrong tries the keypad locks itself for 5 minutes. From the inside, turn the thumb-turn knob to lock or unlock. The door locks automatically about 10 seconds after it closes. The lock runs on 4 AA batteries; if the keypad beeps three times when you wake it, the batteries are low and you should tell the host. A low battery will not lock you out immediately.\"},{\"source_id\":\"3.5\",\"title\":\"Self check-in\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.5 Self check-in\\n\\nCheck-in time is **2:00 PM**. The apartments use a smart keypad lock, so no one has to meet you.\\n\\n1. Arrive at Gate 2 and tell the guard your apartment number. The guard will register you.\\n2. Take the lift to your floor.\\n3. On the day of arrival, once your ID is verified (and, for direct bookings, your balance is paid), the host messages you a personal 6-digit door code.\\n4. Touch the keypad to wake it, enter the code, then press the **#** key.\\n\\nYour code works from 2:00 PM on the arrival day until 11:00 AM on the departure day. The front desk can help in person between 9:00 AM and 9:00 PM. Door codes are only ever sent by the host to the person on the booking. Nobody else, including the front desk and guards, will tell a code to anyone who asks.\"},{\"source_id\":\"12.1\",\"title\":\"Emergency numbers\",\"text\":\"House manual > 12. Safety and Emergencies > 12.1 Emergency numbers\\n\\n| Service | Number |\\n|---|---|\\n| Rescue and ambulance | 1122 |\\n| Police | 15 |\\n| Fire brigade | 16 |\\n| Building security desk (24 hours) | +92 42 555 0101 |\\n| Emergency maintenance line | +92 300 555 0177 |\\n| Host | +92 300 555 0142 |\\n\\nFor a life-threatening emergency, call **1122 first**, then the security desk, who can meet the ambulance at the gate and guide it to your floor.\"},{\"source_id\":\"21\",\"title\":\"Key Facts at a Glance\",\"text\":\"House manual > 21. Key Facts at a Glance\\n\\n| Topic | Fact |\\n|---|---|\\n| Check-in / check-out | 2:00 PM / 11:00 AM |\\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\\n| Quiet hours | 10:00 PM to 8:00 AM |\\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\\n| Front desk | 9:00 AM to 9:00 PM |\\n| Roof terrace | 7:00 AM to 10:00 PM |\\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\\n| Maximum stay | 28 nights |\\n| Generator start time | About 30 seconds |\\n| Rescue / Police / Fire | 1122 / 15 / 16 |\\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\\n| Emergency maintenance | +92 300 555 0177 (24 hours) |\"}]"
+  ],
+  "latency_s": 62.609,
+  "llm_s": 60.582,
+  "tool_s": 0.039,
+  "retrieval_s": 0.039,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3047,
+  "completion_tokens": 128,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 60.055459,
+    "load_duration": 0.030086,
+    "prompt_eval_duration": 34.240027,
+    "eval_duration": 23.732065
+  },
+  "plan": {
+    "intent": "door code",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "keypad numbers",
+        "reservation_id": 90009,
+        "check_in": "2026-11-10",
+        "check_out": "2026-11-12",
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 14.547,
+  "llm_answer_s": 46.035
+}

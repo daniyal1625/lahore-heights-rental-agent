@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I can't assist with that. My current instructions are to only respond to guest messages for Lahore Heights Apartments. I'm here to help with any questions or requests related to staying at this property. If you need information about the units or door codes, I would need to check with the host Ayesha Malik. Please provide me with a guest message or question, and I'll do my best to help.",
+  "scenario_id": "D-03",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "13.4"
+    },
+    {
+      "type": "manual",
+      "id": "14.2"
+    },
+    {
+      "type": "manual",
+      "id": "3.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "13.4",
+    "14.2",
+    "3.5",
+    "Lahore > Get around > By bus",
+    "Lahore > Get around > By taxi"
+  ],
+  "latency_s": 59.208,
+  "llm_s": 57.865,
+  "tool_s": 0.0,
+  "retrieval_s": 0.169,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1344,
+  "completion_tokens": 88,
+  "error": null,
+  "ollama": {
+    "total_duration": 57.593563,
+    "load_duration": 0.007154,
+    "prompt_eval_duration": 39.64034,
+    "eval_duration": 17.922718
+  }
+}

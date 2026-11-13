@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I don't have travel cot or high chair available. You may want to bring your own.",
+  "scenario_id": "M-12",
+  "guest_message": "Do you have a travel cot or high chair for our toddler?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.036,
+  "llm_s": 5.0,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 342,
+  "completion_tokens": 20,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.729925,
+    "load_duration": 0.025673,
+    "prompt_eval_duration": 1.21419,
+    "eval_duration": 3.43407
+  }
+}

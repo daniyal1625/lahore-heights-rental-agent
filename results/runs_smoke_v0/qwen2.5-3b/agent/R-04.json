@@ -1,0 +1,37 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "You owe PKR 76,000. Payment is due by 2026-11-18. Please check the payment status for details.",
+  "scenario_id": "R-04",
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90004"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90004
+      },
+      "result_size": 514,
+      "ms": 15.7
+    }
+  ],
+  "retrieved": [],
+  "latency_s": 36.761,
+  "llm_s": 34.86,
+  "tool_s": 0.016,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2016,
+  "completion_tokens": 62,
+  "error": null,
+  "ollama": {
+    "total_duration": 34.596927,
+    "load_duration": 0.01608,
+    "prompt_eval_duration": 24.505342,
+    "eval_duration": 10.020106
+  }
+}

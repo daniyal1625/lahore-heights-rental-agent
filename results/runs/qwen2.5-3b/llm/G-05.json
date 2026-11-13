@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have information about the Faisal Movers terminal in Lahore. I recommend checking online for the location or contacting a local transportation service for the most accurate information.",
+  "scenario_id": "G-05",
+  "guest_message": "I want to take a coach to Islamabad. Where is the Faisal Movers terminal in Lahore?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.725,
+  "llm_s": 8.788,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 349,
+  "completion_tokens": 40,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.51541,
+    "load_duration": 0.015145,
+    "prompt_eval_duration": 1.437211,
+    "eval_duration": 7.019327
+  }
+}

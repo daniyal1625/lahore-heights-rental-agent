@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Your total price includes the nightly rate, extra guest fees, and optional fees. The nightly rate covers electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels, and all taxes. Extra guest fees are PKR 2,000 per guest per night. Optional fees include early check-in, late check-out, mid-stay cleaning, shared laundry, extra vehicle in the basement, and travel cot and high chair rental. Please note that travel cot and high chair rental is free of charge, but they are subject to availability and require a request at least 48 hours before arrival. For any other fees, I will check with the host.",
+  "scenario_id": "R-06",
+  "guest_message": "Can you tell me my total price and what extra charges are on it?",
+  "thread_context": {
+    "reservation_id": 90006,
+    "guest_name": "Daniel Meyer"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.2"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    },
+    {
+      "type": "manual",
+      "id": "11.7"
+    },
+    {
+      "type": "manual",
+      "id": "15.1"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "total price and extra charges"
+      },
+      "result_size": 2386,
+      "ms": 34.3
+    }
+  ],
+  "retrieved": [
+    "2.2",
+    "2.3",
+    "11.7",
+    "15.1"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"2.2\",\"title\":\"Extra guest fee\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.2 Extra guest fee\\n\\nIf the number of guests is above the base occupancy of the apartment, an extra guest fee of **PKR 2,000 per extra guest per night** applies, up to the maximum occupancy. For example, three guests in the One-Bedroom (base 2) pay one extra guest fee each night, and five guests in the Two-Bedroom (base 4) pay one extra guest fee each night. The Studio has no extra guest fee because its base and maximum are both 2.\"},{\"source_id\":\"2.3\",\"title\":\"What is included in the nightly rate, and optional fees\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\\n\\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\\n\\n| Item | Fee |\\n|---|---|\\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\\n| Travel cot, high chair, extra heater, plug adapters | Free |\"},{\"source_id\":\"11.7\",\"title\":\"Damage and loss\",\"text\":\"House manual > 11. House Rules > 11.7 Damage and loss\\n\\nPlease report breakages straight away. Accidental breakage of small items (a glass or plate) is not a problem if you tell us. Larger damage or missing items are charged at replacement cost; for direct bookings this is deducted from the security deposit, and for platform bookings we claim through the platform. We take photos of every apartment before each stay.\"},{\"source_id\":\"15.1\",\"title\":\"Travel cot and high chair\",\"text\":\"House manual > 15. Extras and Requests > 15.1 Travel cot and high chair\\n\\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.\"}]"
+  ],
+  "latency_s": 153.914,
+  "llm_s": 152.127,
+  "tool_s": 0.034,
+  "retrieval_s": 0.034,
+  "n_llm_calls": 3,
+  "prompt_tokens": 3877,
+  "completion_tokens": 592,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 151.578655,
+    "load_duration": 0.064446,
+    "prompt_eval_duration": 62.029363,
+    "eval_duration": 89.394946
+  },
+  "plan": {
+    "intent": "total price and extra charges",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "total price and extra charges",
+        "reservation_id": 90006,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 2,
+  "llm_plan_s": 94.263,
+  "llm_answer_s": 57.864
+}

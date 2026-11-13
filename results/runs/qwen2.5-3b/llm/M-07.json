@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, smoking is allowed on the balcony. Please be mindful of the no-smoking signs inside the apartment.",
+  "scenario_id": "M-07",
+  "guest_message": "Can I smoke on the balcony?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.778,
+  "llm_s": 6.547,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 336,
+  "completion_tokens": 23,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.275985,
+    "load_duration": 0.029252,
+    "prompt_eval_duration": 1.395395,
+    "eval_duration": 4.810016
+  }
+}

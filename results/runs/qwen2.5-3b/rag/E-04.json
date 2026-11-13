@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The host decides case by case on special rates or long-stay discounts. You will need to ask the host directly for this.",
+  "scenario_id": "E-04",
+  "guest_message": "We'd like to stay a whole month. Is there a discount for long stays?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.3",
+    "2.7",
+    "2.8",
+    "Lahore > Sleep",
+    "Lahore > Sleep > Budget"
+  ],
+  "evidence": [
+    "[Manual 20.3 — Long stays]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\n\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\n- Studio guests use the shared laundry room for longer stays (section 9.1).\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles."
+  ],
+  "latency_s": 45.257,
+  "llm_s": 43.925,
+  "tool_s": 0.0,
+  "retrieval_s": 0.134,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1341,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 43.616771,
+    "load_duration": 0.005675,
+    "prompt_eval_duration": 38.989733,
+    "eval_duration": 4.56099
+  }
+}

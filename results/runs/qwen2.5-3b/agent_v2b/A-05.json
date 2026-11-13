@@ -1,0 +1,73 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The studio is available for your dates, Nov 25-27. The total cost for your booking will be PKR 19,000.",
+  "scenario_id": "A-05",
+  "guest_message": "Can I book the studio for Nov 25-27?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-25..2026-11-27"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-25",
+        "check_out": "2026-11-27"
+      },
+      "result_size": 759,
+      "ms": 10.9
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-25\",\"check_out\":\"2026-11-27\",\"nights\":2,\"guests\":null,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":true,\"nightly_price_pkr\":9500,\"stay_total_pkr\":19000,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":true,\"nightly_price_pkr\":14000,\"stay_total_pkr\":28000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":true,\"nightly_price_pkr\":21000,\"stay_total_pkr\":42000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":true,\"nightly_price_pkr\":38000,\"stay_total_pkr\":76000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 40.524,
+  "llm_s": 38.582,
+  "tool_s": 0.011,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2329,
+  "completion_tokens": 168,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.055345,
+    "load_duration": 0.014779,
+    "prompt_eval_duration": 9.98222,
+    "eval_duration": 27.938189
+  },
+  "plan": {
+    "intent": "extend stay and deposit",
+    "calls": [
+      {
+        "tool": "get_reservation",
+        "query": null,
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      },
+      {
+        "tool": "check_availability",
+        "query": null,
+        "reservation_id": null,
+        "check_in": "2026-11-25",
+        "check_out": "2026-11-27",
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 23.942,
+  "llm_answer_s": 14.64
+}

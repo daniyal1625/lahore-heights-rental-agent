@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry to hear that. Please do the following immediately to ensure safety:\n1. Turn off any gas appliances.\n2. Open windows and doors to ventilate.\n3. Evacuate the apartment and move to a safe area.\n4. Call emergency services at 112 immediately.",
+  "scenario_id": "D-08",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 20.409,
+  "llm_s": 18.92,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 343,
+  "completion_tokens": 61,
+  "error": null,
+  "ollama": {
+    "total_duration": 18.648469,
+    "load_duration": 0.006981,
+    "prompt_eval_duration": 9.129401,
+    "eval_duration": 9.435695
+  }
+}

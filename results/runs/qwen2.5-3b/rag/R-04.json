@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "For your booking, you need to pay 50% now and the remaining 50% by 48 hours before your arrival. Please transfer the first installment to our bank account.",
+  "scenario_id": "R-04",
+  "guest_message": "How much do I still owe, and when is it due?",
+  "thread_context": {
+    "reservation_id": 90004,
+    "guest_name": "Hamza Sheikh"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "14.5"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Go next"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.5",
+    "14.5",
+    "14.3",
+    "Lahore > Sleep > Budget",
+    "Lahore > Go next"
+  ],
+  "evidence": [
+    "[Manual 2.5 — Paying for your booking]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\n\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.",
+    "[Manual 14.5 — Lost and found]\nHouse manual > 14. Checking Out > 14.5 Lost and found\n\nWe keep found items for **30 days**. Message the host with a description. We can send items by courier at the guest's cost.",
+    "[Manual 14.3 — Late check-out]\nHouse manual > 14. Checking Out > 14.3 Late check-out\n\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles.",
+    "[Guide Lahore > Go next]\nLahore > Go next\n\nWagah Border The border between Pakistan and India is also an attraction for tourists, with a ceremony at the border everyday.\n\nFor foreigners, crossing the Wagah border to India and visiting the Golden Temple in Amritsar is a lifetime experience. However, for this you will need an Indian visa. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200(800 from the raja sansi airport) for the entire vehicle. Amritsar is about 32 km from Lahore. As of July 2024, the Pakistani side is under construction so the Indian side is much better.\n\nChanga Manga is a man-made forest 68 km from Lahore. There is a lake, and a miniature railway, which winds its way through its forest. Chhanga Manga has 12,510 acres of plantations. It is a popular picnic spot spread over 50 acres with a lake and rowboats, motorboats, children's park, swimming pool, cafeteria, canteen and rest houses"
+  ],
+  "latency_s": 40.467,
+  "llm_s": 39.262,
+  "tool_s": 0.0,
+  "retrieval_s": 0.143,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1299,
+  "completion_tokens": 40,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.992215,
+    "load_duration": 0.010652,
+    "prompt_eval_duration": 31.946545,
+    "eval_duration": 7.018666
+  }
+}

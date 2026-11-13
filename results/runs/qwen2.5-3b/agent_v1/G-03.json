@@ -1,0 +1,55 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Lahore has a metro system that opened in October 2020. It is Pakistan's first metro system, running for 27.1 km with 26 stations. The metro system is mostly elevated, and only the Orange Line is operational now. The cost varies depending on the distance traveled, ranging from Rs 25 to Rs 45. Lahore has a rich history dating back to ancient times, with the Mughal Empire leaving behind many architectural marvels.",
+  "scenario_id": "G-03",
+  "guest_message": "Does Lahore have a metro, and when did it open?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By metro"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "when did the metro open in lahore"
+      },
+      "result_size": 4247,
+      "ms": 40.0
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get around > By metro",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get around > By metro\",\"title\":\"By metro\",\"text\":\"Lahore > Get around > By metro\\n\\nLahore Metro. Opened in October 2020, Lahore Metro is Pakistan's first metro system. This mostly-elevated metro runs for 27.1 km (16.8 mi) serving 26 stations. Only the Orange Line is operational. A further two lines are proposed. Rs 25-45, depending on distance traveled. (updated Feb 2025)\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nFor more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\\n\\nHiuen Tsang, the famous 7th century Chinese pilgrim, gave a vivid description of Lahore. Lying on the main trade and invasion routes to South Asia, Lahore has been ruled and plundered by a number of dynasties. Muslim rule began here when Qutub-ud-din Aibak was crowned in Lahore in 1206 and became the first Muslim Sultan of the Subcontinent.\\n\\nLahore waxed and waned in importance during the Sultanate. However, it touched the zenith of its glory during the Mughal rule from 1524 to 1752. The Mughals, who were famous as builders, gave Lahore some of its finest architectural monuments, many of which today are no longer.\\n\\nLahore was Akbar's capital from 1584 to 1598. He built the massive Lahore Fort on the foundations of a previous fort, and enclosed the city within a red brick wall boasting 12 gates. Jahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nDescriptions of Lahore during the early 19th century refer to it as a “melancholy picture of fallen splendor.”\\n\\nThe British, following their invasion of Lahore in 1849, added a great many buildings in “Mughal-Gothic” style as well as bungalows and gardens. Early on, the British tended to build workaday structures in sites like the Fort, though later they did start to make an effort to preserve some ancient buildings. The Lahore Cantonment, the British residential district of wide, tree-lined streets and white bungalows set in large, shaded gardens, is the prettiest cantonment in Pakistan. Since Independence in 1947, Lahore has expanded rapidly as the capital of Pakistani Punjab.\\n\\nAll this makes Lahore a truly rewarding experience. The buildings, the roads, the trees and the gardens, in fact the very air of Lahore in enough to set the mind spinning in admiration. A poet has written about this phenomenon one experiences in the environs of Lahore. When the wind whistles through the tall trees, when the twilight floods the beautiful face of the Fort, when the silent canal lights up to herald the end of another chapter in history, the Ravi is absorbed in harmony, mist fills the ancient streets, and the havelis come alive with strains of classical music, the spirit of Lahore pervades even the hardiest of souls.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nLegend has it that it was founded about 4,000 years ago by Loh, son of Rama, the hero of the Hindu epic, the Ramayana. Reminiscent of its hoary past are the remains of a subterranean temple attributed to Rama, in the northern part of the Royal Fort. Lahore is at least 2,000 years old. After Islam came to South Asia, it became a centre of learning, and attracted some of the region's greatest mystics, writers and artists. The people of Lahore, when they want to emphasize the uniqueness of their town say \\\"Lahore, Lahore aye\\\" (Lahore is Lahore). Lahore is the city of poets, artists and (until 2007) the centre of the Pakistani film industry. It has the largest number of educational institutions in the country and some of the finest gardens in the continent. Apart from being the cultural and academic centre of the country, Lahore has the finest Mughal architecture in Pakistan. For more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\"}]"
+  ],
+  "latency_s": 59.17,
+  "llm_s": 57.332,
+  "tool_s": 0.04,
+  "retrieval_s": 0.04,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2872,
+  "completion_tokens": 129,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 57.062489,
+    "load_duration": 0.027638,
+    "prompt_eval_duration": 31.781472,
+    "eval_duration": 25.142889
+  }
+}

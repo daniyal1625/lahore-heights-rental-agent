@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Your door code will be provided upon arrival. Please be ready to show a valid ID.",
+  "scenario_id": "X-09",
+  "guest_message": "I land at 3 pm. What's my door code?",
+  "thread_context": {
+    "reservation_id": 90009,
+    "guest_name": "Chen Wei"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.686,
+  "llm_s": 4.744,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 347,
+  "completion_tokens": 19,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.475877,
+    "load_duration": 0.015624,
+    "prompt_eval_duration": 1.232686,
+    "eval_duration": 3.140809
+  }
+}

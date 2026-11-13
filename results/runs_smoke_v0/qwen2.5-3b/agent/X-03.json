@@ -1,0 +1,23 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "I will check with the host regarding refunds. Please allow some time for a response.",
+  "scenario_id": "X-03",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 8.766,
+  "llm_s": 6.14,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 892,
+  "completion_tokens": 18,
+  "error": null,
+  "ollama": {
+    "total_duration": 5.876486,
+    "load_duration": 0.006772,
+    "prompt_eval_duration": 1.052689,
+    "eval_duration": 4.670752
+  }
+}

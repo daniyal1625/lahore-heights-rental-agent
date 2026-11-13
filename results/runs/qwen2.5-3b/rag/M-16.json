@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but the check-out time is strictly at 11:00 AM. If you need to leave earlier, you can leave your luggage at the front desk until 9:00 PM. Please message the host for any adjustments.",
+  "scenario_id": "M-16",
+  "guest_message": "Can I check out at 1 pm instead of 11?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "14.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "18",
+    "14.3",
+    "14.1",
+    "Lahore > Do",
+    "Lahore > Buy > Other"
+  ],
+  "evidence": [
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 14.3 — Late check-out]\nHouse manual > 14. Checking Out > 14.3 Late check-out\n\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).",
+    "[Manual 14.1 — Check-out time]\nHouse manual > 14. Checking Out > 14.1 Check-out time\n\nCheck-out is at **11:00 AM**. The next guest may arrive at 2:00 PM, and the cleaners need the time in between. Please message the host when you leave.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > Buy > Other]\nLahore > Buy > Other\n\nHigher end khadi can be bought at the Khaadi shop in Mini Market.\n\n8 Hafeez Centre. One of the famous mobile and computer market of the province Punjab, with inexpensive software (pirated), and hardware that can be bargained for. (updated Feb 2017)\n\nFortress Stadium has a huge variety of inexpensive linens, clothes, DVDs.\n\nEhsan chappal house has shoes for ladies, also check out Stylo shoes for stylish shoes and clutches/purses.\n\n9 Moon Market. Jewellery market, banks, clothes market (mostly for women and children), restaurants. (updated Feb 2017)\n\n10 Kareem Block Market. Men's wear - casual and formal wear for men of all ages. (updated Feb 2017)\n\nJoray Pull is a developing area near airport and Rangers HQ. It's safe and you do a lot of eating activity here along with shopping.\n\nLevi's products are comparatively cheap as they're produced in Pakistan. A regular pair of trousers in an official retail store will be between 5,000 and 10,000 Rs."
+  ],
+  "latency_s": 45.796,
+  "llm_s": 44.573,
+  "tool_s": 0.0,
+  "retrieval_s": 0.097,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1371,
+  "completion_tokens": 53,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 44.303313,
+    "load_duration": 0.023416,
+    "prompt_eval_duration": 33.802943,
+    "eval_duration": 10.430771
+  }
+}

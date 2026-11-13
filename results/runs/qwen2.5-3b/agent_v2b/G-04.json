@@ -1,0 +1,76 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The Badshahi Mosque was built by the Mughal emperor Aurangzeb. It is located near Delhi Gate and is one of Lahore's most famous Mughal-era landmarks.",
+  "scenario_id": "G-04",
+  "guest_message": "Who built Badshahi Mosque?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Badshahi Mosque built by whom"
+      },
+      "result_size": 5305,
+      "ms": 37.8
+    }
+  ],
+  "retrieved": [
+    "Lahore > See > Walled City",
+    "Lahore",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\\n\\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\\n\\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\\n\\n6 Minar-e-Pakistan. This tower, sometimes called the \\\"Eiffel Tower of Pakistan\\\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\\n\\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"},{\"source_id\":\"Lahore > Understand > History\",\"title\":\"History\",\"text\":\"Lahore > Understand > History\\n\\nJahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens.\\n\\nJahangir loved the city, and he and his wife Noor Jahan are buried at Shahdara on the outskirts of Lahore. Aurangzeb (1658-1707) gave Lahore its most famous monuments: the Badshahi Masjid (Royal Mosque) and the Alamgiri gateway to the fort.\\n\\nDuring the eighteenth century, as Mughal power dwindled, there were constant invasions. Lahore was a suba, a province of the Empire, governed by provincial rulers with their own courts. The 1740s were years of chaos, and between 1745 and 1756 there were nine changes of governors. Invasions and chaos in local government allowed bands of warring Sikhs to gain control in some areas. Lahore ended up being ruled by a triumvirate of Sikhs of dubious character, and the population of the city invited Ranjit Singh to invade. He took the city in 1799. Holding the capital gave him enough legitimacy to proclaim himself the Emperor. Descriptions of Lahore during the early 19th century refer to it as a “melancholy picture of fallen splendor.”\"},{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\nAn exquisite tiled mosque located near Delhi Gate.\\n\\n8 Shahi Hammam (Imperial Baths). A Persian-style bathhouse built in 1635, restored in 2015, and covered with beautiful frescos. (updated Feb 2017)\\n\\nHaveli Asif Jah.  (updated Feb 2017)\\n\\nIn the Mughal days, the Old City was surrounded by a 9-metre-high brick wall and had a rampart running around it which served as a protection for the city. A circular road around the rampart gave access to the city through thirteen gates. The walls were mostly destroyed by the British after the 1857 rebellion, but some of the imposing structures of the gates are still preserved. Listed clockwise, starting from Lahore Fort in the north:\\n\\n9 Raushnai Gate, or the \\\"Gate of Light\\\" is between the royal mosque and the citadels. There is a very famous gali (row or narrow street) commonly known as the Shahi Mahala. The name Shahi has been given after the Shahi Qila. People living here are simple. There are various food shops located around the gate.\\n\\n10 Masti Gate.\\n\\n11 Kashmiri Gate, so called because it faces the direction of Kashmir.\\n\\n12 Khizri or the Sheranwala Gate. The river in former times flowed by the city walls, and the crossing was near this spot. The gate was named after the name of Khizr Elias.\"}]"
+  ],
+  "latency_s": 55.31,
+  "llm_s": 53.412,
+  "tool_s": 0.038,
+  "retrieval_s": 0.038,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3340,
+  "completion_tokens": 86,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 52.884877,
+    "load_duration": 0.020691,
+    "prompt_eval_duration": 38.245917,
+    "eval_duration": 14.440844
+  },
+  "plan": {
+    "intent": "old city sights",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "Badshahi Mosque built by whom",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 8.523,
+  "llm_answer_s": 44.888
+}

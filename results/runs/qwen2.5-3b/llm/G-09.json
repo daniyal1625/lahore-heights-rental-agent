@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Shalimar Gardens are about 10 km from Lahore Heights Apartments. You can reach there by taking a taxi or a bus.",
+  "scenario_id": "G-09",
+  "guest_message": "Where are the Shalimar Gardens?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.062,
+  "llm_s": 5.109,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 337,
+  "completion_tokens": 28,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.844752,
+    "load_duration": 0.007631,
+    "prompt_eval_duration": 0.822555,
+    "eval_duration": 3.955639
+  }
+}

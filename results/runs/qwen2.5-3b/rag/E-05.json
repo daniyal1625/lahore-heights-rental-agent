@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but Lahore Heights Apartments does not have a PlayStation or board games. However, we do have a smart TV with local channels and streaming accounts. Let me know if you need any other recommendations for entertainment.",
+  "scenario_id": "E-05",
+  "guest_message": "Do you have a PlayStation or any board games for the kids?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "5.2"
+    },
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "manual",
+      "id": "14.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "5.2",
+    "20.1",
+    "14.5",
+    "Lahore > Do",
+    "Lahore > Buy > Other"
+  ],
+  "evidence": [
+    "[Manual 5.2 — TV and streaming]\nHouse manual > 5. Wi-Fi, TV and Electronics > 5.2 TV and streaming\n\nEvery apartment has a smart TV with local cable channels and YouTube. You can sign in to your own streaming accounts (for example Netflix). **Please sign out before check-out.** The TV remote and spare batteries are in the TV-stand drawer.",
+    "[Manual 20.1 — Families with children]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\n\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).",
+    "[Manual 14.5 — Lost and found]\nHouse manual > 14. Checking Out > 14.5 Lost and found\n\nWe keep found items for **30 days**. Message the host with a description. We can send items by courier at the guest's cost.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > Buy > Other]\nLahore > Buy > Other\n\nHigher end khadi can be bought at the Khaadi shop in Mini Market.\n\n8 Hafeez Centre. One of the famous mobile and computer market of the province Punjab, with inexpensive software (pirated), and hardware that can be bargained for. (updated Feb 2017)\n\nFortress Stadium has a huge variety of inexpensive linens, clothes, DVDs.\n\nEhsan chappal house has shoes for ladies, also check out Stylo shoes for stylish shoes and clutches/purses.\n\n9 Moon Market. Jewellery market, banks, clothes market (mostly for women and children), restaurants. (updated Feb 2017)\n\n10 Kareem Block Market. Men's wear - casual and formal wear for men of all ages. (updated Feb 2017)\n\nJoray Pull is a developing area near airport and Rangers HQ. It's safe and you do a lot of eating activity here along with shopping.\n\nLevi's products are comparatively cheap as they're produced in Pakistan. A regular pair of trousers in an official retail store will be between 5,000 and 10,000 Rs."
+  ],
+  "latency_s": 33.63,
+  "llm_s": 32.558,
+  "tool_s": 0.0,
+  "retrieval_s": 0.095,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1167,
+  "completion_tokens": 45,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.293171,
+    "load_duration": 0.005605,
+    "prompt_eval_duration": 22.910271,
+    "eval_duration": 9.351445
+  }
+}

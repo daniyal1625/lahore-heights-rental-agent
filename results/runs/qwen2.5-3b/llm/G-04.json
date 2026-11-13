@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque was built by Emperor Aurangzeb in 1671.",
+  "scenario_id": "G-04",
+  "guest_message": "Who built Badshahi Mosque?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.655,
+  "llm_s": 4.775,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 336,
+  "completion_tokens": 20,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.512812,
+    "load_duration": 0.013465,
+    "prompt_eval_duration": 0.977721,
+    "eval_duration": 3.471456
+  }
+}

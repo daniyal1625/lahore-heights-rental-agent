@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have a car to offer rides. The Badshahi Mosque usually opens at 7:00 AM. You might want to check their official website for any early opening hours.",
+  "scenario_id": "X-10",
+  "guest_message": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 11.072,
+  "llm_s": 10.111,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 356,
+  "completion_tokens": 45,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 9.849082,
+    "load_duration": 0.007424,
+    "prompt_eval_duration": 1.857145,
+    "eval_duration": 7.751963
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have the status of reservation 99999. I would need to check with the host Ayesha Malik to get the most accurate information. I'll inform her of your inquiry.",
+  "scenario_id": "D-01",
+  "guest_message": "What's the status of reservation 99999?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "21"
+    },
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "manual",
+      "id": "2.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Go next"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "21",
+    "11.4",
+    "2.4",
+    "Lahore > Go next",
+    "Lahore > Eat > Splurge"
+  ],
+  "evidence": [
+    "[Manual 21 — Key Facts at a Glance]\nHouse manual > 21. Key Facts at a Glance\n\n| Topic | Fact |\n|---|---|\n| Check-in / check-out | 2:00 PM / 11:00 AM |\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\n| Quiet hours | 10:00 PM to 8:00 AM |\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\n| Front desk | 9:00 AM to 9:00 PM |\n| Roof terrace | 7:00 AM to 10:00 PM |\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\n| Maximum stay | 28 nights |\n| Generator start time | About 30 seconds |\n| Rescue / Police / Fire | 1122 / 15 / 16 |\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\n| Emergency maintenance | +92 300 555 0177 (24 hours) |",
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Manual 2.4 — Security deposit (direct bookings only)]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.4 Security deposit (direct bookings only)\n\nFor **direct bookings** (booked with us and not through a platform) we collect a refundable security deposit of **PKR 25,000**. Pay it by bank transfer or mobile wallet (Easypaisa or JazzCash) at least 24 hours before arrival. The host sends the payment details. After you check out and we inspect the apartment, the deposit is refunded to the same account within **3 business days**, minus the cost of any damage or fees described in section 11.7.\n\nFor bookings made through **Airbnb or Booking.com** we do not collect a deposit. The platform's own damage-protection rules apply instead.",
+    "[Guide Lahore > Go next]\nLahore > Go next\n\nIt is a popular picnic spot spread over 50 acres with a lake and rowboats, motorboats, children's park, swimming pool, cafeteria, canteen and rest houses\n\n48 Hiran Minar (About 35 km away, near Sheikhupura). A peaceful rural park with a lake and minaret. It used to be favourite hunting sport of the Muslim kings, especially the Mughals. Jehangir erected the pavilion-like monument to commemorate the death of his pet deer (Hiran means deer). It served a double purpose as from its top the hunters could locate the habitations of deer. It is a beautiful picnic as well as a historic spot. A high Bara Dari Ghat is constructed right in middle of a Talab. A man made big lake, boating facility is also available. A good garden lay out is surrounding the place. (updated Feb 2017)\n\nThe ancient city of Harappa was one of the first Indus Valley excavation sites; a must see if you're into archaeology. Harappa lies about 300 km southwest of Lahore",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\n☏ +91 42 35789824\n\nThe Skye (Skye - Dining in the Clouds), 3 C3, Noor Jehan Road, Block C 3 Gulberg III (near Liberty Chowk), ☏ +92 33164778886, toll-free:  +92 42 111 463 446. One of the highest rooftop restaurants in Lahore, it is on the 19th floor of the Indigo Hotel overlooking the metropolitan of Lahore. MM Alam Road on one side and Liberty on the other. It provides buffet and à-la-carte menu. (updated Jan 2023)\n\nLoafology Bakery & Cafe, Gold Crest Mall sector DD phase 4 Dha, ☏ +92 042 32175707, info@loafology.com. Daily 8AM–11PM. Casual dining and gatherings; offers a variety of vegetarian and vegan options. Rs 1500-4000. (updated Jan 2025)"
+  ],
+  "latency_s": 49.026,
+  "llm_s": 47.969,
+  "tool_s": 0.0,
+  "retrieval_s": 0.13,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1536,
+  "completion_tokens": 48,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 47.695721,
+    "load_duration": 0.007051,
+    "prompt_eval_duration": 36.32377,
+    "eval_duration": 11.257091
+  }
+}

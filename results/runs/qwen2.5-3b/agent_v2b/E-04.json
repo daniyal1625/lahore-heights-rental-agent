@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "For a whole month stay, a discount is not available. Longer stays require the host's approval. Please ask the host for details.",
+  "scenario_id": "E-04",
+  "guest_message": "We'd like to stay a whole month. Is there a discount for long stays?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "2.6"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "long stay discount policy"
+      },
+      "result_size": 2596,
+      "ms": 32.1
+    }
+  ],
+  "retrieved": [
+    "20.3",
+    "2.6",
+    "2.7",
+    "2.8"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"20.3\",\"title\":\"Long stays\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\\n\\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\\n- Studio guests use the shared laundry room for longer stays (section 9.1).\\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).\"},{\"source_id\":\"2.6\",\"title\":\"Cancellation policy\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.6 Cancellation policy\\n\\n- **Direct bookings:** free cancellation with a full refund up to **7 days before the arrival date**. If you cancel between 7 days and 48 hours before arrival, you receive a 50% refund. Within 48 hours of arrival there is no refund. Refunds are processed within 5 business days to the original payment method.\\n- **Bookings made through Airbnb or Booking.com:** the cancellation policy shown on your platform booking applies, not the direct-booking policy above. Cancel and request refunds through the platform.\\n\\nRefund exceptions (illness, flight problems and similar) are decided by the host. See section 2.8.\"},{\"source_id\":\"2.7\",\"title\":\"Changing or extending your stay\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\\n\\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.\"},{\"source_id\":\"2.8\",\"title\":\"Decisions only the host can make\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\\n\\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\\n\\n- refunds, compensation or goodwill gestures\\n- special rates or long-stay discounts\\n- exceptions to check-in or check-out times\\n- changes to booking dates or moving to a different apartment\\n- deductions from the security deposit\\n- stays longer than 28 nights\"}]"
+  ],
+  "latency_s": 33.013,
+  "llm_s": 31.175,
+  "tool_s": 0.032,
+  "retrieval_s": 0.032,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2654,
+  "completion_tokens": 72,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 30.643986,
+    "load_duration": 0.017226,
+    "prompt_eval_duration": 19.050154,
+    "eval_duration": 11.470861
+  },
+  "plan": {
+    "intent": "long stay discount",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "long stay discount policy",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 8.142,
+  "llm_answer_s": 23.033
+}

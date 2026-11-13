@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I understand this is urgent. Please follow these steps to ensure safety:\n\n1. Do not switch any lights or electrical appliances on or off, and do not use a lighter or match.\n2. Turn the red gas shut-off lever under the kitchen sink a quarter turn so it is across the pipe.\n3. Open windows and the balcony door.\n4. Leave the apartment and call the security desk and the emergency maintenance line from outside.\n\nDo not go back inside until Rafiq or the security team says it is safe.",
+  "scenario_id": "D-08",
+  "guest_message": "HELP I can smell gas in the kitchen!!",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "12.3"
+    },
+    {
+      "type": "manual",
+      "id": "8.2"
+    },
+    {
+      "type": "manual",
+      "id": "8.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay safe"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "12.3",
+    "8.2",
+    "8.4",
+    "Lahore > Stay healthy",
+    "Lahore > Stay safe"
+  ],
+  "evidence": [
+    "[Manual 12.3 — If you smell gas]\nHouse manual > 12. Safety and Emergencies > 12.3 If you smell gas\n\n1. Do **not** switch any lights or electrical appliances on or off, and do not use a lighter or match.\n2. Turn the **red gas shut-off lever under the kitchen sink** a quarter turn so it is across the pipe.\n3. Open windows and the balcony door.\n4. Leave the apartment and call the security desk and the emergency maintenance line from outside.\n\nDo not go back inside until Rafiq or the security team says it is safe.",
+    "[Manual 8.2 — Using the gas hob]\nHouse manual > 8. Kitchen and Cooking > 8.2 Using the gas hob\n\nPiped gas supplies the hob. In winter the gas pressure can be low early in the morning and the flame may look weak. This is normal; use the induction plate instead. To light the hob, press and turn the knob, and hold it for a few seconds. **Always turn the hob off when you leave the kitchen.** The red gas shut-off lever is under the kitchen sink (section 12.3).",
+    "[Manual 8.4 — Fridge, cooking smells and the dishes]\nHouse manual > 8. Kitchen and Cooking > 8.4 Fridge, cooking smells and the dishes\n\nPlease wash your dishes before check-out. There is no dishwasher. Use the exhaust fan when frying. Please do not pour oil down the sink; let it cool and put it in the bin.",
+    "[Guide Lahore > Stay healthy]\nLahore > Stay healthy\n\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\n\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\n\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\n\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\n\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\n\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing).",
+    "[Guide Lahore > Stay safe]\nLahore > Stay safe\n\nStreet crimes in Lahore are not common but special precautions must be taken by visitors.\n\nDemonstrations aren't uncommon and should be avoided at all cost. In early 2006, the Prophet Muhammad cartoon protests quickly got out of hand, and several businesses were torched along with scores of cars. If a large demonstration or protest is underway, foreigners should try to remain at their hotels until the dust settles.\n\nIn general, visitors will find the locals very curious, very eager to help. Being friendly and smiling at people goes a long way. If you're a woman, though, it's best to be sparing with smiles lest people get too friendly; though this is mostly in areas like bazaars, not the actual city.\n\nIf you enter a mosque, women should wear a dupatta, which is a scarf used by local females to cover their heads. Men & women should also remove their shoes while entering in a mosque.\n\nAvoid traveling to unlit areas at night, especially alone. Use common sense when hanging out with friends, and definitely avoid being intoxicated in public as it is an Islamic country.\n\nBeware of pickpockets when you are in crowded areas like Liberty market, the airport, bus stands, the railway station, Anarkali, Ichra shopping centre, or Mall road.\n\nIn an emergency you can call police help line 15 or call Rescue Services at 1122."
+  ],
+  "latency_s": 61.098,
+  "llm_s": 59.889,
+  "tool_s": 0.0,
+  "retrieval_s": 0.134,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1269,
+  "completion_tokens": 105,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 59.632332,
+    "load_duration": 0.005999,
+    "prompt_eval_duration": 36.416443,
+    "eval_duration": 23.186914
+  }
+}

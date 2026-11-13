@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque is free to enter. Its opening hours are typically 8:00 AM to 4:00 PM, but it may vary. For the most accurate information, you might want to check their official website or contact them directly.",
+  "scenario_id": "G-01",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 11.865,
+  "llm_s": 9.875,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 345,
+  "completion_tokens": 53,
+  "error": null,
+  "ollama": {
+    "total_duration": 9.597219,
+    "load_duration": 0.016013,
+    "prompt_eval_duration": 1.189067,
+    "eval_duration": 8.342884
+  }
+}

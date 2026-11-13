@@ -1,0 +1,82 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The apartment is available from November 12 to November 14. Early check-in is possible from 12:00 PM for PKR 2,000, but only if the apartment was empty the night before. Please request it at least 24 hours before arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned. Luggage storage is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk. Late check-out until 2:00 PM costs PKR 2,500. It is only possible if no guest is arriving in your apartment that day, and it must be requested by 9:00 PM the evening before. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM.",
+  "scenario_id": "A-01",
+  "guest_message": "Hi, do you have anything free from November 12 to November 14? Two of us.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "14.5"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "Hi, do you have anything free from November 12 to November 14? Two of us."
+      },
+      "result_size": 2517,
+      "ms": 2534.7
+    }
+  ],
+  "retrieved": [
+    "14.5",
+    "3.6",
+    "14.3",
+    "18"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"14.5\",\"title\":\"Lost and found\",\"text\":\"House manual > 14. Checking Out > 14.5 Lost and found\\n\\nWe keep found items for **30 days**. Message the host with a description. We can send items by courier at the guest's cost.\"},{\"source_id\":\"3.6\",\"title\":\"Early check-in and luggage storage\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\\n\\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.\"},{\"source_id\":\"14.3\",\"title\":\"Late check-out\",\"text\":\"House manual > 14. Checking Out > 14.3 Late check-out\\n\\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).\"},{\"source_id\":\"18\",\"title\":\"Quick FAQ\",\"text\":\"House manual > 18. Quick FAQ\\n\\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\\n\\n**Is there a cleaning fee?** No. It is included in the nightly rate.\\n\\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\\n\\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\\n\\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\\n\\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\\n\\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\\n\\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\\n\\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\\n\\n**Who can approve a refund or a special request?** Only the host (section 2.8).\"}]"
+  ],
+  "latency_s": 104.152,
+  "llm_s": 99.745,
+  "tool_s": 2.535,
+  "retrieval_s": 2.535,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2772,
+  "completion_tokens": 323,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 99.209586,
+    "load_duration": 0.021724,
+    "prompt_eval_duration": 31.183309,
+    "eval_duration": 67.836135
+  },
+  "plan": {
+    "intent": "check availability",
+    "calls": [
+      {
+        "tool": "check_availability",
+        "query": "2026-11-12,2026-11-14",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ],
+    "fallback_reason": "planner selected no tools; manual search used"
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 22.653,
+  "llm_answer_s": 77.091
+}

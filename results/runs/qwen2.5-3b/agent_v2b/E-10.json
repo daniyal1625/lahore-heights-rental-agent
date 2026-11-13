@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but the nightly rate already includes the final cleaning fee, so you won't need to pay for a mid-stay cleaning visit. If you need an invoice with your company's tax number, I will check with the host.",
+  "scenario_id": "E-10",
+  "guest_message": "Can I get an invoice with my company's tax number for my stay?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "9.3"
+    },
+    {
+      "type": "manual",
+      "id": "15.3"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "invoice with company tax number for stay"
+      },
+      "result_size": 2797,
+      "ms": 38.4
+    }
+  ],
+  "retrieved": [
+    "9.3",
+    "15.3",
+    "21",
+    "2.3"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"9.3\",\"title\":\"Cleaning during your stay\",\"text\":\"House manual > 9. Laundry, Linens and Housekeeping > 9.3 Cleaning during your stay\\n\\nHousekeeping is **not** included every day, because we want to respect your privacy. Fresh towels are free (section 9.2) and a full mid-stay cleaning visit is available for a fee (section 15.3). The apartment is cleaned thoroughly after you leave.\"},{\"source_id\":\"15.3\",\"title\":\"Mid-stay cleaning\",\"text\":\"House manual > 15. Extras and Requests > 15.3 Mid-stay cleaning\\n\\nA cleaning visit during your stay costs **PKR 3,000 per visit**, including fresh bed linen and towels. Book it **24 hours ahead**. The cleaners work between 10:00 AM and 4:00 PM, and someone should be in the apartment or let us know where the valuables are.\"},{\"source_id\":\"21\",\"title\":\"Key Facts at a Glance\",\"text\":\"House manual > 21. Key Facts at a Glance\\n\\n| Topic | Fact |\\n|---|---|\\n| Check-in / check-out | 2:00 PM / 11:00 AM |\\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\\n| Quiet hours | 10:00 PM to 8:00 AM |\\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\\n| Front desk | 9:00 AM to 9:00 PM |\\n| Roof terrace | 7:00 AM to 10:00 PM |\\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\\n| Maximum stay | 28 nights |\\n| Generator start time | About 30 seconds |\\n| Rescue / Police / Fire | 1122 / 15 / 16 |\\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\\n| Emergency maintenance | +92 300 555 0177 (24 hours) |\"},{\"source_id\":\"2.3\",\"title\":\"What is included in the nightly rate, and optional fees\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\\n\\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\\n\\n| Item | Fee |\\n|---|---|\\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\\n| Travel cot, high chair, extra heater, plug adapters | Free |\"}]"
+  ],
+  "latency_s": 43.509,
+  "llm_s": 41.663,
+  "tool_s": 0.039,
+  "retrieval_s": 0.038,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2962,
+  "completion_tokens": 99,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.117006,
+    "load_duration": 0.013248,
+    "prompt_eval_duration": 25.489369,
+    "eval_duration": 15.448487
+  },
+  "plan": {
+    "intent": "invoice with company tax number",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "invoice with company tax number for stay",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 8.771,
+  "llm_answer_s": 32.892
+}

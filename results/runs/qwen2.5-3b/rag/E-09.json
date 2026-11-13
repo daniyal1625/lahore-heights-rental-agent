@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I don't have specific details about child-proofing in the apartment. For safety, it's best to contact the host directly to ask about these features.",
+  "scenario_id": "E-09",
+  "guest_message": "Is the apartment child-proofed? Do you have socket covers or stair gates?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.5"
+    },
+    {
+      "type": "manual",
+      "id": "12.6"
+    },
+    {
+      "type": "manual",
+      "id": "13.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By auto-rickshaw"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.5",
+    "12.6",
+    "13.4",
+    "Lahore > See > Walled City",
+    "Lahore > Get around > By auto-rickshaw"
+  ],
+  "evidence": [
+    "[Manual 10.5 — Accessibility]\nHouse manual > 10. Building Amenities and Accessibility > 10.5 Accessibility\n\n- The lifts are large enough for a wheelchair (door width 90 cm).\n- A ramp leads from Gate 2 to the lobby, and the lobby has no steps to the lifts.\n- Apartment entrance doors are 85 cm wide.\n- Bathroom doors are 70 cm wide and have a threshold of about 2 cm, and showers have a small step. **The apartments are therefore not fully wheelchair-accessible.** Guests with limited mobility should message the host before booking so we can advise honestly.",
+    "[Manual 12.6 — Security]\nHouse manual > 12. Safety and Emergencies > 12.6 Security\n\nGuards are on duty at both gates 24 hours a day. Lock the door whenever you leave the apartment and keep windows and balcony doors locked at night. The building does not accept responsibility for valuables left in the apartment or in the basement.",
+    "[Manual 13.4 — Locked out]\nHouse manual > 13. Maintenance and Troubleshooting > 13.4 Locked out\n\nIf you cannot get in, call the host or the emergency maintenance line first. After the host approves and the guard has checked your ID, the guard at Gate 2 can open your door with the sealed emergency key. Please do not leave the building without your code and phone.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.",
+    "[Guide Lahore > Get around > By auto-rickshaw]\nLahore > Get around > By auto-rickshaw\n\nAuto-rickshaws/Qingqis are open rickshaws with (narrow) rear-facing seats, or with two seats facing forward and two backward. They are handy for moving around in the Inner City, since it's easier to see where you're going. Tourists used to average western road etiquette might be horrified by the chaos on the roads - but it almost seems to work. Qingqi drivers have an unbelievable sense of space, speed and angles and you may well learn to trust them (or not). Rickshaws are the cheapest and, for women, the safest individual forms of public transport. Haggle thoroughly with the driver; if you do not speak Punjabi or Urdu or are clearly a foreigner, try to get a Lahori friend to ensure you don't get ripped off. Try to find a rickshaw with a well-padded seat, otherwise you will come out bruised and aching. You can also order a rickshaw by using Careem or InDrive app."
+  ],
+  "latency_s": 34.235,
+  "llm_s": 33.185,
+  "tool_s": 0.0,
+  "retrieval_s": 0.091,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1230,
+  "completion_tokens": 32,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.918806,
+    "load_duration": 0.006874,
+    "prompt_eval_duration": 26.570469,
+    "eval_duration": 6.272522
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque is free to enter. Its opening hours are 8:00am-8:00pm.",
+  "scenario_id": "G-01",
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Badshahi Mosque hours"
+      },
+      "result_size": 5292,
+      "ms": 57.3
+    }
+  ],
+  "retrieved": [
+    "Lahore > See > Walled City",
+    "Lahore > Sleep",
+    "Lahore"
+  ],
+  "latency_s": 67.477,
+  "llm_s": 62.939,
+  "tool_s": 0.058,
+  "retrieval_s": 0.057,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3088,
+  "completion_tokens": 52,
+  "error": null,
+  "ollama": {
+    "total_duration": 62.662247,
+    "load_duration": 0.035064,
+    "prompt_eval_duration": 51.767829,
+    "eval_duration": 10.725911
+  }
+}

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lahore-heights-mock-api"
+version = "0.1.0"
+description = "Local mock Hostaway-style API for the fictional Lahore Heights Apartments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.6",
+    "uvicorn==0.34.0",
+    "faker==33.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.4",
+    "httpx==0.28.1",
+]
+# Install the CPU-only PyTorch wheel first (see README), then this extra.
+rag = [
+    "torch==2.15.0",
+    "sentence-transformers==6.2.0",
+    "chromadb==1.5.9",
+    "rank-bm25==0.2.2",
+]
+# Local Ollama systems. The rag extra is still needed for the two search tools
+# and for basic_rag.
+agent = [
+    "langchain-core==1.7.7",
+    "langchain-ollama==1.1.0",
+    "langgraph==1.2.20",
+    "httpx==0.28.1",
+]
+# Local Gradio demo app. Launch with: python -m src.ui
+ui = [
+    "gradio==5.50.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = [
+    "llm: tests that call a real local Ollama model (skipped unless RUN_LLM=1)",
+]

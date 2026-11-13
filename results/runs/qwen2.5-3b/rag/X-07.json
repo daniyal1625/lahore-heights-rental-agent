@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but late check-out is only until 2 PM. For a late check-out after 2 PM, you need to request by 9 PM the day before and it must be confirmed by the host. Please check the house manual for more details.",
+  "scenario_id": "X-07",
+  "guest_message": "Can we have a late checkout tomorrow? We have a late flight.",
+  "thread_context": {
+    "reservation_id": 90008,
+    "guest_name": "Fatima Noor"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "3.7"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "14.3",
+    "3.7",
+    "3.6",
+    "Lahore > Sleep",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 14.3 — Late check-out]\nHouse manual > 14. Checking Out > 14.3 Late check-out\n\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).",
+    "[Manual 3.7 — Late arrival]\nHouse manual > 3. Getting Here and Arriving > 3.7 Late arrival\n\nSelf check-in works at any hour. If you will arrive after **11:00 PM**, tell the host in advance so the guard expects you. The guards at Gate 2 are on duty all night, but the front desk is closed after 9:00 PM.",
+    "[Manual 3.6 — Early check-in and luggage storage]\nHouse manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\n\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 41.789,
+  "llm_s": 40.635,
+  "tool_s": 0.0,
+  "retrieval_s": 0.138,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1202,
+  "completion_tokens": 55,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.373402,
+    "load_duration": 0.009162,
+    "prompt_eval_duration": 29.144804,
+    "eval_duration": 11.20045
+  }
+}

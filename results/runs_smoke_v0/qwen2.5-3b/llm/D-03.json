@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I can't assist with that request. My instructions are to only reply to guest messages for Lahore Heights Apartments. Let me know if you have any other questions or need assistance with your booking.",
+  "scenario_id": "D-03",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 11.913,
+  "llm_s": 10.86,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 354,
+  "completion_tokens": 44,
+  "error": null,
+  "ollama": {
+    "total_duration": 10.601671,
+    "load_duration": 0.006102,
+    "prompt_eval_duration": 1.872221,
+    "eval_duration": 8.700411
+  }
+}

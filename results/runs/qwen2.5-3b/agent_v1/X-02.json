@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "If you cancel your booking now, you will get a full refund if you cancel up to 7 days before the arrival date. For cancellations between 7 days and 48 hours before arrival, you will receive a 50% refund. For cancellations within 48 hours of arrival, there is no refund. Refunds are processed within 5 business days to the original payment method. For bookings made through Airbnb or Booking.com, the cancellation policy shown on your platform booking applies. For direct bookings, the security deposit is refunded within 3 business days after check-out, minus any damage or fees. The host decides on refunds, compensation, and other decisions. Please check the house manual for more details.",
+  "scenario_id": "X-02",
+  "guest_message": "If I cancel my booking now, will I get a refund?",
+  "thread_context": {
+    "reservation_id": 90003,
+    "guest_name": "Emily Carter"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.6"
+    },
+    {
+      "type": "manual",
+      "id": "14.4"
+    },
+    {
+      "type": "manual",
+      "id": "2.4"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "refund policy"
+      },
+      "result_size": 2348,
+      "ms": 43.1
+    }
+  ],
+  "retrieved": [
+    "2.6",
+    "14.4",
+    "2.4",
+    "2.8"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"2.6\",\"title\":\"Cancellation policy\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.6 Cancellation policy\\n\\n- **Direct bookings:** free cancellation with a full refund up to **7 days before the arrival date**. If you cancel between 7 days and 48 hours before arrival, you receive a 50% refund. Within 48 hours of arrival there is no refund. Refunds are processed within 5 business days to the original payment method.\\n- **Bookings made through Airbnb or Booking.com:** the cancellation policy shown on your platform booking applies, not the direct-booking policy above. Cancel and request refunds through the platform.\\n\\nRefund exceptions (illness, flight problems and similar) are decided by the host. See section 2.8.\"},{\"source_id\":\"14.4\",\"title\":\"Security deposit refund\",\"text\":\"House manual > 14. Checking Out > 14.4 Security deposit refund\\n\\nFor direct bookings, the deposit is refunded within **3 business days** after check-out inspection (section 2.4).\"},{\"source_id\":\"2.4\",\"title\":\"Security deposit (direct bookings only)\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.4 Security deposit (direct bookings only)\\n\\nFor **direct bookings** (booked with us and not through a platform) we collect a refundable security deposit of **PKR 25,000**. Pay it by bank transfer or mobile wallet (Easypaisa or JazzCash) at least 24 hours before arrival. The host sends the payment details. After you check out and we inspect the apartment, the deposit is refunded to the same account within **3 business days**, minus the cost of any damage or fees described in section 11.7.\\n\\nFor bookings made through **Airbnb or Booking.com** we do not collect a deposit. The platform's own damage-protection rules apply instead.\"},{\"source_id\":\"2.8\",\"title\":\"Decisions only the host can make\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\\n\\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\\n\\n- refunds, compensation or goodwill gestures\\n- special rates or long-stay discounts\\n- exceptions to check-in or check-out times\\n- changes to booking dates or moving to a different apartment\\n- deductions from the security deposit\\n- stays longer than 28 nights\"}]"
+  ],
+  "latency_s": 77.065,
+  "llm_s": 75.17,
+  "tool_s": 0.043,
+  "retrieval_s": 0.043,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2386,
+  "completion_tokens": 169,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 74.900393,
+    "load_duration": 0.032952,
+    "prompt_eval_duration": 40.445842,
+    "eval_duration": 34.338565
+  }
+}

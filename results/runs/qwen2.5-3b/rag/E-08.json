@@ -1,0 +1,61 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but renting a car with a driver is not a service we offer. For more information, you would need to contact the host directly.",
+  "scenario_id": "E-08",
+  "guest_message": "Can you rent us a car with a driver for the week?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.2",
+    "2.8",
+    "15.1",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 3.2 — Taxis and ride-hailing]\nHouse manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\n\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\"Lahore Heights Apartments, Gate 2\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Manual 15.1 — Travel cot and high chair]\nHouse manual > 15. Extras and Requests > 15.1 Travel cot and high chair\n\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nTaxis are a rarity on the streets of Lahore - with auto-rickshaws having cornered the market - for a  taxi you need to book one by phone. Most taxi drivers and, indeed, rickshaw drivers, carry mobile phones; it may be useful to take a number down if you find someone especially reliable. Do not take taxis in the Inner City, as the streets are narrow and very crowded. Either walk or take a qingqi. InDrive, Uber, and \"Careem\" are also available in the city.\n\nMinivans are probably the most dangerous form of public transport, with very rash drivers. Women will find these especially uncomfortable, as they are very crowded. Often women must sit in an undersized cubicle or with the driver, to prevent harassment.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 37.565,
+  "llm_s": 36.325,
+  "tool_s": 0.0,
+  "retrieval_s": 0.14,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1089,
+  "completion_tokens": 32,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.015544,
+    "load_duration": 0.005635,
+    "prompt_eval_duration": 28.552055,
+    "eval_duration": 7.440371
+  }
+}

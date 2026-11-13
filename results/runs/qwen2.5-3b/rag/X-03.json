@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "For direct bookings, you can get a full refund up to 7 days before the arrival date. Please check your booking details for the most accurate information.",
+  "scenario_id": "X-03",
+  "guest_message": "Can I cancel and get a full refund?",
+  "thread_context": {
+    "reservation_id": 90004,
+    "guest_name": "Hamza Sheikh"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.6"
+    },
+    {
+      "type": "manual",
+      "id": "14.4"
+    },
+    {
+      "type": "manual",
+      "id": "2.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.6",
+    "14.4",
+    "2.4",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around"
+  ],
+  "evidence": [
+    "[Manual 2.6 — Cancellation policy]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.6 Cancellation policy\n\n- **Direct bookings:** free cancellation with a full refund up to **7 days before the arrival date**. If you cancel between 7 days and 48 hours before arrival, you receive a 50% refund. Within 48 hours of arrival there is no refund. Refunds are processed within 5 business days to the original payment method.\n- **Bookings made through Airbnb or Booking.com:** the cancellation policy shown on your platform booking applies, not the direct-booking policy above. Cancel and request refunds through the platform.\n\nRefund exceptions (illness, flight problems and similar) are decided by the host. See section 2.8.",
+    "[Manual 14.4 — Security deposit refund]\nHouse manual > 14. Checking Out > 14.4 Security deposit refund\n\nFor direct bookings, the deposit is refunded within **3 business days** after check-out inspection (section 2.4).",
+    "[Manual 2.4 — Security deposit (direct bookings only)]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.4 Security deposit (direct bookings only)\n\nFor **direct bookings** (booked with us and not through a platform) we collect a refundable security deposit of **PKR 25,000**. Pay it by bank transfer or mobile wallet (Easypaisa or JazzCash) at least 24 hours before arrival. The host sends the payment details. After you check out and we inspect the apartment, the deposit is refunded to the same account within **3 business days**, minus the cost of any damage or fees described in section 11.7.\n\nFor bookings made through **Airbnb or Booking.com** we do not collect a deposit. The platform's own damage-protection rules apply instead.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around]\nLahore > Get around\n\nLahore is a huge and sprawling city.  In the old town, walking or a tuk-tuk are your only options. You get to see a lot more on foot, just remember to wear comfortable shoes if you are going to be walking a great distance. Other than in winter, it will be too hot to walk long distances during the day. Sunday mornings are quiet and are a good time to explore.\n\nLocals are generally helpful in providing directions to well-known spots. However, you should still ask two or three people to confirm the address, especially if you are driving. Using the GPS function on your phone can also be helpful."
+  ],
+  "latency_s": 34.484,
+  "llm_s": 33.125,
+  "tool_s": 0.0,
+  "retrieval_s": 0.114,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1114,
+  "completion_tokens": 32,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.851451,
+    "load_duration": 0.006332,
+    "prompt_eval_duration": 26.498616,
+    "eval_duration": 6.328497
+  }
+}

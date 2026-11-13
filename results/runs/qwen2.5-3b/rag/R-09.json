@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Your door code will be sent to you after your ID is verified. Please ensure you have completed the ID verification process at least 24 hours before your arrival.",
+  "scenario_id": "R-09",
+  "guest_message": "Is my ID verified for check-in?",
+  "thread_context": {
+    "reservation_id": 90009,
+    "guest_name": "Chen Wei"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.5"
+    },
+    {
+      "type": "manual",
+      "id": "3.4"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Go next"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.5",
+    "3.4",
+    "3.6",
+    "Lahore > Go next",
+    "Lahore > Sleep > Budget"
+  ],
+  "evidence": [
+    "[Manual 3.5 — Self check-in]\nHouse manual > 3. Getting Here and Arriving > 3.5 Self check-in\n\nCheck-in time is **2:00 PM**. The apartments use a smart keypad lock, so no one has to meet you.\n\n1. Arrive at Gate 2 and tell the guard your apartment number. The guard will register you.\n2. Take the lift to your floor.\n3. On the day of arrival, once your ID is verified (and, for direct bookings, your balance is paid), the host messages you a personal 6-digit door code.\n4. Touch the keypad to wake it, enter the code, then press the **#** key.\n\nYour code works from 2:00 PM on the arrival day until 11:00 AM on the departure day. The front desk can help in person between 9:00 AM and 9:00 PM. Door codes are only ever sent by the host to the person on the booking. Nobody else, including the front desk and guards, will tell a code to anyone who asks.",
+    "[Manual 3.4 — Guest registration and ID]\nHouse manual > 3. Getting Here and Arriving > 3.4 Guest registration and ID\n\nPakistani law and our building rules require us to register every adult guest. Before arrival, every guest aged 18 or over must send:\n\n- **Pakistani nationals:** a clear photo of the CNIC (front and back).\n- **Foreign nationals:** a photo of the passport photo page and the visa page.\n\nThe host sends an upload link when you book. Please complete it **at least 24 hours before arrival**. The primary guest on the booking must be 21 or older. **Your door code is only released after your ID has been verified** (section 3.5).",
+    "[Manual 3.6 — Early check-in and luggage storage]\nHouse manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\n\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.",
+    "[Guide Lahore > Go next]\nLahore > Go next\n\nWagah Border The border between Pakistan and India is also an attraction for tourists, with a ceremony at the border everyday.\n\nFor foreigners, crossing the Wagah border to India and visiting the Golden Temple in Amritsar is a lifetime experience. However, for this you will need an Indian visa. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200(800 from the raja sansi airport) for the entire vehicle. Amritsar is about 32 km from Lahore. As of July 2024, the Pakistani side is under construction so the Indian side is much better.\n\nChanga Manga is a man-made forest 68 km from Lahore. There is a lake, and a miniature railway, which winds its way through its forest. Chhanga Manga has 12,510 acres of plantations. It is a popular picnic spot spread over 50 acres with a lake and rowboats, motorboats, children's park, swimming pool, cafeteria, canteen and rest houses",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles."
+  ],
+  "latency_s": 53.15,
+  "llm_s": 51.948,
+  "tool_s": 0.0,
+  "retrieval_s": 0.152,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1563,
+  "completion_tokens": 34,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 51.686384,
+    "load_duration": 0.054218,
+    "prompt_eval_duration": 44.975375,
+    "eval_duration": 6.63439
+  }
+}

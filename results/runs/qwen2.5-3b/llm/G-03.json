@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Lahore does not have a metro system yet. It's a planned project, but it hasn't opened yet.",
+  "scenario_id": "G-03",
+  "guest_message": "Does Lahore have a metro, and when did it open?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.87,
+  "llm_s": 5.9,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 25,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.630962,
+    "load_duration": 0.029845,
+    "prompt_eval_duration": 1.19194,
+    "eval_duration": 4.359041
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have a private chef available for your booking. I recommend finding a local restaurant that offers Pakistani cuisine.",
+  "scenario_id": "E-02",
+  "guest_message": "Do you have a private chef who can cook a Pakistani dinner for us one evening?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.381,
+  "llm_s": 8.416,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 346,
+  "completion_tokens": 29,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.142988,
+    "load_duration": 0.007608,
+    "prompt_eval_duration": 2.002412,
+    "eval_duration": 6.099972
+  }
+}

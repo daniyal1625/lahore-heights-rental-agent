@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The hot water in your shower comes from an electric geyser. You need to turn it on about 30 minutes before you need hot water. The geyser size depends on the room type. After heavy use, it takes about 30 minutes to heat up again. Please switch it on about 30 minutes before you need hot water. The tap for hot water is red. If you have any issues with the water dispenser, please message the host.",
+  "scenario_id": "M-10",
+  "guest_message": "The shower is only giving cold water, how does the hot water work?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "7.3"
+    },
+    {
+      "type": "manual",
+      "id": "7.5"
+    },
+    {
+      "type": "manual",
+      "id": "7.4"
+    },
+    {
+      "type": "manual",
+      "id": "19.5"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "how does hot water work in shower"
+      },
+      "result_size": 1866,
+      "ms": 79.0
+    }
+  ],
+  "retrieved": [
+    "7.3",
+    "7.5",
+    "7.4",
+    "19.5"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"7.3\",\"title\":\"Hot water (geyser)\",\"text\":\"House manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.3 Hot water (geyser)\\n\\nHot water comes from an electric geyser (storage water heater). The switch is on the wall outside the bathroom door. **Switch it on about 30 minutes before you need hot water.** A timer automatically cuts the power after 2 hours, so switch it on again if you need more. Geyser sizes: Studio 35 litres, One-Bedroom 50 litres, Two-Bedroom 80 litres, Penthouse two 80-litre units. After heavy use, allow about 30 minutes for reheating. We use electric geysers because piped gas pressure in Lahore can be low, especially on winter mornings.\"},{\"source_id\":\"7.5\",\"title\":\"Drinking water\",\"text\":\"House manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.5 Drinking water\\n\\n**Do not drink the tap water.** Every kitchen has a filtered (reverse osmosis, RO) water dispenser with hot and cold water, and two bottled waters are waiting on arrival. Please use the filtered water for drinking, tea and cooking rice or pasta.\"},{\"source_id\":\"7.4\",\"title\":\"Water supply\",\"text\":\"House manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.4 Water supply\\n\\nWater comes from a rooftop tank and an automatic booster pump, available 24 hours. Occasionally the building cleans the tank; we announce it at least a day ahead.\"},{\"source_id\":\"19.5\",\"title\":\"The water dispenser\",\"text\":\"House manual > 19. Appliance How-To Guide > 19.5 The water dispenser\\n\\nThe filtered water dispenser in the kitchen has two taps: blue for cold and red for hot. The hot tap has a child-lock: press and hold the safety button while you press the tap. The dispenser needs mains power, so after a power cut it takes a few minutes to restart. If the dispenser leaks or the water tastes unusual, stop using it and message the host.\"}]"
+  ],
+  "latency_s": 50.365,
+  "llm_s": 46.15,
+  "tool_s": 0.079,
+  "retrieval_s": 0.079,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2297,
+  "completion_tokens": 124,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 45.865356,
+    "load_duration": 0.054003,
+    "prompt_eval_duration": 18.514503,
+    "eval_duration": 27.172345
+  }
+}

@@ -1,0 +1,8 @@
+"""Entry point for ``python -m src.ui``."""
+
+from __future__ import annotations
+
+from src.ui.app import main
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "You should throw away the garbage in the bin bags provided, tie them up, and take them to the trash room at the end of the corridor on your floor. The trash room is open from 7:00 AM to 8:00 AM every morning.",
+  "scenario_id": "M-20",
+  "guest_message": "Where do I throw away the garbage?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "9.4"
+    },
+    {
+      "type": "manual",
+      "id": "14.2"
+    },
+    {
+      "type": "manual",
+      "id": "12.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "9.4",
+    "14.2",
+    "12.3",
+    "Lahore > Eat > Splurge",
+    "Lahore > Eat > Budget"
+  ],
+  "evidence": [
+    "[Manual 9.4 — Rubbish and recycling]\nHouse manual > 9. Laundry, Linens and Housekeeping > 9.4 Rubbish and recycling\n\nPut rubbish in the bin bags provided, tie the bag and take it to the **trash room at the end of the corridor on your floor**. Please do not leave rubbish outside your door or in the lift. Rubbish is collected from the trash rooms every morning between **7:00 AM and 8:00 AM**. Bin bags are refilled free at the front desk.",
+    "[Manual 14.2 — Check-out checklist]\nHouse manual > 14. Checking Out > 14.2 Check-out checklist\n\n1. Switch off the AC, the geyser, lights and fans.\n2. Close and lock windows and balcony doors.\n3. Take all rubbish to the trash room on your floor (section 9.4).\n4. Leave used towels on the bathroom floor.\n5. Sign out of the TV streaming apps (section 5.2).\n6. Close the door firmly; it locks automatically. You do not need to return a key because we use a keypad code (if you were given a physical key, return it to the front desk).",
+    "[Manual 12.3 — If you smell gas]\nHouse manual > 12. Safety and Emergencies > 12.3 If you smell gas\n\n1. Do **not** switch any lights or electrical appliances on or off, and do not use a lighter or match.\n2. Turn the **red gas shut-off lever under the kitchen sink** a quarter turn so it is across the pipe.\n3. Open windows and the balcony door.\n4. Leave the apartment and call the security desk and the emergency maintenance line from outside.\n\nDo not go back inside until Rafiq or the security team says it is safe.",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\nA globally famous restaurant chain.\n\nCosta Nostra. Authentic Italian food, overseen by Pak-Italian owners. It has a reservation-only, high-end gourmet experience with a rather well put-together table d'hote, and it has a basement pizzeria where you can't go wrong if want a pizza pie that resembles something from Rome and not Chicago.\n\nThe Monal, in Gulberg III near Liberty Chowk, roundabout. It on the top of Liberty Park Plaza. You have to climb up the plaza by a car, but be careful to drive slowly and look in the traffic mirrors to see if a car is coming from the upper floor when you're about to climb up in the plaza. The Monal has indoor and outdoor seating and it shows a total sky view of the bustling city. ☏ +91 42 35789824",
+    "[Guide Lahore > Eat > Budget]\nLahore > Eat > Budget\n\nFor nihari, go to Haji Nihari  on Jail Road or inside Lohari Gate; for chicken paratha rolls go to Karachi Silver Spoon in Liberty Market, and so on lastly go to Muhammadi Nihari in Mozang.\n\nThe 'Food Street' of Gowal Mandi is a must-visit for dinner - you'll find a street full of shops selling fine Lahori fare, and the setting, amidst traditional jharoka architecture, is lovely.  If you make it to Food Street, go by auto rickshaw (Rs 30) or walk to Mochi Gate and try Rasheeds kebabs or Saiyns kebabs.  Mochi Gate is also home to Fazal Sweets and Rafique Sweet House. Bhaiya kabab in Model Town is foremost name in Kabab Street, where you will enjoy bar-b-que with fresh soda. A 200/300-m long street with historically preserved 2/3 storey old houses on both sides which are lightened up in a very special way giving a very historical and magnificent look. The environment is a real creation of culture of Lahore, the mughal era. You will find around a hundred restaurants in this street which mouth watering menus. Do try Chappal Kababas, Saag with Makai ki roti, Golas of Ice, Sardar ki Machli and anything you like because a lot of variety is present."
+  ],
+  "latency_s": 41.317,
+  "llm_s": 40.197,
+  "tool_s": 0.0,
+  "retrieval_s": 0.114,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1260,
+  "completion_tokens": 56,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 39.92722,
+    "load_duration": 0.021793,
+    "prompt_eval_duration": 28.941077,
+    "eval_duration": 10.923177
+  }
+}

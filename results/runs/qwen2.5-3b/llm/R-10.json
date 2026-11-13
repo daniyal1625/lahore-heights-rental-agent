@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Your stay starts today and is for 7 nights.",
+  "scenario_id": "R-10",
+  "guest_message": "When does my stay start and how long is it?",
+  "thread_context": {
+    "reservation_id": 90010,
+    "guest_name": "Hassan Ali"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 13.392,
+  "llm_s": 12.211,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 345,
+  "completion_tokens": 12,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 11.941435,
+    "load_duration": 0.007587,
+    "prompt_eval_duration": 9.837129,
+    "eval_duration": 2.023389
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have the ability to process refunds. You will need to contact the host directly for this.",
+  "scenario_id": "X-03",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 6.692,
+  "llm_s": 5.749,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 344,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama": {
+    "total_duration": 5.488711,
+    "load_duration": 0.00587,
+    "prompt_eval_duration": 1.132565,
+    "eval_duration": 4.329305
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "You owe PKR 76,000, which is due on 2026-11-18. Please settle your balance.",
+  "scenario_id": "R-04",
+  "guest_message": "How much do I still owe, and when is it due?",
+  "thread_context": {
+    "reservation_id": 90004,
+    "guest_name": "Hamza Sheikh"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90004"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90004
+      },
+      "result_size": 514,
+      "ms": 7.6
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90004,\"status\":\"new\",\"guest_name\":\"Hamza Sheikh\",\"listing\":\"Penthouse, Unit 701\",\"channel\":\"direct\",\"arrival\":\"2026-11-20\",\"departure\":\"2026-11-24\",\"nights\":4,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":4,\"children\":2,\"total_price_pkr\":152000,\"paid_amount_pkr\":76000,\"balance_due_pkr\":76000,\"balance_due_date\":\"2026-11-18\",\"payment_status\":\"partial\",\"fees\":[],\"security_deposit_status\":\"pending\",\"id_verification\":\"pending\",\"guest_note\":\"\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 44.332,
+  "llm_s": 41.957,
+  "tool_s": 0.008,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2016,
+  "completion_tokens": 59,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.690172,
+    "load_duration": 0.018993,
+    "prompt_eval_duration": 31.796413,
+    "eval_duration": 9.806228
+  }
+}

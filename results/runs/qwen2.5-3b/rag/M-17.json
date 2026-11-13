@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, there are elevators in the building. They are large enough for a wheelchair (door width 90 cm). Guests with limited mobility should message the host before booking to ensure we can advise honestly.",
+  "scenario_id": "M-17",
+  "guest_message": "Is there an elevator? My father uses a wheelchair.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.5"
+    },
+    {
+      "type": "manual",
+      "id": "10.1"
+    },
+    {
+      "type": "manual",
+      "id": "10.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.5",
+    "10.1",
+    "10.6",
+    "Lahore > Do",
+    "Lahore > Get around > By bus"
+  ],
+  "evidence": [
+    "[Manual 10.5 — Accessibility]\nHouse manual > 10. Building Amenities and Accessibility > 10.5 Accessibility\n\n- The lifts are large enough for a wheelchair (door width 90 cm).\n- A ramp leads from Gate 2 to the lobby, and the lobby has no steps to the lifts.\n- Apartment entrance doors are 85 cm wide.\n- Bathroom doors are 70 cm wide and have a threshold of about 2 cm, and showers have a small step. **The apartments are therefore not fully wheelchair-accessible.** Guests with limited mobility should message the host before booking so we can advise honestly.",
+    "[Manual 10.1 — Lifts]\nHouse manual > 10. Building Amenities and Accessibility > 10.1 Lifts\n\nThe building has two lifts. They work during power cuts because they run on the generator. If a lift stops between floors, press the alarm button and call the security desk. Do not try to open the doors.",
+    "[Manual 10.6 — Where things are in the building]\nHouse manual > 10. Building Amenities and Accessibility > 10.6 Where things are in the building\n\n- **Ground floor:** lobby and front desk, shared laundry room, the ramp from Gate 2, and the lifts.\n- **Basement (B1):** parking, reached by the vehicle ramp from Gate 1 or by lift (press B1).\n- **Each residential floor:** two lifts, Stair A and Stair B (fire exits), a trash room at the end of the corridor, and the apartment doors.\n- **Roof level (R):** the shared roof terrace with the smoking corner at its north end, reached by lift or by Stair A.\n- **Outside:** the front lawn at Gate 1 is the fire assembly point.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > Get around > By bus]\nLahore > Get around > By bus\n\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\n\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\n\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\n\nOther bus companies\n\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\n\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\n\nSkyways: Known for economical fares and a wide route network.\n\nNiazi Express: A long-standing service offering low-cost travel options.\n\nRajput Travels: Offers reasonably priced routes connecting many regions.\n\nPower International: Affordable intercity travel with decent amenities.\n\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience."
+  ],
+  "latency_s": 40.536,
+  "llm_s": 39.432,
+  "tool_s": 0.0,
+  "retrieval_s": 0.106,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1293,
+  "completion_tokens": 43,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 39.162962,
+    "load_duration": 0.03324,
+    "prompt_eval_duration": 30.77789,
+    "eval_duration": 8.307644
+  }
+}

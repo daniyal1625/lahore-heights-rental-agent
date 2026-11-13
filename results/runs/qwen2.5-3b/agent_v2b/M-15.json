@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we provide prayer mats. The Qibla direction is indicated by an arrow sticker on the bedroom wardrobe.",
+  "scenario_id": "M-15",
+  "guest_message": "Do you provide prayer mats, and which direction is the Qibla?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "1.1"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "manual",
+      "id": "3.2"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "prayer mats and Qibla direction in Lahore Heights Apartments, Lahore, Pakistan, near 10/11/2026 apartment check-out time."
+      },
+      "result_size": 2503,
+      "ms": 42.2
+    }
+  ],
+  "retrieved": [
+    "10.4",
+    "1.1",
+    "0",
+    "3.2"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"10.4\",\"title\":\"Prayer facilities\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.4 Prayer facilities\\n\\nEvery apartment has prayer mats and a copy of the Quran. The Qibla direction is shown by an arrow sticker on the bedroom wardrobe. A neighbourhood mosque (Masjid Al-Noor, about 300 metres away) broadcasts the call to prayer five times a day, and the dawn (Fajr) call can be heard faintly in the early morning. Earplugs are in the bedside drawer.\"},{\"source_id\":\"1.1\",\"title\":\"About the building\",\"text\":\"House manual > 1. Welcome to Lahore Heights > 1.1 About the building\\n\\nWelcome, and thank you for choosing Lahore Heights Apartments. We are a small, quiet building in Gulberg III, Lahore (fictional address: Plot 27-C, Sunrise Avenue, Gulberg III, Lahore). The building has a ground-floor lobby with a front desk, seven residential floors, a shared roof terrace and one level of basement parking (B1).\\n\\nWe rent out four apartments. All other apartments belong to private owners and families who live here all year, so you will share the lifts and corridors with residents. Please treat the building as you would your own home. Guards are on duty at the gates 24 hours a day, and the building has CCTV in all common areas (never inside the apartments).\\n\\nThis manual explains how everything in your apartment and in the building works, what our rules are, and what to do if something goes wrong. If you cannot find an answer here, message your host and we will help.\"},{\"source_id\":\"0\",\"title\":\"About this document\",\"text\":\"House manual > About this document\\n\\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.\"},{\"source_id\":\"3.2\",\"title\":\"Taxis and ride-hailing\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\\n\\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\\\"Lahore Heights Apartments, Gate 2\\\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.\"}]"
+  ],
+  "latency_s": 37.246,
+  "llm_s": 35.151,
+  "tool_s": 0.042,
+  "retrieval_s": 0.042,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2624,
+  "completion_tokens": 103,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 34.620314,
+    "load_duration": 0.018077,
+    "prompt_eval_duration": 18.371112,
+    "eval_duration": 16.056275
+  },
+  "plan": {
+    "intent": "prayer mats and Qibla direction",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "prayer mats and Qibla direction in Lahore Heights Apartments, Lahore, Pakistan, near 10/11/2026 apartment check-out time.",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 14.107,
+  "llm_answer_s": 21.044
+}

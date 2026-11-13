@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The apartment provides an air fryer, but not a hair dryer or an iron. Please bring your own hair dryer. The apartment does have an ironing board, but you will need to use the gas hob for cooking and the induction plate for heating water.",
+  "scenario_id": "M-18",
+  "guest_message": "Do you provide a hair dryer and an iron?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "6.2"
+    },
+    {
+      "type": "manual",
+      "id": "19.4"
+    },
+    {
+      "type": "manual",
+      "id": "15.2"
+    },
+    {
+      "type": "manual",
+      "id": "7.3"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "hair dryer and iron"
+      },
+      "result_size": 2332,
+      "ms": 54.9
+    }
+  ],
+  "retrieved": [
+    "6.2",
+    "19.4",
+    "15.2",
+    "7.3"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"6.2\",\"title\":\"What works on the generator\",\"text\":\"House manual > 6. Electricity, Load-Shedding and the Generator > 6.2 What works on the generator\\n\\nRunning on the generator: lights, sockets, fridge, TV, Wi-Fi router, lifts, water pump, the gas hob, and **one air conditioner per apartment** (marked with a green sticker; the Penthouse has two).\\n\\n**Not running on the generator** (because of power limits): the induction plate, microwave, oven, electric kettle, air fryer, hair dryer, washing machine and the water heater (geyser). During a cut, cook on the gas hob. Hot water will not heat during a power cut, but water already hot stays hot for a few hours.\"},{\"source_id\":\"19.4\",\"title\":\"Washing machine and washer-dryer\",\"text\":\"House manual > 19. Appliance How-To Guide > 19.4 Washing machine and washer-dryer\\n\\nThe washing machines in the One-Bedroom and Two-Bedroom take up to 7 kg. Use the **Quick 30** programme for lightly worn clothes and the **Cotton 40 °C** programme for normal loads. One cap of the provided detergent is enough. The Penthouse washer-dryer washes up to 8 kg and dries up to 4 kg; a wash-and-dry cycle takes about 4 hours. Washing machines do not run on the generator, and a cycle interrupted by a power cut resumes automatically when the grid power returns. Please clean the lint filter of the washer-dryer after each dry cycle.\"},{\"source_id\":\"15.2\",\"title\":\"Extra heaters and adapters\",\"text\":\"House manual > 15. Extras and Requests > 15.2 Extra heaters and adapters\\n\\nFree electric oil-filled heaters (winter) and plug adapters are available from the front desk (sections 7.2 and 5.4).\"},{\"source_id\":\"7.3\",\"title\":\"Hot water (geyser)\",\"text\":\"House manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.3 Hot water (geyser)\\n\\nHot water comes from an electric geyser (storage water heater). The switch is on the wall outside the bathroom door. **Switch it on about 30 minutes before you need hot water.** A timer automatically cuts the power after 2 hours, so switch it on again if you need more. Geyser sizes: Studio 35 litres, One-Bedroom 50 litres, Two-Bedroom 80 litres, Penthouse two 80-litre units. After heavy use, allow about 30 minutes for reheating. We use electric geysers because piped gas pressure in Lahore can be low, especially on winter mornings.\"}]"
+  ],
+  "latency_s": 39.024,
+  "llm_s": 36.978,
+  "tool_s": 0.055,
+  "retrieval_s": 0.055,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2421,
+  "completion_tokens": 77,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.705722,
+    "load_duration": 0.035507,
+    "prompt_eval_duration": 21.265706,
+    "eval_duration": 15.289554
+  }
+}

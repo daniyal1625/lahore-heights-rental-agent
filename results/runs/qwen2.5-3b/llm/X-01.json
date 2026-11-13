@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello Sara, we can check you in early at 11 AM. Enjoy your stay!",
+  "scenario_id": "X-01",
+  "guest_message": "I'm arriving around 11 this morning. Can we check in early?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.602,
+  "llm_s": 5.396,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 350,
+  "completion_tokens": 20,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.121146,
+    "load_duration": 0.026426,
+    "prompt_eval_duration": 1.594635,
+    "eval_duration": 3.452519
+  }
+}

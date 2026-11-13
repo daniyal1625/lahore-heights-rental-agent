@@ -1,0 +1,97 @@
+{
+  "model": "qwen2.5:3b",
+  "model_tag": "qwen2.5-3b",
+  "variants": [
+    "agent_v2b"
+  ],
+  "split": "test",
+  "scenario_count": 55,
+  "started_at": "2026-11-11T09:27:47+00:00",
+  "ended_at": "2026-11-11T10:24:32+00:00",
+  "simulated_now": "2026-11-10T10:00:00+05:00",
+  "machine": {
+    "cpu": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+    "ram_bytes": 16779366400,
+    "ram_gib": 15.63,
+    "os": "Windows-10-10.0.19045-SP0",
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64"
+  },
+  "python": {
+    "version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "version_info": [
+      3,
+      11,
+      9
+    ],
+    "implementation": "CPython",
+    "executable": "python"
+  },
+  "packages": {
+    "fastapi": "0.115.6",
+    "uvicorn": "0.34.0",
+    "faker": "33.1.0",
+    "pytest": "8.3.4",
+    "httpx": "0.28.1",
+    "torch": "2.15.0+cpu",
+    "sentence-transformers": "6.2.0",
+    "chromadb": "1.5.9",
+    "rank-bm25": "0.2.2",
+    "langchain-core": "1.7.7",
+    "langchain-ollama": "1.1.0",
+    "langgraph": "1.2.20",
+    "pydantic": "2.14.3",
+    "numpy": "2.4.6"
+  },
+  "ollama": {
+    "host": "http://localhost:11434",
+    "version": "0.40.16",
+    "model": "qwen2.5:3b",
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "options": {
+      "temperature": 0.0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 400,
+      "keep_alive": "30m",
+      "request_timeout_s": 300.0,
+      "max_tool_rounds": 4
+    }
+  },
+  "retrieval": {
+    "mode": "hybrid",
+    "rag_manual_k": 3,
+    "rag_guide_k": 2,
+    "tool_search_k": 4
+  },
+  "code": {
+    "sha256": "48e3c3aa867c18d686f12932e7b217f2d4dba8924b7611b4d47419efbf65e33f",
+    "files": 30
+  },
+  "warmup": {
+    "ok": true,
+    "answer": "ready",
+    "latency_s": 1.718,
+    "llm_s": 1.718,
+    "prompt_tokens": 37,
+    "completion_tokens": 2,
+    "ollama": {
+      "total_duration": 0.495435,
+      "load_duration": 0.008569,
+      "prompt_eval_duration": 0.236455,
+      "eval_duration": 0.202601
+    },
+    "cold_load_s": 0.008569,
+    "eval_tokens_per_s": 9.87,
+    "prompt_tokens_per_s": 156.48
+  },
+  "summary": {
+    "total": 55,
+    "completed": 55,
+    "skipped": 0,
+    "failed": 0,
+    "errors": [],
+    "elapsed_s": 3404.561
+  }
+}

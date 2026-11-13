@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "For your booking, you need to pay 50% now and the remaining 50% by 48 hours before your arrival. Please transfer the first installment to our bank account.",
+  "scenario_id": "R-04",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "14.5"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Go next"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.5",
+    "14.5",
+    "14.3",
+    "Lahore > Sleep > Budget",
+    "Lahore > Go next"
+  ],
+  "latency_s": 44.156,
+  "llm_s": 42.991,
+  "tool_s": 0.0,
+  "retrieval_s": 0.098,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1299,
+  "completion_tokens": 40,
+  "error": null,
+  "ollama": {
+    "total_duration": 42.721863,
+    "load_duration": 0.008167,
+    "prompt_eval_duration": 34.963682,
+    "eval_duration": 7.726268
+  }
+}

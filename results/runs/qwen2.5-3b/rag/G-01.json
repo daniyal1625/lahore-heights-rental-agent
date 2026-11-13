@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Badshahi Mosque is free to enter. It opens at 8:00 AM and closes at 8:00 PM.",
+  "scenario_id": "G-01",
+  "guest_message": "Is Badshahi Mosque free to enter, and what are its opening hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "16.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "17",
+    "10.4",
+    "16.3",
+    "Lahore > See > Walled City",
+    "Lahore"
+  ],
+  "evidence": [
+    "[Manual 17 — Nearby Essentials (the host's short list)]\nHouse manual > 17. Nearby Essentials (the host's short list)\n\nThese are the places our guests use most. All are within a short walk.\n\n| What | Name and details |\n|---|---|\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\n| Mosque | Masjid Al-Noor, about 300 m away |\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\n\nFor sightseeing, food and transport around Lahore, see the separate local guide.",
+    "[Manual 10.4 — Prayer facilities]\nHouse manual > 10. Building Amenities and Accessibility > 10.4 Prayer facilities\n\nEvery apartment has prayer mats and a copy of the Quran. The Qibla direction is shown by an arrow sticker on the bedroom wardrobe. A neighbourhood mosque (Masjid Al-Noor, about 300 metres away) broadcasts the call to prayer five times a day, and the dawn (Fajr) call can be heard faintly in the early morning. Earplugs are in the bedside drawer.",
+    "[Manual 16.3 — Ramadan]\nHouse manual > 16. Seasonal Notes > 16.3 Ramadan\n\nDuring Ramadan the front desk opens from **10:00 AM to 6:00 PM**. We ask guests not to eat, drink or smoke in the corridors, lobby and on the roof terrace during fasting hours, out of respect for residents. Quiet hours are unchanged.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.",
+    "[Guide Lahore]\nLahore\n\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\n\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\n\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces."
+  ],
+  "latency_s": 42.738,
+  "llm_s": 41.572,
+  "tool_s": 0.0,
+  "retrieval_s": 0.129,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1368,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.297004,
+    "load_duration": 0.026679,
+    "prompt_eval_duration": 35.132945,
+    "eval_duration": 6.049448
+  }
+}

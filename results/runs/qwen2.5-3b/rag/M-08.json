@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "During load shedding, the AC will only work if it has a green sticker, and the lift will run on the generator.",
+  "scenario_id": "M-08",
+  "guest_message": "What happens during load shedding? Will the AC and the lift still work?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "6.2"
+    },
+    {
+      "type": "manual",
+      "id": "13.3"
+    },
+    {
+      "type": "manual",
+      "id": "10.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "6.2",
+    "13.3",
+    "10.1",
+    "Lahore > Get around",
+    "Lahore > Sleep > Budget"
+  ],
+  "evidence": [
+    "[Manual 6.2 — What works on the generator]\nHouse manual > 6. Electricity, Load-Shedding and the Generator > 6.2 What works on the generator\n\nRunning on the generator: lights, sockets, fridge, TV, Wi-Fi router, lifts, water pump, the gas hob, and **one air conditioner per apartment** (marked with a green sticker; the Penthouse has two).\n\n**Not running on the generator** (because of power limits): the induction plate, microwave, oven, electric kettle, air fryer, hair dryer, washing machine and the water heater (geyser). During a cut, cook on the gas hob. Hot water will not heat during a power cut, but water already hot stays hot for a few hours.",
+    "[Manual 13.3 — Quick fixes]\nHouse manual > 13. Maintenance and Troubleshooting > 13.3 Quick fixes\n\n| Problem | What to try |\n|---|---|\n| No power in the apartment | Check the breaker board in the entrance closet (section 6.3). If the whole building is dark, wait for the generator (about 30 seconds). |\n| AC not cooling | Check the mode is **Cool**, the temperature is 24 to 26 °C, windows are closed, and the remote batteries are fresh. During a power cut only the green-sticker AC works. |\n| No hot water | Check the geyser switch outside the bathroom is on, and wait 30 minutes. The geyser does not work on the generator and its 2-hour timer may have switched it off. |\n| Weak gas flame | Common on winter mornings. Use the induction plate. |\n| Low water pressure | The booster pump is automatic. Wait 10 minutes, then message the host. |\n| Wi-Fi not working | Unplug the router for 30 seconds (section 5.1). The 4G backup starts automatically. |\n| TV remote not working | Replace the batteries from the TV-stand drawer. |\n| Door keypad not responding | Touch the keypad to wake it and enter the code followed by **#**. If it still does not respond, call the emergency maintenance line. |",
+    "[Manual 10.1 — Lifts]\nHouse manual > 10. Building Amenities and Accessibility > 10.1 Lifts\n\nThe building has two lifts. They work during power cuts because they run on the generator. If a lift stops between floors, press the alarm button and call the security desk. Do not try to open the doors.",
+    "[Guide Lahore > Get around]\nLahore > Get around\n\nLahore is a huge and sprawling city.  In the old town, walking or a tuk-tuk are your only options. You get to see a lot more on foot, just remember to wear comfortable shoes if you are going to be walking a great distance. Other than in winter, it will be too hot to walk long distances during the day. Sunday mornings are quiet and are a good time to explore.\n\nLocals are generally helpful in providing directions to well-known spots. However, you should still ask two or three people to confirm the address, especially if you are driving. Using the GPS function on your phone can also be helpful.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles."
+  ],
+  "latency_s": 41.452,
+  "llm_s": 39.065,
+  "tool_s": 0.0,
+  "retrieval_s": 0.113,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1385,
+  "completion_tokens": 26,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.801237,
+    "load_duration": 0.079932,
+    "prompt_eval_duration": 33.710129,
+    "eval_duration": 4.969911
+  }
+}

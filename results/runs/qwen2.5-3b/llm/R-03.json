@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello Emily, your reservation 90003 is confirmed. Your stay is scheduled from [start date] to [end date]. Please have your booking confirmation handy for check-in.",
+  "scenario_id": "R-03",
+  "guest_message": "Hi, this is Emily Carter. Can you confirm my reservation 90003? I booked through Booking.com.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": "Emily Carter"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 14.873,
+  "llm_s": 13.905,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 354,
+  "completion_tokens": 39,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 13.639473,
+    "load_duration": 0.006376,
+    "prompt_eval_duration": 8.049983,
+    "eval_duration": 5.559474
+  }
+}

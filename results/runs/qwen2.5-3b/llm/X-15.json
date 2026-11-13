@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "No, there is no security deposit required for your booking.",
+  "scenario_id": "X-15",
+  "guest_message": "Do I need to pay a security deposit?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 4.497,
+  "llm_s": 3.529,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 343,
+  "completion_tokens": 13,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 3.220842,
+    "load_duration": 0.008857,
+    "prompt_eval_duration": 0.99307,
+    "eval_duration": 2.164569
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "For groceries, you can try nearby markets like Gulberg Market or Gulberg Supermarket. In the Walled City, you should see the famous Shalimar Bagh, Lahore Fort, and Badshahi Mosque. Enjoy your visit!",
+  "scenario_id": "X-11",
+  "guest_message": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 10.228,
+  "llm_s": 9.329,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 347,
+  "completion_tokens": 49,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 9.059419,
+    "load_duration": 0.008041,
+    "prompt_eval_duration": 1.069277,
+    "eval_duration": 7.931705
+  }
+}

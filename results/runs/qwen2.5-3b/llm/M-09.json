@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, the tap water in Lahore is safe to drink. You can use it for cooking and drinking.",
+  "scenario_id": "M-09",
+  "guest_message": "Is the tap water safe to drink?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.102,
+  "llm_s": 5.127,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 337,
+  "completion_tokens": 22,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.860206,
+    "load_duration": 0.020932,
+    "prompt_eval_duration": 1.004296,
+    "eval_duration": 3.788192
+  }
+}

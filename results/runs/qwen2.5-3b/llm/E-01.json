@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have the ability to arrange airport pickups. I recommend contacting a local transportation service for assistance.",
+  "scenario_id": "E-01",
+  "guest_message": "Can you arrange an airport pickup for us when we arrive?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.692,
+  "llm_s": 7.797,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 7.531762,
+    "load_duration": 0.00574,
+    "prompt_eval_duration": 1.510174,
+    "eval_duration": 5.69533
+  }
+}

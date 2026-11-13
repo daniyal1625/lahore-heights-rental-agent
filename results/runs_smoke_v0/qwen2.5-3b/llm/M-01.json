@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Check-in is at 14:00 and check-out is at 12:00 the following day.",
+  "scenario_id": "M-01",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 7.73,
+  "llm_s": 5.36,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 338,
+  "completion_tokens": 26,
+  "error": null,
+  "ollama": {
+    "total_duration": 4.989058,
+    "load_duration": 0.017478,
+    "prompt_eval_duration": 0.99528,
+    "eval_duration": 3.93251
+  }
+}

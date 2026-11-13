@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! For a stay of 2 people from 20 to 23 November, the Two-Bedroom or Penthouse would be the best choices as they have separate bedrooms and a washing machine. Please let me know if you need any more details or assistance.",
+  "scenario_id": "A-03",
+  "guest_message": "Looking for a place for 2 people from 20 to 23 November.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.2"
+    },
+    {
+      "type": "manual",
+      "id": "11.4"
+    },
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.2",
+    "11.4",
+    "20.1",
+    "Lahore > Do",
+    "Lahore > See > Walled City"
+  ],
+  "evidence": [
+    "[Manual 10.2 — Roof terrace]\nHouse manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\n\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).",
+    "[Manual 11.4 — Visitors]\nHouse manual > 11. House Rules > 11.4 Visitors\n\nDay visitors are welcome **between 9:00 AM and 9:00 PM**. Every visitor must register at the Gate 2 guard desk with a CNIC or passport, and you must collect them from the gate. A maximum of **4 visitors** may be in your apartment at the same time. **No overnight visitors** are allowed: anyone who sleeps over must be a registered guest on the booking and counts toward the maximum occupancy (section 2.1).",
+    "[Manual 20.1 — Families with children]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\n\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).",
+    "[Guide Lahore > Do]\nLahore > Do\n\nOn Thursdays there is a regular Sufi gathering at the 1 Shah Jamal Tomb. The renowned drummer Pappoo Saein and his disciples perform on the huge two-sided dhol, and devotees of the saint enter trances and dance wildly as hundreds of people watch. There is a separate seating area for women and foreigners; this is very comfortable and has the best view in the enclosure.\n\nCatch a movie. Theaters include Sozo World (in Fortress Stadium), the DHA Cinema (R Block DHA near Defence Public School for Boys), Cinestar (Township), Cinegold (Bahria Town), or The Plaza Cinema (on Queen's Road).\n\nOn Saturdays there is a regular \"Movie night\" organized by Lahore Film and Literary Club at South Asian Media Centre. The projector featuring full HD/Blu-ray 1080p resolution, followed by discussions after the films, available as part of the LFLC evenings. You can also interact with friends over a cup of coffee at the cafe which also serves as a perfect place to initiate debate or simply share an idea. The club offers other facilities with its literary club offering literary seminars, poetry readings and a library.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\n\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\n\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\n\n6 Minar-e-Pakistan. This tower, sometimes called the \"Eiffel Tower of Pakistan\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\n\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate."
+  ],
+  "latency_s": 51.209,
+  "llm_s": 49.977,
+  "tool_s": 0.0,
+  "retrieval_s": 0.102,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1354,
+  "completion_tokens": 56,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 49.709499,
+    "load_duration": 0.005772,
+    "prompt_eval_duration": 39.103423,
+    "eval_duration": 10.579225
+  }
+}

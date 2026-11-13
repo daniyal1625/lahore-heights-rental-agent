@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The travel cot is available free of charge on request, and you need to ask at least 48 hours before arrival. There is no charge for it. However, there is a fee for extra guests above the base occupancy. Please check the additional fees in the booking rules.",
+  "scenario_id": "X-05",
+  "guest_message": "Is our travel cot booked? And do we have to pay for it?",
+  "thread_context": {
+    "reservation_id": 90007,
+    "guest_name": "Bilal Raza"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "15.1"
+    },
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "manual",
+      "id": "2.3"
+    },
+    {
+      "type": "manual",
+      "id": "2.1"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "travel cot"
+      },
+      "result_size": 2746,
+      "ms": 29.9
+    }
+  ],
+  "retrieved": [
+    "15.1",
+    "20.1",
+    "2.3",
+    "2.1"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"15.1\",\"title\":\"Travel cot and high chair\",\"text\":\"House manual > 15. Extras and Requests > 15.1 Travel cot and high chair\\n\\nA **travel cot** and a **high chair** are available **free of charge** on request. Please ask at least **48 hours before arrival**. They are subject to availability, and the host confirms.\"},{\"source_id\":\"20.1\",\"title\":\"Families with children\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\\n\\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).\"},{\"source_id\":\"2.3\",\"title\":\"What is included in the nightly rate, and optional fees\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.3 What is included in the nightly rate, and optional fees\\n\\nYour nightly rate already includes electricity, piped gas, water, Wi-Fi, the final cleaning fee, bed linen, towels and all taxes. **There is no separate cleaning fee.** Nightly rates change with the season and are shown when you book.\\n\\n| Item | Fee |\\n|---|---|\\n| Extra guest above base occupancy | PKR 2,000 per guest per night |\\n| Early check-in from 12:00 PM (section 3.6) | PKR 2,000 |\\n| Late check-out until 2:00 PM (section 14.3) | PKR 2,500 |\\n| Mid-stay cleaning visit (section 15.3) | PKR 3,000 per visit |\\n| Shared laundry room, one wash (Studio guests, section 9.1) | PKR 400 per wash |\\n| Extra vehicle in the basement, if space is free (section 3.3) | PKR 500 per day |\\n| Deep cleaning after smoking indoors (section 11.2) | PKR 15,000 |\\n| Travel cot, high chair, extra heater, plug adapters | Free |\"},{\"source_id\":\"2.1\",\"title\":\"Guest numbers and occupancy\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.1 Guest numbers and occupancy\\n\\nEvery apartment has a **base occupancy** and a **maximum occupancy** (see the table in section 1.2). You may never exceed the maximum, even for a few hours. Infants under 2 years old sleep free and do not count as guests. Children aged 2 and above count as guests.\\n\\nOnly guests registered on the booking may stay overnight. If your plans change and more people will sleep in the apartment, tell the host before they arrive so the booking can be updated (subject to the maximum occupancy and to section 2.2).\"}]"
+  ],
+  "latency_s": 55.619,
+  "llm_s": 53.756,
+  "tool_s": 0.03,
+  "retrieval_s": 0.03,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2785,
+  "completion_tokens": 124,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 53.214277,
+    "load_duration": 0.018991,
+    "prompt_eval_duration": 26.550834,
+    "eval_duration": 26.189011
+  },
+  "plan": {
+    "intent": "cot booking and fees",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "travel cot",
+        "reservation_id": 90007,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 12.945,
+  "llm_answer_s": 40.811
+}

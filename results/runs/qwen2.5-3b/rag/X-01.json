@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Early check-in is possible from 12:00 PM for PKR 2,000. Please request at least 24 hours in advance. Let me check if we can accommodate your early arrival.",
+  "scenario_id": "X-01",
+  "guest_message": "I'm arriving around 11 this morning. Can we check in early?",
+  "thread_context": {
+    "reservation_id": 90001,
+    "guest_name": "Sara Khan"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "manual",
+      "id": "3.7"
+    },
+    {
+      "type": "manual",
+      "id": "14.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.6",
+    "3.7",
+    "14.1",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around"
+  ],
+  "evidence": [
+    "[Manual 3.6 — Early check-in and luggage storage]\nHouse manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\n\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.",
+    "[Manual 3.7 — Late arrival]\nHouse manual > 3. Getting Here and Arriving > 3.7 Late arrival\n\nSelf check-in works at any hour. If you will arrive after **11:00 PM**, tell the host in advance so the guard expects you. The guards at Gate 2 are on duty all night, but the front desk is closed after 9:00 PM.",
+    "[Manual 14.1 — Check-out time]\nHouse manual > 14. Checking Out > 14.1 Check-out time\n\nCheck-out is at **11:00 AM**. The next guest may arrive at 2:00 PM, and the cleaners need the time in between. Please message the host when you leave.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around]\nLahore > Get around\n\nLahore is a huge and sprawling city.  In the old town, walking or a tuk-tuk are your only options. You get to see a lot more on foot, just remember to wear comfortable shoes if you are going to be walking a great distance. Other than in winter, it will be too hot to walk long distances during the day. Sunday mornings are quiet and are a good time to explore.\n\nLocals are generally helpful in providing directions to well-known spots. However, you should still ask two or three people to confirm the address, especially if you are driving. Using the GPS function on your phone can also be helpful."
+  ],
+  "latency_s": 35.853,
+  "llm_s": 34.678,
+  "tool_s": 0.0,
+  "retrieval_s": 0.113,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1071,
+  "completion_tokens": 46,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 34.408024,
+    "load_duration": 0.023791,
+    "prompt_eval_duration": 25.764396,
+    "eval_duration": 8.55885
+  }
+}

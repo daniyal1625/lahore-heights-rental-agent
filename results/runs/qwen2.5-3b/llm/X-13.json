@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello Omar, \n\nI can check with the host regarding extending your stay. Please note that any changes will be subject to availability and policy. \n\nAyesha",
+  "scenario_id": "X-13",
+  "guest_message": "We love it here. Can we stay until the 18th instead of the 12th?",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 6.901,
+  "llm_s": 5.991,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 358,
+  "completion_tokens": 33,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.721754,
+    "load_duration": 0.007277,
+    "prompt_eval_duration": 1.078831,
+    "eval_duration": 4.600549
+  }
+}

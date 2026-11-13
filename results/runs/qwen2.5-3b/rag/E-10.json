@@ -1,0 +1,61 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but only the host can approve this request. You will need to contact the host directly to inquire about getting an invoice with your company's tax number.",
+  "scenario_id": "E-10",
+  "guest_message": "Can I get an invoice with my company's tax number for my stay?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "15.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "18",
+    "2.8",
+    "15.3",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 2.8 — Decisions only the host can make]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\n\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\n\n- refunds, compensation or goodwill gestures\n- special rates or long-stay discounts\n- exceptions to check-in or check-out times\n- changes to booking dates or moving to a different apartment\n- deductions from the security deposit\n- stays longer than 28 nights",
+    "[Manual 15.3 — Mid-stay cleaning]\nHouse manual > 15. Extras and Requests > 15.3 Mid-stay cleaning\n\nA cleaning visit during your stay costs **PKR 3,000 per visit**, including fresh bed linen and towels. Book it **24 hours ahead**. The cleaners work between 10:00 AM and 4:00 PM, and someone should be in the apartment or let us know where the valuables are.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nTaxis are a rarity on the streets of Lahore - with auto-rickshaws having cornered the market - for a  taxi you need to book one by phone. Most taxi drivers and, indeed, rickshaw drivers, carry mobile phones; it may be useful to take a number down if you find someone especially reliable. Do not take taxis in the Inner City, as the streets are narrow and very crowded. Either walk or take a qingqi. InDrive, Uber, and \"Careem\" are also available in the city.\n\nMinivans are probably the most dangerous form of public transport, with very rash drivers. Women will find these especially uncomfortable, as they are very crowded. Often women must sit in an undersized cubicle or with the driver, to prevent harassment.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 43.258,
+  "llm_s": 41.983,
+  "tool_s": 0.0,
+  "retrieval_s": 0.153,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1278,
+  "completion_tokens": 35,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 41.713998,
+    "load_duration": 0.00848,
+    "prompt_eval_duration": 33.951246,
+    "eval_duration": 7.689568
+  }
+}

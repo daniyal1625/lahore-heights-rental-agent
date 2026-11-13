@@ -1,0 +1,50 @@
+{
+  "system": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I understand you're concerned about the gas smell. Please follow these steps to ensure safety:\n\n1. Do not switch any lights or electrical appliances on or off.\n2. Turn the red gas shut-off lever under the kitchen sink a quarter turn so it is across the pipe.\n3. Open windows and the balcony door.\n4. Leave the apartment and call the security desk and the emergency maintenance line from outside.\n\nDo not go back inside until the security team says it is safe.",
+  "scenario_id": "D-08",
+  "sources": [
+    {
+      "type": "manual",
+      "id": "12.3"
+    },
+    {
+      "type": "manual",
+      "id": "8.2"
+    },
+    {
+      "type": "manual",
+      "id": "8.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay safe"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "12.3",
+    "8.2",
+    "8.4",
+    "Lahore > Stay healthy",
+    "Lahore > Stay safe"
+  ],
+  "latency_s": 60.164,
+  "llm_s": 58.991,
+  "tool_s": 0.0,
+  "retrieval_s": 0.09,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1269,
+  "completion_tokens": 97,
+  "error": null,
+  "ollama": {
+    "total_duration": 58.721612,
+    "load_duration": 0.007151,
+    "prompt_eval_duration": 40.107841,
+    "eval_duration": 18.576816
+  }
+}

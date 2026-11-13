@@ -1,0 +1,43 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Reservation 99999 could not be found. Please check the reservation ID and try again.",
+  "scenario_id": "D-01",
+  "guest_message": "What's the status of reservation 99999?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 99999
+      },
+      "result_size": 39,
+      "ms": 51.9
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"error\":\"Reservation 99999 not found\"}"
+  ],
+  "latency_s": 12.593,
+  "llm_s": 10.596,
+  "tool_s": 0.052,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1834,
+  "completion_tokens": 47,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 10.279753,
+    "load_duration": 0.01611,
+    "prompt_eval_duration": 2.391525,
+    "eval_duration": 7.788176
+  }
+}

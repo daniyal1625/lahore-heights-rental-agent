@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The building does not have a rooftop swimming pool. It only has a rooftop terrace for sitting and relaxing.",
+  "scenario_id": "D-07",
+  "guest_message": "I read in your manual that there's a rooftop swimming pool. What time does it open?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "10.3"
+    },
+    {
+      "type": "manual",
+      "id": "7.4"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "18",
+    "10.3",
+    "7.4",
+    "Lahore > Eat > Splurge",
+    "Lahore > Sleep"
+  ],
+  "evidence": [
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 10.3 — What the building does not have]\nHouse manual > 10. Building Amenities and Accessibility > 10.3 What the building does not have\n\nThe building does **not** have a swimming pool, a gym or a sauna. The roof terrace is for sitting and relaxing only.",
+    "[Manual 7.4 — Water supply]\nHouse manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.4 Water supply\n\nWater comes from a rooftop tank and an automatic booster pump, available 24 hours. Occasionally the building cleans the tank; we announce it at least a day ahead.",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\n☏ +91 42 35789824\n\nThe Skye (Skye - Dining in the Clouds), 3 C3, Noor Jehan Road, Block C 3 Gulberg III (near Liberty Chowk), ☏ +92 33164778886, toll-free:  +92 42 111 463 446. One of the highest rooftop restaurants in Lahore, it is on the 19th floor of the Indigo Hotel overlooking the metropolitan of Lahore. MM Alam Road on one side and Liberty on the other. It provides buffet and à-la-carte menu. (updated Jan 2023)\n\nLoafology Bakery & Cafe, Gold Crest Mall sector DD phase 4 Dha, ☏ +92 042 32175707, info@loafology.com. Daily 8AM–11PM. Casual dining and gatherings; offers a variety of vegetarian and vegan options. Rs 1500-4000. (updated Jan 2025)",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner."
+  ],
+  "latency_s": 37.918,
+  "llm_s": 36.845,
+  "tool_s": 0.0,
+  "retrieval_s": 0.131,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1267,
+  "completion_tokens": 22,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.572811,
+    "load_duration": 0.053248,
+    "prompt_eval_duration": 31.752299,
+    "eval_duration": 4.741631
+  }
+}

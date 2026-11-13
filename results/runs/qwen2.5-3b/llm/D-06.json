@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Assalam o alaikum, Check-in time hai 14:00, aur check-out time hai 12:00.",
+  "scenario_id": "D-06",
+  "guest_message": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.041,
+  "llm_s": 6.163,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 352,
+  "completion_tokens": 32,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.874796,
+    "load_duration": 0.008386,
+    "prompt_eval_duration": 1.172837,
+    "eval_duration": 4.661291
+  }
+}

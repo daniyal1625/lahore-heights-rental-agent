@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your total price for the stay is PKR 112,000. There is an extra guest fee of PKR 14,000. All payments have been made, and there is no balance due.",
+  "scenario_id": "R-06",
+  "guest_message": "Can you tell me my total price and what extra charges are on it?",
+  "thread_context": {
+    "reservation_id": 90006,
+    "guest_name": "Daniel Meyer"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90006"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90006
+      },
+      "result_size": 606,
+      "ms": 7.2
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90006,\"status\":\"modified\",\"guest_name\":\"Daniel Meyer\",\"listing\":\"One-Bedroom, Unit 304\",\"channel\":\"airbnbOfficial\",\"arrival\":\"2026-11-15\",\"departure\":\"2026-11-22\",\"nights\":7,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":3,\"children\":0,\"total_price_pkr\":112000,\"paid_amount_pkr\":112000,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[{\"name\":\"Extra guest fee\",\"amount\":14000}],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"verified\",\"guest_note\":\"Dates changed from 14-21 Nov to 15-22 Nov.\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 41.034,
+  "llm_s": 39.077,
+  "tool_s": 0.007,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2043,
+  "completion_tokens": 74,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.758617,
+    "load_duration": 0.015173,
+    "prompt_eval_duration": 26.314235,
+    "eval_duration": 12.329292
+  }
+}

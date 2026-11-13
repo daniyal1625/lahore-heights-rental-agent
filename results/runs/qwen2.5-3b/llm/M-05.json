@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, you can bring your dog. Please make sure to inform me of the breed and any necessary vaccinations.",
+  "scenario_id": "M-05",
+  "guest_message": "Can I bring my dog with me?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.587,
+  "llm_s": 6.368,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 337,
+  "completion_tokens": 23,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.094326,
+    "load_duration": 0.030667,
+    "prompt_eval_duration": 1.288902,
+    "eval_duration": 4.719529
+  }
+}

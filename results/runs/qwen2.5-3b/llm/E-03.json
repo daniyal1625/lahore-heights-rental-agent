@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have information about electric car chargers in the parking. I suggest checking with the host directly for this information.",
+  "scenario_id": "E-03",
+  "guest_message": "Is there an electric car charger in the parking?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.781,
+  "llm_s": 6.351,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 339,
+  "completion_tokens": 31,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.084512,
+    "load_duration": 0.008052,
+    "prompt_eval_duration": 1.106957,
+    "eval_duration": 4.945131
+  }
+}

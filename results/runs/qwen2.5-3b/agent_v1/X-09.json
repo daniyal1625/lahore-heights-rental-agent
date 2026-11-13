@@ -1,0 +1,50 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, all available units are fully booked. Please check back later or consider a different date.",
+  "scenario_id": "X-09",
+  "guest_message": "I land at 3 pm. What's my door code?",
+  "thread_context": {
+    "reservation_id": 90009,
+    "guest_name": "Chen Wei"
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-10..2026-11-11"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-10",
+        "check_out": "2026-11-11",
+        "guests": 1
+      },
+      "result_size": 759,
+      "ms": 9.8
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-10\",\"check_out\":\"2026-11-11\",\"nights\":1,\"guests\":1,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":false,\"nightly_price_pkr\":9500,\"stay_total_pkr\":9500,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":false,\"nightly_price_pkr\":14000,\"stay_total_pkr\":14000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":false,\"nightly_price_pkr\":21000,\"stay_total_pkr\":21000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":false,\"nightly_price_pkr\":38000,\"stay_total_pkr\":38000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 46.499,
+  "llm_s": 44.703,
+  "tool_s": 0.01,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2142,
+  "completion_tokens": 76,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 44.434925,
+    "load_duration": 0.022402,
+    "prompt_eval_duration": 29.950838,
+    "eval_duration": 14.397551
+  }
+}

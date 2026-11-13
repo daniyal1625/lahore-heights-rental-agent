@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Your payment is due upon arrival. Please check your booking confirmation for the exact amount owed.",
+  "scenario_id": "R-04",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 14.705,
+  "llm_s": 13.498,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 348,
+  "completion_tokens": 19,
+  "error": null,
+  "ollama": {
+    "total_duration": 13.227973,
+    "load_duration": 0.009563,
+    "prompt_eval_duration": 9.252973,
+    "eval_duration": 3.909884
+  }
+}

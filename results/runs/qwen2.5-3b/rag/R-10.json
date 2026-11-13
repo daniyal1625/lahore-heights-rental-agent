@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Your stay starts at 2:00 PM and the maximum stay is 28 nights per booking.",
+  "scenario_id": "R-10",
+  "guest_message": "When does my stay start and how long is it?",
+  "thread_context": {
+    "reservation_id": 90010,
+    "guest_name": "Hassan Ali"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.3"
+    },
+    {
+      "type": "manual",
+      "id": "15.3"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Do"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.3",
+    "15.3",
+    "21",
+    "Lahore > Sleep",
+    "Lahore > Do"
+  ],
+  "evidence": [
+    "[Manual 20.3 — Long stays]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.3 Long stays\n\n- The maximum stay is 28 nights per booking; longer stays need the host's approval (section 2.7).\n- Book mid-stay cleaning visits in advance (section 15.3) and use the free towel exchange at the front desk (section 9.2).\n- Studio guests use the shared laundry room for longer stays (section 9.1).\n- Pay attention to the monthly smog season (section 16.1) and the winter heating notes (section 7.2).",
+    "[Manual 15.3 — Mid-stay cleaning]\nHouse manual > 15. Extras and Requests > 15.3 Mid-stay cleaning\n\nA cleaning visit during your stay costs **PKR 3,000 per visit**, including fresh bed linen and towels. Book it **24 hours ahead**. The cleaners work between 10:00 AM and 4:00 PM, and someone should be in the apartment or let us know where the valuables are.",
+    "[Manual 21 — Key Facts at a Glance]\nHouse manual > 21. Key Facts at a Glance\n\n| Topic | Fact |\n|---|---|\n| Check-in / check-out | 2:00 PM / 11:00 AM |\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\n| Quiet hours | 10:00 PM to 8:00 AM |\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\n| Front desk | 9:00 AM to 9:00 PM |\n| Roof terrace | 7:00 AM to 10:00 PM |\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\n| Maximum stay | 28 nights |\n| Generator start time | About 30 seconds |\n| Rescue / Police / Fire | 1122 / 15 / 16 |\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\n| Emergency maintenance | +92 300 555 0177 (24 hours) |",
+    "[Guide Lahore > Sleep]\nLahore > Sleep\n\nFor the visitor there are three broad options of areas in which to stay\n\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\n\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\n\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\n\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\n\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.",
+    "[Guide Lahore > Do]\nLahore > Do\n\nThese can be found at Fortress Stadium and Sozo Water Park (Jallo).\n\nEnjoy street food and local special treats in the aptly named 3 Gawalmandi Food Street and 4 Anarkali Food Street.\n\nWagah Border Ceremony, Grand Trunk Road, Wagah. Daily 4:15 PM or 5:15 PM depending on the season. A patriotic and energetic display of military showmanship between India and Pakistan, known for its loud atmosphere and extended wait times. The experience is unique and memorable, though the long wait can be tiring. Entry is free. If coming from Wagah at the Pakistani border, take a cycle-rickshaw (Rs 15, 3 km) to the Attari station, where you can catch a local bus to Amritsar (Rs 15, 25 km). Taxis also use this route and charge around Rs 200 (800 from the Raja Sansi Airport) for the entire vehicle. (updated July 2024)"
+  ],
+  "latency_s": 45.885,
+  "llm_s": 44.705,
+  "tool_s": 0.0,
+  "retrieval_s": 0.118,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1419,
+  "completion_tokens": 23,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 44.436092,
+    "load_duration": 0.01839,
+    "prompt_eval_duration": 40.018671,
+    "eval_duration": 4.33271
+  }
+}

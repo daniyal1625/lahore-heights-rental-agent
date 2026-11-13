@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I will check with the host regarding your cancellation status. Please allow 5 business days for a response.",
+  "scenario_id": "R-05",
+  "guest_message": "I'm not sure my cancellation went through. Is my booking cancelled?",
+  "thread_context": {
+    "reservation_id": 90005,
+    "guest_name": "Ayesha Tariq"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.6"
+    },
+    {
+      "type": "manual",
+      "id": "2.7"
+    },
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "2.6",
+    "2.7",
+    "2.5",
+    "Lahore > Sleep > Budget",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 2.6 — Cancellation policy]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.6 Cancellation policy\n\n- **Direct bookings:** free cancellation with a full refund up to **7 days before the arrival date**. If you cancel between 7 days and 48 hours before arrival, you receive a 50% refund. Within 48 hours of arrival there is no refund. Refunds are processed within 5 business days to the original payment method.\n- **Bookings made through Airbnb or Booking.com:** the cancellation policy shown on your platform booking applies, not the direct-booking policy above. Cancel and request refunds through the platform.\n\nRefund exceptions (illness, flight problems and similar) are decided by the host. See section 2.8.",
+    "[Manual 2.7 — Changing or extending your stay]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.7 Changing or extending your stay\n\n- **Extending:** ask us. If the apartment is free for the extra nights we can usually extend at the same nightly rate. The host confirms every extension personally; it is not confirmed until the host says so.\n- **Changing dates or moving to another apartment:** subject to availability and the host's approval.\n- **Minimum and maximum stay:** the minimum is 1 night and the maximum is **28 nights** per booking. Longer stays are only possible with the host's approval.\n- **Special rates and long-stay discounts:** we do not publish any. The host decides case by case.",
+    "[Manual 2.5 — Paying for your booking]\nHouse manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\n\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.",
+    "[Guide Lahore > Sleep > Budget]\nLahore > Sleep > Budget\n\nThere are scores of options for travelers. If you feel like staying on budget there are some fairly crowded and over-priced options near the train station, which is in an overwhelmingly busy and chaotic part of the city - not for the faint-hearted. Westerners will often need to bargain if they wish to receive a fair price.\n\n1 Lahore Backpackers Hotel (Amin Building), Near UBL SD. Vault, 65 The Mall (Regale Chowk, above Subway Sandwich), ☏ +92 42 37351544, +92 42 37351545. Backpackers hostel. They arrange many trips to local cultural events and offer extremely clean accommodation at very reasonable rates. They can organize parking. Rs 500 dorms, Rs 1000 doubles. (updated Nov 2015)\n\nRegale Internet Inn, Surriaya Mansion 65, ☏ +92 42 3731-1987, regale_internet@hotmail.com. The owner, Malik, is a former journalist who can show you some amazing off-the-wall stuff in the city, including weekly trips to Shah Jamal on Thursday nights. It's slightly expensive for what it is, but pretty much the best option in town and worth it for the security and to meet other travelers. It is down an alley and upstairs, behind H. Karim Busch & Sons supermarket. They are pretty good at responding online bookings and often update their blog posts. Rs 200 dorms, Rs 450 doubles.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 50.355,
+  "llm_s": 49.029,
+  "tool_s": 0.0,
+  "retrieval_s": 0.118,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1364,
+  "completion_tokens": 22,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 48.763614,
+    "load_duration": 0.007469,
+    "prompt_eval_duration": 43.871233,
+    "eval_duration": 4.863153
+  }
+}

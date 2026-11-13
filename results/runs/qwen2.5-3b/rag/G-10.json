@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The cheapest way to get between big cities in Pakistan is by minibuses. They can be uncomfortably crowded, so consider a more comfortable larger bus if possible.",
+  "scenario_id": "G-10",
+  "guest_message": "What's the cheapest way to get between big cities in Pakistan?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By train"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "20.5",
+    "3.2",
+    "17",
+    "Lahore > Get in > By bus",
+    "Lahore > Get in > By train"
+  ],
+  "evidence": [
+    "[Manual 20.5 — First-time visitors to Pakistan]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\n\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\n- Dress modestly in the lobby and corridors (section 11.9).\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.",
+    "[Manual 3.2 — Taxis and ride-hailing]\nHouse manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\n\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\"Lahore Heights Apartments, Gate 2\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.",
+    "[Manual 17 — Nearby Essentials (the host's short list)]\nHouse manual > 17. Nearby Essentials (the host's short list)\n\nThese are the places our guests use most. All are within a short walk.\n\n| What | Name and details |\n|---|---|\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\n| Mosque | Masjid Al-Noor, about 300 m away |\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\n\nFor sightseeing, food and transport around Lahore, see the separate local guide.",
+    "[Guide Lahore > Get in > By bus]\nLahore > Get in > By bus\n\nFrom the Indian border, bus #4 runs to the Main train station for Rs 20.\n\nMinibuses are the cheapest way to get between the larger cities, and the only way to get to some more remote destinations. They can be uncomfortably crowded, so if possible opt for a more comfortable larger bus.\n\nDaewoo has its own terminal away from the main bus station, on Ferozpur Road near Kalma Chowk and Liberty Market. Clean, comfortable, air-conditioned coaches run regularly between Lahore to all major cities of Punjab, KP and Sindh including Karachi plus many smaller cities and towns such as Islamabad, Multan, Faisalabad and Peshawar. Daewoo is more expensive but much more comfortable and reliable than the competition. Between Lahore and Rawalpindi/Islamabad they have a 'Premium Plus service' which gives you a business class style seat and more space.\n\nFaisal Movers has its Lahore terminal on Band Road at Abdullah Travels. It is popular due to its safety and refreshments in the bus. Faisal Mover is less expensive than Daewoo but not other companies. This is a comfortable and easy way to go from Lahore to cities such as Murree, Rawalpindi, Islamabad, Sahiwal, Multan, Dera Ghazi Khan.\n\nSkyways, Niazi Express and a couple others operate large, comfortable buses to Islamabad, Peshawar, Faisalabad and many other cities and towns from their own bus terminals near M2 Motorway Interchange. These services are rather affordable and convenient.",
+    "[Guide Lahore > Get in > By train]\nLahore > Get in > By train\n\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\n\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\n\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\n\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)"
+  ],
+  "latency_s": 46.931,
+  "llm_s": 45.743,
+  "tool_s": 0.0,
+  "retrieval_s": 0.106,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1446,
+  "completion_tokens": 33,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 45.483194,
+    "load_duration": 0.00961,
+    "prompt_eval_duration": 39.264633,
+    "eval_duration": 6.185101
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have information about specific discounts for long stays. I recommend contacting the host directly for details.",
+  "scenario_id": "E-04",
+  "guest_message": "We'd like to stay a whole month. Is there a discount for long stays?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.195,
+  "llm_s": 6.689,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 346,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 6.442703,
+    "load_duration": 0.011629,
+    "prompt_eval_duration": 2.068228,
+    "eval_duration": 4.319715
+  }
+}

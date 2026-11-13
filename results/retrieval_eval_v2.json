@@ -1,0 +1,6618 @@
+{
+  "generated_at": "2026-11-11T04:34:34+00:00",
+  "config": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "chroma_dir": "<project-root>\\.chroma",
+    "k": 5,
+    "rrf_k": 60,
+    "hybrid_dense_weight": 1.5,
+    "hybrid_bm25_weight": 1.0,
+    "hybrid_manual_min_depth": 5,
+    "hybrid_guide_min_depth": 20,
+    "scenario_count": 87,
+    "manual_scenarios": 42,
+    "guide_scenarios": 12
+  },
+  "build": {
+    "build_time_s": null,
+    "chunks": {
+      "manual": 100,
+      "guide": 56,
+      "total": 156
+    },
+    "words": {
+      "manual": {
+        "avg": 81.67,
+        "max": 218,
+        "min": 27
+      },
+      "guide": {
+        "avg": 166.64,
+        "max": 240,
+        "min": 17
+      }
+    }
+  },
+  "comparison": {
+    "dense": {
+      "manual": {
+        "overall": {
+          "n": 42,
+          "hit@1": 0.7857,
+          "hit@3": 0.9286,
+          "hit@5": 0.9762,
+          "recall@5": 0.9048,
+          "mrr": 0.8587
+        },
+        "by_category": {
+          "edge_adversarial": {
+            "n": 4,
+            "hit@1": 0.25,
+            "hit@3": 0.75,
+            "hit@5": 1.0,
+            "recall@5": 0.75,
+            "mrr": 0.5083
+          },
+          "manual_only": {
+            "n": 20,
+            "hit@1": 0.85,
+            "hit@3": 0.95,
+            "hit@5": 0.95,
+            "recall@5": 0.9,
+            "mrr": 0.9
+          },
+          "multi_tool": {
+            "n": 15,
+            "hit@1": 0.8667,
+            "hit@3": 0.9333,
+            "hit@5": 1.0,
+            "recall@5": 0.9667,
+            "mrr": 0.9133
+          },
+          "must_escalate": {
+            "n": 3,
+            "hit@1": 0.6667,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.8333,
+            "mrr": 0.7778
+          }
+        }
+      },
+      "guide": {
+        "overall": {
+          "n": 12,
+          "hit@1": 0.6667,
+          "hit@3": 0.8333,
+          "hit@5": 0.8333,
+          "mrr": 0.7222
+        },
+        "by_category": {
+          "guide_only": {
+            "n": 10,
+            "hit@1": 0.7,
+            "hit@3": 0.9,
+            "hit@5": 0.9,
+            "mrr": 0.7667
+          },
+          "multi_tool": {
+            "n": 2,
+            "hit@1": 0.5,
+            "hit@3": 0.5,
+            "hit@5": 0.5,
+            "mrr": 0.5
+          }
+        },
+        "union_fallback": {
+          "single_hit@5": 10,
+          "union_hit@5": 0,
+          "miss@5": 2
+        }
+      }
+    },
+    "hybrid": {
+      "manual": {
+        "overall": {
+          "n": 42,
+          "hit@1": 0.7857,
+          "hit@3": 0.9286,
+          "hit@5": 0.9762,
+          "recall@5": 0.9048,
+          "mrr": 0.8639
+        },
+        "by_category": {
+          "edge_adversarial": {
+            "n": 4,
+            "hit@1": 0.25,
+            "hit@3": 0.75,
+            "hit@5": 1.0,
+            "recall@5": 0.75,
+            "mrr": 0.5625
+          },
+          "manual_only": {
+            "n": 20,
+            "hit@1": 0.85,
+            "hit@3": 0.95,
+            "hit@5": 0.95,
+            "recall@5": 0.9,
+            "mrr": 0.9
+          },
+          "multi_tool": {
+            "n": 15,
+            "hit@1": 0.9333,
+            "hit@3": 0.9333,
+            "hit@5": 1.0,
+            "recall@5": 0.9667,
+            "mrr": 0.9467
+          },
+          "must_escalate": {
+            "n": 3,
+            "hit@1": 0.3333,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.8333,
+            "mrr": 0.6111
+          }
+        }
+      },
+      "guide": {
+        "overall": {
+          "n": 12,
+          "hit@1": 0.6667,
+          "hit@3": 0.8333,
+          "hit@5": 0.9167,
+          "mrr": 0.7389
+        },
+        "by_category": {
+          "guide_only": {
+            "n": 10,
+            "hit@1": 0.7,
+            "hit@3": 0.9,
+            "hit@5": 0.9,
+            "mrr": 0.7667
+          },
+          "multi_tool": {
+            "n": 2,
+            "hit@1": 0.5,
+            "hit@3": 0.5,
+            "hit@5": 1.0,
+            "mrr": 0.6
+          }
+        },
+        "union_fallback": {
+          "single_hit@5": 11,
+          "union_hit@5": 0,
+          "miss@5": 1
+        }
+      }
+    }
+  },
+  "latency": {
+    "dense": {
+      "overall": {
+        "n": 54,
+        "median_ms": 67.9,
+        "p95_ms": 76.03,
+        "min_ms": 55.87,
+        "max_ms": 3061.5
+      },
+      "manual": {
+        "n": 42,
+        "median_ms": 66.98,
+        "p95_ms": 74.55,
+        "min_ms": 55.87,
+        "max_ms": 3061.5
+      },
+      "guide": {
+        "n": 12,
+        "median_ms": 71.47,
+        "p95_ms": 79.83,
+        "min_ms": 64.48,
+        "max_ms": 84.42
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "n": 54,
+        "median_ms": 67.47,
+        "p95_ms": 83.07,
+        "min_ms": 48.38,
+        "max_ms": 95.56
+      },
+      "manual": {
+        "n": 42,
+        "median_ms": 68.0,
+        "p95_ms": 83.17,
+        "min_ms": 48.38,
+        "max_ms": 95.56
+      },
+      "guide": {
+        "n": 12,
+        "median_ms": 63.87,
+        "p95_ms": 77.98,
+        "min_ms": 49.62,
+        "max_ms": 79.32
+      }
+    }
+  },
+  "worst_misses": {
+    "dense": [
+      {
+        "source": "manual",
+        "severity": 4,
+        "id": "M-18",
+        "category": "manual_only",
+        "query": "Do you provide a hair dryer and an iron?",
+        "expected": [
+          "4.1",
+          "4.2",
+          "4.3",
+          "4.4"
+        ],
+        "miss": true,
+        "mrr": 0.0,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "8.3",
+            "title": "Supplies",
+            "score": 0.571514
+          },
+          {
+            "rank": 2,
+            "label": "9.1",
+            "title": "Washing your clothes",
+            "score": 0.556359
+          },
+          {
+            "rank": 3,
+            "label": "9.2",
+            "title": "Linens and towels",
+            "score": 0.554939
+          }
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-02",
+        "category": "guide_only",
+        "query": "How much does Lahore Fort cost for a foreign tourist?",
+        "expected": [
+          "non-pakistanis",
+          "500"
+        ],
+        "miss": true,
+        "mrr": 0.0,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.713138
+          },
+          {
+            "rank": 2,
+            "label": "Lahore > Sleep > Budget",
+            "title": "Budget",
+            "score": 0.707079
+          },
+          {
+            "rank": 3,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.699927
+          }
+        ],
+        "missing_evidence": [
+          "non-pakistanis"
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "X-11",
+        "category": "multi_tool",
+        "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+        "expected": [
+          "wazir khan",
+          "lahore fort"
+        ],
+        "miss": true,
+        "mrr": 0.0,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore > Eat > Budget",
+            "title": "Budget",
+            "score": 0.627357
+          },
+          {
+            "rank": 2,
+            "label": "Lahore > See > Walled City",
+            "title": "Walled City",
+            "score": 0.616773
+          },
+          {
+            "rank": 3,
+            "label": "Lahore > Buy > Other",
+            "title": "Other",
+            "score": 0.615197
+          }
+        ],
+        "missing_evidence": [
+          "wazir khan"
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-06",
+        "category": "edge_adversarial",
+        "query": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+        "expected": [
+          "3.5",
+          "14.1"
+        ],
+        "miss": false,
+        "mrr": 0.2,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "20.5",
+            "title": "First-time visitors to Pakistan",
+            "score": 0.608396
+          },
+          {
+            "rank": 2,
+            "label": "17",
+            "title": "Nearby Essentials (the host's short list)",
+            "score": 0.606036
+          },
+          {
+            "rank": 3,
+            "label": "21",
+            "title": "Key Facts at a Glance",
+            "score": 0.60381
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 1,
+        "id": "X-08",
+        "category": "multi_tool",
+        "query": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+        "expected": [
+          "2.2"
+        ],
+        "miss": false,
+        "mrr": 0.2,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.568242
+          },
+          {
+            "rank": 2,
+            "label": "2.7",
+            "title": "Changing or extending your stay",
+            "score": 0.562125
+          },
+          {
+            "rank": 3,
+            "label": "14.3",
+            "title": "Late check-out",
+            "score": 0.558434
+          }
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-08",
+        "category": "guide_only",
+        "query": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+        "expected": [
+          "unesco",
+          "wazir khan"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore > See > Walled City",
+            "title": "Walled City",
+            "score": 0.795211
+          },
+          {
+            "rank": 2,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.788774
+          },
+          {
+            "rank": 3,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.766014
+          }
+        ],
+        "missing_evidence": []
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-09",
+        "category": "guide_only",
+        "query": "Where are the Shalimar Gardens?",
+        "expected": [
+          "shalimar gardens",
+          "wagah"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.639045
+          },
+          {
+            "rank": 2,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.633698
+          },
+          {
+            "rank": 3,
+            "label": "Lahore > See > Other sights",
+            "title": "Other sights",
+            "score": 0.612064
+          }
+        ],
+        "missing_evidence": []
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-10",
+        "category": "edge_adversarial",
+        "query": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+        "expected": [
+          "5.1",
+          "2.8"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "13.2",
+            "title": "How fast we respond",
+            "score": 0.606457
+          },
+          {
+            "rank": 2,
+            "label": "13.3",
+            "title": "Quick fixes",
+            "score": 0.605729
+          },
+          {
+            "rank": 3,
+            "label": "5.1",
+            "title": "Wi-Fi",
+            "score": 0.60177
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "E-06",
+        "category": "must_escalate",
+        "query": "The AC in our bedroom didn't cool properly last night. Can I get a refund for one night?",
+        "expected": [
+          "2.8",
+          "13.3"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.655724
+          },
+          {
+            "rank": 2,
+            "label": "2.6",
+            "title": "Cancellation policy",
+            "score": 0.648546
+          },
+          {
+            "rank": 3,
+            "label": "13.3",
+            "title": "Quick fixes",
+            "score": 0.647163
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-07",
+        "category": "edge_adversarial",
+        "query": "I read in your manual that there's a rooftop swimming pool. What time does it open?",
+        "expected": [
+          "10.2",
+          "10.3"
+        ],
+        "miss": false,
+        "mrr": 0.5,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.671947
+          },
+          {
+            "rank": 2,
+            "label": "10.3",
+            "title": "What the building does not have",
+            "score": 0.666501
+          },
+          {
+            "rank": 3,
+            "label": "7.4",
+            "title": "Water supply",
+            "score": 0.637754
+          }
+        ]
+      }
+    ],
+    "hybrid": [
+      {
+        "source": "manual",
+        "severity": 4,
+        "id": "M-18",
+        "category": "manual_only",
+        "query": "Do you provide a hair dryer and an iron?",
+        "expected": [
+          "4.1",
+          "4.2",
+          "4.3",
+          "4.4"
+        ],
+        "miss": true,
+        "mrr": 0.0,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "8.3",
+            "title": "Supplies",
+            "score": 0.040463
+          },
+          {
+            "rank": 2,
+            "label": "8.1",
+            "title": "Cooking equipment",
+            "score": 0.03947
+          },
+          {
+            "rank": 3,
+            "label": "9.1",
+            "title": "Washing your clothes",
+            "score": 0.024194
+          }
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-02",
+        "category": "guide_only",
+        "query": "How much does Lahore Fort cost for a foreign tourist?",
+        "expected": [
+          "non-pakistanis",
+          "500"
+        ],
+        "miss": true,
+        "mrr": 0.0,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.039975
+          },
+          {
+            "rank": 2,
+            "label": "Lahore > Do",
+            "title": "Do",
+            "score": 0.03947
+          },
+          {
+            "rank": 3,
+            "label": "Lahore > Sleep > Budget",
+            "title": "Budget",
+            "score": 0.039345
+          }
+        ],
+        "missing_evidence": [
+          "non-pakistanis"
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "X-11",
+        "category": "multi_tool",
+        "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+        "expected": [
+          "wazir khan",
+          "lahore fort"
+        ],
+        "miss": false,
+        "mrr": 0.2,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore > See > Walled City",
+            "title": "Walled City",
+            "score": 0.038278
+          },
+          {
+            "rank": 2,
+            "label": "Lahore > Buy > Other",
+            "title": "Other",
+            "score": 0.037326
+          },
+          {
+            "rank": 3,
+            "label": "Lahore > Buy > Other",
+            "title": "Other",
+            "score": 0.037323
+          }
+        ],
+        "missing_evidence": []
+      },
+      {
+        "source": "manual",
+        "severity": 1,
+        "id": "X-08",
+        "category": "multi_tool",
+        "query": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+        "expected": [
+          "2.2"
+        ],
+        "miss": false,
+        "mrr": 0.2,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.02459
+          },
+          {
+            "rank": 2,
+            "label": "2.7",
+            "title": "Changing or extending your stay",
+            "score": 0.024194
+          },
+          {
+            "rank": 3,
+            "label": "14.3",
+            "title": "Late check-out",
+            "score": 0.02381
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-10",
+        "category": "edge_adversarial",
+        "query": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+        "expected": [
+          "5.1",
+          "2.8"
+        ],
+        "miss": false,
+        "mrr": 0.25,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.039831
+          },
+          {
+            "rank": 2,
+            "label": "13.2",
+            "title": "How fast we respond",
+            "score": 0.02459
+          },
+          {
+            "rank": 3,
+            "label": "13.3",
+            "title": "Quick fixes",
+            "score": 0.024194
+          }
+        ]
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-08",
+        "category": "guide_only",
+        "query": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+        "expected": [
+          "unesco",
+          "wazir khan"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore > See > Walled City",
+            "title": "Walled City",
+            "score": 0.040984
+          },
+          {
+            "rank": 2,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.040323
+          },
+          {
+            "rank": 3,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.039683
+          }
+        ],
+        "missing_evidence": []
+      },
+      {
+        "source": "guide",
+        "severity": 2,
+        "id": "G-09",
+        "category": "guide_only",
+        "query": "Where are the Shalimar Gardens?",
+        "expected": [
+          "shalimar gardens",
+          "wagah"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.040587
+          },
+          {
+            "rank": 2,
+            "label": "Lahore > See > Other sights",
+            "title": "Other sights",
+            "score": 0.039939
+          },
+          {
+            "rank": 3,
+            "label": "Lahore",
+            "title": "Lahore",
+            "score": 0.039516
+          }
+        ],
+        "missing_evidence": []
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "E-06",
+        "category": "must_escalate",
+        "query": "The AC in our bedroom didn't cool properly last night. Can I get a refund for one night?",
+        "expected": [
+          "2.8",
+          "13.3"
+        ],
+        "miss": false,
+        "mrr": 0.3333333333333333,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.040984
+          },
+          {
+            "rank": 2,
+            "label": "2.6",
+            "title": "Cancellation policy",
+            "score": 0.024194
+          },
+          {
+            "rank": 3,
+            "label": "13.3",
+            "title": "Quick fixes",
+            "score": 0.02381
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-06",
+        "category": "edge_adversarial",
+        "query": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+        "expected": [
+          "3.5",
+          "14.1"
+        ],
+        "miss": false,
+        "mrr": 0.5,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "21",
+            "title": "Key Facts at a Glance",
+            "score": 0.039939
+          },
+          {
+            "rank": 2,
+            "label": "14.1",
+            "title": "Check-out time",
+            "score": 0.03947
+          },
+          {
+            "rank": 3,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.039062
+          }
+        ]
+      },
+      {
+        "source": "manual",
+        "severity": 2,
+        "id": "D-07",
+        "category": "edge_adversarial",
+        "query": "I read in your manual that there's a rooftop swimming pool. What time does it open?",
+        "expected": [
+          "10.2",
+          "10.3"
+        ],
+        "miss": false,
+        "mrr": 0.5,
+        "top3": [
+          {
+            "rank": 1,
+            "label": "18",
+            "title": "Quick FAQ",
+            "score": 0.040984
+          },
+          {
+            "rank": 2,
+            "label": "10.3",
+            "title": "What the building does not have",
+            "score": 0.040323
+          },
+          {
+            "rank": 3,
+            "label": "7.4",
+            "title": "Water supply",
+            "score": 0.039435
+          }
+        ]
+      }
+    ]
+  },
+  "details": {
+    "dense": {
+      "manual": [
+        {
+          "source": "manual",
+          "id": "M-01",
+          "category": "manual_only",
+          "query": "What time is check-in and check-out?",
+          "expected": [
+            "3.5",
+            "14.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.791669
+            },
+            {
+              "rank": 2,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.725417
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.699859
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.690878
+            },
+            {
+              "rank": 5,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.679064
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-02",
+          "category": "manual_only",
+          "query": "Hi! What's the wifi name and password for the studio?",
+          "expected": [
+            "5.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "5.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.689294
+            },
+            {
+              "rank": 2,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.594409
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.592374
+            },
+            {
+              "rank": 4,
+              "label": "5.2",
+              "title": "TV and streaming",
+              "score": 0.578372
+            },
+            {
+              "rank": 5,
+              "label": "20.2",
+              "title": "Business travellers and remote workers",
+              "score": 0.563243
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-03",
+          "category": "manual_only",
+          "query": "We're in unit 502. How do we connect to the internet?",
+          "expected": [
+            "5.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "5.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.66509
+            },
+            {
+              "rank": 2,
+              "label": "4.3",
+              "title": "Two-Bedroom, Unit 502",
+              "score": 0.630072
+            },
+            {
+              "rank": 3,
+              "label": "5.2",
+              "title": "TV and streaming",
+              "score": 0.606681
+            },
+            {
+              "rank": 4,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.562131
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.558148
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-04",
+          "category": "manual_only",
+          "query": "Is there a washing machine in the studio?",
+          "expected": [
+            "4.1",
+            "9.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "9.1": 1,
+            "4.1": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.720843
+            },
+            {
+              "rank": 2,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.637281
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.634035
+            },
+            {
+              "rank": 4,
+              "label": "9.3",
+              "title": "Cleaning during your stay",
+              "score": 0.620066
+            },
+            {
+              "rank": 5,
+              "label": "19.4",
+              "title": "Washing machine and washer-dryer",
+              "score": 0.608463
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-05",
+          "category": "manual_only",
+          "query": "Can I bring my dog with me?",
+          "expected": [
+            "11.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.5",
+              "title": "Pets",
+              "score": 0.605747
+            },
+            {
+              "rank": 2,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.526551
+            },
+            {
+              "rank": 3,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.524793
+            },
+            {
+              "rank": 4,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.524546
+            },
+            {
+              "rank": 5,
+              "label": "11.9",
+              "title": "Respecting neighbours and local customs",
+              "score": 0.522066
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-06",
+          "category": "manual_only",
+          "query": "What are your quiet hours?",
+          "expected": [
+            "11.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.1",
+              "title": "Quiet hours",
+              "score": 0.790818
+            },
+            {
+              "rank": 2,
+              "label": "16.3",
+              "title": "Ramadan",
+              "score": 0.583323
+            },
+            {
+              "rank": 3,
+              "label": "13.2",
+              "title": "How fast we respond",
+              "score": 0.583056
+            },
+            {
+              "rank": 4,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.559866
+            },
+            {
+              "rank": 5,
+              "label": "1.5",
+              "title": "Time zone and language",
+              "score": 0.558776
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-07",
+          "category": "manual_only",
+          "query": "Can I smoke on the balcony?",
+          "expected": [
+            "11.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.2",
+              "title": "Smoking and vaping",
+              "score": 0.767139
+            },
+            {
+              "rank": 2,
+              "label": "11.8",
+              "title": "Open flames and barbecues",
+              "score": 0.705439
+            },
+            {
+              "rank": 3,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.680048
+            },
+            {
+              "rank": 4,
+              "label": "8.5",
+              "title": "Cooking Pakistani dishes without setting off the alarm",
+              "score": 0.628415
+            },
+            {
+              "rank": 5,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.590986
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-08",
+          "category": "manual_only",
+          "query": "What happens during load shedding? Will the AC and the lift still work?",
+          "expected": [
+            "6.1",
+            "6.2"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "6.1": 2,
+            "6.2": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "6.3",
+              "title": "If the power goes off only in your apartment",
+              "score": 0.639744
+            },
+            {
+              "rank": 2,
+              "label": "6.1",
+              "title": "Power cuts (load-shedding)",
+              "score": 0.636384
+            },
+            {
+              "rank": 3,
+              "label": "6.2",
+              "title": "What works on the generator",
+              "score": 0.635159
+            },
+            {
+              "rank": 4,
+              "label": "10.1",
+              "title": "Lifts",
+              "score": 0.632912
+            },
+            {
+              "rank": 5,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.593732
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-09",
+          "category": "manual_only",
+          "query": "Is the tap water safe to drink?",
+          "expected": [
+            "7.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "7.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "7.5",
+              "title": "Drinking water",
+              "score": 0.703623
+            },
+            {
+              "rank": 2,
+              "label": "19.5",
+              "title": "The water dispenser",
+              "score": 0.665946
+            },
+            {
+              "rank": 3,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.584109
+            },
+            {
+              "rank": 4,
+              "label": "3.8",
+              "title": "What is waiting for you",
+              "score": 0.551233
+            },
+            {
+              "rank": 5,
+              "label": "7.3",
+              "title": "Hot water (geyser)",
+              "score": 0.549659
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-10",
+          "category": "manual_only",
+          "query": "The shower is only giving cold water, how does the hot water work?",
+          "expected": [
+            "7.3",
+            "13.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "7.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "7.3",
+              "title": "Hot water (geyser)",
+              "score": 0.653295
+            },
+            {
+              "rank": 2,
+              "label": "7.5",
+              "title": "Drinking water",
+              "score": 0.64444
+            },
+            {
+              "rank": 3,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.63458
+            },
+            {
+              "rank": 4,
+              "label": "19.5",
+              "title": "The water dispenser",
+              "score": 0.628509
+            },
+            {
+              "rank": 5,
+              "label": "7.2",
+              "title": "Winter heating",
+              "score": 0.621202
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-11",
+          "category": "manual_only",
+          "query": "Where do we park, and how many cars can we bring?",
+          "expected": [
+            "3.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.3",
+              "title": "Parking",
+              "score": 0.621281
+            },
+            {
+              "rank": 2,
+              "label": "3.1",
+              "title": "Address and entrances",
+              "score": 0.616836
+            },
+            {
+              "rank": 3,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.576352
+            },
+            {
+              "rank": 4,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.572334
+            },
+            {
+              "rank": 5,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.564349
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-12",
+          "category": "manual_only",
+          "query": "Do you have a travel cot or high chair for our toddler?",
+          "expected": [
+            "15.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "15.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.750664
+            },
+            {
+              "rank": 2,
+              "label": "20.1",
+              "title": "Families with children",
+              "score": 0.644152
+            },
+            {
+              "rank": 3,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.604086
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.520416
+            },
+            {
+              "rank": 5,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.517409
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-13",
+          "category": "manual_only",
+          "query": "Is there a swimming pool or a gym in the building?",
+          "expected": [
+            "10.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.752112
+            },
+            {
+              "rank": 2,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.579093
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.567202
+            },
+            {
+              "rank": 4,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.55804
+            },
+            {
+              "rank": 5,
+              "label": "10.4",
+              "title": "Prayer facilities",
+              "score": 0.557986
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-14",
+          "category": "manual_only",
+          "query": "What should I do if I smell gas in the apartment?",
+          "expected": [
+            "12.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "12.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.826268
+            },
+            {
+              "rank": 2,
+              "label": "12.2",
+              "title": "Fire",
+              "score": 0.714265
+            },
+            {
+              "rank": 3,
+              "label": "11.2",
+              "title": "Smoking and vaping",
+              "score": 0.659198
+            },
+            {
+              "rank": 4,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.651078
+            },
+            {
+              "rank": 5,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.649138
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-15",
+          "category": "manual_only",
+          "query": "Do you provide prayer mats, and which direction is the Qibla?",
+          "expected": [
+            "10.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.4",
+              "title": "Prayer facilities",
+              "score": 0.744567
+            },
+            {
+              "rank": 2,
+              "label": "20.4",
+              "title": "Halal kitchens and prayer",
+              "score": 0.687645
+            },
+            {
+              "rank": 3,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.522887
+            },
+            {
+              "rank": 4,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.520714
+            },
+            {
+              "rank": 5,
+              "label": "1.1",
+              "title": "About the building",
+              "score": 0.515277
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-16",
+          "category": "manual_only",
+          "query": "Can I check out at 1 pm instead of 11?",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "14.3": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.676782
+            },
+            {
+              "rank": 2,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.67465
+            },
+            {
+              "rank": 3,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.66619
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.654004
+            },
+            {
+              "rank": 5,
+              "label": "1.5",
+              "title": "Time zone and language",
+              "score": 0.64884
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-17",
+          "category": "manual_only",
+          "query": "Is there an elevator? My father uses a wheelchair.",
+          "expected": [
+            "10.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.5",
+              "title": "Accessibility",
+              "score": 0.662882
+            },
+            {
+              "rank": 2,
+              "label": "10.1",
+              "title": "Lifts",
+              "score": 0.625219
+            },
+            {
+              "rank": 3,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.590893
+            },
+            {
+              "rank": 4,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.585986
+            },
+            {
+              "rank": 5,
+              "label": "0",
+              "title": "About this document",
+              "score": 0.541641
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-18",
+          "category": "manual_only",
+          "query": "Do you provide a hair dryer and an iron?",
+          "expected": [
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "recall@5": 0.0,
+            "mrr": 0.0
+          },
+          "found_ranks": {},
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.571514
+            },
+            {
+              "rank": 2,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.556359
+            },
+            {
+              "rank": 3,
+              "label": "9.2",
+              "title": "Linens and towels",
+              "score": 0.554939
+            },
+            {
+              "rank": 4,
+              "label": "15.2",
+              "title": "Extra heaters and adapters",
+              "score": 0.548467
+            },
+            {
+              "rank": 5,
+              "label": "8.1",
+              "title": "Cooking equipment",
+              "score": 0.54607
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-19",
+          "category": "manual_only",
+          "query": "Is there a grocery store or pharmacy nearby that's open late?",
+          "expected": [
+            "17"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "17": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.616588
+            },
+            {
+              "rank": 2,
+              "label": "12.4",
+              "title": "Medical help",
+              "score": 0.614468
+            },
+            {
+              "rank": 3,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.555022
+            },
+            {
+              "rank": 4,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.550707
+            },
+            {
+              "rank": 5,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.542853
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-20",
+          "category": "manual_only",
+          "query": "Where do I throw away the garbage?",
+          "expected": [
+            "9.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "9.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "9.4",
+              "title": "Rubbish and recycling",
+              "score": 0.703142
+            },
+            {
+              "rank": 2,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.600845
+            },
+            {
+              "rank": 3,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.553349
+            },
+            {
+              "rank": 4,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.530298
+            },
+            {
+              "rank": 5,
+              "label": "9.3",
+              "title": "Cleaning during your stay",
+              "score": 0.529545
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-01",
+          "category": "multi_tool",
+          "query": "I'm arriving around 11 this morning. Can we check in early?",
+          "expected": [
+            "3.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.708316
+            },
+            {
+              "rank": 2,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.667846
+            },
+            {
+              "rank": 3,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.662089
+            },
+            {
+              "rank": 4,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.657271
+            },
+            {
+              "rank": 5,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.652567
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-02",
+          "category": "multi_tool",
+          "query": "If I cancel my booking now, will I get a refund?",
+          "expected": [
+            "2.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.800747
+            },
+            {
+              "rank": 2,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.693804
+            },
+            {
+              "rank": 3,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.687233
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.664019
+            },
+            {
+              "rank": 5,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.654497
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-03",
+          "category": "multi_tool",
+          "query": "Can I cancel and get a full refund?",
+          "expected": [
+            "2.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.74459
+            },
+            {
+              "rank": 2,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.633114
+            },
+            {
+              "rank": 3,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.613493
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.598857
+            },
+            {
+              "rank": 5,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.596355
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-04",
+          "category": "multi_tool",
+          "query": "Why is there an extra fee on my booking?",
+          "expected": [
+            "2.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.740292
+            },
+            {
+              "rank": 2,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.722228
+            },
+            {
+              "rank": 3,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.68538
+            },
+            {
+              "rank": 4,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.669681
+            },
+            {
+              "rank": 5,
+              "label": "2.3",
+              "title": "What is included in the nightly rate, and optional fees",
+              "score": 0.666746
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-05",
+          "category": "multi_tool",
+          "query": "Is our travel cot booked? And do we have to pay for it?",
+          "expected": [
+            "15.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "15.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.749077
+            },
+            {
+              "rank": 2,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.717918
+            },
+            {
+              "rank": 3,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.682462
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.648267
+            },
+            {
+              "rank": 5,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.639782
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-06",
+          "category": "multi_tool",
+          "query": "Can we do a late checkout on the 13th?",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.721397
+            },
+            {
+              "rank": 2,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.657533
+            },
+            {
+              "rank": 3,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.650339
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.649717
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.6179
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-07",
+          "category": "multi_tool",
+          "query": "Can we have a late checkout tomorrow? We have a late flight.",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.726424
+            },
+            {
+              "rank": 2,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.680612
+            },
+            {
+              "rank": 3,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.668439
+            },
+            {
+              "rank": 4,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.641575
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.621341
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-08",
+          "category": "multi_tool",
+          "query": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+          "expected": [
+            "2.2"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.2
+          },
+          "found_ranks": {
+            "2.2": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.568242
+            },
+            {
+              "rank": 2,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.562125
+            },
+            {
+              "rank": 3,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.558434
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.539973
+            },
+            {
+              "rank": 5,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.534568
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-09",
+          "category": "multi_tool",
+          "query": "I land at 3 pm. What's my door code?",
+          "expected": [
+            "3.4",
+            "3.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.721295
+            },
+            {
+              "rank": 2,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.654937
+            },
+            {
+              "rank": 3,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.637728
+            },
+            {
+              "rank": 4,
+              "label": "19.1",
+              "title": "The smart door lock",
+              "score": 0.62707
+            },
+            {
+              "rank": 5,
+              "label": "13.4",
+              "title": "Locked out",
+              "score": 0.626243
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-10",
+          "category": "multi_tool",
+          "query": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+          "expected": [
+            "3.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.676255
+            },
+            {
+              "rank": 2,
+              "label": "16.3",
+              "title": "Ramadan",
+              "score": 0.658544
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.654207
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.648535
+            },
+            {
+              "rank": 5,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.629039
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-11",
+          "category": "multi_tool",
+          "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+          "expected": [
+            "17"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "17": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.609693
+            },
+            {
+              "rank": 2,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.533955
+            },
+            {
+              "rank": 3,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.524774
+            },
+            {
+              "rank": 4,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.523018
+            },
+            {
+              "rank": 5,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.508928
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-12",
+          "category": "multi_tool",
+          "query": "Can I extend my stay by 2 nights, until Dec 7?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.760037
+            },
+            {
+              "rank": 2,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.659974
+            },
+            {
+              "rank": 3,
+              "label": "11.4",
+              "title": "Visitors",
+              "score": 0.648179
+            },
+            {
+              "rank": 4,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.647314
+            },
+            {
+              "rank": 5,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.643949
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-13",
+          "category": "multi_tool",
+          "query": "We love it here. Can we stay until the 18th instead of the 12th?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "2.7": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.606443
+            },
+            {
+              "rank": 2,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.603134
+            },
+            {
+              "rank": 3,
+              "label": "11.4",
+              "title": "Visitors",
+              "score": 0.587247
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.582229
+            },
+            {
+              "rank": 5,
+              "label": "11.1",
+              "title": "Quiet hours",
+              "score": 0.575653
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-14",
+          "category": "multi_tool",
+          "query": "Do I need to pay a security deposit, and how?",
+          "expected": [
+            "2.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.722244
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.663524
+            },
+            {
+              "rank": 3,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.663291
+            },
+            {
+              "rank": 4,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.648982
+            },
+            {
+              "rank": 5,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.642053
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-15",
+          "category": "multi_tool",
+          "query": "Do I need to pay a security deposit?",
+          "expected": [
+            "2.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.713533
+            },
+            {
+              "rank": 2,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.661954
+            },
+            {
+              "rank": 3,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.658726
+            },
+            {
+              "rank": 4,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.647367
+            },
+            {
+              "rank": 5,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.629836
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-04",
+          "category": "must_escalate",
+          "query": "We'd like to stay a whole month. Is there a discount for long stays?",
+          "expected": [
+            "2.7",
+            "2.8"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1,
+            "2.8": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.671979
+            },
+            {
+              "rank": 2,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.646763
+            },
+            {
+              "rank": 3,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.62236
+            },
+            {
+              "rank": 4,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.607643
+            },
+            {
+              "rank": 5,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.592171
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-06",
+          "category": "must_escalate",
+          "query": "The AC in our bedroom didn't cool properly last night. Can I get a refund for one night?",
+          "expected": [
+            "2.8",
+            "13.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.3333333333333333
+          },
+          "found_ranks": {
+            "13.3": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.655724
+            },
+            {
+              "rank": 2,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.648546
+            },
+            {
+              "rank": 3,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.647163
+            },
+            {
+              "rank": 4,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.640474
+            },
+            {
+              "rank": 5,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.636736
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-11",
+          "category": "must_escalate",
+          "query": "We want to stay for 45 nights. Is that possible?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.688787
+            },
+            {
+              "rank": 2,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.667958
+            },
+            {
+              "rank": 3,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.599768
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.596418
+            },
+            {
+              "rank": 5,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.595856
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-06",
+          "category": "edge_adversarial",
+          "query": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+          "expected": [
+            "3.5",
+            "14.1"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.2
+          },
+          "found_ranks": {
+            "14.1": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "20.5",
+              "title": "First-time visitors to Pakistan",
+              "score": 0.608396
+            },
+            {
+              "rank": 2,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.606036
+            },
+            {
+              "rank": 3,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.60381
+            },
+            {
+              "rank": 4,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.602761
+            },
+            {
+              "rank": 5,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.588112
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-07",
+          "category": "edge_adversarial",
+          "query": "I read in your manual that there's a rooftop swimming pool. What time does it open?",
+          "expected": [
+            "10.2",
+            "10.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "10.3": 2,
+            "10.2": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.671947
+            },
+            {
+              "rank": 2,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.666501
+            },
+            {
+              "rank": 3,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.637754
+            },
+            {
+              "rank": 4,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.637573
+            },
+            {
+              "rank": 5,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.629616
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-08",
+          "category": "edge_adversarial",
+          "query": "HELP I can smell gas in the kitchen!!",
+          "expected": [
+            "12.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "12.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.756839
+            },
+            {
+              "rank": 2,
+              "label": "8.2",
+              "title": "Using the gas hob",
+              "score": 0.669174
+            },
+            {
+              "rank": 3,
+              "label": "8.4",
+              "title": "Fridge, cooking smells and the dishes",
+              "score": 0.662183
+            },
+            {
+              "rank": 4,
+              "label": "8.1",
+              "title": "Cooking equipment",
+              "score": 0.631637
+            },
+            {
+              "rank": 5,
+              "label": "8.5",
+              "title": "Cooking Pakistani dishes without setting off the alarm",
+              "score": 0.625299
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-10",
+          "category": "edge_adversarial",
+          "query": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+          "expected": [
+            "5.1",
+            "2.8"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.3333333333333333
+          },
+          "found_ranks": {
+            "5.1": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "13.2",
+              "title": "How fast we respond",
+              "score": 0.606457
+            },
+            {
+              "rank": 2,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.605729
+            },
+            {
+              "rank": 3,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.60177
+            },
+            {
+              "rank": 4,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.598571
+            },
+            {
+              "rank": 5,
+              "label": "13.1",
+              "title": "How to report a problem",
+              "score": 0.585783
+            }
+          ]
+        }
+      ],
+      "guide": [
+        {
+          "source": "guide",
+          "id": "G-01",
+          "category": "guide_only",
+          "query": "Is Badshahi Mosque free to enter, and what are its opening hours?",
+          "expected": [
+            "badshahi",
+            "entrance is free"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.703004
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Drink",
+              "title": "Drink",
+              "score": 0.607182
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Sleep",
+              "title": "Sleep",
+              "score": 0.597727
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Do",
+              "title": "Do",
+              "score": 0.578579
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.573581
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-02",
+          "category": "guide_only",
+          "query": "How much does Lahore Fort cost for a foreign tourist?",
+          "expected": [
+            "non-pakistanis",
+            "500"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "single_hit@5": 0.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": null,
+            "missing_evidence": [
+              "non-pakistanis"
+            ]
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": null,
+            "hit@5": null
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.713138
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Sleep > Budget",
+              "title": "Budget",
+              "score": 0.707079
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.699927
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Sleep > Splurge",
+              "title": "Splurge",
+              "score": 0.664406
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Do",
+              "title": "Do",
+              "score": 0.662925
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-03",
+          "category": "guide_only",
+          "query": "Does Lahore have a metro, and when did it open?",
+          "expected": [
+            "metro",
+            "october 2020"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get around > By metro",
+              "title": "By metro",
+              "score": 0.810848
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.729764
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.719595
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.707457
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.699985
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-04",
+          "category": "guide_only",
+          "query": "Who built Badshahi Mosque?",
+          "expected": [
+            "aurangzeb"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.66167
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.624052
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.612514
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.598924
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.596112
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-05",
+          "category": "guide_only",
+          "query": "I want to take a coach to Islamabad. Where is the Faisal Movers terminal in Lahore?",
+          "expected": [
+            "faisal movers",
+            "band road"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.788427
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get around > By bus",
+              "title": "By bus",
+              "score": 0.706927
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get in > By car",
+              "title": "By car",
+              "score": 0.69319
+            },
+            {
+              "rank": 4,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.675813
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.675558
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-06",
+          "category": "guide_only",
+          "query": "Roughly how much should a taxi to Gulberg cost, according to your guide?",
+          "expected": [
+            "600 to gulberg"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.690463
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Buy > Other",
+              "title": "Other",
+              "score": 0.600067
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.589388
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Eat > Splurge",
+              "title": "Splurge",
+              "score": 0.581102
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Sleep > Budget",
+              "title": "Budget",
+              "score": 0.565168
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-07",
+          "category": "guide_only",
+          "query": "Which railway stations in Lahore can I take a train from?",
+          "expected": [
+            "lahore junction",
+            "lahore cantonment"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By train",
+              "title": "By train",
+              "score": 0.827063
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.729734
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.707121
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Get around > By metro",
+              "title": "By metro",
+              "score": 0.705822
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get around > By bus",
+              "title": "By bus",
+              "score": 0.704923
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-08",
+          "category": "guide_only",
+          "query": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+          "expected": [
+            "unesco",
+            "wazir khan"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.3333333333333333,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.795211
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.788774
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.766014
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > See > Other sights",
+              "title": "Other sights",
+              "score": 0.713157
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.6937
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-09",
+          "category": "guide_only",
+          "query": "Where are the Shalimar Gardens?",
+          "expected": [
+            "shalimar gardens",
+            "wagah"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.3333333333333333,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.639045
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.633698
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > See > Other sights",
+              "title": "Other sights",
+              "score": 0.612064
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Go next",
+              "title": "Go next",
+              "score": 0.586152
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Do > Parks",
+              "title": "Parks",
+              "score": 0.574003
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-10",
+          "category": "guide_only",
+          "query": "What's the cheapest way to get between big cities in Pakistan?",
+          "expected": [
+            "minibuses",
+            "cheapest"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.731254
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get in > By car",
+              "title": "By car",
+              "score": 0.709815
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get around > By bus",
+              "title": "By bus",
+              "score": 0.702182
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Get in > By train",
+              "title": "By train",
+              "score": 0.697589
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get in > By plane",
+              "title": "By plane",
+              "score": 0.694335
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "X-10",
+          "category": "multi_tool",
+          "query": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+          "expected": [
+            "badshahi",
+            "entrance is free"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.687804
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Sleep",
+              "title": "Sleep",
+              "score": 0.653827
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get around",
+              "title": "Get around",
+              "score": 0.626024
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Do",
+              "title": "Do",
+              "score": 0.621558
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.621422
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "X-11",
+          "category": "multi_tool",
+          "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+          "expected": [
+            "wazir khan",
+            "lahore fort"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "single_hit@5": 0.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": null,
+            "missing_evidence": [
+              "wazir khan"
+            ]
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": null,
+            "hit@5": null
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Eat > Budget",
+              "title": "Budget",
+              "score": 0.627357
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.616773
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Buy > Other",
+              "title": "Other",
+              "score": 0.615197
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Buy > Other",
+              "title": "Other",
+              "score": 0.595712
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Eat > Splurge",
+              "title": "Splurge",
+              "score": 0.595462
+            }
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "manual": [
+        {
+          "source": "manual",
+          "id": "M-01",
+          "category": "manual_only",
+          "query": "What time is check-in and check-out?",
+          "expected": [
+            "3.5",
+            "14.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.040463
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.040203
+            },
+            {
+              "rank": 3,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.039567
+            },
+            {
+              "rank": 4,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.024194
+            },
+            {
+              "rank": 5,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-02",
+          "category": "manual_only",
+          "query": "Hi! What's the wifi name and password for the studio?",
+          "expected": [
+            "5.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "5.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "5.2",
+              "title": "TV and streaming",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "20.2",
+              "title": "Business travellers and remote workers",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-03",
+          "category": "manual_only",
+          "query": "We're in unit 502. How do we connect to the internet?",
+          "expected": [
+            "5.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "5.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "4.3",
+              "title": "Two-Bedroom, Unit 502",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "5.2",
+              "title": "TV and streaming",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-04",
+          "category": "manual_only",
+          "query": "Is there a washing machine in the studio?",
+          "expected": [
+            "4.1",
+            "9.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "9.1": 1,
+            "4.1": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.040067
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.039435
+            },
+            {
+              "rank": 4,
+              "label": "19.4",
+              "title": "Washing machine and washer-dryer",
+              "score": 0.039206
+            },
+            {
+              "rank": 5,
+              "label": "9.3",
+              "title": "Cleaning during your stay",
+              "score": 0.023438
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-05",
+          "category": "manual_only",
+          "query": "Can I bring my dog with me?",
+          "expected": [
+            "11.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.5",
+              "title": "Pets",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "11.9",
+              "title": "Respecting neighbours and local customs",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-06",
+          "category": "manual_only",
+          "query": "What are your quiet hours?",
+          "expected": [
+            "11.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.1",
+              "title": "Quiet hours",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "16.3",
+              "title": "Ramadan",
+              "score": 0.040067
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.038822
+            },
+            {
+              "rank": 4,
+              "label": "13.2",
+              "title": "How fast we respond",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "1.5",
+              "title": "Time zone and language",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-07",
+          "category": "manual_only",
+          "query": "Can I smoke on the balcony?",
+          "expected": [
+            "11.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "11.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "11.2",
+              "title": "Smoking and vaping",
+              "score": 0.039975
+            },
+            {
+              "rank": 2,
+              "label": "8.5",
+              "title": "Cooking Pakistani dishes without setting off the alarm",
+              "score": 0.039567
+            },
+            {
+              "rank": 3,
+              "label": "11.8",
+              "title": "Open flames and barbecues",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-08",
+          "category": "manual_only",
+          "query": "What happens during load shedding? Will the AC and the lift still work?",
+          "expected": [
+            "6.1",
+            "6.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "6.2": 1,
+            "6.1": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "6.2",
+              "title": "What works on the generator",
+              "score": 0.039939
+            },
+            {
+              "rank": 2,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.03947
+            },
+            {
+              "rank": 3,
+              "label": "10.1",
+              "title": "Lifts",
+              "score": 0.039062
+            },
+            {
+              "rank": 4,
+              "label": "6.3",
+              "title": "If the power goes off only in your apartment",
+              "score": 0.02459
+            },
+            {
+              "rank": 5,
+              "label": "6.1",
+              "title": "Power cuts (load-shedding)",
+              "score": 0.024194
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-09",
+          "category": "manual_only",
+          "query": "Is the tap water safe to drink?",
+          "expected": [
+            "7.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "7.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "7.5",
+              "title": "Drinking water",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "19.5",
+              "title": "The water dispenser",
+              "score": 0.040587
+            },
+            {
+              "rank": 3,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "3.8",
+              "title": "What is waiting for you",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "7.3",
+              "title": "Hot water (geyser)",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-10",
+          "category": "manual_only",
+          "query": "The shower is only giving cold water, how does the hot water work?",
+          "expected": [
+            "7.3",
+            "13.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "7.3": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "7.5",
+              "title": "Drinking water",
+              "score": 0.040587
+            },
+            {
+              "rank": 2,
+              "label": "7.3",
+              "title": "Hot water (geyser)",
+              "score": 0.040463
+            },
+            {
+              "rank": 3,
+              "label": "19.5",
+              "title": "The water dispenser",
+              "score": 0.039567
+            },
+            {
+              "rank": 4,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.039194
+            },
+            {
+              "rank": 5,
+              "label": "7.2",
+              "title": "Winter heating",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-11",
+          "category": "manual_only",
+          "query": "Where do we park, and how many cars can we bring?",
+          "expected": [
+            "3.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.3",
+              "title": "Parking",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "3.1",
+              "title": "Address and entrances",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-12",
+          "category": "manual_only",
+          "query": "Do you have a travel cot or high chair for our toddler?",
+          "expected": [
+            "15.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "15.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "20.1",
+              "title": "Families with children",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-13",
+          "category": "manual_only",
+          "query": "Is there a swimming pool or a gym in the building?",
+          "expected": [
+            "10.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.039939
+            },
+            {
+              "rank": 3,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "4.1",
+              "title": "Studio, Unit 201",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "10.4",
+              "title": "Prayer facilities",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-14",
+          "category": "manual_only",
+          "query": "What should I do if I smell gas in the apartment?",
+          "expected": [
+            "12.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "12.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "12.2",
+              "title": "Fire",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "11.2",
+              "title": "Smoking and vaping",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-15",
+          "category": "manual_only",
+          "query": "Do you provide prayer mats, and which direction is the Qibla?",
+          "expected": [
+            "10.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.4",
+              "title": "Prayer facilities",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "20.4",
+              "title": "Halal kitchens and prayer",
+              "score": 0.040587
+            },
+            {
+              "rank": 3,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "1.1",
+              "title": "About the building",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-16",
+          "category": "manual_only",
+          "query": "Can I check out at 1 pm instead of 11?",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "14.3": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.039683
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "1.5",
+              "title": "Time zone and language",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-17",
+          "category": "manual_only",
+          "query": "Is there an elevator? My father uses a wheelchair.",
+          "expected": [
+            "10.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "10.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "10.5",
+              "title": "Accessibility",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "10.1",
+              "title": "Lifts",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "10.6",
+              "title": "Where things are in the building",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "0",
+              "title": "About this document",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-18",
+          "category": "manual_only",
+          "query": "Do you provide a hair dryer and an iron?",
+          "expected": [
+            "4.1",
+            "4.2",
+            "4.3",
+            "4.4"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "recall@5": 0.0,
+            "mrr": 0.0
+          },
+          "found_ranks": {},
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.040463
+            },
+            {
+              "rank": 2,
+              "label": "8.1",
+              "title": "Cooking equipment",
+              "score": 0.03947
+            },
+            {
+              "rank": 3,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "9.2",
+              "title": "Linens and towels",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "15.2",
+              "title": "Extra heaters and adapters",
+              "score": 0.023438
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-19",
+          "category": "manual_only",
+          "query": "Is there a grocery store or pharmacy nearby that's open late?",
+          "expected": [
+            "17"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "17": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "12.4",
+              "title": "Medical help",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "M-20",
+          "category": "manual_only",
+          "query": "Where do I throw away the garbage?",
+          "expected": [
+            "9.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "9.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "9.4",
+              "title": "Rubbish and recycling",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "14.2",
+              "title": "Check-out checklist",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "9.1",
+              "title": "Washing your clothes",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "9.3",
+              "title": "Cleaning during your stay",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-01",
+          "category": "multi_tool",
+          "query": "I'm arriving around 11 this morning. Can we check in early?",
+          "expected": [
+            "3.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-02",
+          "category": "multi_tool",
+          "query": "If I cancel my booking now, will I get a refund?",
+          "expected": [
+            "2.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.038462
+            },
+            {
+              "rank": 3,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-03",
+          "category": "multi_tool",
+          "query": "Can I cancel and get a full refund?",
+          "expected": [
+            "2.6"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.6": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-04",
+          "category": "multi_tool",
+          "query": "Why is there an extra fee on my booking?",
+          "expected": [
+            "2.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "2.3",
+              "title": "What is included in the nightly rate, and optional fees",
+              "score": 0.039206
+            },
+            {
+              "rank": 3,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.023438
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-05",
+          "category": "multi_tool",
+          "query": "Is our travel cot booked? And do we have to pay for it?",
+          "expected": [
+            "15.1"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "15.1": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.039435
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-06",
+          "category": "multi_tool",
+          "query": "Can we do a late checkout on the 13th?",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-07",
+          "category": "multi_tool",
+          "query": "Can we have a late checkout tomorrow? We have a late flight.",
+          "expected": [
+            "14.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "14.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.040215
+            },
+            {
+              "rank": 2,
+              "label": "3.7",
+              "title": "Late arrival",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-08",
+          "category": "multi_tool",
+          "query": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+          "expected": [
+            "2.2"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.2
+          },
+          "found_ranks": {
+            "2.2": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "14.3",
+              "title": "Late check-out",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-09",
+          "category": "multi_tool",
+          "query": "I land at 3 pm. What's my door code?",
+          "expected": [
+            "3.4",
+            "3.5"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.5": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.040463
+            },
+            {
+              "rank": 2,
+              "label": "19.1",
+              "title": "The smart door lock",
+              "score": 0.038822
+            },
+            {
+              "rank": 3,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "13.4",
+              "title": "Locked out",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-10",
+          "category": "multi_tool",
+          "query": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+          "expected": [
+            "3.2"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "3.2": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.02459
+            },
+            {
+              "rank": 2,
+              "label": "16.3",
+              "title": "Ramadan",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-11",
+          "category": "multi_tool",
+          "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+          "expected": [
+            "17"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "17": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "8.3",
+              "title": "Supplies",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "15.4",
+              "title": "Deliveries and parcels",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "3.2",
+              "title": "Taxis and ride-hailing",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-12",
+          "category": "multi_tool",
+          "query": "Can I extend my stay by 2 nights, until Dec 7?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.039578
+            },
+            {
+              "rank": 3,
+              "label": "11.4",
+              "title": "Visitors",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-13",
+          "category": "multi_tool",
+          "query": "We love it here. Can we stay until the 18th instead of the 12th?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.040587
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.02459
+            },
+            {
+              "rank": 3,
+              "label": "11.4",
+              "title": "Visitors",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "3.6",
+              "title": "Early check-in and luggage storage",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "11.1",
+              "title": "Quiet hours",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-14",
+          "category": "multi_tool",
+          "query": "Do I need to pay a security deposit, and how?",
+          "expected": [
+            "2.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "3.5",
+              "title": "Self check-in",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "X-15",
+          "category": "multi_tool",
+          "query": "Do I need to pay a security deposit?",
+          "expected": [
+            "2.4"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.4": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.039831
+            },
+            {
+              "rank": 3,
+              "label": "11.7",
+              "title": "Damage and loss",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "2.5",
+              "title": "Paying for your booking",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-04",
+          "category": "must_escalate",
+          "query": "We'd like to stay a whole month. Is there a discount for long stays?",
+          "expected": [
+            "2.7",
+            "2.8"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "2.7": 2,
+            "2.8": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.040323
+            },
+            {
+              "rank": 2,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.02459
+            },
+            {
+              "rank": 3,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "15.1",
+              "title": "Travel cot and high chair",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-06",
+          "category": "must_escalate",
+          "query": "The AC in our bedroom didn't cool properly last night. Can I get a refund for one night?",
+          "expected": [
+            "2.8",
+            "13.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.3333333333333333
+          },
+          "found_ranks": {
+            "13.3": 3
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "2.6",
+              "title": "Cancellation policy",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.4",
+              "title": "Security deposit (direct bookings only)",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "14.4",
+              "title": "Security deposit refund",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "E-11",
+          "category": "must_escalate",
+          "query": "We want to stay for 45 nights. Is that possible?",
+          "expected": [
+            "2.7"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "2.7": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "2.7",
+              "title": "Changing or extending your stay",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "20.3",
+              "title": "Long stays",
+              "score": 0.024194
+            },
+            {
+              "rank": 3,
+              "label": "2.1",
+              "title": "Guest numbers and occupancy",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "2.8",
+              "title": "Decisions only the host can make",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "2.2",
+              "title": "Extra guest fee",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-06",
+          "category": "edge_adversarial",
+          "query": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+          "expected": [
+            "3.5",
+            "14.1"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "14.1": 2
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.039939
+            },
+            {
+              "rank": 2,
+              "label": "14.1",
+              "title": "Check-out time",
+              "score": 0.03947
+            },
+            {
+              "rank": 3,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.039062
+            },
+            {
+              "rank": 4,
+              "label": "20.5",
+              "title": "First-time visitors to Pakistan",
+              "score": 0.02459
+            },
+            {
+              "rank": 5,
+              "label": "17",
+              "title": "Nearby Essentials (the host's short list)",
+              "score": 0.024194
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-07",
+          "category": "edge_adversarial",
+          "query": "I read in your manual that there's a rooftop swimming pool. What time does it open?",
+          "expected": [
+            "10.2",
+            "10.3"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 0.5
+          },
+          "found_ranks": {
+            "10.3": 2,
+            "10.2": 5
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "10.3",
+              "title": "What the building does not have",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "7.4",
+              "title": "Water supply",
+              "score": 0.039435
+            },
+            {
+              "rank": 4,
+              "label": "21",
+              "title": "Key Facts at a Glance",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "10.2",
+              "title": "Roof terrace",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-08",
+          "category": "edge_adversarial",
+          "query": "HELP I can smell gas in the kitchen!!",
+          "expected": [
+            "12.3"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "recall@5": 1.0,
+            "mrr": 1.0
+          },
+          "found_ranks": {
+            "12.3": 1
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "12.3",
+              "title": "If you smell gas",
+              "score": 0.040463
+            },
+            {
+              "rank": 2,
+              "label": "8.2",
+              "title": "Using the gas hob",
+              "score": 0.039819
+            },
+            {
+              "rank": 3,
+              "label": "8.4",
+              "title": "Fridge, cooking smells and the dishes",
+              "score": 0.02381
+            },
+            {
+              "rank": 4,
+              "label": "8.1",
+              "title": "Cooking equipment",
+              "score": 0.023438
+            },
+            {
+              "rank": 5,
+              "label": "8.5",
+              "title": "Cooking Pakistani dishes without setting off the alarm",
+              "score": 0.023077
+            }
+          ]
+        },
+        {
+          "source": "manual",
+          "id": "D-10",
+          "category": "edge_adversarial",
+          "query": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+          "expected": [
+            "5.1",
+            "2.8"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 1.0,
+            "recall@5": 0.5,
+            "mrr": 0.25
+          },
+          "found_ranks": {
+            "5.1": 4
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "18",
+              "title": "Quick FAQ",
+              "score": 0.039831
+            },
+            {
+              "rank": 2,
+              "label": "13.2",
+              "title": "How fast we respond",
+              "score": 0.02459
+            },
+            {
+              "rank": 3,
+              "label": "13.3",
+              "title": "Quick fixes",
+              "score": 0.024194
+            },
+            {
+              "rank": 4,
+              "label": "5.1",
+              "title": "Wi-Fi",
+              "score": 0.02381
+            },
+            {
+              "rank": 5,
+              "label": "13.1",
+              "title": "How to report a problem",
+              "score": 0.023077
+            }
+          ]
+        }
+      ],
+      "guide": [
+        {
+          "source": "guide",
+          "id": "G-01",
+          "category": "guide_only",
+          "query": "Is Badshahi Mosque free to enter, and what are its opening hours?",
+          "expected": [
+            "badshahi",
+            "entrance is free"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.03895
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Sleep",
+              "title": "Sleep",
+              "score": 0.038095
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.037256
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.036881
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-02",
+          "category": "guide_only",
+          "query": "How much does Lahore Fort cost for a foreign tourist?",
+          "expected": [
+            "non-pakistanis",
+            "500"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 0.0,
+            "mrr": 0.0,
+            "single_hit@5": 0.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": null,
+            "missing_evidence": [
+              "non-pakistanis"
+            ]
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": null,
+            "hit@5": null
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.039975
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Do",
+              "title": "Do",
+              "score": 0.03947
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Sleep > Budget",
+              "title": "Budget",
+              "score": 0.039345
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.038856
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.038302
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-03",
+          "category": "guide_only",
+          "query": "Does Lahore have a metro, and when did it open?",
+          "expected": [
+            "metro",
+            "october 2020"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get around > By metro",
+              "title": "By metro",
+              "score": 0.040719
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.038589
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.038462
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.038452
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.037894
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-04",
+          "category": "guide_only",
+          "query": "Who built Badshahi Mosque?",
+          "expected": [
+            "aurangzeb"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.039819
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Understand > History",
+              "title": "History",
+              "score": 0.039206
+            },
+            {
+              "rank": 4,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.038961
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.037302
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-05",
+          "category": "guide_only",
+          "query": "I want to take a coach to Islamabad. Where is the Faisal Movers terminal in Lahore?",
+          "expected": [
+            "faisal movers",
+            "band road"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get around > By bus",
+              "title": "By bus",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > See > Mall Road",
+              "title": "Mall Road",
+              "score": 0.036665
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.03658
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get in > By plane",
+              "title": "By plane",
+              "score": 0.036473
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-06",
+          "category": "guide_only",
+          "query": "Roughly how much should a taxi to Gulberg cost, according to your guide?",
+          "expected": [
+            "600 to gulberg"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.039435
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Stay healthy",
+              "title": "Stay healthy",
+              "score": 0.03722
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Sleep > Budget",
+              "title": "Budget",
+              "score": 0.03659
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Eat > Splurge",
+              "title": "Splurge",
+              "score": 0.036425
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-07",
+          "category": "guide_only",
+          "query": "Which railway stations in Lahore can I take a train from?",
+          "expected": [
+            "lahore junction",
+            "lahore cantonment"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By train",
+              "title": "By train",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get around > By bus",
+              "title": "By bus",
+              "score": 0.03895
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.038735
+            },
+            {
+              "rank": 4,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.038082
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get around > By taxi",
+              "title": "By taxi",
+              "score": 0.037054
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-08",
+          "category": "guide_only",
+          "query": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+          "expected": [
+            "unesco",
+            "wazir khan"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.3333333333333333,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.040323
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.039683
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > See > Other sights",
+              "title": "Other sights",
+              "score": 0.038363
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.037879
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-09",
+          "category": "guide_only",
+          "query": "Where are the Shalimar Gardens?",
+          "expected": [
+            "shalimar gardens",
+            "wagah"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 0.3333333333333333,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.040587
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > See > Other sights",
+              "title": "Other sights",
+              "score": 0.039939
+            },
+            {
+              "rank": 3,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.039516
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Sleep > Mid-range",
+              "title": "Mid-range",
+              "score": 0.035933
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.035833
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "G-10",
+          "category": "guide_only",
+          "query": "What's the cheapest way to get between big cities in Pakistan?",
+          "expected": [
+            "minibuses",
+            "cheapest"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > Get in > By bus",
+              "title": "By bus",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Get in > By train",
+              "title": "By train",
+              "score": 0.039567
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get around",
+              "title": "Get around",
+              "score": 0.03722
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Go next",
+              "title": "Go next",
+              "score": 0.037054
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Get in > By car",
+              "title": "By car",
+              "score": 0.036694
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "X-10",
+          "category": "multi_tool",
+          "query": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+          "expected": [
+            "badshahi",
+            "entrance is free"
+          ],
+          "metrics": {
+            "hit@1": 1.0,
+            "hit@3": 1.0,
+            "hit@5": 1.0,
+            "mrr": 1.0,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": "single",
+            "hit@3": "single",
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.040984
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Sleep",
+              "title": "Sleep",
+              "score": 0.037892
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Get around",
+              "title": "Get around",
+              "score": 0.036967
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Eat > Splurge",
+              "title": "Splurge",
+              "score": 0.036891
+            },
+            {
+              "rank": 5,
+              "label": "Lahore > Stay safe",
+              "title": "Stay safe",
+              "score": 0.035948
+            }
+          ]
+        },
+        {
+          "source": "guide",
+          "id": "X-11",
+          "category": "multi_tool",
+          "query": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+          "expected": [
+            "wazir khan",
+            "lahore fort"
+          ],
+          "metrics": {
+            "hit@1": 0.0,
+            "hit@3": 0.0,
+            "hit@5": 1.0,
+            "mrr": 0.2,
+            "single_hit@5": 1.0,
+            "union_hit@5": 0.0,
+            "hit_type@5": "single",
+            "missing_evidence": []
+          },
+          "hit_types": {
+            "hit@1": null,
+            "hit@3": null,
+            "hit@5": "single"
+          },
+          "retrieved": [
+            {
+              "rank": 1,
+              "label": "Lahore > See > Walled City",
+              "title": "Walled City",
+              "score": 0.038278
+            },
+            {
+              "rank": 2,
+              "label": "Lahore > Buy > Other",
+              "title": "Other",
+              "score": 0.037326
+            },
+            {
+              "rank": 3,
+              "label": "Lahore > Buy > Other",
+              "title": "Other",
+              "score": 0.037323
+            },
+            {
+              "rank": 4,
+              "label": "Lahore > Buy > Bazaars",
+              "title": "Bazaars",
+              "score": 0.037313
+            },
+            {
+              "rank": 5,
+              "label": "Lahore",
+              "title": "Lahore",
+              "score": 0.037
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

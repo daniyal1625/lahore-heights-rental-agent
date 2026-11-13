@@ -1,0 +1,77 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Lahore Fort is indeed a UNESCO World Heritage site. In the Walled City, you can also visit the Shalimar Gardens, which is another UNESCO World Heritage Site. Other notable sites include the Lahore Museum, the General Post Office, and the Wazir Khan Mosque. Lahore also features the Tomb of Jahangir and the Tomb of Nur Jahan. There's a replica of Trafalgar Square in Bahria Town, which is worth a visit.",
+  "scenario_id": "G-08",
+  "guest_message": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Other sights"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Lahore Fort UNESCO site Walled City sights restaurants shopping transport"
+      },
+      "result_size": 5490,
+      "ms": 31.0
+    }
+  ],
+  "retrieved": [
+    "Lahore",
+    "Lahore > See > Walled City",
+    "Lahore > See > Other sights"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\nThe Walled City of Lahore is one of the oldest cities in the world and comprises the following places for sightseeing.\\n\\n1 Lahore Fort (شاہی قلعہ, Shahi Qila). A huge structure where the Mughal and Sikh rulers built their imperial quarters. It is on the UNESCO World Heritage List. There is a small museum dedicated to the Sikh period of the 18th century. A friendly museum caretaker might agree to take you into the summer rooms underground. For non-Pakistanis is Rs 500.\\n\\n2 Alamgiri Gate. The iconic entrance to the fort. Located opposite the Badshahi Mosque. (updated Feb 2017)\\n\\n3 Shah Burj gate. Decorated with colored tiles. Known as the \\\"Elephant Gate\\\" because royal elephants would enter here. Just inside the gate is the Hathi Paer (Elephant Path) - a staircase with very wide steps so that an elephant's feet could fit on them while climbing to the upper level of the fort. The fort's wall outside this staircase is decorated with tiles including pictures of elephants. (You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"},{\"source_id\":\"Lahore > See > Other sights\",\"title\":\"Other sights\",\"text\":\"Lahore > See > Other sights\\n\\nMasterpieces of Mughal architecture are scattered throughout the city, even in neighborhoods that today seem a little dilapidated. Buildings and sites include:\\n\\n35 Shalimar Gardens (located along the GT Road towards Wagah). A three-tiered formal garden built in the 1600s, and a UNESCO World Heritage Site. Rs 200 for foreigners. (updated Feb 2017)\\n\\n36 Chauburji Gate (at Chauburji Chowk). An impressive, ornate 4-towered gate dating to 1646. (updated Feb 2017)\\n\\n37 Tomb of Jahangir (Shahdara suburb). Built in 1637 for the Mughal emperor Jahangir. (updated Feb 2017)\\n\\n38 Tomb of Nur Jahan (Shahdara suburb).  (updated Feb 2017)\\n\\nThere are also other sites, including tombs and mausoleums. Check this website Lahore, Pakistan: Traditional and Historical Architecture for information, plans, and photo galleries of many monuments.\\n\\n39 Data Durbar (Data Darbar). A Sufi Muslim shrine to Lahore's patron saint, Hazrat Daata Ganj Bakhsh. This vast modern structure is always filled with people praying, collecting or bestowing alms, or eating at the huge charity 'langar' or soup kitchen. (updated Feb 2017)\\n\\n40 Trafalgar Square (Bahria Town). A replica of the famous Trafalgar Square in London is located in the Bahria Town suburb. A Mini Egypt and a Zoo are located nearby and also worth a visit. (updated Feb 2017)\"}]"
+  ],
+  "latency_s": 75.457,
+  "llm_s": 73.635,
+  "tool_s": 0.031,
+  "retrieval_s": 0.031,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2336,
+  "completion_tokens": 213,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 73.115057,
+    "load_duration": 0.012742,
+    "prompt_eval_duration": 40.274952,
+    "eval_duration": 32.743473
+  },
+  "plan": {
+    "intent": "search_local_guide",
+    "use_manual": false,
+    "manual_query": "Lahore Fort UNESCO site Walled City sights",
+    "use_guide": true,
+    "guide_query": "Lahore Fort UNESCO site Walled City sights restaurants shopping transport",
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 17.95,
+  "llm_answer_s": 55.685
+}

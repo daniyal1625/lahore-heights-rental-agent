@@ -1,0 +1,98 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Lahore has a metro system called Lahore Metro, which opened in October 2020. It runs for 27.1 km and has 26 stations. The Orange Line is the only operational line currently. The fare is Rs 25-45 depending on distance.",
+  "scenario_id": "G-03",
+  "guest_message": "Does Lahore have a metro, and when did it open?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By metro"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By train"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "metro in Lahore"
+      },
+      "result_size": 4515,
+      "ms": 48.0
+    },
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "metro opening date in Lahore"
+      },
+      "result_size": 4515,
+      "ms": 47.5
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get around > By metro",
+    "Lahore > Get around > By bus",
+    "Lahore > Get in > By train",
+    "Lahore"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get around > By metro\",\"title\":\"By metro\",\"text\":\"Lahore > Get around > By metro\\n\\nLahore Metro. Opened in October 2020, Lahore Metro is Pakistan's first metro system. This mostly-elevated metro runs for 27.1 km (16.8 mi) serving 26 stations. Only the Orange Line is operational. A further two lines are proposed. Rs 25-45, depending on distance traveled. (updated Feb 2025)\"},{\"source_id\":\"Lahore > Get around > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get around > By bus\\n\\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\\n\\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\\n\\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\\n\\nOther bus companies\\n\\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\\n\\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\\n\\nSkyways: Known for economical fares and a wide route network.\\n\\nNiazi Express: A long-standing service offering low-cost travel options.\\n\\nRajput Travels: Offers reasonably priced routes connecting many regions.\\n\\nPower International: Affordable intercity travel with decent amenities.\\n\\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.\"},{\"source_id\":\"Lahore > Get in > By train\",\"title\":\"By train\",\"text\":\"Lahore > Get in > By train\\n\\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\\n\\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\\n\\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\\n\\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"}]",
+    "[{\"source_id\":\"Lahore > Get around > By metro\",\"title\":\"By metro\",\"text\":\"Lahore > Get around > By metro\\n\\nLahore Metro. Opened in October 2020, Lahore Metro is Pakistan's first metro system. This mostly-elevated metro runs for 27.1 km (16.8 mi) serving 26 stations. Only the Orange Line is operational. A further two lines are proposed. Rs 25-45, depending on distance traveled. (updated Feb 2025)\"},{\"source_id\":\"Lahore > Get around > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get around > By bus\\n\\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\\n\\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\\n\\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\\n\\nOther bus companies\\n\\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\\n\\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\\n\\nSkyways: Known for economical fares and a wide route network.\\n\\nNiazi Express: A long-standing service offering low-cost travel options.\\n\\nRajput Travels: Offers reasonably priced routes connecting many regions.\\n\\nPower International: Affordable intercity travel with decent amenities.\\n\\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.\"},{\"source_id\":\"Lahore > Get in > By train\",\"title\":\"By train\",\"text\":\"Lahore > Get in > By train\\n\\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\\n\\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\\n\\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\\n\\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"}]"
+  ],
+  "latency_s": 81.967,
+  "llm_s": 80.104,
+  "tool_s": 0.048,
+  "retrieval_s": 0.096,
+  "n_llm_calls": 2,
+  "prompt_tokens": 4151,
+  "completion_tokens": 138,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 79.575826,
+    "load_duration": 0.013304,
+    "prompt_eval_duration": 57.661245,
+    "eval_duration": 21.725211
+  },
+  "plan": {
+    "intent": "metro information",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "metro in Lahore",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      },
+      {
+        "tool": "search_local_guide",
+        "query": "metro opening date in Lahore",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 12.335,
+  "llm_answer_s": 67.769
+}

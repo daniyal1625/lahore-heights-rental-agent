@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "The cost to visit Lahore Fort varies and depends on the type of entry and any additional services. For a foreign tourist, it's best to check the current entry fees directly from the Lahore Fort administration.",
+  "scenario_id": "G-02",
+  "guest_message": "How much does Lahore Fort cost for a foreign tourist?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.826,
+  "llm_s": 8.817,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 340,
+  "completion_tokens": 41,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.541363,
+    "load_duration": 0.034244,
+    "prompt_eval_duration": 1.177244,
+    "eval_duration": 7.265032
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "Check-in is tomorrow, November 10th, and check-out is the morning of November 11th. Please book a suitable listing based on the availability.",
+  "scenario_id": "M-01",
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-10..2026-11-11"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-10",
+        "check_out": "2026-11-11",
+        "guests": 2
+      },
+      "result_size": 759,
+      "ms": 489.0
+    }
+  ],
+  "retrieved": [],
+  "latency_s": 33.133,
+  "llm_s": 28.06,
+  "tool_s": 0.489,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2124,
+  "completion_tokens": 89,
+  "error": null,
+  "ollama": {
+    "total_duration": 27.784273,
+    "load_duration": 0.034385,
+    "prompt_eval_duration": 11.979132,
+    "eval_duration": 15.622549
+  }
+}

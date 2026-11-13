@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I can help you with that, but it's important to note that scraping Instagram followers is against Instagram's terms of service. Instead, I can guide you on how to use Python to interact with Instagram programmatically using the Instagram API, which is allowed. Would you like to proceed with that?",
+  "scenario_id": "D-04",
+  "guest_message": "Can you write me a Python script that scrapes Instagram followers?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "manual",
+      "id": "1.3"
+    },
+    {
+      "type": "manual",
+      "id": "14.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By auto-rickshaw"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "0",
+    "1.3",
+    "14.5",
+    "Lahore > Eat > Splurge",
+    "Lahore > Get around > By auto-rickshaw"
+  ],
+  "evidence": [
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Manual 1.3 — Your host and who to contact]\nHouse manual > 1. Welcome to Lahore Heights > 1.3 Your host and who to contact\n\n| Who | How to reach them | When |\n|---|---|---|\n| Host: Ayesha Malik | WhatsApp or phone +92 300 555 0142, email host@lahoreheights.example | 9:00 AM to 11:00 PM daily |\n| Emergency maintenance line (Rafiq, building technician) | +92 300 555 0177 | 24 hours, urgent problems only (see section 13.2) |\n| Front desk (lobby, ground floor) | +92 42 555 0100, or the \"Front Desk\" button on the intercom panel inside your unit | 9:00 AM to 9:00 PM daily |\n| Security guard desk (Gate 1 and Gate 2) | +92 42 555 0101, or the \"Security\" button on the intercom panel | 24 hours |",
+    "[Manual 14.5 — Lost and found]\nHouse manual > 14. Checking Out > 14.5 Lost and found\n\nWe keep found items for **30 days**. Message the host with a description. We can send items by courier at the guest's cost.",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\nA globally famous restaurant chain.\n\nCosta Nostra. Authentic Italian food, overseen by Pak-Italian owners. It has a reservation-only, high-end gourmet experience with a rather well put-together table d'hote, and it has a basement pizzeria where you can't go wrong if want a pizza pie that resembles something from Rome and not Chicago.\n\nThe Monal, in Gulberg III near Liberty Chowk, roundabout. It on the top of Liberty Park Plaza. You have to climb up the plaza by a car, but be careful to drive slowly and look in the traffic mirrors to see if a car is coming from the upper floor when you're about to climb up in the plaza. The Monal has indoor and outdoor seating and it shows a total sky view of the bustling city. ☏ +91 42 35789824",
+    "[Guide Lahore > Get around > By auto-rickshaw]\nLahore > Get around > By auto-rickshaw\n\nAuto-rickshaws/Qingqis are open rickshaws with (narrow) rear-facing seats, or with two seats facing forward and two backward. They are handy for moving around in the Inner City, since it's easier to see where you're going. Tourists used to average western road etiquette might be horrified by the chaos on the roads - but it almost seems to work. Qingqi drivers have an unbelievable sense of space, speed and angles and you may well learn to trust them (or not). Rickshaws are the cheapest and, for women, the safest individual forms of public transport. Haggle thoroughly with the driver; if you do not speak Punjabi or Urdu or are clearly a foreigner, try to get a Lahori friend to ensure you don't get ripped off. Try to find a rickshaw with a well-padded seat, otherwise you will come out bruised and aching. You can also order a rickshaw by using Careem or InDrive app."
+  ],
+  "latency_s": 37.32,
+  "llm_s": 36.218,
+  "tool_s": 0.0,
+  "retrieval_s": 0.119,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1197,
+  "completion_tokens": 60,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 35.963247,
+    "load_duration": 0.013356,
+    "prompt_eval_duration": 26.563809,
+    "eval_duration": 9.367568
+  }
+}

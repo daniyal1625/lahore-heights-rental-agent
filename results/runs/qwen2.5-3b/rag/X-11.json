@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "You can buy groceries at Fresh Basket Mart, which is a 5-minute walk from the apartment. For sightseeing in the Walled City, you can visit Lahore Fort, Alamgiri Gate, and Shah Burj gate. Each offers unique historical and architectural features.",
+  "scenario_id": "X-11",
+  "guest_message": "Where can we buy groceries nearby, and what should we see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "8.3"
+    },
+    {
+      "type": "manual",
+      "id": "10.2"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "17",
+    "8.3",
+    "10.2",
+    "Lahore > See > Walled City",
+    "Lahore > Buy > Other"
+  ],
+  "evidence": [
+    "[Manual 17 — Nearby Essentials (the host's short list)]\nHouse manual > 17. Nearby Essentials (the host's short list)\n\nThese are the places our guests use most. All are within a short walk.\n\n| What | Name and details |\n|---|---|\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\n| Mosque | Masjid Al-Noor, about 300 m away |\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\n\nFor sightseeing, food and transport around Lahore, see the separate local guide.",
+    "[Manual 8.3 — Supplies]\nHouse manual > 8. Kitchen and Cooking > 8.3 Supplies\n\nWe supply tea, instant coffee, sugar, salt, pepper, cooking oil, dish soap and a sponge. We do not provide fresh milk or groceries. Section 17 lists the nearest shop.",
+    "[Manual 10.2 — Roof terrace]\nHouse manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\n\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\nThe Walled City of Lahore is one of the oldest cities in the world and comprises the following places for sightseeing.\n\n1 Lahore Fort (شاہی قلعہ, Shahi Qila). A huge structure where the Mughal and Sikh rulers built their imperial quarters. It is on the UNESCO World Heritage List. There is a small museum dedicated to the Sikh period of the 18th century. A friendly museum caretaker might agree to take you into the summer rooms underground. For non-Pakistanis is Rs 500.\n\n2 Alamgiri Gate. The iconic entrance to the fort. Located opposite the Badshahi Mosque. (updated Feb 2017)\n\n3 Shah Burj gate. Decorated with colored tiles. Known as the \"Elephant Gate\" because royal elephants would enter here. Just inside the gate is the Hathi Paer (Elephant Path) - a staircase with very wide steps so that an elephant's feet could fit on them while climbing to the upper level of the fort. The fort's wall outside this staircase is decorated with tiles including pictures of elephants. (You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)",
+    "[Guide Lahore > Buy > Other]\nLahore > Buy > Other\n\nTrendy types congregate in the Gulberg and Defence suburbs. In Gulberg, MM Alam Road is the hippest part of town, with all the most expensive designer shops, including fine furniture and clothing, both Western and Pakistani, and the best restaurants.\n\n6 Liberty Market (Gulberg). A large circular market with hundreds of shops selling clothing, electronics, and so on. A basement shop in Liberty (tell the rickshaw driver it's near H Karim Bakhsh) has good handicrafts, and can be bargained with. (updated Feb 2017)\n\n7 Ferozsons Book Centre, Mall Road. The oldest book shop in Lahore. (updated Feb 2017)\n\nReadings bookshop in Main Boulevard Gulberg and Variety Books in liberty market are a must see.\n\nLast word in Gulberg at 32-A, Mian Mehmood Ali Kasoori Road.\n\nRaja Centre in Gulberg has a good selection of handloom 'khadi' fabric, both stitched and unstitched. Higher end khadi can be bought at the Khaadi shop in Mini Market."
+  ],
+  "latency_s": 34.429,
+  "llm_s": 33.17,
+  "tool_s": 0.0,
+  "retrieval_s": 0.109,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1250,
+  "completion_tokens": 55,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.899732,
+    "load_duration": 0.006133,
+    "prompt_eval_duration": 24.02352,
+    "eval_duration": 8.803067
+  }
+}

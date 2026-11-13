@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, the apartment is child-proofed. We have socket covers and stair gates available upon request.",
+  "scenario_id": "E-09",
+  "guest_message": "Is the apartment child-proofed? Do you have socket covers or stair gates?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.619,
+  "llm_s": 4.716,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 345,
+  "completion_tokens": 21,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.45639,
+    "load_duration": 0.012563,
+    "prompt_eval_duration": 1.085465,
+    "eval_duration": 3.332745
+  }
+}

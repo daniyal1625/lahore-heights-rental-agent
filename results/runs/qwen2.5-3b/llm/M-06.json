@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Quiet hours are from 10:00 PM to 8:00 AM. Please respect these hours to ensure a peaceful stay.",
+  "scenario_id": "M-06",
+  "guest_message": "What are your quiet hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 9.367,
+  "llm_s": 8.02,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 335,
+  "completion_tokens": 30,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 7.757866,
+    "load_duration": 0.041305,
+    "prompt_eval_duration": 1.331425,
+    "eval_duration": 6.292072
+  }
+}

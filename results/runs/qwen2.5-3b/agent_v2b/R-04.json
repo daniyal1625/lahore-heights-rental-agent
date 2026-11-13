@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "For your booking, 50% of the total is due to confirm the booking, and the balance is due 48 hours before arrival. Payment is by bank transfer or mobile wallet. Please check with the host for the exact amount owed.",
+  "scenario_id": "R-04",
+  "guest_message": "How much do I still owe, and when is it due?",
+  "thread_context": {
+    "reservation_id": 90004,
+    "guest_name": "Hamza Sheikh"
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "2.5"
+    },
+    {
+      "type": "manual",
+      "id": "2.8"
+    },
+    {
+      "type": "manual",
+      "id": "14.3"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "check-out policies and due date and amount owed"
+      },
+      "result_size": 2515,
+      "ms": 41.6
+    }
+  ],
+  "retrieved": [
+    "2.5",
+    "2.8",
+    "14.3",
+    "21"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"2.5\",\"title\":\"Paying for your booking\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.5 Paying for your booking\\n\\n- **Bookings made through a platform** (Airbnb, Booking.com): you pay through the platform, and the platform's payment rules apply.\\n- **Direct bookings:** 50% of the total is due to confirm the booking, and the balance is due **48 hours before arrival**. Payment is by bank transfer or mobile wallet. Our front desk does not handle cash.\"},{\"source_id\":\"2.8\",\"title\":\"Decisions only the host can make\",\"text\":\"House manual > 2. Booking Rules, Fees and Policies > 2.8 Decisions only the host can make\\n\\nThe front desk, the guards and automated assistants cannot promise any of the following. Only the host decides, so requests are passed to the host:\\n\\n- refunds, compensation or goodwill gestures\\n- special rates or long-stay discounts\\n- exceptions to check-in or check-out times\\n- changes to booking dates or moving to a different apartment\\n- deductions from the security deposit\\n- stays longer than 28 nights\"},{\"source_id\":\"14.3\",\"title\":\"Late check-out\",\"text\":\"House manual > 14. Checking Out > 14.3 Late check-out\\n\\nLate check-out until **2:00 PM** costs **PKR 2,500**. It is only possible if no guest is arriving in your apartment that day, and it must be requested **by 9:00 PM the evening before**. The host confirms it. If you stay beyond 2:00 PM, a full night is charged at the nightly rate. You can leave your luggage at the front desk until 9:00 PM (section 3.6).\"},{\"source_id\":\"21\",\"title\":\"Key Facts at a Glance\",\"text\":\"House manual > 21. Key Facts at a Glance\\n\\n| Topic | Fact |\\n|---|---|\\n| Check-in / check-out | 2:00 PM / 11:00 AM |\\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\\n| Quiet hours | 10:00 PM to 8:00 AM |\\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\\n| Front desk | 9:00 AM to 9:00 PM |\\n| Roof terrace | 7:00 AM to 10:00 PM |\\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\\n| Maximum stay | 28 nights |\\n| Generator start time | About 30 seconds |\\n| Rescue / Police / Fire | 1122 / 15 / 16 |\\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\\n| Emergency maintenance | +92 300 555 0177 (24 hours) |\"}]"
+  ],
+  "latency_s": 107.104,
+  "llm_s": 105.16,
+  "tool_s": 0.042,
+  "retrieval_s": 0.042,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2830,
+  "completion_tokens": 134,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 104.622848,
+    "load_duration": 0.016831,
+    "prompt_eval_duration": 76.348324,
+    "eval_duration": 28.12551
+  },
+  "plan": {
+    "intent": "check-out policies and due date",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "check-out policies and due date and amount owed",
+        "reservation_id": 90004,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 53.058,
+  "llm_answer_s": 52.101
+}

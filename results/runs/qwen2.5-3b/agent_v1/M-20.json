@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your garbage should be thrown in the bin bags provided and taken to the trash room at the end of the corridor on your floor. The trash room is collected from the trash rooms every morning between 7:00 AM and 8:00 AM. Bin bags are refilled free at the front desk.",
+  "scenario_id": "M-20",
+  "guest_message": "Where do I throw away the garbage?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "9.4"
+    },
+    {
+      "type": "manual",
+      "id": "11.7"
+    },
+    {
+      "type": "manual",
+      "id": "14.2"
+    },
+    {
+      "type": "manual",
+      "id": "9.1"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "garbage disposal policy"
+      },
+      "result_size": 2217,
+      "ms": 47.1
+    }
+  ],
+  "retrieved": [
+    "9.4",
+    "11.7",
+    "14.2",
+    "9.1"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"9.4\",\"title\":\"Rubbish and recycling\",\"text\":\"House manual > 9. Laundry, Linens and Housekeeping > 9.4 Rubbish and recycling\\n\\nPut rubbish in the bin bags provided, tie the bag and take it to the **trash room at the end of the corridor on your floor**. Please do not leave rubbish outside your door or in the lift. Rubbish is collected from the trash rooms every morning between **7:00 AM and 8:00 AM**. Bin bags are refilled free at the front desk.\"},{\"source_id\":\"11.7\",\"title\":\"Damage and loss\",\"text\":\"House manual > 11. House Rules > 11.7 Damage and loss\\n\\nPlease report breakages straight away. Accidental breakage of small items (a glass or plate) is not a problem if you tell us. Larger damage or missing items are charged at replacement cost; for direct bookings this is deducted from the security deposit, and for platform bookings we claim through the platform. We take photos of every apartment before each stay.\"},{\"source_id\":\"14.2\",\"title\":\"Check-out checklist\",\"text\":\"House manual > 14. Checking Out > 14.2 Check-out checklist\\n\\n1. Switch off the AC, the geyser, lights and fans.\\n2. Close and lock windows and balcony doors.\\n3. Take all rubbish to the trash room on your floor (section 9.4).\\n4. Leave used towels on the bathroom floor.\\n5. Sign out of the TV streaming apps (section 5.2).\\n6. Close the door firmly; it locks automatically. You do not need to return a key because we use a keypad code (if you were given a physical key, return it to the front desk).\"},{\"source_id\":\"9.1\",\"title\":\"Washing your clothes\",\"text\":\"House manual > 9. Laundry, Linens and Housekeeping > 9.1 Washing your clothes\\n\\n- **One-Bedroom and Two-Bedroom:** a fully automatic washing machine is in the unit. A bottle of detergent is provided. Use the drying rack on the balcony; please do not hang clothes over the balcony railing.\\n- **Penthouse:** a combined washer-dryer is in the unit.\\n- **Studio:** there is no washing machine in the unit. Studio guests use the **shared laundry room on the ground floor**, open **8:00 AM to 8:00 PM**. Collect a token for **PKR 400 per wash** at the front desk. Detergent is available free at the front desk, and a drying rack is in the Studio wardrobe.\"}]"
+  ],
+  "latency_s": 40.464,
+  "llm_s": 38.506,
+  "tool_s": 0.047,
+  "retrieval_s": 0.047,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2384,
+  "completion_tokens": 88,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.236267,
+    "load_duration": 0.026836,
+    "prompt_eval_duration": 20.800556,
+    "eval_duration": 17.291626
+  }
+}

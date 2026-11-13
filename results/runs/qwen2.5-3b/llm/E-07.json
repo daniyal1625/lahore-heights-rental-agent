@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry to hear about your toothache. Here are a few dentists in the area you might consider: Dr. Ayesha Malik at Lahore Heights Apartments. They have a good reputation. You can also check out Dr. Ali Khan at Gulberg Dental Clinic.",
+  "scenario_id": "E-07",
+  "guest_message": "I've broken a tooth. Can you recommend a good dentist nearby?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 10.435,
+  "llm_s": 9.578,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 343,
+  "completion_tokens": 56,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 9.309733,
+    "load_duration": 0.01402,
+    "prompt_eval_duration": 0.972145,
+    "eval_duration": 8.280707
+  }
+}

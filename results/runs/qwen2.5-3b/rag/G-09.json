@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The Shalimar Gardens are located along the GT Road towards Wagah. They are a three-tiered formal garden built in the 1600s and are a UNESCO World Heritage Site.",
+  "scenario_id": "G-09",
+  "guest_message": "Where are the Shalimar Gardens?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.4"
+    },
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Other sights"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.4",
+    "17",
+    "0",
+    "Lahore",
+    "Lahore > See > Other sights"
+  ],
+  "evidence": [
+    "[Manual 10.4 — Prayer facilities]\nHouse manual > 10. Building Amenities and Accessibility > 10.4 Prayer facilities\n\nEvery apartment has prayer mats and a copy of the Quran. The Qibla direction is shown by an arrow sticker on the bedroom wardrobe. A neighbourhood mosque (Masjid Al-Noor, about 300 metres away) broadcasts the call to prayer five times a day, and the dawn (Fajr) call can be heard faintly in the early morning. Earplugs are in the bedside drawer.",
+    "[Manual 17 — Nearby Essentials (the host's short list)]\nHouse manual > 17. Nearby Essentials (the host's short list)\n\nThese are the places our guests use most. All are within a short walk.\n\n| What | Name and details |\n|---|---|\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\n| Mosque | Masjid Al-Noor, about 300 m away |\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\n\nFor sightseeing, food and transport around Lahore, see the separate local guide.",
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Guide Lahore]\nLahore\n\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\n\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\n\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\n\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.",
+    "[Guide Lahore > See > Other sights]\nLahore > See > Other sights\n\nMasterpieces of Mughal architecture are scattered throughout the city, even in neighborhoods that today seem a little dilapidated. Buildings and sites include:\n\n35 Shalimar Gardens (located along the GT Road towards Wagah). A three-tiered formal garden built in the 1600s, and a UNESCO World Heritage Site. Rs 200 for foreigners. (updated Feb 2017)\n\n36 Chauburji Gate (at Chauburji Chowk). An impressive, ornate 4-towered gate dating to 1646. (updated Feb 2017)\n\n37 Tomb of Jahangir (Shahdara suburb). Built in 1637 for the Mughal emperor Jahangir. (updated Feb 2017)\n\n38 Tomb of Nur Jahan (Shahdara suburb).  (updated Feb 2017)\n\nThere are also other sites, including tombs and mausoleums. Check this website Lahore, Pakistan: Traditional and Historical Architecture for information, plans, and photo galleries of many monuments.\n\n39 Data Durbar (Data Darbar). A Sufi Muslim shrine to Lahore's patron saint, Hazrat Daata Ganj Bakhsh. This vast modern structure is always filled with people praying, collecting or bestowing alms, or eating at the huge charity 'langar' or soup kitchen. (updated Feb 2017)\n\n40 Trafalgar Square (Bahria Town). A replica of the famous Trafalgar Square in London is located in the Bahria Town suburb. A Mini Egypt and a Zoo are located nearby and also worth a visit. (updated Feb 2017)"
+  ],
+  "latency_s": 38.192,
+  "llm_s": 37.09,
+  "tool_s": 0.0,
+  "retrieval_s": 0.092,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1411,
+  "completion_tokens": 41,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 36.818742,
+    "load_duration": 0.006149,
+    "prompt_eval_duration": 30.335825,
+    "eval_duration": 6.458391
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! The apartment is available for one night with two guests. Please let me check the availability and price.",
+  "scenario_id": "A-07",
+  "guest_message": "Anything free tonight? Just one night, 2 guests.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 5.919,
+  "llm_s": 4.963,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 23,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 4.696536,
+    "load_duration": 0.006954,
+    "prompt_eval_duration": 1.399947,
+    "eval_duration": 3.222723
+  }
+}

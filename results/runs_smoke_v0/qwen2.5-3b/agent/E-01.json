@@ -1,0 +1,23 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have the capability to arrange airport pickups. I recommend contacting a local transportation service for assistance.",
+  "scenario_id": "E-01",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 8.802,
+  "llm_s": 6.742,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 889,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama": {
+    "total_duration": 6.478828,
+    "load_duration": 0.007167,
+    "prompt_eval_duration": 0.920282,
+    "eval_duration": 5.483758
+  }
+}

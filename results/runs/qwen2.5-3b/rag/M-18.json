@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, we provide a hair dryer and an iron.",
+  "scenario_id": "M-18",
+  "guest_message": "Do you provide a hair dryer and an iron?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "8.3"
+    },
+    {
+      "type": "manual",
+      "id": "8.1"
+    },
+    {
+      "type": "manual",
+      "id": "9.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "8.3",
+    "8.1",
+    "9.1",
+    "Lahore > Buy > Other",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 8.3 — Supplies]\nHouse manual > 8. Kitchen and Cooking > 8.3 Supplies\n\nWe supply tea, instant coffee, sugar, salt, pepper, cooking oil, dish soap and a sponge. We do not provide fresh milk or groceries. Section 17 lists the nearest shop.",
+    "[Manual 8.1 — Cooking equipment]\nHouse manual > 8. Kitchen and Cooking > 8.1 Cooking equipment\n\nEach kitchen has a gas hob, an induction plate, a microwave, a kettle and a toaster. The One-Bedroom, Two-Bedroom and Penthouse also have an air fryer. Only the Two-Bedroom and the Penthouse have an oven. We provide pots, pans, a knife set, chopping board, plates, glasses, cups and cutlery for the maximum number of guests.",
+    "[Manual 9.1 — Washing your clothes]\nHouse manual > 9. Laundry, Linens and Housekeeping > 9.1 Washing your clothes\n\n- **One-Bedroom and Two-Bedroom:** a fully automatic washing machine is in the unit. A bottle of detergent is provided. Use the drying rack on the balcony; please do not hang clothes over the balcony railing.\n- **Penthouse:** a combined washer-dryer is in the unit.\n- **Studio:** there is no washing machine in the unit. Studio guests use the **shared laundry room on the ground floor**, open **8:00 AM to 8:00 PM**. Collect a token for **PKR 400 per wash** at the front desk. Detergent is available free at the front desk, and a drying rack is in the Studio wardrobe.",
+    "[Guide Lahore > Buy > Other]\nLahore > Buy > Other\n\nHigher end khadi can be bought at the Khaadi shop in Mini Market.\n\n8 Hafeez Centre. One of the famous mobile and computer market of the province Punjab, with inexpensive software (pirated), and hardware that can be bargained for. (updated Feb 2017)\n\nFortress Stadium has a huge variety of inexpensive linens, clothes, DVDs.\n\nEhsan chappal house has shoes for ladies, also check out Stylo shoes for stylish shoes and clutches/purses.\n\n9 Moon Market. Jewellery market, banks, clothes market (mostly for women and children), restaurants. (updated Feb 2017)\n\n10 Kareem Block Market. Men's wear - casual and formal wear for men of all ages. (updated Feb 2017)\n\nJoray Pull is a developing area near airport and Rangers HQ. It's safe and you do a lot of eating activity here along with shopping.\n\nLevi's products are comparatively cheap as they're produced in Pakistan. A regular pair of trousers in an official retail store will be between 5,000 and 10,000 Rs.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city."
+  ],
+  "latency_s": 30.681,
+  "llm_s": 29.274,
+  "tool_s": 0.0,
+  "retrieval_s": 0.116,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1170,
+  "completion_tokens": 12,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 29.006392,
+    "load_duration": 0.03208,
+    "prompt_eval_duration": 26.780104,
+    "eval_duration": 2.14825
+  }
+}

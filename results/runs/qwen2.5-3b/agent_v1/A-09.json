@@ -1,0 +1,45 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Sorry, you can't book a stay that starts in the past. Please check a future date.",
+  "scenario_id": "A-09",
+  "guest_message": "Can we book November 5 to November 7?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-05",
+        "check_out": "2026-11-07",
+        "guests": null
+      },
+      "result_size": 88,
+      "ms": 76.6
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"error\":\"checkIn 2026-11-05 is in the past relative to the simulated date 2026-11-10.\"}"
+  ],
+  "latency_s": 17.067,
+  "llm_s": 15.009,
+  "tool_s": 0.077,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1880,
+  "completion_tokens": 74,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 14.745842,
+    "load_duration": 0.017295,
+    "prompt_eval_duration": 3.605715,
+    "eval_duration": 11.057533
+  }
+}

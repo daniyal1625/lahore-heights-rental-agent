@@ -1,0 +1,23 @@
+{
+  "system": "agent",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry to hear that, Sara Khan. Please ensure the kitchen is well-ventilated and do not use any open flames or electrical appliances. Call a professional plumber immediately.",
+  "scenario_id": "D-08",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 34.777,
+  "llm_s": 32.283,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 891,
+  "completion_tokens": 37,
+  "error": null,
+  "ollama": {
+    "total_duration": 32.036832,
+    "load_duration": 0.007871,
+    "prompt_eval_duration": 25.134692,
+    "eval_duration": 6.844684
+  }
+}

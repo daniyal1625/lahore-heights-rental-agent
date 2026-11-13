@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! We have availability from November 12 to November 14. How many nights would you like to book?",
+  "scenario_id": "A-01",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 8.223,
+  "llm_s": 7.006,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 351,
+  "completion_tokens": 26,
+  "error": null,
+  "ollama": {
+    "total_duration": 6.741355,
+    "load_duration": 0.011458,
+    "prompt_eval_duration": 1.751949,
+    "eval_duration": 4.93065
+  }
+}

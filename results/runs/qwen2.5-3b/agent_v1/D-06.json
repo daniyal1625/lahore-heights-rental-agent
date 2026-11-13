@@ -1,0 +1,50 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Check-in time is on 2026-11-10 and check-out time is on 2026-11-12. Please note that all available listings are fully booked. Please check back later or consider a different date.",
+  "scenario_id": "D-06",
+  "guest_message": "Assalam o alaikum, check-in ka time kya hai aur check-out kab karna hai?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-10..2026-11-12"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-10",
+        "check_out": "2026-11-12",
+        "guests": null
+      },
+      "result_size": 763,
+      "ms": 13.6
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-10\",\"check_out\":\"2026-11-12\",\"nights\":2,\"guests\":null,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":false,\"nightly_price_pkr\":9500,\"stay_total_pkr\":19000,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":false,\"nightly_price_pkr\":14000,\"stay_total_pkr\":28000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":false,\"nightly_price_pkr\":21000,\"stay_total_pkr\":42000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":false,\"nightly_price_pkr\":38000,\"stay_total_pkr\":76000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 33.229,
+  "llm_s": 31.368,
+  "tool_s": 0.014,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2153,
+  "completion_tokens": 108,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 31.059188,
+    "load_duration": 0.01581,
+    "prompt_eval_duration": 12.405493,
+    "eval_duration": 18.563179
+  }
+}

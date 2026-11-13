@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your reservation 90003 is confirmed. Here are the details:\n- Room Type: Studio, Unit 201\n- Arrival Date: 2026-11-14\n- Check-In Time: 2:00 PM\n- Check-Out Time: 11:00 AM\n- Departure Date: 2026-11-17\n- Number of Nights: 3\n- Total Price: PKR 28,500\n- Payment Status: Paid\n- Security Deposit: Not Applicable\n- Payment Method: Booking.com\n\nPlease ensure you have all necessary documents ready for ID verification. Enjoy your stay!",
+  "scenario_id": "R-03",
+  "guest_message": "Hi, this is Emily Carter. Can you confirm my reservation 90003? I booked through Booking.com.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": "Emily Carter"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90003"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90003
+      },
+      "result_size": 529,
+      "ms": 6.3
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90003,\"status\":\"new\",\"guest_name\":\"Emily Carter\",\"listing\":\"Studio, Unit 201\",\"channel\":\"bookingcom\",\"arrival\":\"2026-11-14\",\"departure\":\"2026-11-17\",\"nights\":3,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":0,\"total_price_pkr\":28500,\"paid_amount_pkr\":28500,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"pending\",\"guest_note\":\"First time in Pakistan.\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 52.253,
+  "llm_s": 50.252,
+  "tool_s": 0.006,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2019,
+  "completion_tokens": 171,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 49.977101,
+    "load_duration": 0.018565,
+    "prompt_eval_duration": 22.082179,
+    "eval_duration": 27.822248
+  }
+}

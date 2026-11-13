@@ -1,0 +1,76 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "You can take trains from major Pakistani cities to Lahore. Major railway stations in Lahore include Lahore Junction and Lahore Cantonment. For more details, you can visit the main station or local stations like Shahdara Bagh, Badami Bagh, and Moghulpura.",
+  "scenario_id": "G-07",
+  "guest_message": "Which railway stations in Lahore can I take a train from?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By train"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By bus"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "train stations Lahore"
+      },
+      "result_size": 5451,
+      "ms": 35.8
+    }
+  ],
+  "retrieved": [
+    "Lahore > Get in > By train",
+    "Lahore",
+    "Lahore > Get around > By bus"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > Get in > By train\",\"title\":\"By train\",\"text\":\"Lahore > Get in > By train\\n\\nThere are routes from all major Pakistani cities to Lahore with Pakistan Railways official website. Trains from southern destinations (Multan, DG Khan, Karachi, etc.) and northern destinations (Gujrat, Gujranwala, Jhelum, Rawalpindi, Peshawar, etc.) run from the main station. It also connects to the western part of Pakistan to Faisalabad and beyond. The Samjhauta Express (Friendship Express) ran twice a week between Lahore and Attari, Amritsar, across the border in India, however services have been suspended since 2019 by Pakistan citing tensions.\\n\\nLocal stations in Lahore are Shahdara Bagh, Badami Bagh, Moghalpura, Baghbanpura, Harbanspura, Jallo, and Wagah. These stations mostly have peak-hour services for commuters to Lahore.\\n\\n2 Lahore Junction railway station (لاہور جنکشن ریلوے اسٹیشن). (updated Feb 2022)\\n\\n3 Lahore Cantonment railway station (لاہور کینٹ ریلوے اسٹیشن). A smaller station that serves some trains from Karachi, situated near the airport. (updated Apr 2021)\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"},{\"source_id\":\"Lahore > Get around > By bus\",\"title\":\"By bus\",\"text\":\"Lahore > Get around > By bus\\n\\nMetro Bus is a separate bus rapid transit (BRT) line. Buses are air-conditioned, comfortable and have special sitting for the disabled and women. The price is very cheap (20 Rs). There are 27 stations starting from Gajjumata Terminal to Shahdara Terminal. Buses arrive every 3 minutes, but can become very crowded (especially in the men's section). Make sure to move to the door before your stop, as other passengers will come pushing in hard.\\n\\nLahore Transport Company buses are also a cheaper means of traveling within the several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here  .\\n\\nLahore Transport Company buses are also a cheaper means of traveling within several areas in Lahore. They are also a clean and cheap option. A detailed route map can be found here.\\n\\nOther bus companies\\n\\nFaisal Movers: Provides affordable travel with comfortable options across various destinations.\\n\\nRoad Master: A budget-friendly bus service connecting Lahore with other major cities.\\n\\nSkyways: Known for economical fares and a wide route network.\\n\\nNiazi Express: A long-standing service offering low-cost travel options.\\n\\nRajput Travels: Offers reasonably priced routes connecting many regions.\\n\\nPower International: Affordable intercity travel with decent amenities.\\n\\nBilal Travels: Known for budget-conscious travel with basic comfort and convenience.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\\n\\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\\n\\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\"}]"
+  ],
+  "latency_s": 59.073,
+  "llm_s": 57.23,
+  "tool_s": 0.036,
+  "retrieval_s": 0.036,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3265,
+  "completion_tokens": 98,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 56.651075,
+    "load_duration": 0.012609,
+    "prompt_eval_duration": 38.462395,
+    "eval_duration": 18.024005
+  },
+  "plan": {
+    "intent": "city transport",
+    "calls": [
+      {
+        "tool": "search_local_guide",
+        "query": "train stations Lahore",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 7.579,
+  "llm_answer_s": 49.651
+}

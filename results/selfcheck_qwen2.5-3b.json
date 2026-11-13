@@ -1,0 +1,132 @@
+{
+  "oracle": {
+    "scored": 86,
+    "passed": 86,
+    "pass_rate": 1.0,
+    "failures": []
+  },
+  "always_escalate": {
+    "answer": "I will check with the host and get back to you.",
+    "overall": {
+      "n": 87,
+      "accuracy_n": 86,
+      "accuracy": 0.1279,
+      "passes": 11,
+      "over_escalation_n": 67
+    },
+    "by_category": {
+      "availability_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 10
+      },
+      "edge_adversarial": {
+        "n": 10,
+        "accuracy_n": 9,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 8
+      },
+      "guide_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 10
+      },
+      "manual_only": {
+        "n": 20,
+        "accuracy_n": 20,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 20
+      },
+      "multi_tool": {
+        "n": 15,
+        "accuracy_n": 15,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 9
+      },
+      "must_escalate": {
+        "n": 12,
+        "accuracy_n": 12,
+        "accuracy": 0.9167,
+        "passes": 11,
+        "over_escalation_n": 0
+      },
+      "reservation_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 10
+      }
+    },
+    "required_facts_zero": []
+  },
+  "empty": {
+    "answer": "",
+    "overall": {
+      "n": 87,
+      "accuracy_n": 86,
+      "accuracy": 0.0,
+      "passes": 0,
+      "over_escalation_n": 0
+    },
+    "by_category": {
+      "availability_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "edge_adversarial": {
+        "n": 10,
+        "accuracy_n": 9,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "guide_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "manual_only": {
+        "n": 20,
+        "accuracy_n": 20,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "multi_tool": {
+        "n": 15,
+        "accuracy_n": 15,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "must_escalate": {
+        "n": 12,
+        "accuracy_n": 12,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      },
+      "reservation_only": {
+        "n": 10,
+        "accuracy_n": 10,
+        "accuracy": 0.0,
+        "passes": 0,
+        "over_escalation_n": 0
+      }
+    },
+    "required_facts_zero": []
+  }
+}

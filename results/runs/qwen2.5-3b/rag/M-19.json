@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Fresh Basket Mart is open 9:00 AM to 1:00 AM daily. Lane 4 Care Pharmacy is open 24 hours.",
+  "scenario_id": "M-19",
+  "guest_message": "Is there a grocery store or pharmacy nearby that's open late?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "17"
+    },
+    {
+      "type": "manual",
+      "id": "12.4"
+    },
+    {
+      "type": "manual",
+      "id": "8.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Buy > Other"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Mid-range"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "17",
+    "12.4",
+    "8.3",
+    "Lahore > Buy > Other",
+    "Lahore > Eat > Mid-range"
+  ],
+  "evidence": [
+    "[Manual 17 — Nearby Essentials (the host's short list)]\nHouse manual > 17. Nearby Essentials (the host's short list)\n\nThese are the places our guests use most. All are within a short walk.\n\n| What | Name and details |\n|---|---|\n| Grocery | Fresh Basket Mart, 5-minute walk, open **9:00 AM to 1:00 AM** daily |\n| Pharmacy | Lane 4 Care Pharmacy, 3-minute walk, open **24 hours** |\n| Cash machine | ATM at the Lane 4 junction, 3-minute walk, 24 hours |\n| Mosque | Masjid Al-Noor, about 300 m away |\n| Hospital | Gulberg Community Hospital, about 2.5 km, 24-hour emergency department |\n\nFor sightseeing, food and transport around Lahore, see the separate local guide.",
+    "[Manual 12.4 — Medical help]\nHouse manual > 12. Safety and Emergencies > 12.4 Medical help\n\nCall **1122** for emergencies. The nearest hospital with a 24-hour emergency department is Gulberg Community Hospital, about 2.5 km away (roughly 10 minutes by car). A 24-hour pharmacy is a 3-minute walk away (section 17).",
+    "[Manual 8.3 — Supplies]\nHouse manual > 8. Kitchen and Cooking > 8.3 Supplies\n\nWe supply tea, instant coffee, sugar, salt, pepper, cooking oil, dish soap and a sponge. We do not provide fresh milk or groceries. Section 17 lists the nearest shop.",
+    "[Guide Lahore > Buy > Other]\nLahore > Buy > Other\n\nHigher end khadi can be bought at the Khaadi shop in Mini Market.\n\n8 Hafeez Centre. One of the famous mobile and computer market of the province Punjab, with inexpensive software (pirated), and hardware that can be bargained for. (updated Feb 2017)\n\nFortress Stadium has a huge variety of inexpensive linens, clothes, DVDs.\n\nEhsan chappal house has shoes for ladies, also check out Stylo shoes for stylish shoes and clutches/purses.\n\n9 Moon Market. Jewellery market, banks, clothes market (mostly for women and children), restaurants. (updated Feb 2017)\n\n10 Kareem Block Market. Men's wear - casual and formal wear for men of all ages. (updated Feb 2017)\n\nJoray Pull is a developing area near airport and Rangers HQ. It's safe and you do a lot of eating activity here along with shopping.\n\nLevi's products are comparatively cheap as they're produced in Pakistan. A regular pair of trousers in an official retail store will be between 5,000 and 10,000 Rs.",
+    "[Guide Lahore > Eat > Mid-range]\nLahore > Eat > Mid-range\n\nLahore has several mid-range cafes, notably Masoom's for cakes, desserts and coffee, and sandwiches at Coffee, Tea and Company nearby. In Defence, Hot Fuzon is another good cafe and a Masoom's franchise.\n\nMexican cafes: Chalupa in Samnabad which has many tasty Mexican dishes like taco. There is also a bar with night time disco.\n\nLebanese restaurants: Cock and Bull with three branches in Lahore serving shawarmas.\n\nKim's snack bar in Samnabad. Lahore second best shawarma.\n\nChinese food is also very popular in Lahore. It is very strongly altered to local tastes.\n\nMini Golf (National Bank Park near Kalma Chowk). Don't miss this place for great open air atmosphere where you can also get sheesha.\n\nChatkhara. Serves snack food like samosas, chaat and dahi bhallay\n\nBalouchi Sajji, Fortress Stadium. One of the best restaurant in Lahore. Best traditionally grilled lamb and chicken in town and after the meal one must have the traditional kawa (green tea)\n\nLiberty Market. Offers good standard Pakistani food. The mutton karahi at Rs 510 is a popular dish and easily serves two people, while most dishes are half that price. They also offer salads, but see the Stay Healthy section below."
+  ],
+  "latency_s": 36.877,
+  "llm_s": 35.75,
+  "tool_s": 0.0,
+  "retrieval_s": 0.103,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1245,
+  "completion_tokens": 35,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 35.489078,
+    "load_duration": 0.031549,
+    "prompt_eval_duration": 28.771741,
+    "eval_duration": 6.634072
+  }
+}

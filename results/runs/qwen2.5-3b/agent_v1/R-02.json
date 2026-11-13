@@ -1,0 +1,48 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Your booking has 2 adults and 2 children. You are staying in Unit 502.",
+  "scenario_id": "R-02",
+  "guest_message": "How many guests are on my booking and which apartment am I in?",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [
+    {
+      "type": "reservation",
+      "id": "90002"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "get_reservation",
+      "args": {
+        "reservation_id": 90002
+      },
+      "result_size": 515,
+      "ms": 5.8
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"id\":90002,\"status\":\"new\",\"guest_name\":\"Omar Farooq\",\"listing\":\"Two-Bedroom, Unit 502\",\"channel\":\"airbnbOfficial\",\"arrival\":\"2026-11-08\",\"departure\":\"2026-11-12\",\"nights\":4,\"check_in_time\":\"2:00 PM\",\"check_out_time\":\"11:00 AM\",\"adults\":2,\"children\":2,\"total_price_pkr\":84000,\"paid_amount_pkr\":84000,\"balance_due_pkr\":0,\"balance_due_date\":null,\"payment_status\":\"paid\",\"fees\":[],\"security_deposit_status\":\"not_applicable\",\"id_verification\":\"verified\",\"guest_note\":\"\",\"cancellation_date\":null,\"refunded_amount_pkr\":0}"
+  ],
+  "latency_s": 34.384,
+  "llm_s": 32.568,
+  "tool_s": 0.006,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2013,
+  "completion_tokens": 47,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 32.296642,
+    "load_duration": 0.017628,
+    "prompt_eval_duration": 25.105303,
+    "eval_duration": 7.091181
+  }
+}

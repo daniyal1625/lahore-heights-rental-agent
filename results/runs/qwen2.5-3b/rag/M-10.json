@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "The hot water is provided by an electric geyser. Please switch it on about 30 minutes before you need hot water.",
+  "scenario_id": "M-10",
+  "guest_message": "The shower is only giving cold water, how does the hot water work?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "7.5"
+    },
+    {
+      "type": "manual",
+      "id": "7.3"
+    },
+    {
+      "type": "manual",
+      "id": "19.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > Climate"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "7.5",
+    "7.3",
+    "19.5",
+    "Lahore > Stay healthy",
+    "Lahore > Understand > Climate"
+  ],
+  "evidence": [
+    "[Manual 7.5 — Drinking water]\nHouse manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.5 Drinking water\n\n**Do not drink the tap water.** Every kitchen has a filtered (reverse osmosis, RO) water dispenser with hot and cold water, and two bottled waters are waiting on arrival. Please use the filtered water for drinking, tea and cooking rice or pasta.",
+    "[Manual 7.3 — Hot water (geyser)]\nHouse manual > 7. Cooling, Heating, Hot Water and Drinking Water > 7.3 Hot water (geyser)\n\nHot water comes from an electric geyser (storage water heater). The switch is on the wall outside the bathroom door. **Switch it on about 30 minutes before you need hot water.** A timer automatically cuts the power after 2 hours, so switch it on again if you need more. Geyser sizes: Studio 35 litres, One-Bedroom 50 litres, Two-Bedroom 80 litres, Penthouse two 80-litre units. After heavy use, allow about 30 minutes for reheating. We use electric geysers because piped gas pressure in Lahore can be low, especially on winter mornings.",
+    "[Manual 19.5 — The water dispenser]\nHouse manual > 19. Appliance How-To Guide > 19.5 The water dispenser\n\nThe filtered water dispenser in the kitchen has two taps: blue for cold and red for hot. The hot tap has a child-lock: press and hold the safety button while you press the tap. The dispenser needs mains power, so after a power cut it takes a few minutes to restart. If the dispenser leaks or the water tastes unusual, stop using it and message the host.",
+    "[Guide Lahore > Stay healthy]\nLahore > Stay healthy\n\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\n\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\n\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\n\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\n\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\n\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing).",
+    "[Guide Lahore > Understand > Climate]\nLahore > Understand > Climate\n\nLahore has a hot semi-arid climate. The hottest month is June, where temperatures routinely exceed 45 °C (113 °F). The monsoon season starts in late June, and the wettest months are July, August and September. During this seasons, expect heavy rainfal, evening thunderstorms, and the possibility of flash floods. The coolest month is January, when the daily high averages around 18 °C (64 °F), often accompanied by dense fog."
+  ],
+  "latency_s": 33.455,
+  "llm_s": 31.19,
+  "tool_s": 0.0,
+  "retrieval_s": 0.106,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1139,
+  "completion_tokens": 28,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 30.931533,
+    "load_duration": 0.029948,
+    "prompt_eval_duration": 25.306624,
+    "eval_duration": 5.550828
+  }
+}

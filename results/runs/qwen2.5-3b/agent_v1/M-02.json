@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "The Wi-Fi name for the studio is **LH-Guest-201**. The password is **Studio201wifi**. Please remember to sign out of your streaming accounts before you check out.",
+  "scenario_id": "M-02",
+  "guest_message": "Hi! What's the wifi name and password for the studio?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "5.1"
+    },
+    {
+      "type": "manual",
+      "id": "20.2"
+    },
+    {
+      "type": "manual",
+      "id": "4.1"
+    },
+    {
+      "type": "manual",
+      "id": "5.2"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "wifi name and password studio"
+      },
+      "result_size": 2675,
+      "ms": 67.8
+    }
+  ],
+  "retrieved": [
+    "5.1",
+    "20.2",
+    "4.1",
+    "5.2"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"5.1\",\"title\":\"Wi-Fi\",\"text\":\"House manual > 5. Wi-Fi, TV and Electronics > 5.1 Wi-Fi\\n\\nEach apartment has its own network. The building has 100 Mbps fibre internet with an automatic 4G backup router (slower, about 20 Mbps) that switches on if the main line fails.\\n\\n| Unit | Network name | Password |\\n|---|---|---|\\n| Studio, 201 | LH-Guest-201 | Studio201wifi |\\n| One-Bedroom, 304 | LH-Guest-304 | 1BR304wifi |\\n| Two-Bedroom, 502 | LH-Guest-502 | 2BR502wifi |\\n| Penthouse, 701 | LH-Guest-701 | Penthouse701wifi |\\n\\nThe router is on the living-room shelf. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. Please do not change router settings. If it still does not work after 10 minutes, message the host.\"},{\"source_id\":\"20.2\",\"title\":\"Business travellers and remote workers\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.2 Business travellers and remote workers\\n\\n- Every apartment has a desk or dining table and fast Wi-Fi with an automatic 4G backup (section 5.1).\\n- The generator keeps the Wi-Fi router on during power cuts, but your laptop battery is your own responsibility, and the induction plate and kettle will not work during a cut.\\n- The front desk can receive parcels and documents for you between 9:00 AM and 9:00 PM (section 15.4).\\n- Quiet hours (10:00 PM to 8:00 AM) apply to video calls on balconies and in corridors.\"},{\"source_id\":\"4.1\",\"title\":\"Studio, Unit 201\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.1 Studio, Unit 201\\n\\n- **Sleeps:** 2. One queen bed (160 × 200 cm). The sofa is not a bed.\\n- **Bathroom:** one, with shower. Electric water heater (geyser) of 35 litres.\\n- **Kitchenette:** 2-burner gas hob, induction plate, microwave, kettle, toaster, 250-litre fridge. There is **no oven**.\\n- **Laundry:** **no washing machine** in the unit. Use the shared laundry room on the ground floor (section 9.1).\\n- **Cooling and air:** one inverter air conditioner (this is the AC that keeps running on the generator) and one air purifier.\\n- **Other:** 32-inch smart TV, desk and chair for working, large window with garden view (no balcony), iron and ironing board in the wardrobe, hair dryer in the bathroom drawer.\\n- **Parking:** B1-12. **Wi-Fi network:** LH-Guest-201.\"},{\"source_id\":\"5.2\",\"title\":\"TV and streaming\",\"text\":\"House manual > 5. Wi-Fi, TV and Electronics > 5.2 TV and streaming\\n\\nEvery apartment has a smart TV with local cable channels and YouTube. You can sign in to your own streaming accounts (for example Netflix). **Please sign out before check-out.** The TV remote and spare batteries are in the TV-stand drawer.\"}]"
+  ],
+  "latency_s": 57.128,
+  "llm_s": 54.296,
+  "tool_s": 0.068,
+  "retrieval_s": 0.068,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2610,
+  "completion_tokens": 70,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 54.013781,
+    "load_duration": 0.028422,
+    "prompt_eval_duration": 36.557689,
+    "eval_duration": 17.30156
+  }
+}

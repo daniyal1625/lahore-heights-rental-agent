@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I apologize for the inconvenience. Please allow me to check with the host regarding your situation. You may need to wait for a response.",
+  "scenario_id": "D-10",
+  "guest_message": "This is unacceptable!! The wifi has been down for an hour and I'm working. I want a refund right now.",
+  "thread_context": {
+    "reservation_id": 90002,
+    "guest_name": "Omar Farooq"
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 12.879,
+  "llm_s": 11.928,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 360,
+  "completion_tokens": 28,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 11.663066,
+    "load_duration": 0.02341,
+    "prompt_eval_duration": 7.560978,
+    "eval_duration": 4.01028
+  }
+}

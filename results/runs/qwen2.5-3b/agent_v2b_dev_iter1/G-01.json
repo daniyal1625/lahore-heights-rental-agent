@@ -1,0 +1,49 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The Badshahi Mosque is free to enter. Its opening hours are typically 08:00 to 17:00 daily. Please note that these hours may vary, and it's best to check the current schedule.",
+  "scenario_id": "G-01",
+  "guest_message": "Is Badshahi Mosque free to enter, and what are its opening hours?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 26.069,
+  "llm_s": 24.245,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1009,
+  "completion_tokens": 149,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 23.707022,
+    "load_duration": 0.013353,
+    "prompt_eval_duration": 1.505274,
+    "eval_duration": 22.142369
+  },
+  "plan": {
+    "intent": "search_local",
+    "use_manual": false,
+    "manual_query": "Badshahi Mosque opening hours and free entry",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 16.347,
+  "llm_answer_s": 7.898
+}

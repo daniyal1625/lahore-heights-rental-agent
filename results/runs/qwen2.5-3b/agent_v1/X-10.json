@@ -1,0 +1,60 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Badshahi Mosque is open from 8:00 AM to 8:00 PM. To get a ride from your apartment, you can use a local taxi or ride-sharing service. It's best to check availability as it might be busy during peak times. Sunday mornings are quieter, which might be a good time to visit.",
+  "scenario_id": "X-10",
+  "guest_message": "Tomorrow morning we want to see Badshahi Mosque. How do we get a ride from the apartment, and is it open early?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Sleep"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_local_guide",
+      "args": {
+        "query": "Badshahi Mosque hours"
+      },
+      "result_size": 5292,
+      "ms": 45.3
+    }
+  ],
+  "retrieved": [
+    "Lahore > See > Walled City",
+    "Lahore > Sleep",
+    "Lahore"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\n(You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)\\n\\n4 Badshahi Mosque. 8:00am-8:00pm. Built by the Mughal emperor Aurangzeb, this was long the largest mosque in the world. Entrance is free, but you will be asked to pay about Rs 20 (Nov 2024) to the shoekeeper upon exit. However, it is not compulsory to pay fee for shoe storage. You can instead bring a bag to carry your shoes in after removing them at the entrance. Try going late at night, when there are few people there. Since mosques are holy places, do not wear shorts to this or any mosque; women are advised to wear long or half-sleeved clothing, and to carry a shawl so they can cover their head. Remove shoes before entering.\\n\\n5 Tomb of Ranjit Singh. Tomb of this Sikh ruler of Lahore. Located next to the square between Lahore Fort and the Badshahi Mosque. (updated Feb 2017)\\n\\n6 Minar-e-Pakistan. This tower, sometimes called the \\\"Eiffel Tower of Pakistan\\\", was built on the site where in 1940 the creation of a separate state for Muslims was recognized. Located in a park in front of the Fort and Badshahi Mosque. (updated Feb 2017)\\n\\n7 Wazir Khan Mosque. An exquisite tiled mosque located near Delhi Gate.\"},{\"source_id\":\"Lahore > Sleep\",\"title\":\"Sleep\",\"text\":\"Lahore > Sleep\\n\\nFor the visitor there are three broad options of areas in which to stay\\n\\nIn or near the old town - has the advantage of having all the historical sights on your doorstep - however you are then limited for evening entertainment unless you want a long tuktuk ride. However the two 'rooftop' restaurants overlooking the mosque are nearby.\\n\\nAlong Mall Road probably in one of the big and expensive chain hotels - you will be equidistant from the old town and the nightlife\\n\\nIn Gulberg or Defense - where you have nice restaurants and shopping on your doorstep, and are closer to the airport.\\n\\nThese tradeoffs are important because of Lahore's awful traffic, and you want to minimise the amount of (daytime especially) travel in the city.  Sunday mornings are very quiet however and this is a good time to visit Mall Road and the old town.\\n\\nHotels and guesthouses are the two main options in the city. Hotels are a bit more expensive but usually have western-style toilets and are cleaner.\"},{\"source_id\":\"Lahore > See > Walled City\",\"title\":\"Walled City\",\"text\":\"Lahore > See > Walled City\\n\\nAn exquisite tiled mosque located near Delhi Gate.\\n\\n8 Shahi Hammam (Imperial Baths). A Persian-style bathhouse built in 1635, restored in 2015, and covered with beautiful frescos. (updated Feb 2017)\\n\\nHaveli Asif Jah.  (updated Feb 2017)\\n\\nIn the Mughal days, the Old City was surrounded by a 9-metre-high brick wall and had a rampart running around it which served as a protection for the city. A circular road around the rampart gave access to the city through thirteen gates. The walls were mostly destroyed by the British after the 1857 rebellion, but some of the imposing structures of the gates are still preserved. Listed clockwise, starting from Lahore Fort in the north:\\n\\n9 Raushnai Gate, or the \\\"Gate of Light\\\" is between the royal mosque and the citadels. There is a very famous gali (row or narrow street) commonly known as the Shahi Mahala. The name Shahi has been given after the Shahi Qila. People living here are simple. There are various food shops located around the gate.\\n\\n10 Masti Gate.\\n\\n11 Kashmiri Gate, so called because it faces the direction of Kashmir.\\n\\n12 Khizri or the Sheranwala Gate. The river in former times flowed by the city walls, and the crossing was near this spot. The gate was named after the name of Khizr Elias.\"},{\"source_id\":\"Lahore\",\"title\":\"Lahore\",\"text\":\"Lahore\\n\\nThe Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces.\\n\\nLahore also preserves buildings from the British colonial period, particularly along The Mall, where visitors can see historic institutions and architectural landmarks such as Lahore Museum and the General Post Office. The city offers a contrast between its older quarters and newer commercial districts, including Gulberg and Defence, which have modern shopping centres, restaurants, cafés, and hotels. Traditional bazaars, local cuisine, and cultural attractions make Lahore a destination for travellers interested in the history and everyday life of Pakistan.\\n\\nLahore (Punjabi: لہور; Urdu: لاہور‎) is Pakistan's second largest city after Karachi, and the capital of the north-eastern Punjab province. It is widely considered the country's cultural capital. The heart of Lahore is the Walled or Inner City, a very densely populated area of about one square kilometre.\\n\\nFounded in legendary times, and a cultural centre for over a thousand years, Lahore has many attractions for the tourist. The Mughal and Sikh legacy survives in the Lahore Fort, Badshahi Mosque and Gurdwara, the Mall is lined with colonial-gothic buildings from the British Raj, and the suburbs of Gulberg and Defence feature palatial mansions and trendy shopping districts.\"}]"
+  ],
+  "latency_s": 57.44,
+  "llm_s": 55.672,
+  "tool_s": 0.046,
+  "retrieval_s": 0.045,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3110,
+  "completion_tokens": 95,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 55.396945,
+    "load_duration": 0.019244,
+    "prompt_eval_duration": 39.455776,
+    "eval_duration": 15.731327
+  }
+}

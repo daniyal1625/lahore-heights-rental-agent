@@ -1,0 +1,32 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "If you smell gas, open windows and doors to ventilate the area, and evacuate immediately. Call emergency services for assistance.",
+  "scenario_id": "M-14",
+  "guest_message": "What should I do if I smell gas in the apartment?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 7.98,
+  "llm_s": 5.954,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 889,
+  "completion_tokens": 26,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 5.684887,
+    "load_duration": 0.036288,
+    "prompt_eval_duration": 0.812542,
+    "eval_duration": 4.746584
+  }
+}

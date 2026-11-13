@@ -1,0 +1,6943 @@
+{
+  "generated_at": "2026-11-12T11:48:43+00:00",
+  "model": "qwen2.5:3b",
+  "model_tag": "qwen2.5-3b",
+  "variants": [
+    "llm",
+    "rag",
+    "agent_v1",
+    "agent_v2b"
+  ],
+  "split": {
+    "seed": 42,
+    "dev": [
+      "A-03",
+      "A-04",
+      "A-08",
+      "A-09",
+      "D-03",
+      "D-04",
+      "D-05",
+      "D-06",
+      "E-01",
+      "E-09",
+      "E-10",
+      "E-12",
+      "G-01",
+      "G-03",
+      "G-06",
+      "G-08",
+      "M-01",
+      "M-03",
+      "M-04",
+      "M-08",
+      "M-10",
+      "M-17",
+      "M-19",
+      "R-01",
+      "R-04",
+      "R-07",
+      "R-08",
+      "X-03",
+      "X-08",
+      "X-11",
+      "X-13",
+      "X-14"
+    ],
+    "test": [
+      "A-01",
+      "A-02",
+      "A-05",
+      "A-06",
+      "A-07",
+      "A-10",
+      "D-01",
+      "D-02",
+      "D-07",
+      "D-08",
+      "D-09",
+      "D-10",
+      "E-02",
+      "E-03",
+      "E-04",
+      "E-05",
+      "E-06",
+      "E-07",
+      "E-08",
+      "E-11",
+      "G-02",
+      "G-04",
+      "G-05",
+      "G-07",
+      "G-09",
+      "G-10",
+      "M-02",
+      "M-05",
+      "M-06",
+      "M-07",
+      "M-09",
+      "M-11",
+      "M-12",
+      "M-13",
+      "M-14",
+      "M-15",
+      "M-16",
+      "M-18",
+      "M-20",
+      "R-02",
+      "R-03",
+      "R-05",
+      "R-06",
+      "R-09",
+      "R-10",
+      "X-01",
+      "X-02",
+      "X-04",
+      "X-05",
+      "X-06",
+      "X-07",
+      "X-09",
+      "X-10",
+      "X-12",
+      "X-15"
+    ]
+  },
+  "scenario_count": 87,
+  "details_included": false,
+  "aggregates": {
+    "test": {
+      "llm": {
+        "overall": {
+          "n": 55,
+          "accuracy_n": 54,
+          "accuracy": 0.0926,
+          "accuracy_ci95": [
+            0.0402,
+            0.1991
+          ],
+          "accuracy_passes": 5,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 55,
+            "rate": 0.0364,
+            "passes": 2
+          },
+          "hallucination_combined": {
+            "n": 55,
+            "rate": 0.1818,
+            "passes": 10
+          },
+          "over_escalation": {
+            "n": 55,
+            "rate": 0.0727,
+            "passes": 4
+          },
+          "source_hit": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "latency_s": {
+            "n": 55,
+            "median": 7.777,
+            "p95": 14.889,
+            "mean": 8.781
+          },
+          "mean_prompt_tokens": 345.0,
+          "mean_completion_tokens": 26.8,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3903
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 7.521,
+              "p95": 8.793,
+              "mean": 7.455
+            },
+            "mean_prompt_tokens": 348.0,
+            "mean_completion_tokens": 29.8,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 6,
+            "accuracy_n": 5,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4345
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.3333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 7.276,
+              "p95": 12.674,
+              "mean": 8.563
+            },
+            "mean_prompt_tokens": 348.5,
+            "mean_completion_tokens": 25.3,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.1667,
+            "accuracy_ci95": [
+              0.0301,
+              0.5635
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 6.787,
+              "p95": 9.801,
+              "mean": 7.435
+            },
+            "mean_prompt_tokens": 340.8,
+            "mean_completion_tokens": 29.3,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 13,
+            "accuracy_n": 13,
+            "accuracy": 0.3077,
+            "accuracy_ci95": [
+              0.1268,
+              0.5763
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 13,
+              "rate": 0.0769,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 13,
+              "rate": 0.2308,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 13,
+              "median": 7.587,
+              "p95": 9.805,
+              "mean": 7.577
+            },
+            "mean_prompt_tokens": 339.7,
+            "mean_completion_tokens": 24.7,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2775
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 6.847,
+              "p95": 13.597,
+              "mean": 8.119
+            },
+            "mean_prompt_tokens": 348.4,
+            "mean_completion_tokens": 23.3,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 8,
+            "accuracy_n": 8,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3244
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 8,
+              "median": 8.684,
+              "p95": 13.354,
+              "mean": 9.192
+            },
+            "mean_prompt_tokens": 344.8,
+            "mean_completion_tokens": 33.2,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3903
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.3333,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 14.84,
+              "p95": 16.48,
+              "mean": 14.837
+            },
+            "mean_prompt_tokens": 348.7,
+            "mean_completion_tokens": 24.2,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 23,
+            "accuracy_n": 23,
+            "accuracy": 0.2174,
+            "accuracy_ci95": [
+              0.0966,
+              0.419
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 23,
+              "rate": 0.0435,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 23,
+              "rate": 0.1739,
+              "passes": 4
+            },
+            "over_escalation": {
+              "n": 23,
+              "rate": 0.0435,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 23,
+              "median": 7.725,
+              "p95": 14.686,
+              "mean": 8.652
+            },
+            "mean_prompt_tokens": 342.3,
+            "mean_completion_tokens": 25.1,
+            "errors": 0
+          },
+          "hard": {
+            "n": 14,
+            "accuracy_n": 14,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2153
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 14,
+              "rate": 0.0714,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 14,
+              "rate": 0.2143,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 14,
+              "rate": 0.1429,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 14,
+              "median": 8.734,
+              "p95": 14.357,
+              "mean": 9.336
+            },
+            "mean_prompt_tokens": 350.6,
+            "mean_completion_tokens": 26.9,
+            "errors": 0
+          },
+          "medium": {
+            "n": 18,
+            "accuracy_n": 17,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.1843
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 18,
+              "rate": 0.1667,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 18,
+              "rate": 0.0556,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 18,
+              "median": 7.796,
+              "p95": 15.16,
+              "mean": 8.515
+            },
+            "mean_prompt_tokens": 344.1,
+            "mean_completion_tokens": 28.8,
+            "errors": 0
+          }
+        }
+      },
+      "rag": {
+        "overall": {
+          "n": 55,
+          "accuracy_n": 54,
+          "accuracy": 0.4074,
+          "accuracy_ci95": [
+            0.2868,
+            0.5403
+          ],
+          "accuracy_passes": 22,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 55,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "hallucination_combined": {
+            "n": 55,
+            "rate": 0.0364,
+            "passes": 2
+          },
+          "over_escalation": {
+            "n": 55,
+            "rate": 0.1455,
+            "passes": 8
+          },
+          "source_hit": {
+            "n": 35,
+            "rate": 0.9143,
+            "passes": 32
+          },
+          "latency_s": {
+            "n": 55,
+            "median": 43.339,
+            "p95": 59.473,
+            "mean": 44.729
+          },
+          "mean_prompt_tokens": 1385.5,
+          "mean_completion_tokens": 40.6,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3903
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.5,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 48.367,
+              "p95": 51.199,
+              "mean": 47.335
+            },
+            "mean_prompt_tokens": 1499.0,
+            "mean_completion_tokens": 47.2,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 6,
+            "accuracy_n": 5,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0362,
+              0.6245
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.3333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.6667,
+              "passes": 2
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 43.533,
+              "p95": 59.202,
+              "mean": 45.513
+            },
+            "mean_prompt_tokens": 1393.3,
+            "mean_completion_tokens": 45.7,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.8333,
+            "accuracy_ci95": [
+              0.4365,
+              0.9699
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 6,
+              "rate": 0.8333,
+              "passes": 5
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 42.066,
+              "p95": 49.448,
+              "mean": 42.773
+            },
+            "mean_prompt_tokens": 1406.3,
+            "mean_completion_tokens": 34.0,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 13,
+            "accuracy_n": 13,
+            "accuracy": 0.9231,
+            "accuracy_ci95": [
+              0.6669,
+              0.9863
+            ],
+            "accuracy_passes": 12,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 13,
+              "rate": 0.9231,
+              "passes": 12
+            },
+            "latency_s": {
+              "n": 13,
+              "median": 41.317,
+              "p95": 57.665,
+              "mean": 42.339
+            },
+            "mean_prompt_tokens": 1307.2,
+            "mean_completion_tokens": 36.8,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.3,
+            "accuracy_ci95": [
+              0.1078,
+              0.6032
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 41.773,
+              "p95": 56.261,
+              "mean": 43.379
+            },
+            "mean_prompt_tokens": 1387.1,
+            "mean_completion_tokens": 39.0,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 8,
+            "accuracy_n": 8,
+            "accuracy": 0.125,
+            "accuracy_ci95": [
+              0.0224,
+              0.4709
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 8,
+              "rate": 0.125,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 1.0,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 8,
+              "median": 44.822,
+              "p95": 60.181,
+              "mean": 46.285
+            },
+            "mean_prompt_tokens": 1358.6,
+            "mean_completion_tokens": 48.0,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3903
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 49.766,
+              "p95": 54.441,
+              "mean": 48.65
+            },
+            "mean_prompt_tokens": 1446.3,
+            "mean_completion_tokens": 36.5,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 23,
+            "accuracy_n": 23,
+            "accuracy": 0.6522,
+            "accuracy_ci95": [
+              0.4489,
+              0.8119
+            ],
+            "accuracy_passes": 15,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 23,
+              "rate": 0.1739,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 16,
+              "rate": 0.875,
+              "passes": 14
+            },
+            "latency_s": {
+              "n": 23,
+              "median": 41.762,
+              "p95": 52.966,
+              "mean": 43.087
+            },
+            "mean_prompt_tokens": 1364.8,
+            "mean_completion_tokens": 31.5,
+            "errors": 0
+          },
+          "hard": {
+            "n": 14,
+            "accuracy_n": 14,
+            "accuracy": 0.2143,
+            "accuracy_ci95": [
+              0.0757,
+              0.4759
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 14,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 14,
+              "rate": 0.0714,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 14,
+              "rate": 0.1429,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 12,
+              "rate": 0.9167,
+              "passes": 11
+            },
+            "latency_s": {
+              "n": 14,
+              "median": 41.773,
+              "p95": 56.429,
+              "mean": 44.244
+            },
+            "mean_prompt_tokens": 1426.2,
+            "mean_completion_tokens": 40.8,
+            "errors": 0
+          },
+          "medium": {
+            "n": 18,
+            "accuracy_n": 17,
+            "accuracy": 0.2353,
+            "accuracy_ci95": [
+              0.0955,
+              0.4726
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 18,
+              "rate": 0.0556,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 18,
+              "rate": 0.1111,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "latency_s": {
+              "n": 18,
+              "median": 47.562,
+              "p95": 59.125,
+              "mean": 47.205
+            },
+            "mean_prompt_tokens": 1380.3,
+            "mean_completion_tokens": 52.1,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v1": {
+        "overall": {
+          "n": 55,
+          "accuracy_n": 54,
+          "accuracy": 0.4815,
+          "accuracy_ci95": [
+            0.3539,
+            0.6115
+          ],
+          "accuracy_passes": 26,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 55,
+            "rate": 0.6,
+            "passes": 33
+          },
+          "tool_args_ok": {
+            "n": 55,
+            "rate": 0.9818,
+            "passes": 54
+          },
+          "hallucination_strict": {
+            "n": 55,
+            "rate": 0.0182,
+            "passes": 1
+          },
+          "hallucination_combined": {
+            "n": 55,
+            "rate": 0.0909,
+            "passes": 5
+          },
+          "over_escalation": {
+            "n": 55,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "source_hit": {
+            "n": 35,
+            "rate": 0.5714,
+            "passes": 20
+          },
+          "latency_s": {
+            "n": 55,
+            "median": 41.034,
+            "p95": 79.852,
+            "mean": 44.533
+          },
+          "mean_prompt_tokens": 2196.3,
+          "mean_completion_tokens": 92.4,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.8333,
+            "accuracy_ci95": [
+              0.4365,
+              0.9699
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 50.913,
+              "p95": 75.35,
+              "mean": 49.879
+            },
+            "mean_prompt_tokens": 2145.2,
+            "mean_completion_tokens": 203.3,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 6,
+            "accuracy_n": 5,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4345
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 6,
+              "rate": 0.6667,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.3333,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 23.233,
+              "p95": 71.07,
+              "mean": 31.545
+            },
+            "mean_prompt_tokens": 1715.3,
+            "mean_completion_tokens": 90.2,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.6667,
+            "accuracy_ci95": [
+              0.3,
+              0.9032
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 6,
+              "rate": 0.8333,
+              "passes": 5
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 68.46,
+              "p95": 82.938,
+              "mean": 70.514
+            },
+            "mean_prompt_tokens": 3079.2,
+            "mean_completion_tokens": 89.0,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 13,
+            "accuracy_n": 13,
+            "accuracy": 0.7692,
+            "accuracy_ci95": [
+              0.4974,
+              0.9182
+            ],
+            "accuracy_passes": 10,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 13,
+              "rate": 0.7692,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 13,
+              "rate": 1.0,
+              "passes": 13
+            },
+            "hallucination_strict": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 13,
+              "rate": 0.0769,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 13,
+              "rate": 0.6923,
+              "passes": 9
+            },
+            "latency_s": {
+              "n": 13,
+              "median": 40.445,
+              "p95": 57.502,
+              "mean": 39.891
+            },
+            "mean_prompt_tokens": 2329.5,
+            "mean_completion_tokens": 70.7,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.1,
+            "accuracy_ci95": [
+              0.0179,
+              0.4042
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 0.9,
+              "passes": 9
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 0.4,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 44.136,
+              "p95": 75.353,
+              "mean": 49.962
+            },
+            "mean_prompt_tokens": 2272.3,
+            "mean_completion_tokens": 95.7,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 8,
+            "accuracy_n": 8,
+            "accuracy": 0.125,
+            "accuracy_ci95": [
+              0.0224,
+              0.4709
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 8,
+              "rate": 0.25,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 8,
+              "rate": 1.0,
+              "passes": 8
+            },
+            "hallucination_strict": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.3333,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 8,
+              "median": 30.298,
+              "p95": 76.745,
+              "mean": 34.81
+            },
+            "mean_prompt_tokens": 1895.5,
+            "mean_completion_tokens": 62.8,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.8333,
+            "accuracy_ci95": [
+              0.4365,
+              0.9699
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 0.8333,
+              "passes": 5
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 39.606,
+              "p95": 49.883,
+              "mean": 40.166
+            },
+            "mean_prompt_tokens": 1831.5,
+            "mean_completion_tokens": 68.2,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 23,
+            "accuracy_n": 23,
+            "accuracy": 0.8261,
+            "accuracy_ci95": [
+              0.6286,
+              0.9302
+            ],
+            "accuracy_passes": 19,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 23,
+              "rate": 0.913,
+              "passes": 21
+            },
+            "tool_args_ok": {
+              "n": 23,
+              "rate": 1.0,
+              "passes": 23
+            },
+            "hallucination_strict": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 16,
+              "rate": 0.8125,
+              "passes": 13
+            },
+            "latency_s": {
+              "n": 23,
+              "median": 42.771,
+              "p95": 79.554,
+              "mean": 50.251
+            },
+            "mean_prompt_tokens": 2448.4,
+            "mean_completion_tokens": 88.1,
+            "errors": 0
+          },
+          "hard": {
+            "n": 14,
+            "accuracy_n": 14,
+            "accuracy": 0.0714,
+            "accuracy_ci95": [
+              0.0127,
+              0.3147
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 14,
+              "rate": 0.1429,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 14,
+              "rate": 0.9286,
+              "passes": 13
+            },
+            "hallucination_strict": {
+              "n": 14,
+              "rate": 0.0714,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 14,
+              "rate": 0.2143,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 14,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 12,
+              "rate": 0.3333,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 14,
+              "median": 39.651,
+              "p95": 82.036,
+              "mean": 44.099
+            },
+            "mean_prompt_tokens": 2217.1,
+            "mean_completion_tokens": 83.1,
+            "errors": 0
+          },
+          "medium": {
+            "n": 18,
+            "accuracy_n": 17,
+            "accuracy": 0.3529,
+            "accuracy_ci95": [
+              0.1731,
+              0.587
+            ],
+            "accuracy_passes": 6,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 18,
+              "rate": 0.5556,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 18,
+              "rate": 1.0,
+              "passes": 18
+            },
+            "hallucination_strict": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 18,
+              "rate": 0.1111,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 0.4286,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 18,
+              "median": 34.177,
+              "p95": 74.342,
+              "mean": 37.565
+            },
+            "mean_prompt_tokens": 1858.0,
+            "mean_completion_tokens": 105.2,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v2b": {
+        "overall": {
+          "n": 55,
+          "accuracy_n": 54,
+          "accuracy": 0.5185,
+          "accuracy_ci95": [
+            0.3885,
+            0.6461
+          ],
+          "accuracy_passes": 28,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 55,
+            "rate": 0.6545,
+            "passes": 36
+          },
+          "tool_args_ok": {
+            "n": 55,
+            "rate": 0.9273,
+            "passes": 51
+          },
+          "hallucination_strict": {
+            "n": 55,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "hallucination_combined": {
+            "n": 55,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "over_escalation": {
+            "n": 55,
+            "rate": 0.0909,
+            "passes": 5
+          },
+          "source_hit": {
+            "n": 35,
+            "rate": 0.7143,
+            "passes": 25
+          },
+          "latency_s": {
+            "n": 55,
+            "median": 46.556,
+            "p95": 158.308,
+            "mean": 61.891
+          },
+          "mean_prompt_tokens": 2820.6,
+          "mean_completion_tokens": 187.1,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.1876,
+              0.8124
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 0.6667,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 0.5,
+              "passes": 3
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 44.722,
+              "p95": 150.406,
+              "mean": 71.346
+            },
+            "mean_prompt_tokens": 2469.2,
+            "mean_completion_tokens": 248.0,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 6,
+            "accuracy_n": 5,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1176,
+              0.7693
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 6,
+              "rate": 0.8333,
+              "passes": 5
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.1667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.6667,
+              "passes": 2
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 36.428,
+              "p95": 45.284,
+              "mean": 33.419
+            },
+            "mean_prompt_tokens": 2419.3,
+            "mean_completion_tokens": 117.7,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.8333,
+            "accuracy_ci95": [
+              0.4365,
+              0.9699
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 6,
+              "rate": 0.8333,
+              "passes": 5
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 59.042,
+              "p95": 61.186,
+              "mean": 57.836
+            },
+            "mean_prompt_tokens": 3304.0,
+            "mean_completion_tokens": 92.7,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 13,
+            "accuracy_n": 13,
+            "accuracy": 0.8462,
+            "accuracy_ci95": [
+              0.5776,
+              0.9567
+            ],
+            "accuracy_passes": 11,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 13,
+              "rate": 0.9231,
+              "passes": 12
+            },
+            "tool_args_ok": {
+              "n": 13,
+              "rate": 1.0,
+              "passes": 13
+            },
+            "hallucination_strict": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 13,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 13,
+              "rate": 0.0769,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 13,
+              "rate": 0.7692,
+              "passes": 10
+            },
+            "latency_s": {
+              "n": 13,
+              "median": 40.813,
+              "p95": 184.12,
+              "mean": 68.567
+            },
+            "mean_prompt_tokens": 2869.7,
+            "mean_completion_tokens": 274.6,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.1,
+            "accuracy_ci95": [
+              0.0179,
+              0.4042
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 0.9,
+              "passes": 9
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 0.7,
+              "passes": 7
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 52.284,
+              "p95": 112.104,
+              "mean": 61.823
+            },
+            "mean_prompt_tokens": 2932.2,
+            "mean_completion_tokens": 134.1,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 8,
+            "accuracy_n": 8,
+            "accuracy": 0.375,
+            "accuracy_ci95": [
+              0.1368,
+              0.6943
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 8,
+              "rate": 0.75,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 8,
+              "rate": 1.0,
+              "passes": 8
+            },
+            "hallucination_strict": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 8,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.3333,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 8,
+              "median": 34.966,
+              "p95": 122.09,
+              "mean": 52.77
+            },
+            "mean_prompt_tokens": 2846.0,
+            "mean_completion_tokens": 178.6,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 6,
+            "accuracy_n": 6,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.1876,
+              0.8124
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 6,
+              "rate": 0.3333,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 6,
+              "rate": 1.0,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 6,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 6,
+              "rate": 0.3333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 6,
+              "median": 79.356,
+              "p95": 137.375,
+              "mean": 82.772
+            },
+            "mean_prompt_tokens": 2764.0,
+            "mean_completion_tokens": 200.5,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 23,
+            "accuracy_n": 23,
+            "accuracy": 0.7391,
+            "accuracy_ci95": [
+              0.5353,
+              0.8745
+            ],
+            "accuracy_passes": 17,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 23,
+              "rate": 0.7826,
+              "passes": 18
+            },
+            "tool_args_ok": {
+              "n": 23,
+              "rate": 0.9565,
+              "passes": 22
+            },
+            "hallucination_strict": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 23,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 23,
+              "rate": 0.0435,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 16,
+              "rate": 0.8125,
+              "passes": 13
+            },
+            "latency_s": {
+              "n": 23,
+              "median": 59.011,
+              "p95": 173.881,
+              "mean": 73.328
+            },
+            "mean_prompt_tokens": 2944.7,
+            "mean_completion_tokens": 225.0,
+            "errors": 0
+          },
+          "hard": {
+            "n": 14,
+            "accuracy_n": 14,
+            "accuracy": 0.2857,
+            "accuracy_ci95": [
+              0.1172,
+              0.5465
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 14,
+              "rate": 0.3571,
+              "passes": 5
+            },
+            "tool_args_ok": {
+              "n": 14,
+              "rate": 0.9286,
+              "passes": 13
+            },
+            "hallucination_strict": {
+              "n": 14,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 14,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 14,
+              "rate": 0.1429,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 12,
+              "rate": 0.5833,
+              "passes": 7
+            },
+            "latency_s": {
+              "n": 14,
+              "median": 47.484,
+              "p95": 104.98,
+              "mean": 54.629
+            },
+            "mean_prompt_tokens": 2854.7,
+            "mean_completion_tokens": 120.6,
+            "errors": 0
+          },
+          "medium": {
+            "n": 18,
+            "accuracy_n": 17,
+            "accuracy": 0.4118,
+            "accuracy_ci95": [
+              0.2161,
+              0.6399
+            ],
+            "accuracy_passes": 7,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 18,
+              "rate": 0.7222,
+              "passes": 13
+            },
+            "tool_args_ok": {
+              "n": 18,
+              "rate": 0.8889,
+              "passes": 16
+            },
+            "hallucination_strict": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 18,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 18,
+              "rate": 0.1111,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 0.7143,
+              "passes": 5
+            },
+            "latency_s": {
+              "n": 18,
+              "median": 42.386,
+              "p95": 154.09,
+              "mean": 52.925
+            },
+            "mean_prompt_tokens": 2635.6,
+            "mean_completion_tokens": 190.6,
+            "errors": 0
+          }
+        }
+      }
+    },
+    "dev": {
+      "llm": {
+        "overall": {
+          "n": 32,
+          "accuracy_n": 32,
+          "accuracy": 0.0938,
+          "accuracy_ci95": [
+            0.0324,
+            0.2422
+          ],
+          "accuracy_passes": 3,
+          "manual_review_n": 0,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 32,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "hallucination_combined": {
+            "n": 32,
+            "rate": 0.1875,
+            "passes": 6
+          },
+          "over_escalation": {
+            "n": 32,
+            "rate": 0.0312,
+            "passes": 1
+          },
+          "source_hit": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "latency_s": {
+            "n": 32,
+            "median": 8.564,
+            "p95": 14.13,
+            "mean": 9.201
+          },
+          "mean_prompt_tokens": 345.4,
+          "mean_completion_tokens": 30.5,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 7.611,
+              "p95": 8.317,
+              "mean": 7.666
+            },
+            "mean_prompt_tokens": 345.5,
+            "mean_completion_tokens": 30.8,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 8.468,
+              "p95": 13.578,
+              "mean": 9.015
+            },
+            "mean_prompt_tokens": 347.0,
+            "mean_completion_tokens": 38.8,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 8.88,
+              "p95": 9.87,
+              "mean": 8.642
+            },
+            "mean_prompt_tokens": 345.5,
+            "mean_completion_tokens": 33.2,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 7,
+            "accuracy_n": 7,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.3543
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 7,
+              "rate": 0.1429,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 7,
+              "median": 10.221,
+              "p95": 15.748,
+              "mean": 10.204
+            },
+            "mean_prompt_tokens": 341.7,
+            "mean_completion_tokens": 28.6,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4345
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 7.806,
+              "p95": 10.084,
+              "mean": 8.254
+            },
+            "mean_prompt_tokens": 350.0,
+            "mean_completion_tokens": 32.6,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.25,
+            "accuracy_ci95": [
+              0.0456,
+              0.6994
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 8.564,
+              "p95": 9.621,
+              "mean": 8.133
+            },
+            "mean_prompt_tokens": 342.5,
+            "mean_completion_tokens": 31.2,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 11.974,
+              "p95": 13.637,
+              "mean": 11.977
+            },
+            "mean_prompt_tokens": 347.0,
+            "mean_completion_tokens": 19.0,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2425
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.1667,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 10.146,
+              "p95": 15.24,
+              "mean": 10.686
+            },
+            "mean_prompt_tokens": 343.2,
+            "mean_completion_tokens": 32.0,
+            "errors": 0
+          },
+          "hard": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4345
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 7.806,
+              "p95": 10.084,
+              "mean": 8.254
+            },
+            "mean_prompt_tokens": 350.0,
+            "mean_completion_tokens": 32.6,
+            "errors": 0
+          },
+          "medium": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0705,
+              0.4519
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.2,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 8.279,
+              "p95": 12.711,
+              "mean": 8.328
+            },
+            "mean_prompt_tokens": 345.5,
+            "mean_completion_tokens": 28.5,
+            "errors": 0
+          }
+        }
+      },
+      "rag": {
+        "overall": {
+          "n": 32,
+          "accuracy_n": 32,
+          "accuracy": 0.375,
+          "accuracy_ci95": [
+            0.2293,
+            0.5475
+          ],
+          "accuracy_passes": 12,
+          "manual_review_n": 0,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 32,
+            "rate": 0.0312,
+            "passes": 1
+          },
+          "hallucination_combined": {
+            "n": 32,
+            "rate": 0.0625,
+            "passes": 2
+          },
+          "over_escalation": {
+            "n": 32,
+            "rate": 0.0938,
+            "passes": 3
+          },
+          "source_hit": {
+            "n": 17,
+            "rate": 0.8824,
+            "passes": 15
+          },
+          "latency_s": {
+            "n": 32,
+            "median": 42.213,
+            "p95": 58.22,
+            "mean": 43.004
+          },
+          "mean_prompt_tokens": 1348.2,
+          "mean_completion_tokens": 41.3,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 52.094,
+              "p95": 58.168,
+              "mean": 48.909
+            },
+            "mean_prompt_tokens": 1527.0,
+            "mean_completion_tokens": 36.8,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 1,
+              "rate": 1.0,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 39.994,
+              "p95": 45.493,
+              "mean": 39.096
+            },
+            "mean_prompt_tokens": 1357.8,
+            "mean_completion_tokens": 50.8,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.75,
+            "accuracy_ci95": [
+              0.3006,
+              0.9544
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 44.428,
+              "p95": 47.577,
+              "mean": 41.592
+            },
+            "mean_prompt_tokens": 1286.8,
+            "mean_completion_tokens": 32.8,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 7,
+            "accuracy_n": 7,
+            "accuracy": 0.5714,
+            "accuracy_ci95": [
+              0.2505,
+              0.8418
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "latency_s": {
+              "n": 7,
+              "median": 41.452,
+              "p95": 60.484,
+              "mean": 46.861
+            },
+            "mean_prompt_tokens": 1385.9,
+            "mean_completion_tokens": 32.9,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1176,
+              0.7693
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.6,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 37.407,
+              "p95": 53.096,
+              "mean": 42.095
+            },
+            "mean_prompt_tokens": 1360.8,
+            "mean_completion_tokens": 52.8,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 37.997,
+              "p95": 43.033,
+              "mean": 37.819
+            },
+            "mean_prompt_tokens": 1212.5,
+            "mean_completion_tokens": 40.5,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.25,
+            "accuracy_ci95": [
+              0.0456,
+              0.6994
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 42.535,
+              "p95": 48.826,
+              "mean": 41.99
+            },
+            "mean_prompt_tokens": 1275.0,
+            "mean_completion_tokens": 46.2,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.4167,
+            "accuracy_ci95": [
+              0.1933,
+              0.6805
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 8,
+              "rate": 1.0,
+              "passes": 8
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 42.095,
+              "p95": 59.423,
+              "mean": 44.277
+            },
+            "mean_prompt_tokens": 1332.4,
+            "mean_completion_tokens": 36.7,
+            "errors": 0
+          },
+          "hard": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1176,
+              0.7693
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.6,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 37.407,
+              "p95": 53.096,
+              "mean": 42.095
+            },
+            "mean_prompt_tokens": 1360.8,
+            "mean_completion_tokens": 52.8,
+            "errors": 0
+          },
+          "medium": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.3333,
+            "accuracy_ci95": [
+              0.1518,
+              0.5829
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.1333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 42.668,
+              "p95": 54.811,
+              "mean": 42.288
+            },
+            "mean_prompt_tokens": 1356.5,
+            "mean_completion_tokens": 41.2,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v1": {
+        "overall": {
+          "n": 32,
+          "accuracy_n": 32,
+          "accuracy": 0.4688,
+          "accuracy_ci95": [
+            0.3087,
+            0.6355
+          ],
+          "accuracy_passes": 15,
+          "manual_review_n": 0,
+          "tool_correct": {
+            "n": 32,
+            "rate": 0.5625,
+            "passes": 18
+          },
+          "tool_args_ok": {
+            "n": 32,
+            "rate": 1.0,
+            "passes": 32
+          },
+          "hallucination_strict": {
+            "n": 32,
+            "rate": 0.0625,
+            "passes": 2
+          },
+          "hallucination_combined": {
+            "n": 32,
+            "rate": 0.125,
+            "passes": 4
+          },
+          "over_escalation": {
+            "n": 32,
+            "rate": 0.0625,
+            "passes": 2
+          },
+          "source_hit": {
+            "n": 17,
+            "rate": 0.5294,
+            "passes": 9
+          },
+          "latency_s": {
+            "n": 32,
+            "median": 50.003,
+            "p95": 101.432,
+            "mean": 50.076
+          },
+          "mean_prompt_tokens": 2237.2,
+          "mean_completion_tokens": 108.7,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.75,
+            "accuracy_ci95": [
+              0.3006,
+              0.9544
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 33.566,
+              "p95": 52.941,
+              "mean": 35.013
+            },
+            "mean_prompt_tokens": 2078.5,
+            "mean_completion_tokens": 128.5,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.25,
+            "accuracy_ci95": [
+              0.0456,
+              0.6994
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 1,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 38.902,
+              "p95": 97.449,
+              "mean": 50.346
+            },
+            "mean_prompt_tokens": 2054.0,
+            "mean_completion_tokens": 159.8,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 1.0,
+            "accuracy_ci95": [
+              0.5101,
+              1.0
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 58.922,
+              "p95": 138.808,
+              "mean": 80.184
+            },
+            "mean_prompt_tokens": 3275.2,
+            "mean_completion_tokens": 118.2,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 7,
+            "accuracy_n": 7,
+            "accuracy": 0.4286,
+            "accuracy_ci95": [
+              0.1582,
+              0.7495
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 7,
+              "rate": 0.7143,
+              "passes": 5
+            },
+            "tool_args_ok": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "hallucination_strict": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 0.7143,
+              "passes": 5
+            },
+            "latency_s": {
+              "n": 7,
+              "median": 59.609,
+              "p95": 65.982,
+              "mean": 54.463
+            },
+            "mean_prompt_tokens": 2479.3,
+            "mean_completion_tokens": 103.0,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0362,
+              0.6245
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 5,
+              "rate": 1.0,
+              "passes": 5
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 53.885,
+              "p95": 89.911,
+              "mean": 58.153
+            },
+            "mean_prompt_tokens": 2162.6,
+            "mean_completion_tokens": 133.6,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.4899
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 9.709,
+              "p95": 36.821,
+              "mean": 16.991
+            },
+            "mean_prompt_tokens": 1311.0,
+            "mean_completion_tokens": 37.0,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.75,
+            "accuracy_ci95": [
+              0.3006,
+              0.9544
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 47.154,
+              "p95": 69.178,
+              "mean": 50.069
+            },
+            "mean_prompt_tokens": 2136.8,
+            "mean_completion_tokens": 78.8,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.6667,
+            "accuracy_ci95": [
+              0.3906,
+              0.8619
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 12,
+              "rate": 0.75,
+              "passes": 9
+            },
+            "tool_args_ok": {
+              "n": 12,
+              "rate": 1.0,
+              "passes": 12
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0833,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 8,
+              "rate": 0.75,
+              "passes": 6
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 57.264,
+              "p95": 65.705,
+              "mean": 51.674
+            },
+            "mean_prompt_tokens": 2340.5,
+            "mean_completion_tokens": 106.9,
+            "errors": 0
+          },
+          "hard": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0362,
+              0.6245
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 5,
+              "rate": 1.0,
+              "passes": 5
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 53.885,
+              "p95": 89.911,
+              "mean": 58.153
+            },
+            "mean_prompt_tokens": 2162.6,
+            "mean_completion_tokens": 133.6,
+            "errors": 0
+          },
+          "medium": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1982,
+              0.6425
+            ],
+            "accuracy_passes": 6,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 15,
+              "rate": 0.6,
+              "passes": 9
+            },
+            "tool_args_ok": {
+              "n": 15,
+              "rate": 1.0,
+              "passes": 15
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.1333,
+              "passes": 2
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.1333,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 36.439,
+              "p95": 120.605,
+              "mean": 46.104
+            },
+            "mean_prompt_tokens": 2179.4,
+            "mean_completion_tokens": 101.8,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v2b": {
+        "overall": {
+          "n": 32,
+          "accuracy_n": 32,
+          "accuracy": 0.5625,
+          "accuracy_ci95": [
+            0.3933,
+            0.7183
+          ],
+          "accuracy_passes": 18,
+          "manual_review_n": 0,
+          "tool_correct": {
+            "n": 32,
+            "rate": 0.7188,
+            "passes": 23
+          },
+          "tool_args_ok": {
+            "n": 32,
+            "rate": 0.9375,
+            "passes": 30
+          },
+          "hallucination_strict": {
+            "n": 32,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "hallucination_combined": {
+            "n": 32,
+            "rate": 0.0625,
+            "passes": 2
+          },
+          "over_escalation": {
+            "n": 32,
+            "rate": 0.1875,
+            "passes": 6
+          },
+          "source_hit": {
+            "n": 17,
+            "rate": 0.7647,
+            "passes": 13
+          },
+          "latency_s": {
+            "n": 32,
+            "median": 50.799,
+            "p95": 198.618,
+            "mean": 82.221
+          },
+          "mean_prompt_tokens": 3068.3,
+          "mean_completion_tokens": 250.2,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.5,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 71.269,
+              "p95": 148.292,
+              "mean": 82.355
+            },
+            "mean_prompt_tokens": 3110.2,
+            "mean_completion_tokens": 436.2,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 1,
+              "rate": 1.0,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 33.611,
+              "p95": 45.349,
+              "mean": 30.311
+            },
+            "mean_prompt_tokens": 2659.8,
+            "mean_completion_tokens": 66.8,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 64.565,
+              "p95": 110.153,
+              "mean": 70.136
+            },
+            "mean_prompt_tokens": 3723.8,
+            "mean_completion_tokens": 198.8,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 7,
+            "accuracy_n": 7,
+            "accuracy": 0.7143,
+            "accuracy_ci95": [
+              0.3589,
+              0.9178
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "tool_args_ok": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "hallucination_strict": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 7,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 7,
+              "rate": 1.0,
+              "passes": 7
+            },
+            "latency_s": {
+              "n": 7,
+              "median": 45.605,
+              "p95": 250.58,
+              "mean": 95.413
+            },
+            "mean_prompt_tokens": 2900.7,
+            "mean_completion_tokens": 275.9,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1176,
+              0.7693
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 5,
+              "rate": 0.6,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 5,
+              "rate": 0.8,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.4,
+              "passes": 2
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 102.882,
+              "p95": 181.618,
+              "mean": 108.703
+            },
+            "mean_prompt_tokens": 3164.8,
+            "mean_completion_tokens": 306.6,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.15,
+              0.85
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 45.083,
+              "p95": 71.185,
+              "mean": 50.192
+            },
+            "mean_prompt_tokens": 3060.8,
+            "mean_completion_tokens": 131.5,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 4,
+            "accuracy_n": 4,
+            "accuracy": 0.75,
+            "accuracy_ci95": [
+              0.3006,
+              0.9544
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "tool_args_ok": {
+              "n": 4,
+              "rate": 1.0,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 4,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 4,
+              "median": 101.222,
+              "p95": 192.832,
+              "mean": 121.921
+            },
+            "mean_prompt_tokens": 2959.8,
+            "mean_completion_tokens": 302.5,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.6667,
+            "accuracy_ci95": [
+              0.3906,
+              0.8619
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 12,
+              "rate": 0.8333,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 12,
+              "rate": 0.9167,
+              "passes": 11
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0833,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 8,
+              "rate": 1.0,
+              "passes": 8
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 50.675,
+              "p95": 225.343,
+              "mean": 83.542
+            },
+            "mean_prompt_tokens": 2942.8,
+            "mean_completion_tokens": 208.8,
+            "errors": 0
+          },
+          "hard": {
+            "n": 5,
+            "accuracy_n": 5,
+            "accuracy": 0.4,
+            "accuracy_ci95": [
+              0.1176,
+              0.7693
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 5,
+              "rate": 0.6,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 5,
+              "rate": 0.8,
+              "passes": 4
+            },
+            "hallucination_strict": {
+              "n": 5,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 5,
+              "rate": 0.2,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 5,
+              "rate": 0.4,
+              "passes": 2
+            },
+            "latency_s": {
+              "n": 5,
+              "median": 102.882,
+              "p95": 181.618,
+              "mean": 108.703
+            },
+            "mean_prompt_tokens": 3164.8,
+            "mean_completion_tokens": 306.6,
+            "errors": 0
+          },
+          "medium": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.5333,
+            "accuracy_ci95": [
+              0.3012,
+              0.7519
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 15,
+              "rate": 0.6667,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 15,
+              "rate": 1.0,
+              "passes": 15
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.2667,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 45.491,
+              "p95": 171.928,
+              "mean": 72.337
+            },
+            "mean_prompt_tokens": 3136.5,
+            "mean_completion_tokens": 264.6,
+            "errors": 0
+          }
+        }
+      }
+    },
+    "all": {
+      "llm": {
+        "overall": {
+          "n": 87,
+          "accuracy_n": 86,
+          "accuracy": 0.093,
+          "accuracy_ci95": [
+            0.0479,
+            0.173
+          ],
+          "accuracy_passes": 8,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 87,
+            "rate": 0.023,
+            "passes": 2
+          },
+          "hallucination_combined": {
+            "n": 87,
+            "rate": 0.1839,
+            "passes": 16
+          },
+          "over_escalation": {
+            "n": 87,
+            "rate": 0.0575,
+            "passes": 5
+          },
+          "source_hit": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "latency_s": {
+            "n": 87,
+            "median": 7.835,
+            "p95": 14.853,
+            "mean": 8.936
+          },
+          "mean_prompt_tokens": 345.1,
+          "mean_completion_tokens": 28.1,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2775
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 7.582,
+              "p95": 8.696,
+              "mean": 7.539
+            },
+            "mean_prompt_tokens": 347.0,
+            "mean_completion_tokens": 30.2,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 10,
+            "accuracy_n": 9,
+            "accuracy": 0.2222,
+            "accuracy_ci95": [
+              0.0632,
+              0.5474
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 7.427,
+              "p95": 13.621,
+              "mean": 8.744
+            },
+            "mean_prompt_tokens": 347.9,
+            "mean_completion_tokens": 30.7,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.1,
+            "accuracy_ci95": [
+              0.0179,
+              0.4042
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 7.896,
+              "p95": 9.888,
+              "mean": 7.918
+            },
+            "mean_prompt_tokens": 342.7,
+            "mean_completion_tokens": 30.9,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 20,
+            "accuracy_n": 20,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0807,
+              0.416
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 20,
+              "rate": 0.05,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 20,
+              "rate": 0.2,
+              "passes": 4
+            },
+            "over_escalation": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 20,
+              "median": 7.656,
+              "p95": 14.17,
+              "mean": 8.497
+            },
+            "mean_prompt_tokens": 340.4,
+            "mean_completion_tokens": 26.1,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2039
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.2,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 7.033,
+              "p95": 13.345,
+              "mean": 8.164
+            },
+            "mean_prompt_tokens": 348.9,
+            "mean_completion_tokens": 26.4,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.0833,
+            "accuracy_ci95": [
+              0.0149,
+              0.3539
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 8.564,
+              "p95": 12.455,
+              "mean": 8.839
+            },
+            "mean_prompt_tokens": 344.0,
+            "mean_completion_tokens": 32.6,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2775
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.2,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 13.745,
+              "p95": 16.235,
+              "mean": 13.693
+            },
+            "mean_prompt_tokens": 348.0,
+            "mean_completion_tokens": 22.1,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 35,
+            "accuracy_n": 35,
+            "accuracy": 0.1429,
+            "accuracy_ci95": [
+              0.0626,
+              0.2938
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 35,
+              "rate": 0.0286,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 35,
+              "rate": 0.1714,
+              "passes": 6
+            },
+            "over_escalation": {
+              "n": 35,
+              "rate": 0.0286,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 35,
+              "median": 8.402,
+              "p95": 15.033,
+              "mean": 9.349
+            },
+            "mean_prompt_tokens": 342.6,
+            "mean_completion_tokens": 27.5,
+            "errors": 0
+          },
+          "hard": {
+            "n": 19,
+            "accuracy_n": 19,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.1682
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 19,
+              "rate": 0.0526,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 19,
+              "rate": 0.2105,
+              "passes": 4
+            },
+            "over_escalation": {
+              "n": 19,
+              "rate": 0.1053,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 19,
+              "median": 7.806,
+              "p95": 14.138,
+              "mean": 9.052
+            },
+            "mean_prompt_tokens": 350.4,
+            "mean_completion_tokens": 28.4,
+            "errors": 0
+          },
+          "medium": {
+            "n": 33,
+            "accuracy_n": 32,
+            "accuracy": 0.0938,
+            "accuracy_ci95": [
+              0.0324,
+              0.2422
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 33,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 33,
+              "rate": 0.1818,
+              "passes": 6
+            },
+            "over_escalation": {
+              "n": 33,
+              "rate": 0.0606,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 33,
+              "median": 7.835,
+              "p95": 14.283,
+              "mean": 8.43
+            },
+            "mean_prompt_tokens": 344.7,
+            "mean_completion_tokens": 28.7,
+            "errors": 0
+          }
+        }
+      },
+      "rag": {
+        "overall": {
+          "n": 87,
+          "accuracy_n": 86,
+          "accuracy": 0.3953,
+          "accuracy_ci95": [
+            0.2986,
+            0.501
+          ],
+          "accuracy_passes": 34,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "tool_args_ok": {
+            "n": 0,
+            "rate": null,
+            "passes": 0
+          },
+          "hallucination_strict": {
+            "n": 87,
+            "rate": 0.0115,
+            "passes": 1
+          },
+          "hallucination_combined": {
+            "n": 87,
+            "rate": 0.046,
+            "passes": 4
+          },
+          "over_escalation": {
+            "n": 87,
+            "rate": 0.1264,
+            "passes": 11
+          },
+          "source_hit": {
+            "n": 52,
+            "rate": 0.9038,
+            "passes": 47
+          },
+          "latency_s": {
+            "n": 87,
+            "median": 42.738,
+            "p95": 58.992,
+            "mean": 44.095
+          },
+          "mean_prompt_tokens": 1371.8,
+          "mean_completion_tokens": 40.9,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.0,
+            "accuracy_ci95": [
+              0.0,
+              0.2775
+            ],
+            "accuracy_passes": 0,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.4,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 50.751,
+              "p95": 56.337,
+              "mean": 47.965
+            },
+            "mean_prompt_tokens": 1510.2,
+            "mean_completion_tokens": 43.0,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 10,
+            "accuracy_n": 9,
+            "accuracy": 0.3333,
+            "accuracy_ci95": [
+              0.1206,
+              0.6458
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 40.354,
+              "p95": 57.686,
+              "mean": 42.946
+            },
+            "mean_prompt_tokens": 1379.1,
+            "mean_completion_tokens": 47.7,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.4902,
+              0.9433
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 0.9,
+              "passes": 9
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 42.458,
+              "p95": 49.183,
+              "mean": 42.3
+            },
+            "mean_prompt_tokens": 1358.5,
+            "mean_completion_tokens": 33.5,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 20,
+            "accuracy_n": 20,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.584,
+              0.9193
+            ],
+            "accuracy_passes": 16,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 20,
+              "rate": 0.95,
+              "passes": 19
+            },
+            "latency_s": {
+              "n": 20,
+              "median": 41.385,
+              "p95": 62.072,
+              "mean": 43.921
+            },
+            "mean_prompt_tokens": 1334.8,
+            "mean_completion_tokens": 35.5,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.3333,
+            "accuracy_ci95": [
+              0.1518,
+              0.5829
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.1333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 15,
+              "rate": 0.8667,
+              "passes": 13
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 41.756,
+              "p95": 55.276,
+              "mean": 42.951
+            },
+            "mean_prompt_tokens": 1378.3,
+            "mean_completion_tokens": 43.6,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.0833,
+            "accuracy_ci95": [
+              0.0149,
+              0.3539
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0833,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.1667,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 1.0,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 42.508,
+              "p95": 59.232,
+              "mean": 43.463
+            },
+            "mean_prompt_tokens": 1309.9,
+            "mean_completion_tokens": 45.5,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.1,
+            "accuracy_ci95": [
+              0.0179,
+              0.4042
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 47.531,
+              "p95": 54.097,
+              "mean": 45.986
+            },
+            "mean_prompt_tokens": 1377.8,
+            "mean_completion_tokens": 40.4,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 35,
+            "accuracy_n": 35,
+            "accuracy": 0.5714,
+            "accuracy_ci95": [
+              0.4086,
+              0.7202
+            ],
+            "accuracy_passes": 20,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 35,
+              "rate": 0.1143,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 24,
+              "rate": 0.9167,
+              "passes": 22
+            },
+            "latency_s": {
+              "n": 35,
+              "median": 41.762,
+              "p95": 58.786,
+              "mean": 43.495
+            },
+            "mean_prompt_tokens": 1353.7,
+            "mean_completion_tokens": 33.3,
+            "errors": 0
+          },
+          "hard": {
+            "n": 19,
+            "accuracy_n": 19,
+            "accuracy": 0.2632,
+            "accuracy_ci95": [
+              0.1181,
+              0.4879
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 19,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 19,
+              "rate": 0.1053,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 19,
+              "rate": 0.1579,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 17,
+              "rate": 0.8235,
+              "passes": 14
+            },
+            "latency_s": {
+              "n": 19,
+              "median": 41.756,
+              "p95": 54.582,
+              "mean": 43.679
+            },
+            "mean_prompt_tokens": 1409.0,
+            "mean_completion_tokens": 43.9,
+            "errors": 0
+          },
+          "medium": {
+            "n": 33,
+            "accuracy_n": 32,
+            "accuracy": 0.2812,
+            "accuracy_ci95": [
+              0.1556,
+              0.4537
+            ],
+            "accuracy_passes": 9,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "hallucination_strict": {
+              "n": 33,
+              "rate": 0.0303,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 33,
+              "rate": 0.0606,
+              "passes": 2
+            },
+            "over_escalation": {
+              "n": 33,
+              "rate": 0.1212,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 11,
+              "rate": 1.0,
+              "passes": 11
+            },
+            "latency_s": {
+              "n": 33,
+              "median": 45.257,
+              "p95": 58.9,
+              "mean": 44.97
+            },
+            "mean_prompt_tokens": 1369.5,
+            "mean_completion_tokens": 47.2,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v1": {
+        "overall": {
+          "n": 87,
+          "accuracy_n": 86,
+          "accuracy": 0.4767,
+          "accuracy_ci95": [
+            0.3745,
+            0.581
+          ],
+          "accuracy_passes": 41,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 87,
+            "rate": 0.5862,
+            "passes": 51
+          },
+          "tool_args_ok": {
+            "n": 87,
+            "rate": 0.9885,
+            "passes": 86
+          },
+          "hallucination_strict": {
+            "n": 87,
+            "rate": 0.0345,
+            "passes": 3
+          },
+          "hallucination_combined": {
+            "n": 87,
+            "rate": 0.1034,
+            "passes": 9
+          },
+          "over_escalation": {
+            "n": 87,
+            "rate": 0.023,
+            "passes": 2
+          },
+          "source_hit": {
+            "n": 52,
+            "rate": 0.5577,
+            "passes": 29
+          },
+          "latency_s": {
+            "n": 87,
+            "median": 42.771,
+            "p95": 83.057,
+            "mean": 46.572
+          },
+          "mean_prompt_tokens": 2211.3,
+          "mean_completion_tokens": 98.4,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.4902,
+              0.9433
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 43.305,
+              "p95": 71.959,
+              "mean": 43.933
+            },
+            "mean_prompt_tokens": 2118.5,
+            "mean_completion_tokens": 173.4,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 10,
+            "accuracy_n": 9,
+            "accuracy": 0.1111,
+            "accuracy_ci95": [
+              0.0199,
+              0.435
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.6,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.25,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 30.849,
+              "p95": 94.94,
+              "mean": 39.065
+            },
+            "mean_prompt_tokens": 1850.8,
+            "mean_completion_tokens": 118.0,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.4902,
+              0.9433
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 0.9,
+              "passes": 9
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 66.451,
+              "p95": 121.949,
+              "mean": 74.382
+            },
+            "mean_prompt_tokens": 3157.6,
+            "mean_completion_tokens": 100.7,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 20,
+            "accuracy_n": 20,
+            "accuracy": 0.65,
+            "accuracy_ci95": [
+              0.4329,
+              0.8188
+            ],
+            "accuracy_passes": 13,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 20,
+              "rate": 0.75,
+              "passes": 15
+            },
+            "tool_args_ok": {
+              "n": 20,
+              "rate": 1.0,
+              "passes": 20
+            },
+            "hallucination_strict": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 20,
+              "rate": 0.05,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 20,
+              "rate": 0.7,
+              "passes": 14
+            },
+            "latency_s": {
+              "n": 20,
+              "median": 41.916,
+              "p95": 65.263,
+              "mean": 44.991
+            },
+            "mean_prompt_tokens": 2381.9,
+            "mean_completion_tokens": 82.0,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.1333,
+            "accuracy_ci95": [
+              0.0374,
+              0.3788
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "tool_args_ok": {
+              "n": 15,
+              "rate": 0.9333,
+              "passes": 14
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.2,
+              "passes": 3
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 15,
+              "rate": 0.2667,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 52.912,
+              "p95": 83.063,
+              "mean": 52.693
+            },
+            "mean_prompt_tokens": 2235.7,
+            "mean_completion_tokens": 108.3,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.0833,
+            "accuracy_ci95": [
+              0.0149,
+              0.3539
+            ],
+            "accuracy_passes": 1,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 12,
+              "rate": 0.25,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 12,
+              "rate": 1.0,
+              "passes": 12
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.3333,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 22.404,
+              "p95": 68.446,
+              "mean": 28.871
+            },
+            "mean_prompt_tokens": 1700.7,
+            "mean_completion_tokens": 54.2,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.4902,
+              0.9433
+            ],
+            "accuracy_passes": 8,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.7,
+              "passes": 7
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 41.903,
+              "p95": 63.426,
+              "mean": 44.127
+            },
+            "mean_prompt_tokens": 1953.6,
+            "mean_completion_tokens": 72.4,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 35,
+            "accuracy_n": 35,
+            "accuracy": 0.7714,
+            "accuracy_ci95": [
+              0.6098,
+              0.8793
+            ],
+            "accuracy_passes": 27,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 35,
+              "rate": 0.8571,
+              "passes": 30
+            },
+            "tool_args_ok": {
+              "n": 35,
+              "rate": 1.0,
+              "passes": 35
+            },
+            "hallucination_strict": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 35,
+              "rate": 0.0286,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 24,
+              "rate": 0.7917,
+              "passes": 19
+            },
+            "latency_s": {
+              "n": 35,
+              "median": 50.171,
+              "p95": 79.351,
+              "mean": 50.739
+            },
+            "mean_prompt_tokens": 2411.4,
+            "mean_completion_tokens": 94.5,
+            "errors": 0
+          },
+          "hard": {
+            "n": 19,
+            "accuracy_n": 19,
+            "accuracy": 0.1053,
+            "accuracy_ci95": [
+              0.0294,
+              0.3139
+            ],
+            "accuracy_passes": 2,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 19,
+              "rate": 0.1053,
+              "passes": 2
+            },
+            "tool_args_ok": {
+              "n": 19,
+              "rate": 0.9474,
+              "passes": 18
+            },
+            "hallucination_strict": {
+              "n": 19,
+              "rate": 0.0526,
+              "passes": 1
+            },
+            "hallucination_combined": {
+              "n": 19,
+              "rate": 0.2105,
+              "passes": 4
+            },
+            "over_escalation": {
+              "n": 19,
+              "rate": 0.0526,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 17,
+              "rate": 0.2353,
+              "passes": 4
+            },
+            "latency_s": {
+              "n": 19,
+              "median": 42.877,
+              "p95": 91.846,
+              "mean": 47.797
+            },
+            "mean_prompt_tokens": 2202.8,
+            "mean_completion_tokens": 96.4,
+            "errors": 0
+          },
+          "medium": {
+            "n": 33,
+            "accuracy_n": 32,
+            "accuracy": 0.375,
+            "accuracy_ci95": [
+              0.2293,
+              0.5475
+            ],
+            "accuracy_passes": 12,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 33,
+              "rate": 0.5758,
+              "passes": 19
+            },
+            "tool_args_ok": {
+              "n": 33,
+              "rate": 1.0,
+              "passes": 33
+            },
+            "hallucination_strict": {
+              "n": 33,
+              "rate": 0.0606,
+              "passes": 2
+            },
+            "hallucination_combined": {
+              "n": 33,
+              "rate": 0.1212,
+              "passes": 4
+            },
+            "over_escalation": {
+              "n": 33,
+              "rate": 0.0303,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 11,
+              "rate": 0.5455,
+              "passes": 6
+            },
+            "latency_s": {
+              "n": 33,
+              "median": 36.439,
+              "p95": 90.993,
+              "mean": 41.446
+            },
+            "mean_prompt_tokens": 2004.1,
+            "mean_completion_tokens": 103.6,
+            "errors": 0
+          }
+        }
+      },
+      "agent_v2b": {
+        "overall": {
+          "n": 87,
+          "accuracy_n": 86,
+          "accuracy": 0.5349,
+          "accuracy_ci95": [
+            0.4302,
+            0.6365
+          ],
+          "accuracy_passes": 46,
+          "manual_review_n": 1,
+          "tool_correct": {
+            "n": 87,
+            "rate": 0.6782,
+            "passes": 59
+          },
+          "tool_args_ok": {
+            "n": 87,
+            "rate": 0.931,
+            "passes": 81
+          },
+          "hallucination_strict": {
+            "n": 87,
+            "rate": 0.0,
+            "passes": 0
+          },
+          "hallucination_combined": {
+            "n": 87,
+            "rate": 0.023,
+            "passes": 2
+          },
+          "over_escalation": {
+            "n": 87,
+            "rate": 0.1264,
+            "passes": 11
+          },
+          "source_hit": {
+            "n": 52,
+            "rate": 0.7308,
+            "passes": 38
+          },
+          "latency_s": {
+            "n": 87,
+            "median": 47.175,
+            "p95": 178.375,
+            "mean": 69.369
+          },
+          "mean_prompt_tokens": 2911.7,
+          "mean_completion_tokens": 210.3,
+          "errors": 0
+        },
+        "by_category": {
+          "availability_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.5,
+            "accuracy_ci95": [
+              0.2366,
+              0.7634
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.6,
+              "passes": 6
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 0.6,
+              "passes": 6
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.1,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 44.722,
+              "p95": 161.621,
+              "mean": 75.75
+            },
+            "mean_prompt_tokens": 2725.6,
+            "mean_completion_tokens": 323.3,
+            "errors": 0
+          },
+          "edge_adversarial": {
+            "n": 10,
+            "accuracy_n": 9,
+            "accuracy": 0.4444,
+            "accuracy_ci95": [
+              0.1888,
+              0.7334
+            ],
+            "accuracy_passes": 4,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.8,
+              "passes": 8
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.4,
+              "passes": 4
+            },
+            "source_hit": {
+              "n": 4,
+              "rate": 0.75,
+              "passes": 3
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 36.428,
+              "p95": 45.411,
+              "mean": 32.176
+            },
+            "mean_prompt_tokens": 2515.5,
+            "mean_completion_tokens": 97.3,
+            "errors": 0
+          },
+          "guide_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.7,
+            "accuracy_ci95": [
+              0.3968,
+              0.8922
+            ],
+            "accuracy_passes": 7,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 10,
+              "rate": 0.8,
+              "passes": 8
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 59.042,
+              "p95": 100.205,
+              "mean": 62.756
+            },
+            "mean_prompt_tokens": 3471.9,
+            "mean_completion_tokens": 135.1,
+            "errors": 0
+          },
+          "manual_only": {
+            "n": 20,
+            "accuracy_n": 20,
+            "accuracy": 0.8,
+            "accuracy_ci95": [
+              0.584,
+              0.9193
+            ],
+            "accuracy_passes": 16,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 20,
+              "rate": 0.95,
+              "passes": 19
+            },
+            "tool_args_ok": {
+              "n": 20,
+              "rate": 1.0,
+              "passes": 20
+            },
+            "hallucination_strict": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 20,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 20,
+              "rate": 0.05,
+              "passes": 1
+            },
+            "source_hit": {
+              "n": 20,
+              "rate": 0.85,
+              "passes": 17
+            },
+            "latency_s": {
+              "n": 20,
+              "median": 43.456,
+              "p95": 202.273,
+              "mean": 77.963
+            },
+            "mean_prompt_tokens": 2880.6,
+            "mean_completion_tokens": 275.1,
+            "errors": 0
+          },
+          "multi_tool": {
+            "n": 15,
+            "accuracy_n": 15,
+            "accuracy": 0.2,
+            "accuracy_ci95": [
+              0.0705,
+              0.4519
+            ],
+            "accuracy_passes": 3,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 15,
+              "rate": 0.2667,
+              "passes": 4
+            },
+            "tool_args_ok": {
+              "n": 15,
+              "rate": 0.8667,
+              "passes": 13
+            },
+            "hallucination_strict": {
+              "n": 15,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 15,
+              "rate": 0.0667,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 15,
+              "rate": 0.1333,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 15,
+              "rate": 0.6,
+              "passes": 9
+            },
+            "latency_s": {
+              "n": 15,
+              "median": 58.054,
+              "p95": 158.231,
+              "mean": 77.45
+            },
+            "mean_prompt_tokens": 3009.7,
+            "mean_completion_tokens": 191.6,
+            "errors": 0
+          },
+          "must_escalate": {
+            "n": 12,
+            "accuracy_n": 12,
+            "accuracy": 0.4167,
+            "accuracy_ci95": [
+              0.1933,
+              0.6805
+            ],
+            "accuracy_passes": 5,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 12,
+              "rate": 0.75,
+              "passes": 9
+            },
+            "tool_args_ok": {
+              "n": 12,
+              "rate": 1.0,
+              "passes": 12
+            },
+            "hallucination_strict": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 12,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "source_hit": {
+              "n": 3,
+              "rate": 0.3333,
+              "passes": 1
+            },
+            "latency_s": {
+              "n": 12,
+              "median": 39.901,
+              "p95": 111.321,
+              "mean": 51.911
+            },
+            "mean_prompt_tokens": 2917.6,
+            "mean_completion_tokens": 162.9,
+            "errors": 0
+          },
+          "reservation_only": {
+            "n": 10,
+            "accuracy_n": 10,
+            "accuracy": 0.6,
+            "accuracy_ci95": [
+              0.3127,
+              0.8318
+            ],
+            "accuracy_passes": 6,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "tool_args_ok": {
+              "n": 10,
+              "rate": 1.0,
+              "passes": 10
+            },
+            "hallucination_strict": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 10,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 10,
+              "rate": 0.3,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 0,
+              "rate": null,
+              "passes": 0
+            },
+            "latency_s": {
+              "n": 10,
+              "median": 84.853,
+              "p95": 183.64,
+              "mean": 98.431
+            },
+            "mean_prompt_tokens": 2842.3,
+            "mean_completion_tokens": 241.3,
+            "errors": 0
+          }
+        },
+        "by_difficulty": {
+          "easy": {
+            "n": 35,
+            "accuracy_n": 35,
+            "accuracy": 0.7143,
+            "accuracy_ci95": [
+              0.5494,
+              0.8367
+            ],
+            "accuracy_passes": 25,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 35,
+              "rate": 0.8,
+              "passes": 28
+            },
+            "tool_args_ok": {
+              "n": 35,
+              "rate": 0.9429,
+              "passes": 33
+            },
+            "hallucination_strict": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 35,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "over_escalation": {
+              "n": 35,
+              "rate": 0.0571,
+              "passes": 2
+            },
+            "source_hit": {
+              "n": 24,
+              "rate": 0.875,
+              "passes": 21
+            },
+            "latency_s": {
+              "n": 35,
+              "median": 55.31,
+              "p95": 185.383,
+              "mean": 76.83
+            },
+            "mean_prompt_tokens": 2944.1,
+            "mean_completion_tokens": 219.4,
+            "errors": 0
+          },
+          "hard": {
+            "n": 19,
+            "accuracy_n": 19,
+            "accuracy": 0.3158,
+            "accuracy_ci95": [
+              0.1536,
+              0.5399
+            ],
+            "accuracy_passes": 6,
+            "manual_review_n": 0,
+            "tool_correct": {
+              "n": 19,
+              "rate": 0.4211,
+              "passes": 8
+            },
+            "tool_args_ok": {
+              "n": 19,
+              "rate": 0.8947,
+              "passes": 17
+            },
+            "hallucination_strict": {
+              "n": 19,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 19,
+              "rate": 0.0526,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 19,
+              "rate": 0.1579,
+              "passes": 3
+            },
+            "source_hit": {
+              "n": 17,
+              "rate": 0.5294,
+              "passes": 9
+            },
+            "latency_s": {
+              "n": 19,
+              "median": 55.619,
+              "p95": 148.876,
+              "mean": 68.859
+            },
+            "mean_prompt_tokens": 2936.3,
+            "mean_completion_tokens": 169.5,
+            "errors": 0
+          },
+          "medium": {
+            "n": 33,
+            "accuracy_n": 32,
+            "accuracy": 0.4688,
+            "accuracy_ci95": [
+              0.3087,
+              0.6355
+            ],
+            "accuracy_passes": 15,
+            "manual_review_n": 1,
+            "tool_correct": {
+              "n": 33,
+              "rate": 0.697,
+              "passes": 23
+            },
+            "tool_args_ok": {
+              "n": 33,
+              "rate": 0.9394,
+              "passes": 31
+            },
+            "hallucination_strict": {
+              "n": 33,
+              "rate": 0.0,
+              "passes": 0
+            },
+            "hallucination_combined": {
+              "n": 33,
+              "rate": 0.0303,
+              "passes": 1
+            },
+            "over_escalation": {
+              "n": 33,
+              "rate": 0.1818,
+              "passes": 6
+            },
+            "source_hit": {
+              "n": 11,
+              "rate": 0.7273,
+              "passes": 8
+            },
+            "latency_s": {
+              "n": 33,
+              "median": 44.546,
+              "p95": 155.646,
+              "mean": 61.748
+            },
+            "mean_prompt_tokens": 2863.3,
+            "mean_completion_tokens": 224.2,
+            "errors": 0
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "test": {
+      "llm__vs__rag": {
+        "n_paired": 54,
+        "both_pass": 5,
+        "both_fail": 32,
+        "a_pass_b_fail": 0,
+        "a_fail_b_pass": 17,
+        "mcnemar_exact_p": 1.5e-05
+      },
+      "llm__vs__agent_v1": {
+        "n_paired": 54,
+        "both_pass": 5,
+        "both_fail": 28,
+        "a_pass_b_fail": 0,
+        "a_fail_b_pass": 21,
+        "mcnemar_exact_p": 1e-06
+      },
+      "llm__vs__agent_v2b": {
+        "n_paired": 54,
+        "both_pass": 5,
+        "both_fail": 26,
+        "a_pass_b_fail": 0,
+        "a_fail_b_pass": 23,
+        "mcnemar_exact_p": 0.0
+      },
+      "rag__vs__agent_v1": {
+        "n_paired": 54,
+        "both_pass": 15,
+        "both_fail": 21,
+        "a_pass_b_fail": 7,
+        "a_fail_b_pass": 11,
+        "mcnemar_exact_p": 0.480682
+      },
+      "rag__vs__agent_v2b": {
+        "n_paired": 54,
+        "both_pass": 17,
+        "both_fail": 21,
+        "a_pass_b_fail": 5,
+        "a_fail_b_pass": 11,
+        "mcnemar_exact_p": 0.210114
+      },
+      "agent_v1__vs__agent_v2b": {
+        "n_paired": 54,
+        "both_pass": 20,
+        "both_fail": 20,
+        "a_pass_b_fail": 6,
+        "a_fail_b_pass": 8,
+        "mcnemar_exact_p": 0.790527
+      }
+    },
+    "dev": {
+      "llm__vs__rag": {
+        "n_paired": 32,
+        "both_pass": 1,
+        "both_fail": 18,
+        "a_pass_b_fail": 2,
+        "a_fail_b_pass": 11,
+        "mcnemar_exact_p": 0.022461
+      },
+      "llm__vs__agent_v1": {
+        "n_paired": 32,
+        "both_pass": 0,
+        "both_fail": 14,
+        "a_pass_b_fail": 3,
+        "a_fail_b_pass": 15,
+        "mcnemar_exact_p": 0.007538
+      },
+      "llm__vs__agent_v2b": {
+        "n_paired": 32,
+        "both_pass": 1,
+        "both_fail": 12,
+        "a_pass_b_fail": 2,
+        "a_fail_b_pass": 17,
+        "mcnemar_exact_p": 0.000729
+      },
+      "rag__vs__agent_v1": {
+        "n_paired": 32,
+        "both_pass": 6,
+        "both_fail": 11,
+        "a_pass_b_fail": 6,
+        "a_fail_b_pass": 9,
+        "mcnemar_exact_p": 0.607239
+      },
+      "rag__vs__agent_v2b": {
+        "n_paired": 32,
+        "both_pass": 10,
+        "both_fail": 12,
+        "a_pass_b_fail": 2,
+        "a_fail_b_pass": 8,
+        "mcnemar_exact_p": 0.109375
+      },
+      "agent_v1__vs__agent_v2b": {
+        "n_paired": 32,
+        "both_pass": 8,
+        "both_fail": 7,
+        "a_pass_b_fail": 7,
+        "a_fail_b_pass": 10,
+        "mcnemar_exact_p": 0.629059
+      }
+    },
+    "all": {
+      "llm__vs__rag": {
+        "n_paired": 86,
+        "both_pass": 6,
+        "both_fail": 50,
+        "a_pass_b_fail": 2,
+        "a_fail_b_pass": 28,
+        "mcnemar_exact_p": 1e-06
+      },
+      "llm__vs__agent_v1": {
+        "n_paired": 86,
+        "both_pass": 5,
+        "both_fail": 42,
+        "a_pass_b_fail": 3,
+        "a_fail_b_pass": 36,
+        "mcnemar_exact_p": 0.0
+      },
+      "llm__vs__agent_v2b": {
+        "n_paired": 86,
+        "both_pass": 6,
+        "both_fail": 38,
+        "a_pass_b_fail": 2,
+        "a_fail_b_pass": 40,
+        "mcnemar_exact_p": 0.0
+      },
+      "rag__vs__agent_v1": {
+        "n_paired": 86,
+        "both_pass": 21,
+        "both_fail": 32,
+        "a_pass_b_fail": 13,
+        "a_fail_b_pass": 20,
+        "mcnemar_exact_p": 0.296206
+      },
+      "rag__vs__agent_v2b": {
+        "n_paired": 86,
+        "both_pass": 27,
+        "both_fail": 33,
+        "a_pass_b_fail": 7,
+        "a_fail_b_pass": 19,
+        "mcnemar_exact_p": 0.028959
+      },
+      "agent_v1__vs__agent_v2b": {
+        "n_paired": 86,
+        "both_pass": 28,
+        "both_fail": 27,
+        "a_pass_b_fail": 13,
+        "a_fail_b_pass": 18,
+        "mcnemar_exact_p": 0.47313
+      }
+    }
+  },
+  "failures": [],
+  "manual_review": [],
+  "per_scenario": {},
+  "primary_split": "all"
+}

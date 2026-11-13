@@ -1,0 +1,27 @@
+# Vector index built by `python -m src.rag build`
+.chroma/
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local secrets and configuration
+.env
+
+# Archives
+*.zip
+
+# Runtime logs and the regenerated mock database
+results/run_log_*.txt
+var/*.sqlite
+var/*.sqlite-*
+
+# Editor settings
+.idea/
+.vscode/

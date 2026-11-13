@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! The WiFi name is \"LHApartmentWiFi\". The password is \"LH123WiFi\". Please connect to this for internet access.",
+  "scenario_id": "M-02",
+  "guest_message": "Hi! What's the wifi name and password for the studio?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 10.124,
+  "llm_s": 8.962,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 342,
+  "completion_tokens": 33,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 8.688504,
+    "load_duration": 0.023081,
+    "prompt_eval_duration": 1.437013,
+    "eval_duration": 7.186199
+  }
+}

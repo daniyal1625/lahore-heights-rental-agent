@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "There are no available units that can accommodate 3 guests for your requested dates. The Penthouse, Unit 701, is available but only for 6 guests. Please check availability for other dates or consider a different unit.",
+  "scenario_id": "A-02",
+  "guest_message": "We're 3 adults looking for Nov 15 to Nov 18. What's available?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-15..2026-11-18"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-15",
+        "check_out": "2026-11-18"
+      },
+      "result_size": 763,
+      "ms": 294.2
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-15\",\"check_out\":\"2026-11-18\",\"nights\":3,\"guests\":null,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":false,\"nightly_price_pkr\":9500,\"stay_total_pkr\":28500,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":false,\"nightly_price_pkr\":14000,\"stay_total_pkr\":42000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":false,\"nightly_price_pkr\":21000,\"stay_total_pkr\":63000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":true,\"nightly_price_pkr\":38000,\"stay_total_pkr\":114000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 42.888,
+  "llm_s": 40.811,
+  "tool_s": 0.294,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2325,
+  "completion_tokens": 154,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.287692,
+    "load_duration": 0.02797,
+    "prompt_eval_duration": 11.256218,
+    "eval_duration": 28.879512
+  },
+  "plan": {
+    "intent": "check availability",
+    "calls": [
+      {
+        "tool": "check_availability",
+        "query": "2026-11-15,2026-11-18",
+        "reservation_id": null,
+        "check_in": "2026-11-15",
+        "check_out": "2026-11-18",
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 20.983,
+  "llm_answer_s": 19.828
+}

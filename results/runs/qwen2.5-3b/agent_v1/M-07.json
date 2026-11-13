@@ -1,0 +1,65 @@
+{
+  "system": "agent",
+  "variant": "agent_v1",
+  "model": "qwen2.5:3b",
+  "answer": "Based on the house manual, smoking is not allowed inside the apartments, on the balconies, or on the roof terrace. Smoking is permitted only in the marked corner at the north end of the roof terrace. Please be mindful of the fire safety rules.",
+  "scenario_id": "M-07",
+  "guest_message": "Can I smoke on the balcony?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.2"
+    },
+    {
+      "type": "manual",
+      "id": "10.2"
+    },
+    {
+      "type": "manual",
+      "id": "11.8"
+    },
+    {
+      "type": "manual",
+      "id": "8.5"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "smoking balcony"
+      },
+      "result_size": 2027,
+      "ms": 48.9
+    }
+  ],
+  "retrieved": [
+    "11.2",
+    "10.2",
+    "11.8",
+    "8.5"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"11.2\",\"title\":\"Smoking and vaping\",\"text\":\"House manual > 11. House Rules > 11.2 Smoking and vaping\\n\\nSmoking and vaping are **not allowed** inside the apartments, on the balconies, on the Penthouse terrace, in the corridors, in the lifts or in the basement. You may smoke only in the **marked corner at the north end of the roof terrace**. If we find that someone has smoked indoors, a deep-cleaning fee of **PKR 15,000** is deducted from the security deposit (or charged to the guest for platform bookings).\"},{\"source_id\":\"10.2\",\"title\":\"Roof terrace\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\\n\\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).\"},{\"source_id\":\"11.8\",\"title\":\"Open flames and barbecues\",\"text\":\"House manual > 11. House Rules > 11.8 Open flames and barbecues\\n\\nBarbecues, charcoal grills, candles with open flames and fireworks are **not allowed** anywhere in the building, including balconies, the roof terrace and the Penthouse terrace. This is a fire-safety rule.\"},{\"source_id\":\"8.5\",\"title\":\"Cooking Pakistani dishes without setting off the alarm\",\"text\":\"House manual > 8. Kitchen and Cooking > 8.5 Cooking Pakistani dishes without setting off the alarm\\n\\nFrying onions, tempering spices (tadka) and making parathas can create smoke that triggers the smoke detector. Before you start, switch on the exhaust fan and open a window, and use the lowest flame that works. **Never cover or disable the smoke detector.** If the alarm sounds from cooking smoke, fan the detector with a towel and open the balcony door; it stops by itself within a minute. If you see actual flames, use the kitchen fire extinguisher or a damp cloth over the pan, leave the apartment and follow section 12.2.\"}]"
+  ],
+  "latency_s": 40.445,
+  "llm_s": 36.028,
+  "tool_s": 0.049,
+  "retrieval_s": 0.049,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2316,
+  "completion_tokens": 75,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 35.752912,
+    "load_duration": 0.046623,
+    "prompt_eval_duration": 20.742673,
+    "eval_duration": 14.847233
+  }
+}

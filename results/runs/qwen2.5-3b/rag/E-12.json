@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "No baby monitor or baby bath is provided in the apartment. For safety, please ensure all children are supervised at all times.",
+  "scenario_id": "E-12",
+  "guest_message": "Do you have a baby monitor or a baby bath?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.3"
+    },
+    {
+      "type": "manual",
+      "id": "9.3"
+    },
+    {
+      "type": "manual",
+      "id": "4.1"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By auto-rickshaw"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "10.3",
+    "9.3",
+    "4.1",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By auto-rickshaw"
+  ],
+  "evidence": [
+    "[Manual 10.3 — What the building does not have]\nHouse manual > 10. Building Amenities and Accessibility > 10.3 What the building does not have\n\nThe building does **not** have a swimming pool, a gym or a sauna. The roof terrace is for sitting and relaxing only.",
+    "[Manual 9.3 — Cleaning during your stay]\nHouse manual > 9. Laundry, Linens and Housekeeping > 9.3 Cleaning during your stay\n\nHousekeeping is **not** included every day, because we want to respect your privacy. Fresh towels are free (section 9.2) and a full mid-stay cleaning visit is available for a fee (section 15.3). The apartment is cleaned thoroughly after you leave.",
+    "[Manual 4.1 — Studio, Unit 201]\nHouse manual > 4. Your Apartment, Unit by Unit > 4.1 Studio, Unit 201\n\n- **Sleeps:** 2. One queen bed (160 × 200 cm). The sofa is not a bed.\n- **Bathroom:** one, with shower. Electric water heater (geyser) of 35 litres.\n- **Kitchenette:** 2-burner gas hob, induction plate, microwave, kettle, toaster, 250-litre fridge. There is **no oven**.\n- **Laundry:** **no washing machine** in the unit. Use the shared laundry room on the ground floor (section 9.1).\n- **Cooling and air:** one inverter air conditioner (this is the AC that keeps running on the generator) and one air purifier.\n- **Other:** 32-inch smart TV, desk and chair for working, large window with garden view (no balcony), iron and ironing board in the wardrobe, hair dryer in the bathroom drawer.\n- **Parking:** B1-12. **Wi-Fi network:** LH-Guest-201.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around > By auto-rickshaw]\nLahore > Get around > By auto-rickshaw\n\nAuto-rickshaws/Qingqis are open rickshaws with (narrow) rear-facing seats, or with two seats facing forward and two backward. They are handy for moving around in the Inner City, since it's easier to see where you're going. Tourists used to average western road etiquette might be horrified by the chaos on the roads - but it almost seems to work. Qingqi drivers have an unbelievable sense of space, speed and angles and you may well learn to trust them (or not). Rickshaws are the cheapest and, for women, the safest individual forms of public transport. Haggle thoroughly with the driver; if you do not speak Punjabi or Urdu or are clearly a foreigner, try to get a Lahori friend to ensure you don't get ripped off. Try to find a rickshaw with a well-padded seat, otherwise you will come out bruised and aching. You can also order a rickshaw by using Careem or InDrive app."
+  ],
+  "latency_s": 32.024,
+  "llm_s": 30.684,
+  "tool_s": 0.0,
+  "retrieval_s": 0.15,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1212,
+  "completion_tokens": 26,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 30.418078,
+    "load_duration": 0.04557,
+    "prompt_eval_duration": 25.081505,
+    "eval_duration": 5.263938
+  }
+}

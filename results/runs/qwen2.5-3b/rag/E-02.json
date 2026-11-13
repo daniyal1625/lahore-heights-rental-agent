@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but as the guest-messaging assistant for Lahore Heights Apartments, I don't have the authority to arrange for a private chef. This would be something the host, Ayesha Malik, would need to decide. I recommend reaching out to her directly to discuss this request.",
+  "scenario_id": "E-02",
+  "guest_message": "Do you have a private chef who can cook a Pakistani dinner for us one evening?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.4"
+    },
+    {
+      "type": "manual",
+      "id": "8.5"
+    },
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Budget"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.4",
+    "8.5",
+    "20.5",
+    "Lahore > Eat > Budget",
+    "Lahore > Eat > Splurge"
+  ],
+  "evidence": [
+    "[Manual 3.4 — Guest registration and ID]\nHouse manual > 3. Getting Here and Arriving > 3.4 Guest registration and ID\n\nPakistani law and our building rules require us to register every adult guest. Before arrival, every guest aged 18 or over must send:\n\n- **Pakistani nationals:** a clear photo of the CNIC (front and back).\n- **Foreign nationals:** a photo of the passport photo page and the visa page.\n\nThe host sends an upload link when you book. Please complete it **at least 24 hours before arrival**. The primary guest on the booking must be 21 or older. **Your door code is only released after your ID has been verified** (section 3.5).",
+    "[Manual 8.5 — Cooking Pakistani dishes without setting off the alarm]\nHouse manual > 8. Kitchen and Cooking > 8.5 Cooking Pakistani dishes without setting off the alarm\n\nFrying onions, tempering spices (tadka) and making parathas can create smoke that triggers the smoke detector. Before you start, switch on the exhaust fan and open a window, and use the lowest flame that works. **Never cover or disable the smoke detector.** If the alarm sounds from cooking smoke, fan the detector with a towel and open the balcony door; it stops by itself within a minute. If you see actual flames, use the kitchen fire extinguisher or a damp cloth over the pan, leave the apartment and follow section 12.2.",
+    "[Manual 20.5 — First-time visitors to Pakistan]\nHouse manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\n\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\n- Dress modestly in the lobby and corridors (section 11.9).\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.",
+    "[Guide Lahore > Eat > Budget]\nLahore > Eat > Budget\n\nFor nihari, go to Haji Nihari  on Jail Road or inside Lohari Gate; for chicken paratha rolls go to Karachi Silver Spoon in Liberty Market, and so on lastly go to Muhammadi Nihari in Mozang.\n\nThe 'Food Street' of Gowal Mandi is a must-visit for dinner - you'll find a street full of shops selling fine Lahori fare, and the setting, amidst traditional jharoka architecture, is lovely.  If you make it to Food Street, go by auto rickshaw (Rs 30) or walk to Mochi Gate and try Rasheeds kebabs or Saiyns kebabs.  Mochi Gate is also home to Fazal Sweets and Rafique Sweet House. Bhaiya kabab in Model Town is foremost name in Kabab Street, where you will enjoy bar-b-que with fresh soda. A 200/300-m long street with historically preserved 2/3 storey old houses on both sides which are lightened up in a very special way giving a very historical and magnificent look. The environment is a real creation of culture of Lahore, the mughal era. You will find around a hundred restaurants in this street which mouth watering menus. Do try Chappal Kababas, Saag with Makai ki roti, Golas of Ice, Sardar ki Machli and anything you like because a lot of variety is present.",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\nCafe Aylanto, 2-C 9th Commercial Ln, ☏ +92 21 587-5724. Has the best non-Pakistani food in town. Try the shrimp and avocado salad. You can also take your own wine to the restaurant and they'll be happy to serve you; just make sure to inform them on the door, if you have an alcoholic drink with you. (updated Apr 2026)\n\nZouk, MM Alam Rd, ☏ +92 42 571-2731. One of Lahore's institutions, despite the distressing decor. It serves a mix of Continental and Thai food. It is highly popular among elites.\n\nFreddy's, 12C MM Alam Rd, ☏ +92 042 575-4416. Family-oriented restaurant which has a safe, vaguely continental menu. Freddy's offers an afternoon high tea buffet, which offers a full variety foods and some drinks.\n\nVillage, 103-B-2 MM Alam Rd, ☏ +92 42 578-5523. A vast mud structure which has an all-you-can-eat Pakistani buffet. It's a popular joint to take visiting tourists, as it combines a variety of local foods with good hygiene.\n\nSalt n Pepper Grill. Owned by the same company as Village, with a fine à la carte menu. Try their sweet lassi."
+  ],
+  "latency_s": 57.098,
+  "llm_s": 55.94,
+  "tool_s": 0.0,
+  "retrieval_s": 0.107,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1469,
+  "completion_tokens": 59,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 55.681991,
+    "load_duration": 0.007108,
+    "prompt_eval_duration": 41.304129,
+    "eval_duration": 14.337339
+  }
+}

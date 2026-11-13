@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Smoking is not allowed inside the apartments, on the balconies, or in the corridors. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace, which is open from 7:00 AM to 10:00 PM.",
+  "scenario_id": "M-07",
+  "guest_message": "Can I smoke on the balcony?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "11.2"
+    },
+    {
+      "type": "manual",
+      "id": "10.2"
+    },
+    {
+      "type": "manual",
+      "id": "20.1"
+    },
+    {
+      "type": "manual",
+      "id": "11.8"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "balcony smoking policy"
+      },
+      "result_size": 2022,
+      "ms": 41.2
+    }
+  ],
+  "retrieved": [
+    "11.2",
+    "10.2",
+    "20.1",
+    "11.8"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"11.2\",\"title\":\"Smoking and vaping\",\"text\":\"House manual > 11. House Rules > 11.2 Smoking and vaping\\n\\nSmoking and vaping are **not allowed** inside the apartments, on the balconies, on the Penthouse terrace, in the corridors, in the lifts or in the basement. You may smoke only in the **marked corner at the north end of the roof terrace**. If we find that someone has smoked indoors, a deep-cleaning fee of **PKR 15,000** is deducted from the security deposit (or charged to the guest for platform bookings).\"},{\"source_id\":\"10.2\",\"title\":\"Roof terrace\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.2 Roof terrace\\n\\nThe shared roof terrace has seating and city views. It is open **7:00 AM to 10:00 PM**. It is a quiet space: no loud music, no gatherings, no parties and no barbecues. The only place in the building where smoking is allowed is the marked smoking corner at the north end of the roof terrace (section 11.2).\"},{\"source_id\":\"20.1\",\"title\":\"Families with children\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.1 Families with children\\n\\n- Ask for the free travel cot or high chair at least 48 hours before arrival (section 15.1).\\n- Keep balcony doors locked when small children are in the apartment, and never leave children alone on the balcony or terrace.\\n- Children under 12 must be accompanied by an adult in the lifts and on the roof terrace.\\n- The Two-Bedroom and the Penthouse are the best choices for families because they have separate bedrooms and washing machines.\\n- Remember that children aged 2 and above count as guests for occupancy and for the extra guest fee (sections 2.1 and 2.2).\"},{\"source_id\":\"11.8\",\"title\":\"Open flames and barbecues\",\"text\":\"House manual > 11. House Rules > 11.8 Open flames and barbecues\\n\\nBarbecues, charcoal grills, candles with open flames and fireworks are **not allowed** anywhere in the building, including balconies, the roof terrace and the Penthouse terrace. This is a fire-safety rule.\"}]"
+  ],
+  "latency_s": 40.813,
+  "llm_s": 38.904,
+  "tool_s": 0.041,
+  "retrieval_s": 0.041,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2528,
+  "completion_tokens": 110,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 38.365634,
+    "load_duration": 0.017429,
+    "prompt_eval_duration": 16.273089,
+    "eval_duration": 21.953944
+  },
+  "plan": {
+    "intent": "balcony smoking policy",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "balcony smoking policy",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 9.77,
+  "llm_answer_s": 29.134
+}

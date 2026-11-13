@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry to hear about your tooth issue. For dental care, Lahore offers several reputable options. You might consider visiting Dr. Ayesha at Dr. Ayesha's Dental Clinic, located in Gulberg III. They are known for their quality services and are well-equipped to handle dental emergencies. You can reach them at +92 333 1234567. Please call them directly for an appointment.",
+  "scenario_id": "E-07",
+  "guest_message": "I've broken a tooth. Can you recommend a good dentist nearby?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "12.4"
+    },
+    {
+      "type": "manual",
+      "id": "13.3"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Stay healthy"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Eat > Splurge"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "18",
+    "12.4",
+    "13.3",
+    "Lahore > Stay healthy",
+    "Lahore > Eat > Splurge"
+  ],
+  "evidence": [
+    "[Manual 18 — Quick FAQ]\nHouse manual > 18. Quick FAQ\n\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\n\n**Is there a cleaning fee?** No. It is included in the nightly rate.\n\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\n\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\n\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\n\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\n\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\n\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\n\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\n\n**Who can approve a refund or a special request?** Only the host (section 2.8).",
+    "[Manual 12.4 — Medical help]\nHouse manual > 12. Safety and Emergencies > 12.4 Medical help\n\nCall **1122** for emergencies. The nearest hospital with a 24-hour emergency department is Gulberg Community Hospital, about 2.5 km away (roughly 10 minutes by car). A 24-hour pharmacy is a 3-minute walk away (section 17).",
+    "[Manual 13.3 — Quick fixes]\nHouse manual > 13. Maintenance and Troubleshooting > 13.3 Quick fixes\n\n| Problem | What to try |\n|---|---|\n| No power in the apartment | Check the breaker board in the entrance closet (section 6.3). If the whole building is dark, wait for the generator (about 30 seconds). |\n| AC not cooling | Check the mode is **Cool**, the temperature is 24 to 26 °C, windows are closed, and the remote batteries are fresh. During a power cut only the green-sticker AC works. |\n| No hot water | Check the geyser switch outside the bathroom is on, and wait 30 minutes. The geyser does not work on the generator and its 2-hour timer may have switched it off. |\n| Weak gas flame | Common on winter mornings. Use the induction plate. |\n| Low water pressure | The booster pump is automatic. Wait 10 minutes, then message the host. |\n| Wi-Fi not working | Unplug the router for 30 seconds (section 5.1). The 4G backup starts automatically. |\n| TV remote not working | Replace the batteries from the TV-stand drawer. |\n| Door keypad not responding | Touch the keypad to wake it and enter the code followed by **#**. If it still does not respond, call the emergency maintenance line. |",
+    "[Guide Lahore > Stay healthy]\nLahore > Stay healthy\n\nLahore abounds with excellent street food, but unless you've been on the road for some time and developed an iron stomach, it's always wise to exercise some caution. Look for busier street stalls, especially those in Gowal Mandi (food street), and stick to food that's hot and has just been cooked. Salads can also cause problems - if you must, one of the fancier restaurants in Gulberg is probably a safer bet than eating a salad at a dhaba or street stall.\n\nBottled water is highly recommended. Some budget places offer free filtered water, but even that is suspect in Lahore.\n\nMedical care is excellent for those who can afford it and, if you can, avoid public hospitals. The Fátima Memorial Hospital is usually a fair bet, with decent rates, good hygiene, and good care.\n\nDoctors hospital on Canal and National Hospital in Defence Housing Authority offers excellent services but at a higher cost.\n\nFarooq Hospital (West Wood Branch) near Thokar Niazbeg offer better Health services and is not very expensive.\n\nBe aware that travelling as women only may be more challenging, as you will be the centre of a lot of attention, and a few people (taxi drivers and waiters) behave poorly (refusing to take you / give you the bill / telling you what you should be doing).",
+    "[Guide Lahore > Eat > Splurge]\nLahore > Eat > Splurge\n\nA globally famous restaurant chain.\n\nCosta Nostra. Authentic Italian food, overseen by Pak-Italian owners. It has a reservation-only, high-end gourmet experience with a rather well put-together table d'hote, and it has a basement pizzeria where you can't go wrong if want a pizza pie that resembles something from Rome and not Chicago.\n\nThe Monal, in Gulberg III near Liberty Chowk, roundabout. It on the top of Liberty Park Plaza. You have to climb up the plaza by a car, but be careful to drive slowly and look in the traffic mirrors to see if a car is coming from the upper floor when you're about to climb up in the plaza. The Monal has indoor and outdoor seating and it shows a total sky view of the bustling city. ☏ +91 42 35789824"
+  ],
+  "latency_s": 53.091,
+  "llm_s": 51.998,
+  "tool_s": 0.0,
+  "retrieval_s": 0.091,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1541,
+  "completion_tokens": 91,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 51.731348,
+    "load_duration": 0.005847,
+    "prompt_eval_duration": 35.010394,
+    "eval_duration": 16.606957
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "According to the guide, a taxi from the airport to Gulberg should cost around Rs 600.",
+  "scenario_id": "G-06",
+  "guest_message": "Roughly how much should a taxi to Gulberg cost, according to your guide?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "1.1"
+    },
+    {
+      "type": "manual",
+      "id": "12.4"
+    },
+    {
+      "type": "manual",
+      "id": "21"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "1.1",
+    "12.4",
+    "21",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get around > By taxi"
+  ],
+  "evidence": [
+    "[Manual 1.1 — About the building]\nHouse manual > 1. Welcome to Lahore Heights > 1.1 About the building\n\nWelcome, and thank you for choosing Lahore Heights Apartments. We are a small, quiet building in Gulberg III, Lahore (fictional address: Plot 27-C, Sunrise Avenue, Gulberg III, Lahore). The building has a ground-floor lobby with a front desk, seven residential floors, a shared roof terrace and one level of basement parking (B1).\n\nWe rent out four apartments. All other apartments belong to private owners and families who live here all year, so you will share the lifts and corridors with residents. Please treat the building as you would your own home. Guards are on duty at the gates 24 hours a day, and the building has CCTV in all common areas (never inside the apartments).\n\nThis manual explains how everything in your apartment and in the building works, what our rules are, and what to do if something goes wrong. If you cannot find an answer here, message your host and we will help.",
+    "[Manual 12.4 — Medical help]\nHouse manual > 12. Safety and Emergencies > 12.4 Medical help\n\nCall **1122** for emergencies. The nearest hospital with a 24-hour emergency department is Gulberg Community Hospital, about 2.5 km away (roughly 10 minutes by car). A 24-hour pharmacy is a 3-minute walk away (section 17).",
+    "[Manual 21 — Key Facts at a Glance]\nHouse manual > 21. Key Facts at a Glance\n\n| Topic | Fact |\n|---|---|\n| Check-in / check-out | 2:00 PM / 11:00 AM |\n| Early check-in | From 12:00 PM, PKR 2,000, ask 24 hours ahead |\n| Late check-out | Until 2:00 PM, PKR 2,500, ask by 9:00 PM the night before |\n| Quiet hours | 10:00 PM to 8:00 AM |\n| Visitors | 9:00 AM to 9:00 PM, maximum 4 at a time |\n| Front desk | 9:00 AM to 9:00 PM |\n| Roof terrace | 7:00 AM to 10:00 PM |\n| Security deposit (direct bookings) | PKR 25,000, refunded within 3 business days |\n| Extra guest fee | PKR 2,000 per guest per night above base occupancy |\n| Direct-booking cancellation | Free until 7 days before arrival, 50% until 48 hours before |\n| Maximum stay | 28 nights |\n| Generator start time | About 30 seconds |\n| Rescue / Police / Fire | 1122 / 15 / 16 |\n| Host | +92 300 555 0142 (9:00 AM to 11:00 PM) |\n| Emergency maintenance | +92 300 555 0177 (24 hours) |",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nTaxis are a rarity on the streets of Lahore - with auto-rickshaws having cornered the market - for a  taxi you need to book one by phone. Most taxi drivers and, indeed, rickshaw drivers, carry mobile phones; it may be useful to take a number down if you find someone especially reliable. Do not take taxis in the Inner City, as the streets are narrow and very crowded. Either walk or take a qingqi. InDrive, Uber, and \"Careem\" are also available in the city.\n\nMinivans are probably the most dangerous form of public transport, with very rash drivers. Women will find these especially uncomfortable, as they are very crowded. Often women must sit in an undersized cubicle or with the driver, to prevent harassment."
+  ],
+  "latency_s": 46.118,
+  "llm_s": 44.892,
+  "tool_s": 0.0,
+  "retrieval_s": 0.128,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1443,
+  "completion_tokens": 23,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 44.626903,
+    "load_duration": 0.00772,
+    "prompt_eval_duration": 40.345597,
+    "eval_duration": 4.254218
+  }
+}

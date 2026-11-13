@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Lahore has a metro. It opened in October 2020.",
+  "scenario_id": "G-03",
+  "guest_message": "Does Lahore have a metro, and when did it open?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "1.5"
+    },
+    {
+      "type": "manual",
+      "id": "16.1"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By metro"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Understand > History"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "1.5",
+    "16.1",
+    "0",
+    "Lahore > Get around > By metro",
+    "Lahore > Understand > History"
+  ],
+  "evidence": [
+    "[Manual 1.5 — Time zone and language]\nHouse manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\n\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.",
+    "[Manual 16.1 — Smog season (roughly November to January)]\nHouse manual > 16. Seasonal Notes > 16.1 Smog season (roughly November to January)\n\nLahore can have heavy smog in winter. On bad days, keep windows and balcony doors closed and run the air purifier (switched on with its power button; the filter is changed monthly). Plan outdoor activities for the afternoon, when the air is usually clearer.",
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Guide Lahore > Get around > By metro]\nLahore > Get around > By metro\n\nLahore Metro. Opened in October 2020, Lahore Metro is Pakistan's first metro system. This mostly-elevated metro runs for 27.1 km (16.8 mi) serving 26 stations. Only the Orange Line is operational. A further two lines are proposed. Rs 25-45, depending on distance traveled. (updated Feb 2025)",
+    "[Guide Lahore > Understand > History]\nLahore > Understand > History\n\nFor more than 200 years (beginning from about 1524), Lahore was a thriving cultural centre of the Mughal Empire, and Mughal emperors beautified Lahore, with palaces, gardens and mosques.\n\nHiuen Tsang, the famous 7th century Chinese pilgrim, gave a vivid description of Lahore. Lying on the main trade and invasion routes to South Asia, Lahore has been ruled and plundered by a number of dynasties. Muslim rule began here when Qutub-ud-din Aibak was crowned in Lahore in 1206 and became the first Muslim Sultan of the Subcontinent.\n\nLahore waxed and waned in importance during the Sultanate. However, it touched the zenith of its glory during the Mughal rule from 1524 to 1752. The Mughals, who were famous as builders, gave Lahore some of its finest architectural monuments, many of which today are no longer.\n\nLahore was Akbar's capital from 1584 to 1598. He built the massive Lahore Fort on the foundations of a previous fort, and enclosed the city within a red brick wall boasting 12 gates. Jahangir and Shah Jahan (who was born in Lahore) extended the fort, built palaces and tombs, and laid out gardens."
+  ],
+  "latency_s": 29.678,
+  "llm_s": 28.479,
+  "tool_s": 0.0,
+  "retrieval_s": 0.106,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1027,
+  "completion_tokens": 18,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 28.20505,
+    "load_duration": 0.027,
+    "prompt_eval_duration": 24.788701,
+    "eval_duration": 3.349518
+  }
+}

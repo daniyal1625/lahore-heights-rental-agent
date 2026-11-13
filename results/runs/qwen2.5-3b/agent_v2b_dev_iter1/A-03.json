@@ -1,0 +1,67 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! Based on your request, I found a suitable option for you. You can stay in the Two-Bedroom, Unit 502 from 20 to 23 November. The total cost for 3 nights will be PKR 63,000. Please note that there will be an extra guest fee for the additional person. Let me know if you need any more information.",
+  "scenario_id": "A-03",
+  "guest_message": "Looking for a place for 2 people from 20 to 23 November.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-20..2026-11-23"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-20",
+        "check_out": "2026-11-23",
+        "guests": 2
+      },
+      "result_size": 759,
+      "ms": 311.3
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-20\",\"check_out\":\"2026-11-23\",\"nights\":3,\"guests\":2,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":true,\"nightly_price_pkr\":9500,\"stay_total_pkr\":28500,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":false,\"nightly_price_pkr\":14000,\"stay_total_pkr\":42000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":true,\"nightly_price_pkr\":21000,\"stay_total_pkr\":63000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":false,\"nightly_price_pkr\":38000,\"stay_total_pkr\":114000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 49.051,
+  "llm_s": 46.92,
+  "tool_s": 0.312,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1324,
+  "completion_tokens": 198,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 46.376392,
+    "load_duration": 0.01695,
+    "prompt_eval_duration": 10.128349,
+    "eval_duration": 36.177269
+  },
+  "plan": {
+    "intent": "check_availability",
+    "use_manual": false,
+    "manual_query": null,
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": true,
+    "check_in": "2026-11-20",
+    "check_out": "2026-11-23",
+    "guests": 2,
+    "needs_clarification": true
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 23.277,
+  "llm_answer_s": 23.642
+}

@@ -1,0 +1,23 @@
+{
+  "system": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but I don't have the option to arrange airport pickups. I recommend using a local transportation service for this.",
+  "scenario_id": "E-01",
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "latency_s": 16.348,
+  "llm_s": 14.786,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 27,
+  "error": null,
+  "ollama": {
+    "total_duration": 14.521067,
+    "load_duration": 0.006695,
+    "prompt_eval_duration": 9.8343,
+    "eval_duration": 4.637655
+  }
+}

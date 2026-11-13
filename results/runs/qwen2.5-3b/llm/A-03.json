@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! For your stay from 20 to 23 November, we have availability. Please let me know if you need any specific room types or amenities.",
+  "scenario_id": "A-03",
+  "guest_message": "Looking for a place for 2 people from 20 to 23 November.",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 8.402,
+  "llm_s": 7.3,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 347,
+  "completion_tokens": 34,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 7.028943,
+    "load_duration": 0.006305,
+    "prompt_eval_duration": 1.701686,
+    "eval_duration": 5.293219
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but we don't offer airport pickup services. You can arrange your own taxi from the airport to the hotel of your choice. Please be firm with the price and pay in advance. It's around Rs 600 to Gulberg, Rs 800-1,000 to the old city.",
+  "scenario_id": "E-01",
+  "guest_message": "Can you arrange an airport pickup for us when we arrive?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.2"
+    },
+    {
+      "type": "manual",
+      "id": "15.4"
+    },
+    {
+      "type": "manual",
+      "id": "3.6"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get around > By taxi"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > Get in > By plane"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "3.2",
+    "15.4",
+    "3.6",
+    "Lahore > Get around > By taxi",
+    "Lahore > Get in > By plane"
+  ],
+  "evidence": [
+    "[Manual 3.2 — Taxis and ride-hailing]\nHouse manual > 3. Getting Here and Arriving > 3.2 Taxis and ride-hailing\n\nRide-hailing apps such as Careem and inDrive work well in Lahore. Set your pickup or drop-off pin to **\"Lahore Heights Apartments, Gate 2\"**. Drivers sometimes stop on Sunrise Avenue by mistake. If your driver cannot find us, call the security desk on +92 42 555 0101 and a guard will guide them. If you use a street taxi or rickshaw, agree on the fare before you start.",
+    "[Manual 15.4 — Deliveries and parcels]\nHouse manual > 15. Extras and Requests > 15.4 Deliveries and parcels\n\nFood and grocery delivery riders should be told to deliver to **Gate 2**; the guard will call you. The front desk accepts parcels addressed to you between 9:00 AM and 9:00 PM.",
+    "[Manual 3.6 — Early check-in and luggage storage]\nHouse manual > 3. Getting Here and Arriving > 3.6 Early check-in and luggage storage\n\n- **Early check-in** is possible **from 12:00 PM** for **PKR 2,000**, but only if the apartment was empty the night before. Request it **at least 24 hours before arrival**. The host confirms by 10:00 AM on the day of arrival. Check-in before 12:00 PM is not possible because the apartment is being cleaned.\n- **Luggage storage** is free at the front desk before check-in and after check-out, between 9:00 AM and 9:00 PM. Please do not leave valuables, passports or cash. Outside front desk hours, ask the security desk; luggage is left at your own risk.",
+    "[Guide Lahore > Get around > By taxi]\nLahore > Get around > By taxi\n\nOften women must sit in an undersized cubicle or with the driver, to prevent harassment.\n\nBuses are usually cleaner and more comfortable than minivans, and usually have a separate seating area for women. Saami Daewoo bus service is an air-conditioned bus service operating in different parts of the city.\n\nFrom the airport - When you arrive at the airport you will likely be besieged with touts offering you taxis and rooms. It's wise not to book anything through them and arrange a taxi yourself to the hotel of your choice. Some of the mid-range and most top-end hotels offer a courtesy shuttle from the airport. If you do use an airport taxi, be firm, agree on a price before you sit (which includes the Rs 50 to leave the airport carpark) and pay in advance. Should be around Rs 600 to Gulberg, Rs 800–1,000 to the old city.",
+    "[Guide Lahore > Get in > By plane]\nLahore > Get in > By plane\n\n1 Allama Iqbal International Airport (LHE  IATA) (20–30 minutes from the city centre). The airport is a major hub by Pakistan standards, but not by international standards. Pakistan International Airlines with daily arrivals from the rest of Pakistan, connecting flights into nearby hub airports Qatar, Dubai, Bangkok for onward connections to the Middle East, Europe, North America, and South-East Asia.\n\nTaxis and shuttles are available to take passengers from the city to the airport; with unmetered taxis it is advisable to set the rate beforehand. The proposed Lahore Mass Rapid Transit System will be linked from different parts of the city to the airport."
+  ],
+  "latency_s": 41.759,
+  "llm_s": 40.645,
+  "tool_s": 0.0,
+  "retrieval_s": 0.102,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1130,
+  "completion_tokens": 69,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 40.387236,
+    "load_duration": 0.010031,
+    "prompt_eval_duration": 27.324829,
+    "eval_duration": 12.955335
+  }
+}

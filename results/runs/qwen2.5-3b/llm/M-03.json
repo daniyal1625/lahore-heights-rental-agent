@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "Hello! To connect to the internet in your unit, you can usually find the router in the hallway. It's best to check the manual or ask the host for the login details.",
+  "scenario_id": "M-03",
+  "guest_message": "We're in unit 502. How do we connect to the internet?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 14.049,
+  "llm_s": 12.783,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 346,
+  "completion_tokens": 38,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 12.521775,
+    "load_duration": 0.033103,
+    "prompt_eval_duration": 2.084008,
+    "eval_duration": 10.34801
+  }
+}

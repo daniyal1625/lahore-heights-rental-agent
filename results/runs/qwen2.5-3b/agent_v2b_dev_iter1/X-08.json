@@ -1,0 +1,67 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "For 5 guests on November 12-13, you can stay in the Penthouse, Unit 701. The cost will be PKR 38,000.",
+  "scenario_id": "X-08",
+  "guest_message": "Do you have a place for 5 of us on Nov 12-13, and what would it cost?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "availability",
+      "id": "2026-11-12..2026-11-13"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "check_availability",
+      "args": {
+        "check_in": "2026-11-12",
+        "check_out": "2026-11-13",
+        "guests": 5
+      },
+      "result_size": 758,
+      "ms": 9.3
+    }
+  ],
+  "retrieved": [],
+  "evidence": [
+    "{\"check_in\":\"2026-11-12\",\"check_out\":\"2026-11-13\",\"nights\":1,\"guests\":5,\"results\":[{\"listing\":\"Studio, Unit 201\",\"listing_id\":1001,\"available\":false,\"nightly_price_pkr\":9500,\"stay_total_pkr\":15500,\"capacity\":2,\"base_guests\":2},{\"listing\":\"One-Bedroom, Unit 304\",\"listing_id\":1002,\"available\":false,\"nightly_price_pkr\":14000,\"stay_total_pkr\":20000,\"capacity\":3,\"base_guests\":2},{\"listing\":\"Two-Bedroom, Unit 502\",\"listing_id\":1003,\"available\":true,\"nightly_price_pkr\":21000,\"stay_total_pkr\":23000,\"capacity\":5,\"base_guests\":4},{\"listing\":\"Penthouse, Unit 701\",\"listing_id\":1004,\"available\":true,\"nightly_price_pkr\":38000,\"stay_total_pkr\":38000,\"capacity\":7,\"base_guests\":6}],\"note\":\"stay_total_pkr includes the extra guest fee when guests exceed base_guests\"}"
+  ],
+  "latency_s": 55.834,
+  "llm_s": 54.03,
+  "tool_s": 0.009,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1337,
+  "completion_tokens": 157,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 53.491553,
+    "load_duration": 0.026409,
+    "prompt_eval_duration": 25.098128,
+    "eval_duration": 28.311381
+  },
+  "plan": {
+    "intent": "check_availability",
+    "use_manual": false,
+    "manual_query": "search_house_manual",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": true,
+    "check_in": "2026-11-12",
+    "check_out": "2026-11-13",
+    "guests": 5,
+    "needs_clarification": true
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 22.132,
+  "llm_answer_s": 31.898
+}

@@ -1,0 +1,82 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "The building does not have a swimming pool, a gym, or a sauna. The only amenity available is the roof terrace for sitting and relaxing.",
+  "scenario_id": "M-13",
+  "guest_message": "Is there a swimming pool or a gym in the building?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "10.3"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    },
+    {
+      "type": "manual",
+      "id": "10.6"
+    },
+    {
+      "type": "manual",
+      "id": "4.1"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "Is there a swimming pool or a gym in the building?"
+      },
+      "result_size": 2962,
+      "ms": 87.8
+    }
+  ],
+  "retrieved": [
+    "10.3",
+    "18",
+    "10.6",
+    "4.1"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"10.3\",\"title\":\"What the building does not have\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.3 What the building does not have\\n\\nThe building does **not** have a swimming pool, a gym or a sauna. The roof terrace is for sitting and relaxing only.\"},{\"source_id\":\"18\",\"title\":\"Quick FAQ\",\"text\":\"House manual > 18. Quick FAQ\\n\\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\\n\\n**Is there a cleaning fee?** No. It is included in the nightly rate.\\n\\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\\n\\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\\n\\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\\n\\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\\n\\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\\n\\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\\n\\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\\n\\n**Who can approve a refund or a special request?** Only the host (section 2.8).\"},{\"source_id\":\"10.6\",\"title\":\"Where things are in the building\",\"text\":\"House manual > 10. Building Amenities and Accessibility > 10.6 Where things are in the building\\n\\n- **Ground floor:** lobby and front desk, shared laundry room, the ramp from Gate 2, and the lifts.\\n- **Basement (B1):** parking, reached by the vehicle ramp from Gate 1 or by lift (press B1).\\n- **Each residential floor:** two lifts, Stair A and Stair B (fire exits), a trash room at the end of the corridor, and the apartment doors.\\n- **Roof level (R):** the shared roof terrace with the smoking corner at its north end, reached by lift or by Stair A.\\n- **Outside:** the front lawn at Gate 1 is the fire assembly point.\"},{\"source_id\":\"4.1\",\"title\":\"Studio, Unit 201\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.1 Studio, Unit 201\\n\\n- **Sleeps:** 2. One queen bed (160 × 200 cm). The sofa is not a bed.\\n- **Bathroom:** one, with shower. Electric water heater (geyser) of 35 litres.\\n- **Kitchenette:** 2-burner gas hob, induction plate, microwave, kettle, toaster, 250-litre fridge. There is **no oven**.\\n- **Laundry:** **no washing machine** in the unit. Use the shared laundry room on the ground floor (section 9.1).\\n- **Cooling and air:** one inverter air conditioner (this is the AC that keeps running on the generator) and one air purifier.\\n- **Other:** 32-inch smart TV, desk and chair for working, large window with garden view (no balcony), iron and ironing board in the wardrobe, hair dryer in the bathroom drawer.\\n- **Parking:** B1-12. **Wi-Fi network:** LH-Guest-201.\"}]"
+  ],
+  "latency_s": 174.776,
+  "llm_s": 172.767,
+  "tool_s": 0.088,
+  "retrieval_s": 0.088,
+  "n_llm_calls": 3,
+  "prompt_tokens": 4036,
+  "completion_tokens": 831,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 172.240395,
+    "load_duration": 0.025964,
+    "prompt_eval_duration": 33.241575,
+    "eval_duration": 138.795302
+  },
+  "plan": {
+    "intent": "fallback",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "Is there a swimming pool or a gym in the building?",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ],
+    "fallback_reason": "plan JSON did not match the schema"
+  },
+  "plan_attempts": 2,
+  "llm_plan_s": 134.278,
+  "llm_answer_s": 38.49
+}

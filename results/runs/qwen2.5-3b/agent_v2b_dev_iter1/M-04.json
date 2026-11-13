@@ -1,0 +1,82 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "There is no washing machine in the Studio unit. Studio guests use the shared laundry room on the ground floor, open from 8:00 AM to 8:00 PM. You will need to collect a token for PKR 400 per wash. Detergent is available free at the front desk.",
+  "scenario_id": "M-04",
+  "guest_message": "Is there a washing machine in the studio?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "9.1"
+    },
+    {
+      "type": "manual",
+      "id": "19.4"
+    },
+    {
+      "type": "manual",
+      "id": "4.1"
+    },
+    {
+      "type": "manual",
+      "id": "18"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "studio washing machine"
+      },
+      "result_size": 3392,
+      "ms": 36.2
+    }
+  ],
+  "retrieved": [
+    "9.1",
+    "19.4",
+    "4.1",
+    "18"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"9.1\",\"title\":\"Washing your clothes\",\"text\":\"House manual > 9. Laundry, Linens and Housekeeping > 9.1 Washing your clothes\\n\\n- **One-Bedroom and Two-Bedroom:** a fully automatic washing machine is in the unit. A bottle of detergent is provided. Use the drying rack on the balcony; please do not hang clothes over the balcony railing.\\n- **Penthouse:** a combined washer-dryer is in the unit.\\n- **Studio:** there is no washing machine in the unit. Studio guests use the **shared laundry room on the ground floor**, open **8:00 AM to 8:00 PM**. Collect a token for **PKR 400 per wash** at the front desk. Detergent is available free at the front desk, and a drying rack is in the Studio wardrobe.\"},{\"source_id\":\"19.4\",\"title\":\"Washing machine and washer-dryer\",\"text\":\"House manual > 19. Appliance How-To Guide > 19.4 Washing machine and washer-dryer\\n\\nThe washing machines in the One-Bedroom and Two-Bedroom take up to 7 kg. Use the **Quick 30** programme for lightly worn clothes and the **Cotton 40 °C** programme for normal loads. One cap of the provided detergent is enough. The Penthouse washer-dryer washes up to 8 kg and dries up to 4 kg; a wash-and-dry cycle takes about 4 hours. Washing machines do not run on the generator, and a cycle interrupted by a power cut resumes automatically when the grid power returns. Please clean the lint filter of the washer-dryer after each dry cycle.\"},{\"source_id\":\"4.1\",\"title\":\"Studio, Unit 201\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.1 Studio, Unit 201\\n\\n- **Sleeps:** 2. One queen bed (160 × 200 cm). The sofa is not a bed.\\n- **Bathroom:** one, with shower. Electric water heater (geyser) of 35 litres.\\n- **Kitchenette:** 2-burner gas hob, induction plate, microwave, kettle, toaster, 250-litre fridge. There is **no oven**.\\n- **Laundry:** **no washing machine** in the unit. Use the shared laundry room on the ground floor (section 9.1).\\n- **Cooling and air:** one inverter air conditioner (this is the AC that keeps running on the generator) and one air purifier.\\n- **Other:** 32-inch smart TV, desk and chair for working, large window with garden view (no balcony), iron and ironing board in the wardrobe, hair dryer in the bathroom drawer.\\n- **Parking:** B1-12. **Wi-Fi network:** LH-Guest-201.\"},{\"source_id\":\"18\",\"title\":\"Quick FAQ\",\"text\":\"House manual > 18. Quick FAQ\\n\\n**What time can I check in and out?** Check-in is from 2:00 PM and check-out is by 11:00 AM.\\n\\n**Is there a cleaning fee?** No. It is included in the nightly rate.\\n\\n**Can I drink the tap water?** No. Use the filtered RO dispenser in the kitchen.\\n\\n**What happens in a power cut?** The generator starts in about 30 seconds. Lifts, lights, Wi-Fi, fridge and one AC keep running.\\n\\n**Is smoking allowed?** Only in the marked corner of the roof terrace.\\n\\n**Can friends visit?** Yes, between 9:00 AM and 9:00 PM, up to 4 at a time, registered at Gate 2. No overnight visitors.\\n\\n**Is there a washing machine?** Yes in the One-Bedroom, Two-Bedroom and Penthouse. Studio guests use the shared laundry room (PKR 400 per wash).\\n\\n**Where do I park?** In the basement (B1) through Gate 1, one space per apartment (two for the Penthouse).\\n\\n**What if I am locked out?** Call the host or the emergency maintenance line (section 13.4).\\n\\n**Who can approve a refund or a special request?** Only the host (section 2.8).\"}]"
+  ],
+  "latency_s": 64.241,
+  "llm_s": 62.207,
+  "tool_s": 0.036,
+  "retrieval_s": 0.036,
+  "n_llm_calls": 2,
+  "prompt_tokens": 1964,
+  "completion_tokens": 167,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 61.673335,
+    "load_duration": 0.019524,
+    "prompt_eval_duration": 30.884111,
+    "eval_duration": 30.67447
+  },
+  "plan": {
+    "intent": "check_apartment_features",
+    "use_manual": true,
+    "manual_query": "studio washing machine",
+    "use_guide": false,
+    "guide_query": null,
+    "use_reservation": false,
+    "reservation_id": null,
+    "use_availability": false,
+    "check_in": null,
+    "check_out": null,
+    "guests": null,
+    "needs_clarification": false
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 18.494,
+  "llm_answer_s": 43.713
+}

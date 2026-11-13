@@ -1,0 +1,32 @@
+{
+  "system": "llm",
+  "variant": "llm",
+  "model": "qwen2.5:3b",
+  "answer": "No, there is no swimming pool or gym in the building.",
+  "scenario_id": "M-13",
+  "guest_message": "Is there a swimming pool or a gym in the building?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [],
+  "tool_calls": [],
+  "retrieved": [],
+  "evidence": [],
+  "latency_s": 4.899,
+  "llm_s": 3.883,
+  "tool_s": 0.0,
+  "retrieval_s": 0.0,
+  "n_llm_calls": 1,
+  "prompt_tokens": 341,
+  "completion_tokens": 14,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 3.611885,
+    "load_duration": 0.037269,
+    "prompt_eval_duration": 1.174588,
+    "eval_duration": 2.35709
+  }
+}

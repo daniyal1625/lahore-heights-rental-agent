@@ -1,0 +1,65 @@
+{
+  "system": "rag",
+  "variant": "rag",
+  "model": "qwen2.5:3b",
+  "answer": "Yes, Lahore Fort is a UNESCO World Heritage site. In the Walled City, you can also visit the Badshahi Mosque, Shahi Hammam, and the Wazir Khan Mosque. There's also Minar-e-Pakistan and Samadhi of Ranjit Singh nearby.",
+  "scenario_id": "G-08",
+  "guest_message": "Is Lahore Fort a UNESCO site? And what else is there to see in the Walled City?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "1.1"
+    },
+    {
+      "type": "manual",
+      "id": "0"
+    },
+    {
+      "type": "manual",
+      "id": "1.5"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore > See > Walled City"
+    },
+    {
+      "type": "guide",
+      "id": "Lahore"
+    }
+  ],
+  "tool_calls": [],
+  "retrieved": [
+    "1.1",
+    "0",
+    "1.5",
+    "Lahore > See > Walled City",
+    "Lahore"
+  ],
+  "evidence": [
+    "[Manual 1.1 — About the building]\nHouse manual > 1. Welcome to Lahore Heights > 1.1 About the building\n\nWelcome, and thank you for choosing Lahore Heights Apartments. We are a small, quiet building in Gulberg III, Lahore (fictional address: Plot 27-C, Sunrise Avenue, Gulberg III, Lahore). The building has a ground-floor lobby with a front desk, seven residential floors, a shared roof terrace and one level of basement parking (B1).\n\nWe rent out four apartments. All other apartments belong to private owners and families who live here all year, so you will share the lifts and corridors with residents. Please treat the building as you would your own home. Guards are on duty at the gates 24 hours a day, and the building has CCTV in all common areas (never inside the apartments).\n\nThis manual explains how everything in your apartment and in the building works, what our rules are, and what to do if something goes wrong. If you cannot find an answer here, message your host and we will help.",
+    "[Manual 0 — About this document]\nHouse manual > About this document\n\n> **About this document.** Lahore Heights Apartments is a *fictional* property created for an open-source portfolio project (an AI guest-messaging agent). Every name, phone number, address, price and policy in this manual is invented. It was written with Claude (Anthropic) and is released under the same licence as the project repository. Do not use it for real travel planning.",
+    "[Manual 1.5 — Time zone and language]\nHouse manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\n\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.",
+    "[Guide Lahore > See > Walled City]\nLahore > See > Walled City\n\nThe Walled City of Lahore is one of the oldest cities in the world and comprises the following places for sightseeing.\n\n1 Lahore Fort (شاہی قلعہ, Shahi Qila). A huge structure where the Mughal and Sikh rulers built their imperial quarters. It is on the UNESCO World Heritage List. There is a small museum dedicated to the Sikh period of the 18th century. A friendly museum caretaker might agree to take you into the summer rooms underground. For non-Pakistanis is Rs 500.\n\n2 Alamgiri Gate. The iconic entrance to the fort. Located opposite the Badshahi Mosque. (updated Feb 2017)\n\n3 Shah Burj gate. Decorated with colored tiles. Known as the \"Elephant Gate\" because royal elephants would enter here. Just inside the gate is the Hathi Paer (Elephant Path) - a staircase with very wide steps so that an elephant's feet could fit on them while climbing to the upper level of the fort. The fort's wall outside this staircase is decorated with tiles including pictures of elephants. (You will also find the Alamgiri Gate occasionally called the Elephant Gate, because its two columns vaguely resemble elephant feet.) (updated Feb 2017)",
+    "[Guide Lahore]\nLahore\n\nLahore (Punjabi: لہور; Urdu: لاہور) is Pakistan's second-largest city after Karachi and the capital of Punjab province. Located in northeastern Pakistan, Lahore is known for its historic architecture, traditional food, gardens, markets, and cultural heritage. The historic Walled City is one of its most distinctive areas, containing narrow streets, traditional neighbourhoods, historic gates, mosques, and bazaars.\n\nLahore has a history spanning many centuries and was an important centre under the Mughal Empire, the Sikh Empire, and British colonial rule. Visitors can explore this history at Lahore Fort, a UNESCO World Heritage Site, and Badshahi Mosque, one of the city's best-known Mughal-era landmarks. Nearby, the Walled City of Lahore includes the historic streets around Delhi Gate, the restored Shahi Hammam, and the colourful Wazir Khan Mosque, noted for its detailed tilework and frescoes.\n\nOther significant historical sites include Minar-e-Pakistan, associated with the Lahore Resolution of 1940; Gurdwara Dera Sahib, an important Sikh religious site; and Samadhi of Ranjit Singh, located near Lahore Fort. The Shalimar Gardens, another UNESCO World Heritage Site, reflect the Mughal tradition of formal gardens, fountains, and landscaped terraces."
+  ],
+  "latency_s": 47.834,
+  "llm_s": 46.668,
+  "tool_s": 0.0,
+  "retrieval_s": 0.114,
+  "n_llm_calls": 1,
+  "prompt_tokens": 1309,
+  "completion_tokens": 59,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 46.395304,
+    "load_duration": 0.010665,
+    "prompt_eval_duration": 35.073694,
+    "eval_duration": 11.289506
+  }
+}

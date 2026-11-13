@@ -1,0 +1,81 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "In Unit 502, you can connect to the internet using the Wi-Fi network named **LH-Guest-502**. The password is **2BR502wifi**. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. If it still doesn't work after 10 minutes, please message the host.",
+  "scenario_id": "M-03",
+  "guest_message": "We're in unit 502. How do we connect to the internet?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "4.3"
+    },
+    {
+      "type": "manual",
+      "id": "5.1"
+    },
+    {
+      "type": "manual",
+      "id": "4.2"
+    },
+    {
+      "type": "manual",
+      "id": "20.2"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "wifi unit 502"
+      },
+      "result_size": 3199,
+      "ms": 2371.6
+    }
+  ],
+  "retrieved": [
+    "4.3",
+    "5.1",
+    "4.2",
+    "20.2"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"4.3\",\"title\":\"Two-Bedroom, Unit 502\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.3 Two-Bedroom, Unit 502\\n\\n- **Sleeps:** up to 5. Master bedroom with a king bed and its own bathroom; second bedroom with two single beds; sofa bed in the living room (base occupancy is 4).\\n- **Bathrooms:** two. Geyser of 80 litres.\\n- **Kitchen:** full kitchen with 4-burner gas hob **and an oven**, induction plate, microwave, air fryer, blender, kettle, toaster, 400-litre fridge, dining table for 6.\\n- **Laundry:** fully automatic washing machine. Drying rack on the balcony.\\n- **Cooling and air:** three inverter ACs (both bedrooms and living room). The **master bedroom** AC runs on the generator. Air purifier in each bedroom.\\n- **Other:** 50-inch smart TV, desk in the living room, balcony, iron and ironing board, hair dryer.\\n- **Parking:** B1-30. **Wi-Fi network:** LH-Guest-502.\"},{\"source_id\":\"5.1\",\"title\":\"Wi-Fi\",\"text\":\"House manual > 5. Wi-Fi, TV and Electronics > 5.1 Wi-Fi\\n\\nEach apartment has its own network. The building has 100 Mbps fibre internet with an automatic 4G backup router (slower, about 20 Mbps) that switches on if the main line fails.\\n\\n| Unit | Network name | Password |\\n|---|---|---|\\n| Studio, 201 | LH-Guest-201 | Studio201wifi |\\n| One-Bedroom, 304 | LH-Guest-304 | 1BR304wifi |\\n| Two-Bedroom, 502 | LH-Guest-502 | 2BR502wifi |\\n| Penthouse, 701 | LH-Guest-701 | Penthouse701wifi |\\n\\nThe router is on the living-room shelf. If the internet stops working, unplug the router's power for 30 seconds and plug it back in. Please do not change router settings. If it still does not work after 10 minutes, message the host.\"},{\"source_id\":\"4.2\",\"title\":\"One-Bedroom, Unit 304\",\"text\":\"House manual > 4. Your Apartment, Unit by Unit > 4.2 One-Bedroom, Unit 304\\n\\n- **Sleeps:** up to 3. Bedroom with one king bed (180 × 200 cm) and a double sofa bed in the living room (base occupancy is 2).\\n- **Bathroom:** one, with shower. Geyser of 50 litres.\\n- **Kitchen:** full kitchen with 4-burner gas hob, induction plate, microwave, air fryer, kettle, toaster, 300-litre fridge. There is **no oven**.\\n- **Laundry:** fully automatic washing machine. Drying rack on the balcony.\\n- **Cooling and air:** two inverter ACs (bedroom and living room). The **bedroom** AC runs on the generator. One air purifier in the bedroom.\\n- **Other:** 43-inch smart TV, desk, balcony with two chairs (street-facing), iron and ironing board, hair dryer.\\n- **Parking:** B1-21. **Wi-Fi network:** LH-Guest-304.\"},{\"source_id\":\"20.2\",\"title\":\"Business travellers and remote workers\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.2 Business travellers and remote workers\\n\\n- Every apartment has a desk or dining table and fast Wi-Fi with an automatic 4G backup (section 5.1).\\n- The generator keeps the Wi-Fi router on during power cuts, but your laptop battery is your own responsibility, and the induction plate and kettle will not work during a cut.\\n- The front desk can receive parcels and documents for you between 9:00 AM and 9:00 PM (section 15.4).\\n- Quiet hours (10:00 PM to 8:00 AM) apply to video calls on balconies and in corridors.\"}]"
+  ],
+  "latency_s": 80.026,
+  "llm_s": 75.97,
+  "tool_s": 2.372,
+  "retrieval_s": 2.372,
+  "n_llm_calls": 2,
+  "prompt_tokens": 3001,
+  "completion_tokens": 128,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 75.441243,
+    "load_duration": 0.015096,
+    "prompt_eval_duration": 55.090064,
+    "eval_duration": 20.208791
+  },
+  "plan": {
+    "intent": "internet connection",
+    "calls": [
+      {
+        "tool": "search_house_manual",
+        "query": "wifi unit 502",
+        "reservation_id": null,
+        "check_in": null,
+        "check_out": null,
+        "guests": null
+      }
+    ]
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 24.124,
+  "llm_answer_s": 51.846
+}

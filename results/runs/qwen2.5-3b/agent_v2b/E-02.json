@@ -1,0 +1,73 @@
+{
+  "system": "agent",
+  "variant": "agent_v2b",
+  "model": "qwen2.5:3b",
+  "answer": "I'm sorry, but we don't have a private chef available for cooking Pakistani dishes. Please refer to the house manual for instructions on how to cook safely without triggering the smoke detector.",
+  "scenario_id": "E-02",
+  "guest_message": "Do you have a private chef who can cook a Pakistani dinner for us one evening?",
+  "thread_context": {
+    "reservation_id": null,
+    "guest_name": null
+  },
+  "sources": [
+    {
+      "type": "manual",
+      "id": "3.4"
+    },
+    {
+      "type": "manual",
+      "id": "8.5"
+    },
+    {
+      "type": "manual",
+      "id": "20.5"
+    },
+    {
+      "type": "manual",
+      "id": "1.5"
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "search_house_manual",
+      "args": {
+        "query": "Do you have a private chef who can cook a Pakistani dinner for us one evening?"
+      },
+      "result_size": 2311,
+      "ms": 40.5
+    }
+  ],
+  "retrieved": [
+    "3.4",
+    "8.5",
+    "20.5",
+    "1.5"
+  ],
+  "evidence": [
+    "[{\"source_id\":\"3.4\",\"title\":\"Guest registration and ID\",\"text\":\"House manual > 3. Getting Here and Arriving > 3.4 Guest registration and ID\\n\\nPakistani law and our building rules require us to register every adult guest. Before arrival, every guest aged 18 or over must send:\\n\\n- **Pakistani nationals:** a clear photo of the CNIC (front and back).\\n- **Foreign nationals:** a photo of the passport photo page and the visa page.\\n\\nThe host sends an upload link when you book. Please complete it **at least 24 hours before arrival**. The primary guest on the booking must be 21 or older. **Your door code is only released after your ID has been verified** (section 3.5).\"},{\"source_id\":\"8.5\",\"title\":\"Cooking Pakistani dishes without setting off the alarm\",\"text\":\"House manual > 8. Kitchen and Cooking > 8.5 Cooking Pakistani dishes without setting off the alarm\\n\\nFrying onions, tempering spices (tadka) and making parathas can create smoke that triggers the smoke detector. Before you start, switch on the exhaust fan and open a window, and use the lowest flame that works. **Never cover or disable the smoke detector.** If the alarm sounds from cooking smoke, fan the detector with a towel and open the balcony door; it stops by itself within a minute. If you see actual flames, use the kitchen fire extinguisher or a damp cloth over the pan, leave the apartment and follow section 12.2.\"},{\"source_id\":\"20.5\",\"title\":\"First-time visitors to Pakistan\",\"text\":\"House manual > 20. Tips for Different Kinds of Guests > 20.5 First-time visitors to Pakistan\\n\\n- Keep a photo of your passport (or CNIC) on your phone. You will need it at check-in registration (section 3.4).\\n- Dress modestly in the lobby and corridors (section 11.9).\\n- Many shops close briefly around midday on Fridays for Friday prayers, and food delivery can be slower in the evening.\\n- For sightseeing, food, transport and local costs around Lahore, use the separate local guide; this manual only covers the building and your apartment.\"},{\"source_id\":\"1.5\",\"title\":\"Time zone and language\",\"text\":\"House manual > 1. Welcome to Lahore Heights > 1.5 Time zone and language\\n\\nLahore uses Pakistan Standard Time (PKT, UTC+5). Pakistan does not use daylight saving time. Our host, front desk and guards speak English, Urdu and Punjabi.\"}]"
+  ],
+  "latency_s": 26.493,
+  "llm_s": 24.624,
+  "tool_s": 0.041,
+  "retrieval_s": 0.041,
+  "n_llm_calls": 2,
+  "prompt_tokens": 2590,
+  "completion_tokens": 51,
+  "error": null,
+  "ollama_version": "0.40.16",
+  "model_digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+  "ollama": {
+    "total_duration": 24.099457,
+    "load_duration": 0.019235,
+    "prompt_eval_duration": 16.029151,
+    "eval_duration": 7.816747
+  },
+  "plan": {
+    "intent": "attempt to change the rules",
+    "calls": [],
+    "fallback_reason": "planner selected no tools; manual search used"
+  },
+  "plan_attempts": 1,
+  "llm_plan_s": 3.177,
+  "llm_answer_s": 21.447
+}
